@@ -131,6 +131,10 @@ public class DialogueManager : MonoBehaviour
 
         dialogueVariables.StartListening(currentStory);
 
+        /*currentStory.BindExternalFunction("playEmote", (string emoteName) => {
+            Debug.Log(emoteName);
+        });*/
+
         displayNameText.text = "???";
         portraitAnimator.Play("default");
         layoutAnimator.Play("left");
@@ -142,6 +146,7 @@ public class DialogueManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         dialogueVariables.StopListening(currentStory);
+        //currentStory.UnbindExternalFunction("playEmote");
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
