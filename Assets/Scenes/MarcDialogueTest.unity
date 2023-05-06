@@ -1316,6 +1316,11 @@ MonoBehaviour:
   - {fileID: 2113285970}
   - {fileID: 1399190800}
   - {fileID: 553864544}
+  defaultAudioInfo: {fileID: 11400000, guid: f138622f6c30b3248b095b28d148a84c, type: 2}
+  audioInfos:
+  - {fileID: 11400000, guid: 8b91395b371f6344a91f4e9008851779, type: 2}
+  - {fileID: 11400000, guid: b9f98afd8f4c68742bc116c3cd0e3fea, type: 2}
+  makePredictable: 1
 --- !u!1 &818153712
 GameObject:
   m_ObjectHideFlags: 0
