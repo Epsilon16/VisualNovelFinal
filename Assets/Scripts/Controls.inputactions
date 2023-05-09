@@ -210,6 +210,28 @@
                 },
                 {
                     "name": "",
+                    "id": "f4eb940d-a4bc-49ba-9bc0-29a8deba016d",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4017c33d-c35b-459d-acdd-bae814caebb2",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "582039fb-d8b0-42c7-aec0-2f0ee50b8535",
                     "path": "<Keyboard>/space",
                     "interactions": "",
