@@ -99,6 +99,7 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueAudioInfoSO audioInfo = null;
         audioInfoDictionary.TryGetValue(id, out audioInfo);
+        Debug.Log(audioInfo);
         if (audioInfo != null)
         {
             this.currentAudioInfo = audioInfo;
@@ -128,6 +129,7 @@ public class DialogueManager : MonoBehaviour
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
+        layoutAnimator = dialoguePanel.GetComponent<Animator>();
 
         dialogueVariables.StartListening(currentStory);
 
@@ -315,7 +317,7 @@ public class DialogueManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
-        //EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
     }
 
     public void MakeChoice(int choiceIndex)
