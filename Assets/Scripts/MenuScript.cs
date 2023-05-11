@@ -27,6 +27,11 @@ public class MenuScript : MonoBehaviour
         Debug.Log(GameScene);
     }
 
+    public void ReturnMenu(int GameScene)
+    {
+        SceneManager.LoadScene(GameScene);
+    }
+
     public void CGScene(int GameScene)
     {
         Debug.Log(GameScene);
