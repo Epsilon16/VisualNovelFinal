@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -51,6 +52,8 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueVariables dialogueVariables;
 
+    private int Sceneindex;
+
     private void Awake()
     {
         if (instance != null)
@@ -83,6 +86,8 @@ public class DialogueManager : MonoBehaviour
             index++;
         }
         InitializeAudioInfoDictionary();
+
+        Sceneindex = SceneManager.GetActiveScene().buildIndex;
     }
 
     private void InitializeAudioInfoDictionary()
@@ -153,6 +158,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
         SetCurrentAudioInfo(defaultAudioInfo.id);
+        SceneManager.LoadScene(Sceneindex + 1);
     }
 
     private void ContinueStory()
@@ -317,7 +323,7 @@ public class DialogueManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
-        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+        //EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
     }
 
     public void MakeChoice(int choiceIndex)
