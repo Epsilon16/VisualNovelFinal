@@ -5,8 +5,9 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 {
 
     [Header("Params")]
@@ -25,6 +26,7 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
+    //[SerializeField] private Button[] choicesButtons;
     private TextMeshProUGUI[] choicesText;
 
     [Header("Audio")]
@@ -54,6 +56,7 @@ public class DialogueManager : MonoBehaviour
 
     private int Sceneindex;
 
+    private GameObject MouseHighlight;
     private void Awake()
     {
         if (instance != null)
@@ -323,7 +326,28 @@ public class DialogueManager : MonoBehaviour
     {
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
-        //EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+        //for (int i = 0; i >= choices.Length; i++)
+        /*{
+            if (choicesButtons[i].GetComponent<Button>().)
+            {
+                EventSystem.current.SetSelectedGameObject(choices[i].gameObject);
+            }
+            else
+                EventSystem.current.SetSelectedGameObject(null);
+
+        }*/
+        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+    }
+
+    /*public GameObject OnPointerEnter(PointerEventData eventData)
+    {
+        return eventData.pointerEnter.transform.gameObject;
+    }*/
+
+    public void Highlightchoice(int Number)
+    {
+        StopCoroutine(SelectFirstChoice());
+        EventSystem.current.SetSelectedGameObject(choices[Number].gameObject);
     }
 
     public void MakeChoice(int choiceIndex)
