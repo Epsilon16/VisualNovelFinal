@@ -15,8 +15,7 @@ public class DirectLoading : MonoBehaviour
 
     private void Awake()
     {
-        //DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
-        
+        //DialogueManager.GetInstance().EnterDialogueMode(inkJSON);   
     }
     void Start()
     {
@@ -27,10 +26,8 @@ public class DirectLoading : MonoBehaviour
         }*/
     }
 
-    // Update is called once per frame
     void Update()
-    {
-        
+    {    
         time += Time.deltaTime;
         if (time >= 0.0000000001f && !isStarted)
         {

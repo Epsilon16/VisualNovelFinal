@@ -57,13 +57,17 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private int Sceneindex;
 
     private bool MouseControl;
+
     private void Awake()
     {
+        //Singleton
         if (instance != null)
         {
             Debug.LogWarning("Found more than one Dialogue Manager in the scene");
         }
         instance = this;
+
+        //Set des variables
         dialogueVariables = new DialogueVariables(loadGlobalsJSON);
         audioSource = this.gameObject.AddComponent<AudioSource>();
         currentAudioInfo = defaultAudioInfo;
@@ -93,6 +97,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         Sceneindex = SceneManager.GetActiveScene().buildIndex;
     }
 
+    //Choisis la bank sonore de base
     private void InitializeAudioInfoDictionary()
     {
         audioInfoDictionary = new Dictionary<string, DialogueAudioInfoSO>();
@@ -103,6 +108,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
+    //Choisis la bank sonore utilisé
     private void SetCurrentAudioInfo(string id)
     {
         DialogueAudioInfoSO audioInfo = null;
@@ -132,6 +138,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
+    //Rentre dans le fichier ink
     public void EnterDialogueMode(TextAsset inkJSON)
     {
         currentStory = new Story(inkJSON.text);
@@ -152,6 +159,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         ContinueStory();
     }
 
+    //Exit du fichier Ink
     private IEnumerator ExitDialogueMode()
     {
         yield return new WaitForSeconds(0.2f);
@@ -164,6 +172,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         SceneManager.LoadScene(Sceneindex + 1);
     }
 
+    //Lorsqu'on appuit sur submit
     private void ContinueStory()
     {
         if (currentStory.canContinue)
@@ -182,6 +191,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
+    //Affichage de la ligne
     private IEnumerator DisplayLine(string line)
     {
         dialogueText.text = line;
@@ -217,6 +227,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         canContinueToNextLine = true;
     }
 
+    //Joue les sons de dialogue
     private void PlayDialogueSound(int currentDisplayedCharacterCount, char currentCharacter)
     {
         AudioClip[] dialogueTypingSoundClips = currentAudioInfo.dialoqueTypingSoundClips;
@@ -260,6 +271,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
+    //Cache les choix
     private void HideChoices()
     {
         foreach(GameObject choiceButton in choices)
@@ -267,6 +279,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             choiceButton.SetActive(false);
         }
     }
+
+    //Tag Inkle
     private void HandleTags(List<string> currentTags)
     {
         foreach(string tag in currentTags)
@@ -285,10 +299,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     displayNameText.text = tagValue;
                     break;
                 case PORTRAIT_TAG:
-                    portraitAnimator.Play(tagValue);
+                    //set du sprite utilisé
                     break;
                 case LAYOUT_TAG:
-                    layoutAnimator.Play(tagValue);
+                    //positionnement du portrait
                     break;
                 case AUDIO_TAG:
                     SetCurrentAudioInfo(tagValue);
@@ -299,6 +313,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             }
         }
     }
+
+    //Montre les choix
     private void DisplayChoices()
     {
         List<Choice> currentChoices = currentStory.currentChoices;
@@ -321,6 +337,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
         StartCoroutine(SelectFirstChoice());
     }
+
+    //Sélectionne le premier choix des boutons
     private IEnumerator SelectFirstChoice()
     {
         EventSystem.current.SetSelectedGameObject(null);
@@ -338,12 +356,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
     }
 
-    /*public GameObject OnPointerEnter(PointerEventData eventData)
-    {
-        return eventData.pointerEnter.transform.gameObject;
-    }*/
-
-   
+   //Sélection des choix avec la souris
     public void Highlightchoice(int Number)
     {
         StopCoroutine(SelectFirstChoice());
@@ -355,6 +368,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         MouseControl = false;
     }
 
+    //Fait le choix avec le bouton
     public void MakeChoice(int choiceIndex)
     {
         if (canContinueToNextLine)
@@ -365,6 +379,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
+    //Get Variable
     public Ink.Runtime.Object GetVariableState(string variableName)
     {
         Ink.Runtime.Object variableValue = null;
@@ -376,13 +391,13 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         return variableValue;
     }
 
+    //???????
     public void OnApplicationQuit()
     {
         if (dialogueVariables != null)
         {
             dialogueVariables.SaveVariables();
-        }   
-            
+        }    
     }
 }
 
