@@ -57,6 +57,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private const string BACKGROUND_TAG = "bg";
     private const string ITEM_TAG = "item";
     private const string AUDIO_TAG = "audio";
+    private const string MUSIC_TAG = "music";
+    private const string SOUND_TAG = "sound";
 
 
     private DialogueVariables dialogueVariables;
@@ -334,6 +336,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     break;
                 case AUDIO_TAG:
                     SetCurrentAudioInfo(tagValue);
+                    break;
+                case MUSIC_TAG:
+                    //set la musique de fond
+                    break;
+                case SOUND_TAG:
+                    //play sound effect once
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled " + tag);
