@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/!Scenes/Menu.unity
     guid: ed891dfb3c36d2e4b9291296433a21a5
   - enabled: 1
-    path: Assets/Scenes/MarcDialogueTest.unity
+    path: Assets/!Scenes/MarcDialogueTest.unity
     guid: 44c365b6c9102a747be3ac05341265fe
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/!Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 274a7c7fefcb37542b6aa83f9f2297fb, type: 2}

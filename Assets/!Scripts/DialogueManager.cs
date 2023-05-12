@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 {
+    private static DialogueManager instance;
 
     [Header("Params")]
     [SerializeField] private float typingSpeed = 0.04f;
@@ -21,8 +22,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [SerializeField] private GameObject continueIcon;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayNameText;
-    [SerializeField] private Animator portraitAnimator;
-    private Animator layoutAnimator;
+
+    [SerializeField] private GameObject spritePlacement;
+    [SerializeField] private GameObject background;
 
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
@@ -36,8 +38,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private DialogueAudioInfoSO currentAudioInfo;
     private Dictionary<string, DialogueAudioInfoSO> audioInfoDictionary;
     private AudioSource audioSource;
-    
 
+
+    [Header("Inkle")]
     private Story currentStory;
 
     public bool dialogueIsPlaying { get; private set;  }
@@ -45,12 +48,16 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private bool canContinueToNextLine = false;
     private Coroutine displayLineCoroutine;
 
-    private const string SPEAKER_TAG = "speaker";
-    private const string PORTRAIT_TAG = "portrait";
-    private const string LAYOUT_TAG = "layout";
+    [Header("Tags")]
+    private const string NAME_TAG = "name";
+    private const string SPRITE_TAG = "sprite";
+    private const string PLACEMENT_TAG = "place";
+    private const string CLEAR_TAG = "clear";
+    private const string TRANSITION_TAG = "trans";
+    private const string BACKGROUND_TAG = "bg";
+    private const string ITEM_TAG = "item";
     private const string AUDIO_TAG = "audio";
 
-    private static DialogueManager instance;
 
     private DialogueVariables dialogueVariables;
 
@@ -82,8 +89,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
-
-        layoutAnimator = dialoguePanel.GetComponent<Animator>();
 
         choicesText = new TextMeshProUGUI[choices.Length];
         int index = 0;
@@ -144,7 +149,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
-        layoutAnimator = dialoguePanel.GetComponent<Animator>();
 
         dialogueVariables.StartListening(currentStory);
 
@@ -153,8 +157,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         });*/
 
         displayNameText.text = "???";
-        portraitAnimator.Play("default");
-        layoutAnimator.Play("left");
 
         ContinueStory();
     }
@@ -283,6 +285,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Tag Inkle
     private void HandleTags(List<string> currentTags)
     {
+        int place = 2;
+
         foreach(string tag in currentTags)
         {
             string[] splitTag = tag.Split(':');
@@ -293,16 +297,40 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             string tagKey = splitTag[0].Trim();
             string tagValue = splitTag[1].Trim();
 
-            switch(tagKey)
+            switch (tagKey)
             {
-                case SPEAKER_TAG:
+                case NAME_TAG:
                     displayNameText.text = tagValue;
                     break;
-                case PORTRAIT_TAG:
-                    //set du sprite utilisé
+                case PLACEMENT_TAG:
+                    place = int.Parse(tagValue);
                     break;
-                case LAYOUT_TAG:
-                    //positionnement du portrait
+                case SPRITE_TAG:
+                    spritePlacement.transform.GetChild(place).GetComponent<Image>().sprite = Resources.Load<Sprite>("sprites/" + tagValue);
+                    spritePlacement.transform.GetChild(place).GetComponent<Image>().color = Color.white;
+                    spritePlacement.transform.GetChild(place).GetComponent<Image>().SetNativeSize();
+                    break;
+                case CLEAR_TAG:
+                    if (tagValue == "all")
+                    {
+                        foreach (Transform child in spritePlacement.transform)
+                        {
+                            child.GetComponent<Image>().color = Color.clear;
+                        }
+                    }
+                    else
+                    {
+                        spritePlacement.transform.GetChild(int.Parse(tagValue)).GetComponent<Image>().color = Color.clear;
+                    }
+                    break;
+                case TRANSITION_TAG:
+                    Debug.Log(tagValue); //ce sera à travers un animator qu'on les fera
+                    break;
+                case BACKGROUND_TAG:
+                    background.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + tagValue);
+                    break;
+                case ITEM_TAG:
+                    Debug.Log(tagValue); //set de l'animation et de l'image
                     break;
                 case AUDIO_TAG:
                     SetCurrentAudioInfo(tagValue);
