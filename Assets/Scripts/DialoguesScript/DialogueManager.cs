@@ -56,7 +56,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private int Sceneindex;
 
-    private GameObject MouseHighlight;
+    private bool MouseControl;
     private void Awake()
     {
         if (instance != null)
@@ -321,7 +321,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
         StartCoroutine(SelectFirstChoice());
     }
-
     private IEnumerator SelectFirstChoice()
     {
         EventSystem.current.SetSelectedGameObject(null);
@@ -344,10 +343,16 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         return eventData.pointerEnter.transform.gameObject;
     }*/
 
+   
     public void Highlightchoice(int Number)
     {
         StopCoroutine(SelectFirstChoice());
         EventSystem.current.SetSelectedGameObject(choices[Number].gameObject);
+        MouseControl = true;
+    }
+    public void stopHighlightchoice()
+    {
+        MouseControl = false;
     }
 
     public void MakeChoice(int choiceIndex)
