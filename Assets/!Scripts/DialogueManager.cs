@@ -19,7 +19,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private GameObject continueIcon;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayNameText;
 
@@ -206,9 +205,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Affichage de la ligne
     private IEnumerator DisplayLine(string line)
     {
+        line += " <sprite=\"ContinueIcon\" index=0>";
+        //line += " <sprite=\"ContinueIcon\" anim=\"0, 69, 5\">";
         dialogueText.text = line;
         dialogueText.maxVisibleCharacters = 0;
-        continueIcon.SetActive(false);
         HideChoices();
         canContinueToNextLine = false;
         bool isAddingRichTextTag = false;
@@ -234,7 +234,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 yield return new WaitForSeconds(typingSpeed);
             }
         }
-        continueIcon.SetActive(true);
+
         DisplayChoices();
         canContinueToNextLine = true;
     }
@@ -310,7 +310,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             switch (tagKey)
             {
                 case NAME_TAG:
-                    displayNameText.text = tagValue;
+                    if (tagValue == "nothing")
+                    {
+                        displayNameText.transform.parent.gameObject.SetActive(false);
+                    }
+                    else
+                    {
+                        displayNameText.transform.parent.gameObject.SetActive(true);
+                        displayNameText.text = tagValue;
+                    }
                     break;
                 case PLACEMENT_TAG:
                     place = int.Parse(tagValue);
@@ -387,6 +395,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         if (canContinueToNextLine)
         {
+            MenuScript.GetInstance().StopHighlightchoice();
             currentStory.ChooseChoiceIndex(choiceIndex);
             InputManager.GetInstance().RegisterSubmitPressed();
             ContinueStory();
