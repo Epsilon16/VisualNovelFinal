@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/!Scenes/Menu.unity
+    path: Assets/!Scenes/MainMenu.unity
     guid: ed891dfb3c36d2e4b9291296433a21a5
   - enabled: 1
     path: Assets/!Scenes/MarcDialogueTest.unity

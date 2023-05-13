@@ -28,6 +28,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
+    public GameObject grigriChoice;
     //[SerializeField] private Button[] choicesButtons;
     private TextMeshProUGUI[] choicesText;
 
@@ -65,7 +66,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private int Sceneindex;
 
-    private bool MouseControl;
+    [Header("Menu")]
+    private bool isMenuOn = false;
+    public GameObject menuParent;
 
     private void Awake()
     {
@@ -142,6 +145,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             && InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
+        }
+
+        if (InputManager.GetInstance().GetMenuPressed())
+        {
+            MenuActivation();
         }
     }
 
@@ -371,37 +379,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         {
             choices[i].gameObject.SetActive(false);
         }
-        StartCoroutine(SelectFirstChoice());
-    }
-
-    //Sélectionne le premier choix des boutons
-    private IEnumerator SelectFirstChoice()
-    {
-        EventSystem.current.SetSelectedGameObject(null);
-        yield return new WaitForEndOfFrame();
-        //for (int i = 0; i >= choices.Length; i++)
-        /*{
-            if (choicesButtons[i].GetComponent<Button>().)
-            {
-                EventSystem.current.SetSelectedGameObject(choices[i].gameObject);
-            }
-            else
-                EventSystem.current.SetSelectedGameObject(null);
-
-        }*/
-        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
-    }
-
-   //Sélection des choix avec la souris
-    public void Highlightchoice(int Number)
-    {
-        StopCoroutine(SelectFirstChoice());
-        EventSystem.current.SetSelectedGameObject(choices[Number].gameObject);
-        MouseControl = true;
-    }
-    public void stopHighlightchoice()
-    {
-        MouseControl = false;
+        StartCoroutine(MenuScript.GetInstance().SelectFirstChoice(choices[0].gameObject));
     }
 
     //Fait le choix avec le bouton
@@ -435,6 +413,37 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             dialogueVariables.SaveVariables();
         }    
     }
+
+    //Active/Désactive le Menu Déroulant
+    public void MenuActivation()
+    {
+        if (!isMenuOn)
+        {
+            isMenuOn = true;
+            menuParent.GetComponent<Animator>().Play("menu_on_anim");
+
+            foreach (GameObject choice in choices)
+            {
+                choice.GetComponent<Button>().interactable = false;
+            }
+
+            //activation bouton grigri
+
+            StartCoroutine(MenuScript.GetInstance().SelectFirstChoice(menuParent.transform.GetChild(1).gameObject));
+        }
+        else
+        {
+            isMenuOn = false;
+            menuParent.GetComponent<Animator>().Play("menu_off_anim");
+
+            foreach (GameObject choice in choices)
+            {
+                choice.GetComponent<Button>().interactable = true;
+            }
+
+            //activation bouton grigri
+
+            StartCoroutine(MenuScript.GetInstance().SelectFirstChoice(choices[0]));
+        }
+    }
 }
-
-
