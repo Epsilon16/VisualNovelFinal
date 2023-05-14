@@ -12,24 +12,41 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private static DialogueManager instance;
 
     [Header("Params")]
-    [SerializeField] private float typingSpeed = 0.04f;
+    [SerializeField] private float normalTypingSpeed = 0.04f;
+    [SerializeField] private float grigriTypingSpeed = 0.04f;
+    private float typingSpeed;
 
     [Header("Load Globals JSON")]
     [SerializeField] private TextAsset loadGlobalsJSON;
     
-    [Header("Dialogue UI")]
-    [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TextMeshProUGUI dialogueText;
+    [Header("Dialogue Const")]
     [SerializeField] private TextMeshProUGUI displayNameText;
-
     [SerializeField] private GameObject spritePlacement;
     [SerializeField] private GameObject background;
 
-    [Header("Choices UI")]
-    [SerializeField] private GameObject[] choices;
-    public GameObject grigriChoice;
-    //[SerializeField] private Button[] choicesButtons;
+    private GameObject dialoguePanel;
+    private TextMeshProUGUI dialogueText;
+    private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
+
+    [Header("Grigri Const")]
+    [SerializeField] private GameObject grigriButton;
+    private bool isGrigriActivated;
+    [SerializeField] private int grigriLives;
+
+    [Header("Normal UI")]
+    [SerializeField] private GameObject normalPanel;
+    [SerializeField] private TextMeshProUGUI normalText;
+    [SerializeField] private GameObject[] normalChoices;
+
+    [Header("Grigri UI")]
+    [SerializeField] private GameObject grigriPanel;
+    [SerializeField] private TextMeshProUGUI grigriText;
+    [SerializeField] private GameObject[] grigriChoices;
+
+    [Header("Menu UI")]
+    [SerializeField] private GameObject menuParent;
+    private bool isMenuOn = false;
 
     [Header("Audio")]
     [SerializeField] private DialogueAudioInfoSO defaultAudioInfo;
@@ -42,9 +59,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     [Header("Inkle")]
     private Story currentStory;
-
     public bool dialogueIsPlaying { get; private set;  }
-
     private bool canContinueToNextLine = false;
     private Coroutine displayLineCoroutine;
 
@@ -59,15 +74,13 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private const string AUDIO_TAG = "audio";
     private const string MUSIC_TAG = "music";
     private const string SOUND_TAG = "sound";
+    private const string GRIGRI_TAG = "grigri";
 
-
+    [Header("Save ?")]
     private DialogueVariables dialogueVariables;
 
     private int Sceneindex;
 
-    [Header("Menu")]
-    private bool isMenuOn = false;
-    public GameObject menuParent;
 
     private void Awake()
     {
@@ -91,8 +104,47 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private void Start()
     {
+        menuParent.SetActive(true);
+        isGrigriActivated = false;
+        grigriButton.GetComponent<Button>().interactable = false;
+        SetUIObjects();
+
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
+
+        InitializeAudioInfoDictionary();
+
+        Sceneindex = SceneManager.GetActiveScene().buildIndex;
+    }
+
+    private void SetUIObjects()
+    {
+        if (grigriLives > 0 && !isGrigriActivated)
+        {
+            grigriButton.SetActive(true);
+        }
+        else
+        {
+            grigriButton.SetActive(false);
+        }
+
+        grigriPanel.SetActive(false);
+        normalPanel.SetActive(false);
+        if (isGrigriActivated)
+        {
+            dialoguePanel = grigriPanel;
+            dialogueText = grigriText;
+            choices = grigriChoices;
+            typingSpeed = grigriTypingSpeed;
+        }
+        else
+        {
+            dialoguePanel = normalPanel;
+            dialogueText = normalText;
+            choices = normalChoices;
+            typingSpeed = normalTypingSpeed;
+        }
+        dialoguePanel.SetActive(true);
 
         choicesText = new TextMeshProUGUI[choices.Length];
         int index = 0;
@@ -101,9 +153,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
             index++;
         }
-        InitializeAudioInfoDictionary();
-
-        Sceneindex = SceneManager.GetActiveScene().buildIndex;
     }
 
     //Choisis la bank sonore de base
@@ -117,29 +166,14 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
-    //Choisis la bank sonore utilisé
-    private void SetCurrentAudioInfo(string id)
-    {
-        DialogueAudioInfoSO audioInfo = null;
-        audioInfoDictionary.TryGetValue(id, out audioInfo);
-        Debug.Log(audioInfo);
-        if (audioInfo != null)
-        {
-            this.currentAudioInfo = audioInfo;
-        }
-        else
-        {
-            Debug.LogWarning("Failed to find audio info for id: " + id);
-        }
-    }
-
     private void Update()
     {
         if (!dialogueIsPlaying)
         {
             return;
         }
-        if (canContinueToNextLine 
+
+        if (canContinueToNextLine && !isMenuOn
             && currentStory.currentChoices.Count == 0 
             && InputManager.GetInstance().GetSubmitPressed())
         {
@@ -156,6 +190,16 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     public void EnterDialogueMode(TextAsset inkJSON)
     {
         currentStory = new Story(inkJSON.text);
+
+        if (!string.IsNullOrEmpty(loadedState))
+        {
+            currentStory?.state?.LoadJson(loadedState);
+
+            loadedState = null;
+        }
+
+        Debug.Log(currentStory);
+
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
@@ -180,6 +224,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
         SetCurrentAudioInfo(defaultAudioInfo.id);
+
         SceneManager.LoadScene(Sceneindex + 1);
     }
 
@@ -193,6 +238,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 StopCoroutine(displayLineCoroutine);
             }
             string nextLine = currentStory.Continue();
+            Debug.Log(currentStory.currentText);
             HandleTags(currentStory.currentTags);
             displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
         }
@@ -214,7 +260,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         bool isAddingRichTextTag = false;
         foreach(char letter in line.ToCharArray())
         {
-            if (InputManager.GetInstance().GetSubmitPressed())
+            if (InputManager.GetInstance().GetSubmitPressed() || isGrigriActivated)
             {
                 dialogueText.maxVisibleCharacters = line.Length;
                 break;
@@ -237,59 +283,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         DisplayChoices();
         canContinueToNextLine = true;
-    }
-
-    //Joue les sons de dialogue
-    private void PlayDialogueSound(int currentDisplayedCharacterCount, char currentCharacter)
-    {
-        AudioClip[] dialogueTypingSoundClips = currentAudioInfo.dialoqueTypingSoundClips;
-        int frequencyLevel = currentAudioInfo.frequencyLevel;
-        float minPitch = currentAudioInfo.minPitch;
-        float maxPitch = currentAudioInfo.maxPitch;
-        bool stopAudioSource = currentAudioInfo.stopAudioSource;
-        if (currentDisplayedCharacterCount % frequencyLevel == 0)
-        {
-            if (stopAudioSource)
-            {
-                audioSource.Stop();
-            }
-            AudioClip soundClip = null;
-            if (makePredictable)
-            {
-                int hashCode = currentCharacter.GetHashCode();
-                int predictableIndex = hashCode % dialogueTypingSoundClips.Length;
-                soundClip = dialogueTypingSoundClips[predictableIndex];
-                int minPitchInt = (int)(minPitch * 100);
-                int maxPitchInt = (int)(maxPitch * 100);
-                int pitchRangeInt = maxPitchInt - minPitchInt;
-                if (pitchRangeInt != 0)
-                {
-                    int predictablePitchInt = (hashCode % pitchRangeInt) + minPitchInt;
-                    float predictablePitch = predictablePitchInt / 100f;
-                    audioSource.pitch = predictablePitch;
-                }
-                else
-                {
-                    audioSource.pitch = minPitch;
-                }
-            }
-            else
-            {
-                int randomIndex = Random.Range(0, dialogueTypingSoundClips.Length);
-                soundClip = dialogueTypingSoundClips[randomIndex];
-                audioSource.pitch = Random.Range(minPitch, maxPitch);
-            }
-            audioSource.PlayOneShot(soundClip);
-        }
-    }
-
-    //Cache les choix
-    private void HideChoices()
-    {
-        foreach(GameObject choiceButton in choices)
-        {
-            choiceButton.SetActive(false);
-        }
     }
 
     //Tag Inkle
@@ -359,10 +352,83 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 case SOUND_TAG:
                     //play sound effect once
                     break;
+                case GRIGRI_TAG:
+                    if (grigriLives > 0)
+                    {
+                        if (tagValue == "true")
+                        {
+                            grigriButton.GetComponent<Button>().interactable = true;
+                        }
+                        else if (tagValue == "false")
+                        {
+                            grigriButton.GetComponent<Button>().interactable = false;
+                        }
+                    }
+                    break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled " + tag);
                     break;
             }
+        }
+    }
+
+    //Choisis la bank sonore utilisé
+    private void SetCurrentAudioInfo(string id)
+    {
+        DialogueAudioInfoSO audioInfo = null;
+        audioInfoDictionary.TryGetValue(id, out audioInfo);
+        Debug.Log(audioInfo);
+        if (audioInfo != null)
+        {
+            this.currentAudioInfo = audioInfo;
+        }
+        else
+        {
+            Debug.LogWarning("Failed to find audio info for id: " + id);
+        }
+    }
+
+    //Joue les sons de dialogue
+    private void PlayDialogueSound(int currentDisplayedCharacterCount, char currentCharacter)
+    {
+        AudioClip[] dialogueTypingSoundClips = currentAudioInfo.dialoqueTypingSoundClips;
+        int frequencyLevel = currentAudioInfo.frequencyLevel;
+        float minPitch = currentAudioInfo.minPitch;
+        float maxPitch = currentAudioInfo.maxPitch;
+        bool stopAudioSource = currentAudioInfo.stopAudioSource;
+        if (currentDisplayedCharacterCount % frequencyLevel == 0)
+        {
+            if (stopAudioSource)
+            {
+                audioSource.Stop();
+            }
+            AudioClip soundClip = null;
+            if (makePredictable)
+            {
+                int hashCode = currentCharacter.GetHashCode();
+                int predictableIndex = hashCode % dialogueTypingSoundClips.Length;
+                soundClip = dialogueTypingSoundClips[predictableIndex];
+                int minPitchInt = (int)(minPitch * 100);
+                int maxPitchInt = (int)(maxPitch * 100);
+                int pitchRangeInt = maxPitchInt - minPitchInt;
+                if (pitchRangeInt != 0)
+                {
+                    int predictablePitchInt = (hashCode % pitchRangeInt) + minPitchInt;
+                    float predictablePitch = predictablePitchInt / 100f;
+                    audioSource.pitch = predictablePitch;
+                }
+                else
+                {
+                    audioSource.pitch = minPitch;
+                }
+            }
+            else
+            {
+                int randomIndex = Random.Range(0, dialogueTypingSoundClips.Length);
+                soundClip = dialogueTypingSoundClips[randomIndex];
+                audioSource.pitch = Random.Range(minPitch, maxPitch);
+            }
+            audioSource.PlayOneShot(soundClip);
         }
     }
 
@@ -390,6 +456,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         StartCoroutine(MenuScript.GetInstance().SelectFirstChoice(choices[0].gameObject));
     }
 
+    //Cache les choix
+    private void HideChoices()
+    {
+        foreach (GameObject choiceButton in choices)
+        {
+            choiceButton.SetActive(false);
+        }
+    }
+
     //Fait le choix avec le bouton
     public void MakeChoice(int choiceIndex)
     {
@@ -400,27 +475,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             InputManager.GetInstance().RegisterSubmitPressed();
             ContinueStory();
         }
-    }
-
-    //Get Variable
-    public Ink.Runtime.Object GetVariableState(string variableName)
-    {
-        Ink.Runtime.Object variableValue = null;
-        dialogueVariables.variables.TryGetValue(variableName, out variableValue);
-        if (variableValue == null)
-        {
-            Debug.LogWarning("Ink Variable was found to be null: " + variableName);
-        }
-        return variableValue;
-    }
-
-    //???????
-    public void OnApplicationQuit()
-    {
-        if (dialogueVariables != null)
-        {
-            dialogueVariables.SaveVariables();
-        }    
     }
 
     //Active/Désactive le Menu Déroulant
@@ -454,5 +508,74 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
             StartCoroutine(MenuScript.GetInstance().SelectFirstChoice(choices[0]));
         }
+    }
+
+    //Lance le mode Grigri
+    public void EnterGrigriMode()
+    {
+        isGrigriActivated = true;
+        SetUIObjects();
+
+        //set du background
+        //animation du monde grigri
+        //changement des icônes menu
+    }
+
+    public void ExitGrigriMode()
+    {
+        isGrigriActivated = false;
+        SetUIObjects();
+
+        //set du background
+        //animation fin du monde grigri
+        //montrer qu'on a réussi/perdu
+        //changement des icônes menu
+    }
+
+
+    //get the state of the current story
+    public string GetStoryState()
+    {
+        return currentStory.state.ToJson();
+    }
+
+    private static string loadedState;
+
+    public static void LoadState(string state)
+    {
+        loadedState = state;
+    }
+
+    public void StartStory()
+    {
+        //currentStory = new Story(_inkJsonAsset.text);
+
+        if (!string.IsNullOrEmpty(loadedState))
+        {
+            currentStory?.state?.LoadJson(loadedState);
+
+            loadedState = null;
+        }
+    }
+
+    //Get Variable ????
+    public Ink.Runtime.Object GetVariableState(string variableName)
+    {
+        Ink.Runtime.Object variableValue = null;
+        dialogueVariables.variables.TryGetValue(variableName, out variableValue);
+        if (variableValue == null)
+        {
+            Debug.LogWarning("Ink Variable was found to be null: " + variableName);
+        }
+        return variableValue;
+    }
+
+    //???????
+    public void OnApplicationQuit()
+    {
+        if (dialogueVariables != null)
+        {
+            dialogueVariables.SaveVariables();
+        }    
     }
 }

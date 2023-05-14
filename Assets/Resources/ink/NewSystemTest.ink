@@ -4,6 +4,11 @@ Or more like howdy there !
 
 === main ===
 
+Test1 #name:Arianne #clear:all #place:2 #sprite:jes_murder
+Test2 #grigri:true
+Test3
+Test4
+Test5 #grigri:false
 How are you feeling today ? #name:Arianne #clear:all #place:2 #sprite:jes_murder
 +[Happy]
     That make me feel <color=\#F8FF30>happy</color> as well! #name:Zoé #clear:2 #place:3 #sprite:jes_murder
