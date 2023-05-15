@@ -50,15 +50,19 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     [Header("Audio")]
     [SerializeField] private DialogueAudioInfoSO defaultAudioInfo;
-    [SerializeField] private DialogueAudioInfoSO[] audioInfos;
+    public DialogueAudioInfoSO[] audioInfos;
     [SerializeField] private bool makePredictable;
     public DialogueAudioInfoSO currentAudioInfo;
     private Dictionary<string, DialogueAudioInfoSO> audioInfoDictionary;
     private AudioSource audioSource;
 
+    public AudioSource musicAS;
+
 
     [Header("Inkle")]
+    [SerializeField] private TextAsset firstInkJSON;
     private Story currentStory;
+    private TextAsset nextInkJSON;
     public bool dialogueIsPlaying { get; private set;  }
     private bool canContinueToNextLine = false;
     private Coroutine displayLineCoroutine;
@@ -75,14 +79,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private const string MUSIC_TAG = "music";
     private const string SOUND_TAG = "sound";
     private const string GRIGRI_TAG = "grigri";
+    private const string NEXTSTORY_TAG = "next";
 
     [Header("Save/Load System")]
     private static SaveData loadedState;
 
     private DialogueVariables dialogueVariables;
-
-    [Header("Other")]
-    private int Sceneindex;
 
 
     private void Awake()
@@ -115,7 +117,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         InitializeAudioInfoDictionary();
 
         dialogueIsPlaying = false;
-        Sceneindex = SceneManager.GetActiveScene().buildIndex;
+
+        EnterDialogueMode(firstInkJSON);
     }
 
     private void SetUIObjects()
@@ -184,8 +187,30 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             }
 
         }
-        //audioclip
-        //currentAudioInfo = loadedState.audio;
+
+        if (loadedState.music != "nothing")
+        {
+            musicAS.clip = Resources.Load<AudioClip>("musics/" + loadedState.music);
+            musicAS.Play();
+        }
+        else
+        {
+            musicAS.clip = null;
+            musicAS.Stop();
+        }
+
+        for (int i = 0; i < audioInfos.Length; i++)
+        {
+            if (loadedState.audio == audioInfos[i].id)
+            {
+                currentAudioInfo = audioInfos[i];
+                break;
+            }
+            else
+            {
+                currentAudioInfo = defaultAudioInfo;
+            }
+        }
 
         StartCoroutine(DisplayLine(currentStory.currentText));
         loadedState = null;
@@ -218,6 +243,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         if (InputManager.GetInstance().GetMenuPressed())
         {
+            MenuScript.GetInstance().StopHighlightchoice();
             MenuActivation();
         }
     }
@@ -225,6 +251,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Rentre dans le fichier ink
     public void EnterDialogueMode(TextAsset inkJSON)
     {
+
         displayNameText.text = "???";
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
@@ -258,7 +285,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         dialogueText.text = "";
         SetCurrentAudioInfo(defaultAudioInfo.id);
 
-        SceneManager.LoadScene(Sceneindex + 1);
+        //fade into oblivion
+        EnterDialogueMode(nextInkJSON);
     }
 
     //Lorsqu'on appuit sur submit
@@ -271,7 +299,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 StopCoroutine(displayLineCoroutine);
             }
             string nextLine = currentStory.Continue();
-            Debug.Log(nextLine);
             HandleTags(currentStory.currentTags);
             displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
         }
@@ -377,26 +404,47 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     Debug.Log(tagValue); //set de l'animation et de l'image
                     break;
                 case AUDIO_TAG:
-                    SetCurrentAudioInfo(tagValue);
+                    if (tagValue != "nothing")
+                    {
+                        SetCurrentAudioInfo(tagValue);
+                    }
+                    else
+                    {
+                        currentAudioInfo = defaultAudioInfo;
+                    }
                     break;
                 case MUSIC_TAG:
-                    //set la musique de fond
+                    if (tagValue != "nothing")
+                    {
+                        musicAS.clip = Resources.Load<AudioClip>("musics/" + tagValue);
+                        musicAS.Play();
+                    }
+                    else
+                    {
+                        musicAS.clip = null;
+                        musicAS.Stop();
+                    }
                     break;
                 case SOUND_TAG:
-                    //play sound effect once
+                    musicAS.PlayOneShot(Resources.Load<AudioClip>("sounds/" + tagValue));
                     break;
                 case GRIGRI_TAG:
                     if (grigriLives > 0)
                     {
-                        if (tagValue == "true")
-                        {
-                            grigriButton.GetComponent<Button>().interactable = true;
-                        }
-                        else if (tagValue == "false")
+                        if (tagValue == "nothing")
                         {
                             grigriButton.GetComponent<Button>().interactable = false;
+                            nextInkJSON = null;
+                        }
+                        else
+                        {
+                            grigriButton.GetComponent<Button>().interactable = true;
+                            nextInkJSON = Resources.Load<TextAsset>("ink/" + tagValue);
                         }
                     }
+                    break;
+                case NEXTSTORY_TAG:
+                    nextInkJSON = Resources.Load<TextAsset>("ink/" + tagValue);
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled " + tag);
@@ -503,6 +551,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         if (canContinueToNextLine)
         {
+            if (isGrigriActivated)
+            {
+                //AAAAAAH
+            }
+
             MenuScript.GetInstance().StopHighlightchoice();
             currentStory.ChooseChoiceIndex(choiceIndex);
             InputManager.GetInstance().RegisterSubmitPressed();
@@ -546,23 +599,25 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Lance le mode Grigri
     public void EnterGrigriMode()
     {
+        //animation in grigri mode
+        //changement des icônes menu
+
         isGrigriActivated = true;
         SetUIObjects();
 
-        //set du background
-        //animation du monde grigri
-        //changement des icônes menu
+        EnterDialogueMode(nextInkJSON);
     }
 
     public void ExitGrigriMode()
     {
+        //animation out grigri mode
+        //montrer qu'on a réussi/perdu
+        //changement des icônes menu
+
         isGrigriActivated = false;
         SetUIObjects();
 
-        //set du background
-        //animation fin du monde grigri
-        //montrer qu'on a réussi/perdu
-        //changement des icônes menu
+        EnterDialogueMode(nextInkJSON);
     }
 
 

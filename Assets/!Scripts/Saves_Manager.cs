@@ -13,6 +13,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class Saves_Manager : MonoBehaviour
 {
     string[] savedSprites;
+    string savedAudio;
+    string savedMusic;
 
     public void SaveGame()
     {
@@ -45,7 +47,23 @@ public class Saves_Manager : MonoBehaviour
             {
                 savedSprites[i] = null;
             }
+        }
 
+        savedAudio = "nothing";
+
+        for (int i = 0; i < DialogueManager.GetInstance().audioInfos.Length; i++)
+        {
+            if (DialogueManager.GetInstance().currentAudioInfo == DialogueManager.GetInstance().audioInfos[i])
+            {
+                savedAudio = DialogueManager.GetInstance().currentAudioInfo.id + "";
+                break;
+            }
+        }
+
+        savedMusic = "nothing";
+        if (DialogueManager.GetInstance().musicAS.clip != null)
+        {
+            savedMusic = DialogueManager.GetInstance().musicAS.clip.name;
         }
 
         return new SaveData
@@ -54,8 +72,8 @@ public class Saves_Manager : MonoBehaviour
             name = DialogueManager.GetInstance().displayNameText.text,
             background = DialogueManager.GetInstance().background.GetComponent<Image>().sprite.name,
             sprites = savedSprites,
-            //audioclip
-            //audio = DialogueManager.GetInstance().currentAudioInfo,
+            music = savedMusic,
+            audio = savedAudio,
         };
     }
 
