@@ -12,11 +12,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class Saves_Manager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    string[] savedSprites;
 
     public void SaveGame()
     {
@@ -36,9 +32,30 @@ public class Saves_Manager : MonoBehaviour
 
     private SaveData CreateSaveGameObject()
     {
+        savedSprites = null;
+        savedSprites = new string[DialogueManager.GetInstance().spritePlacement.transform.childCount];
+
+        for (int i = 0; i < DialogueManager.GetInstance().spritePlacement.transform.childCount; i++)
+        {
+            if (DialogueManager.GetInstance().spritePlacement.transform.GetChild(i).GetComponent<Image>().color == Color.white)
+            {
+                savedSprites[i] = DialogueManager.GetInstance().spritePlacement.transform.GetChild(i).GetComponent<Image>().sprite.name;
+            }
+            else
+            {
+                savedSprites[i] = null;
+            }
+
+        }
+
         return new SaveData
         {
             InkStoryState = DialogueManager.GetInstance().GetStoryState(),
+            name = DialogueManager.GetInstance().displayNameText.text,
+            background = DialogueManager.GetInstance().background.GetComponent<Image>().sprite.name,
+            sprites = savedSprites,
+            //audioclip
+            //audio = DialogueManager.GetInstance().currentAudioInfo,
         };
     }
 
@@ -57,7 +74,7 @@ public class Saves_Manager : MonoBehaviour
 
             file.Close();
 
-            DialogueManager.LoadState(save.InkStoryState);
+            DialogueManager.LoadState(save);
 
             MenuScript.GetInstance().LoadScene(1);
         }
@@ -72,4 +89,10 @@ public class Saves_Manager : MonoBehaviour
 public class SaveData
 {
     public string InkStoryState;
+    public string name;
+    public string background;
+    public string[] sprites;
+    public string music;
+    public string audio;
+    //les globals
 }

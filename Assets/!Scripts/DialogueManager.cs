@@ -20,9 +20,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [SerializeField] private TextAsset loadGlobalsJSON;
     
     [Header("Dialogue Const")]
-    [SerializeField] private TextMeshProUGUI displayNameText;
-    [SerializeField] private GameObject spritePlacement;
-    [SerializeField] private GameObject background;
+    public TextMeshProUGUI displayNameText;
+    public GameObject spritePlacement;
+    public GameObject background;
 
     private GameObject dialoguePanel;
     private TextMeshProUGUI dialogueText;
@@ -30,8 +30,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private TextMeshProUGUI[] choicesText;
 
     [Header("Grigri Const")]
+    public bool isGrigriActivated;
     [SerializeField] private GameObject grigriButton;
-    private bool isGrigriActivated;
     [SerializeField] private int grigriLives;
 
     [Header("Normal UI")]
@@ -52,7 +52,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [SerializeField] private DialogueAudioInfoSO defaultAudioInfo;
     [SerializeField] private DialogueAudioInfoSO[] audioInfos;
     [SerializeField] private bool makePredictable;
-    private DialogueAudioInfoSO currentAudioInfo;
+    public DialogueAudioInfoSO currentAudioInfo;
     private Dictionary<string, DialogueAudioInfoSO> audioInfoDictionary;
     private AudioSource audioSource;
 
@@ -76,9 +76,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private const string SOUND_TAG = "sound";
     private const string GRIGRI_TAG = "grigri";
 
-    [Header("Save ?")]
+    [Header("Save/Load System")]
+    private static SaveData loadedState;
+
     private DialogueVariables dialogueVariables;
 
+    [Header("Other")]
     private int Sceneindex;
 
 
@@ -107,13 +110,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         menuParent.SetActive(true);
         isGrigriActivated = false;
         grigriButton.GetComponent<Button>().interactable = false;
+
         SetUIObjects();
-
-        dialogueIsPlaying = false;
-        dialoguePanel.SetActive(false);
-
         InitializeAudioInfoDictionary();
 
+        dialogueIsPlaying = false;
         Sceneindex = SceneManager.GetActiveScene().buildIndex;
     }
 
@@ -155,6 +156,41 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
+    public void LoadSavedState()
+    {
+        currentStory?.state?.LoadJson(loadedState.InkStoryState);
+
+        if (loadedState.name == "nothing")
+        {
+            displayNameText.transform.parent.gameObject.SetActive(false);
+        }
+        else
+        {
+            displayNameText.transform.parent.gameObject.SetActive(true);
+            displayNameText.text = loadedState.name;
+        }
+        background.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + loadedState.background);
+        for (int i = 0; i < spritePlacement.transform.childCount; i++)
+        {
+            if (loadedState.sprites[i] == null)
+            {
+                spritePlacement.transform.GetChild(i).GetComponent<Image>().color = Color.clear;
+            }
+            else
+            {
+                spritePlacement.transform.GetChild(i).GetComponent<Image>().color = Color.white;
+                spritePlacement.transform.GetChild(i).GetComponent<Image>().sprite = Resources.Load<Sprite>("sprites/" + loadedState.sprites[i]);
+                spritePlacement.transform.GetChild(i).GetComponent<Image>().SetNativeSize();
+            }
+
+        }
+        //audioclip
+        //currentAudioInfo = loadedState.audio;
+
+        StartCoroutine(DisplayLine(currentStory.currentText));
+        loadedState = null;
+    }
+
     //Choisis la bank sonore de base
     private void InitializeAudioInfoDictionary()
     {
@@ -189,29 +225,26 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Rentre dans le fichier ink
     public void EnterDialogueMode(TextAsset inkJSON)
     {
-        currentStory = new Story(inkJSON.text);
-
-        if (!string.IsNullOrEmpty(loadedState))
-        {
-            currentStory?.state?.LoadJson(loadedState);
-
-            loadedState = null;
-        }
-
-        Debug.Log(currentStory);
-
+        displayNameText.text = "???";
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
-        dialogueVariables.StartListening(currentStory);
+        currentStory = new Story(inkJSON.text);
+
+        if (loadedState != null)
+        {
+            dialogueVariables.StartListening(currentStory);
+            LoadSavedState();
+        }
+        else
+        {
+            dialogueVariables.StartListening(currentStory);
+            ContinueStory();
+        }
 
         /*currentStory.BindExternalFunction("playEmote", (string emoteName) => {
             Debug.Log(emoteName);
         });*/
-
-        displayNameText.text = "???";
-
-        ContinueStory();
     }
 
     //Exit du fichier Ink
@@ -238,7 +271,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 StopCoroutine(displayLineCoroutine);
             }
             string nextLine = currentStory.Continue();
-            Debug.Log(currentStory.currentText);
+            Debug.Log(nextLine);
             HandleTags(currentStory.currentTags);
             displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
         }
@@ -539,23 +572,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         return currentStory.state.ToJson();
     }
 
-    private static string loadedState;
-
-    public static void LoadState(string state)
+    //Load the current story state into the SaveManager
+    public static void LoadState(SaveData state)
     {
         loadedState = state;
-    }
-
-    public void StartStory()
-    {
-        //currentStory = new Story(_inkJsonAsset.text);
-
-        if (!string.IsNullOrEmpty(loadedState))
-        {
-            currentStory?.state?.LoadJson(loadedState);
-
-            loadedState = null;
-        }
     }
 
     //Get Variable ????

@@ -1256,7 +1256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &446381558
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2340,6 +2340,7 @@ MonoBehaviour:
   displayNameText: {fileID: 2090716543}
   spritePlacement: {fileID: 256823441}
   background: {fileID: 619369433}
+  isGrigriActivated: 0
   grigriButton: {fileID: 553864544}
   grigriLives: 7
   normalPanel: {fileID: 1915986391}
@@ -2360,6 +2361,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8b91395b371f6344a91f4e9008851779, type: 2}
   - {fileID: 11400000, guid: b9f98afd8f4c68742bc116c3cd0e3fea, type: 2}
   makePredictable: 1
+  currentAudioInfo: {fileID: 0}
 --- !u!1 &766546550
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,7 +3153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1157671275
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4250,7 +4252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1603254520
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4701,7 +4703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1898544659
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5230,7 +5232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2045887997
 RectTransform:
   m_ObjectHideFlags: 0
