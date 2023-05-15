@@ -1,3 +1,8 @@
+INCLUDE globals.ink
+
+{ CHOICES_TEST has A1: -> GrigriYES}
+{ CHOICES_TEST has A2: -> GrigriNO}
+
 Hello there ! #bg:forest #name:nothing #clear:all #place:2 #sprite:jes_murder #music:goldnoct
 Or more like howdy there !
 -> main 
@@ -5,11 +10,11 @@ Or more like howdy there !
 === main ===
  
 Test1 #name:Arianne #clear:all #place:2 #sprite:jes_murder #music:nothing
-Test2 #grigri:true #audio:celeste_low
+Test2 #grigri:Grigri_Test #audio:celeste_low
 Test3
 Test4
-Test5 #grigri:stop #audio:nothing
-How are you feeling today ? #name:Arianne #clear:all #place:2 #sprite:jes_murder #music:goldnoct
+Test5 #grigri:stop 
+How are you feeling today ? #name:Arianne #clear:all #place:2 #sprite:jes_murder #music:goldnoct #audio:nothing
 +[Happy]
     That make me feel <color=\#F8FF30>happy</color> as well! #name:Zoé #clear:2 #place:3 #sprite:jes_murder
     I'm so <color=\#F8FF30>happy</color> !
@@ -18,10 +23,20 @@ How are you feeling today ? #name:Arianne #clear:all #place:2 #sprite:jes_murder
     Very <color=\#5B81FF>sad</color> actually...
 
 - Don't trust him, he's <b><color=\#FF1E35>not</color></b> a real doctor! #name:Sakutarou #place:4 #sprite:sak_happy
+-> GrigriNO
 
-Well, do you have any more questions ? #name:Jessica #clear:3 #place:2 #sprite:jes_murder #music:goldslaughter
+    
+     === GrigriYES ===
+    The Grigri was very siccessful !
+    Thank you !
+    Do you have any more questions ?
 +[Yes]
     ->main
 +[No]
+    Goodbye then! #name:Zoé #clear:all #bg:bedroom
+    -> END
+    
+    === GrigriNO ===
+    The Grigri was unsuccessful...
     Goodbye then! #name:Zoé #clear:all #bg:bedroom
     -> END

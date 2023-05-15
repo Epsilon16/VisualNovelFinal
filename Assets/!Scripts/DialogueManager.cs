@@ -61,8 +61,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     [Header("Inkle")]
     [SerializeField] private TextAsset firstInkJSON;
+    public TextAsset nextInkJSON;
     private Story currentStory;
-    private TextAsset nextInkJSON;
     public bool dialogueIsPlaying { get; private set;  }
     private bool canContinueToNextLine = false;
     private Coroutine displayLineCoroutine;
@@ -286,7 +286,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         SetCurrentAudioInfo(defaultAudioInfo.id);
 
         //fade into oblivion
-        EnterDialogueMode(nextInkJSON);
+        if (nextInkJSON != null)
+        {
+            EnterDialogueMode(nextInkJSON);
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+        }
+
     }
 
     //Lorsqu'on appuit sur submit
@@ -458,7 +466,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         DialogueAudioInfoSO audioInfo = null;
         audioInfoDictionary.TryGetValue(id, out audioInfo);
-        Debug.Log(audioInfo);
         if (audioInfo != null)
         {
             this.currentAudioInfo = audioInfo;

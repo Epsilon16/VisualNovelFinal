@@ -4,6 +4,6 @@ VAR RS_Zoe = 0
 VAR RS_Martin = 0
 VAR BirthdayEnding = ""
 
-LIST CHOICES = nothing
+LIST CHOICES_TEST = A1, A2, A3
 
 
