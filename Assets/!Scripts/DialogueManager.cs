@@ -78,7 +78,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private const string AUDIO_TAG = "audio";
     private const string MUSIC_TAG = "music";
     private const string SOUND_TAG = "sound";
-    private const string GRIGRI_TAG = "grigri";
     private const string NEXTSTORY_TAG = "next";
 
     [Header("Save/Load System")]
@@ -251,6 +250,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Rentre dans le fichier ink
     public void EnterDialogueMode(TextAsset inkJSON)
     {
+        if (isGrigriActivated == true)
+        {
+            ExitGrigriMode();
+        }
 
         displayNameText.text = "???";
         dialogueIsPlaying = true;
@@ -436,23 +439,26 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 case SOUND_TAG:
                     musicAS.PlayOneShot(Resources.Load<AudioClip>("sounds/" + tagValue));
                     break;
-                case GRIGRI_TAG:
-                    if (grigriLives > 0)
+                case NEXTSTORY_TAG:
+                    string[] splitScene = tagValue.Split('/');
+                    if (splitScene[0] == "nothing")
                     {
-                        if (tagValue == "nothing")
+                        grigriButton.GetComponent<Button>().interactable = false;
+                        nextInkJSON = null;
+                    }
+                    else
+                    {
+                        nextInkJSON = Resources.Load<TextAsset>("ink/" + splitScene[0]);
+
+                        if (splitScene[1] == "false" && grigriLives > 0)
                         {
                             grigriButton.GetComponent<Button>().interactable = false;
-                            nextInkJSON = null;
                         }
-                        else
+                        else if (splitScene[1] == "true" && grigriLives > 0)
                         {
                             grigriButton.GetComponent<Button>().interactable = true;
-                            nextInkJSON = Resources.Load<TextAsset>("ink/" + tagValue);
                         }
                     }
-                    break;
-                case NEXTSTORY_TAG:
-                    nextInkJSON = Resources.Load<TextAsset>("ink/" + tagValue);
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled " + tag);
@@ -609,10 +615,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         //animation in grigri mode
         //changement des icônes menu
 
+        EnterDialogueMode(nextInkJSON);
+
         isGrigriActivated = true;
         SetUIObjects();
-
-        EnterDialogueMode(nextInkJSON);
     }
 
     public void ExitGrigriMode()
@@ -623,8 +629,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         isGrigriActivated = false;
         SetUIObjects();
-
-        EnterDialogueMode(nextInkJSON);
     }
 
 

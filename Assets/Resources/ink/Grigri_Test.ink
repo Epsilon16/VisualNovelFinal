@@ -1,15 +1,15 @@
 INCLUDE globals.ink
 
-I'm not feeling very well. #grigri:nothing
+I'm not feeling very well. #next:NewSystemTest/false
 What is happening.
 I don't understand you.
 +[You don't need to understand me.]
-    ~LIST_INVERT(A1)
+    ~CHOICES_TEST = A1
     Really...?
     That's good.
     I could take my time.
         -> END
 +[Try harder then.]
-    ~LIST_INVERT(A2)
+    ~CHOICES_TEST = A2
     I don't like this...
         -> END

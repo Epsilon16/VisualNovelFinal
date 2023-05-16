@@ -2417,7 +2417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalTypingSpeed: 0.04
-  grigriTypingSpeed: 1
+  grigriTypingSpeed: 0.01
   loadGlobalsJSON: {fileID: 4900000, guid: 814840ffbcd00b9408219276b658a488, type: 3}
   displayNameText: {fileID: 2090716543}
   spritePlacement: {fileID: 256823441}
@@ -2446,6 +2446,7 @@ MonoBehaviour:
   currentAudioInfo: {fileID: 0}
   musicAS: {fileID: 119430550}
   firstInkJSON: {fileID: 4900000, guid: 44af70861bb74a847a9c4ba41e6a65d1, type: 3}
+  nextInkJSON: {fileID: 0}
 --- !u!1 &766546550
 GameObject:
   m_ObjectHideFlags: 0
@@ -3136,7 +3137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1127540045
 Animator:
   serializedVersion: 5
@@ -4708,7 +4709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1868420189
 RectTransform:
   m_ObjectHideFlags: 0

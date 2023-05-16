@@ -3,17 +3,17 @@ INCLUDE globals.ink
 { CHOICES_TEST has A1: -> GrigriYES}
 { CHOICES_TEST has A2: -> GrigriNO}
 
-Hello there ! #bg:forest #name:nothing #clear:all #place:2 #sprite:jes_murder #music:goldnoct
+Hello there ! #next:nothing/nothing #bg:forest #name:nothing #clear:all #place:2 #sprite:jes_murder #music:goldnoct
 Or more like howdy there !
 -> main 
 
 === main ===
  
 Test1 #name:Arianne #clear:all #place:2 #sprite:jes_murder #music:nothing
-Test2 #grigri:Grigri_Test #audio:celeste_low
+Test2 #next:Grigri_Test/true #audio:celeste_low
 Test3
 Test4
-Test5 #grigri:stop 
+Test5 #next:nothing/false
 How are you feeling today ? #name:Arianne #clear:all #place:2 #sprite:jes_murder #music:goldnoct #audio:nothing
 +[Happy]
     That make me feel <color=\#F8FF30>happy</color> as well! #name:Zoé #clear:2 #place:3 #sprite:jes_murder
@@ -27,7 +27,7 @@ How are you feeling today ? #name:Arianne #clear:all #place:2 #sprite:jes_murder
 
     
      === GrigriYES ===
-    The Grigri was very siccessful !
+    The Grigri was very siccessful ! #next:nothing/nothing
     Thank you !
     Do you have any more questions ?
 +[Yes]
@@ -37,6 +37,6 @@ How are you feeling today ? #name:Arianne #clear:all #place:2 #sprite:jes_murder
     -> END
     
     === GrigriNO ===
-    The Grigri was unsuccessful...
+    The Grigri was unsuccessful... #next:nothing/nothing
     Goodbye then! #name:Zoé #clear:all #bg:bedroom
     -> END
