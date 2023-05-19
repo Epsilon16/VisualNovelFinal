@@ -14,7 +14,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [Header("Params")]
     [SerializeField] private float normalTypingSpeed = 0.04f;
     [SerializeField] private float grigriTypingSpeed = 0.04f;
-    private float typingSpeed;
+    [SerializeField] private float typingSpeed;
 
     [Header("Load Globals JSON")]
     [SerializeField] private TextAsset loadGlobalsJSON;
