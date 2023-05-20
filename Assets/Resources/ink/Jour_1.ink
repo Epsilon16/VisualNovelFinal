@@ -14,9 +14,9 @@ La créature sort alors un couteau ensanglanté de ses draps sombres et la mets 
 Des gouttes du liquide vitale coulent le long de la lame et tombe dans le parterre, se diluant dans sa teinte sanguine.
 Les joyaux virent à un noire ébène alors alors qu'un son grave émane de l'intérieur du crâne.
 Le son résonne à l'intérieur de ma tête et s'emplifie, semblant ne vouloir dire qu'une seule chose :
-Je serais la prochaine à colorer de rouge sa lame.
+Je serais la prochaine à colorer de rouge sa lame. #trans:trans_center
 
-"!!!" #name:Arianne
+"!!!" #name:Arianne #bg:bedroom
 La jeune fille se lève en sursaut de son lit #name:nothing
 Pas de figure sombre, pas de sang et pas de mer d'adonis recouvrant le sol.
 Juste elle, une chambre presque vide et un plancher en bois qui grince à chaque pas.
@@ -155,62 +155,69 @@ La curiosité prend le dessus et Arianne ouvre la petite boite pour y découvrir
 Grand-Mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vue porter quelque chose ressemblant à ça.
 La porte d'en bas claque alors, et Arianne descend les escaliers, prenant le bracelet avec elle.
  
-"'man ?"
-Jeanne se pose sur une chaise de la cuisine, se tenant la tête.
-"Tout s'est bien passé ?"
-"Oui... Euh, fait moi un thé tu veux ?"
-Lorsque maman est comme ça il lui faut un petit moment avant de pouvoir lui parler.
+"'man ?" #name:Arianne
+Jeanne se pose sur une chaise de la cuisine, se tenant la tête. #name:nothing
+"Tout s'est bien passé ?" #name:Arianne
+"Oui... Euh, fait moi un thé tu veux ?" #name:Jeanne
+Lorsque maman est comme ça il lui faut un petit moment avant de pouvoir lui parler. #name:nothing
 Arianne sort une boite de sachet de thé et fait de l'eau chaude.
 Une fois la tasse préparé elle la pose devant sa mère et s'assoit à côté d'elle.
-"Merci chérie."
-"Comment s'est passé ton après midi ?"
-"Zoé et Martin sont passé. J'ai pu rattraper un peu."
-"Je vois, ils vont bien ?"
-"Ouais... Je suppose."
-"Mais sinon j'ai trouvé ce bracelet à l'étage. J'ai jamais vu Mamie Nat le porter, tu sais ce que c'est ?"
-"Ca ne me dit rien. Et j'ai pas la force d'essayer de me rappeler si je l'ai déjà vu."
-"Okay..."
-"Alors... Qu'est-ce qui s'est dit ?"
-"Comment ça ?"
-"Au service funéraire."
-"Arianne, tu ne vois pas que je suis fatiguée ?"
-"Je..."
-"Ce rendez-vous était exténuant, et je n'ai vraiment pas envie d'en reparler okay ?"
-Alors que j'allais repartir dans ma chambre, le bracelet se met à briller dans ma main.
+"Merci chérie." #name:Jeanne
+"Comment s'est passé ton après midi ?" #name:Jeanne
+"Zoé et Martin sont passé. J'ai pu rattraper un peu." #name:Arianne
+"Je vois, ils vont bien ?" #name:Jeanne
+"Ouais... Je suppose." #name:Arianne
+"Mais sinon j'ai trouvé ce bracelet à l'étage. J'ai jamais vu Mamie Nat le porter, tu sais ce que c'est ?" #name:Arianne
+"Ca ne me dit rien. Et j'ai pas la force d'essayer de me rappeler si je l'ai déjà vu." #name:Jeanne
+"Okay..." #name:Arianne
+"Alors... Qu'est-ce qui s'est dit ?" #name:Arianne
+"Comment ça ?" #name:Jeanne
+"Au service funéraire." #name:Arianne
+"Arianne, tu ne vois pas que je suis fatiguée ?" #name:Jeanne
+"Je..." #name:Arianne
+"Ce rendez-vous était exténuant, et je n'ai vraiment pas envie d'en reparler." #name:Jeanne
+Alors que j'allais repartir dans ma chambre, le bracelet se met à briller dans ma main. #name:nothing
 L'une des perles s'illumine d'un blanc qui m'aveugle et englobe l'espace devant moi.
 
 
 ===postgrigri===
-"C'est à propos de Yann c'est ça ?"
-"Qu'est-ce que-"
-"Désolé maman, j'aurais pas dû... Je vais dans ma chambre."
+"C'est à propos de Yann c'est ça ?" #name:Arianne
+"Qu'est-ce que-" #name:Jeanne
+"Désolé maman, j'aurais pas dû... Je vais dans ma chambre." #name:Arianne
 "Non, Arianne. Tu veux en parler ?"
-"..."
-Je me rassois sur ma chaise, et maman me prend la main.
-"Ecoute... Je sais que ce n'est pas facile de revenir ici."
-"Surtout au vu de la période de l'année."
-"Mais je suis là pour toi, tu le sais ça n'est-ce pas ?"
-"Bien sur maman."
-"J'ai passée plusieurs heures avec ces gens qui ne font que parler de logistique autour de la mort."
-"Et..."
-"J'avais juste l'impression de revenir la même chose qu'il y a cinq ans..."
-"Après..."
-"Après le suicide de Yann... C'est juste..."
-"Maman..."
-Je ressers ma poignée sur sa main.
-"Tu as toujours su garder la tête haute ma chérie. Tu es très forte, bien plus que tes vieux parents."
-"J'espère que revenir ici pourra nous aider."
-"Pouvoir accepter et passer à la suite."
-"J'espère..."
-"Et tu exagères, toi et papa n'êtes pas si vieux."
-Malgré son regard triste, un petit sourir s'affiche sur le visage de ma mère.
-"Allez, monte dans ta chambre."
-"Oh, avant ça. Il y avait cette lettre à ton nom dans la boite aux lettres."
-Une lettre ?
-Je l'attrape, pas d'expéditeur.
-"Probablement Zoé. Merci 'man."
+"..." #name:Arianne
+Je me rassois sur ma chaise, et maman me prend la main. #name:nothing
+"Ecoute... Je sais que ce n'est pas facile de revenir ici." #name:Jeanne
+"Surtout au vu de la période de l'année." #name:Jeanne
+"Mais je suis là pour toi, tu le sais ça n'est-ce pas ?" #name:Jeanne
+"Bien sur maman." #name:Arianne
+"J'ai passée plusieurs heures avec ces gens qui ne font que parler de logistique autour de la mort." #name:Jeanne
+"Et..." #name:Jeanne
+"J'avais juste l'impression de revenir la même chose qu'il y a cinq ans..." #name:Jeanne
+"Après..." #name:Jeanne
+"Après le suicide de Yann... C'est juste..." #name:Jeanne
+"Maman..." #name:Arianne
+Je ressers ma poignée sur sa main. #name:nothing
+"Tu as toujours su garder la tête haute ma chérie. Tu es très forte, bien plus que tes vieux parents." #name:Jeanne
+"J'espère que revenir ici pourra nous aider." #name:Jeanne
+"Pouvoir accepter et passer à la suite." #name:Jeanne
+"J'espère..." #name:Arianne
+"Et tu exagères, toi et papa n'êtes pas si vieux." #name:Arianne
+Malgré son regard triste, un petit sourir s'affiche sur le visage de ma mère. #name:nothing
+"Allez, monte dans ta chambre." #name:Jeanne
+"Oh, avant ça. Il y avait cette lettre à ton nom dans la boite aux lettres." #name:Jeanne
+Une lettre ? #name:nothing
+Je l'attrape et l'inspecte
+. Pas d'expéditeur.
+"Probablement Zoé. Merci 'man." #name:Arianne
 
-De retour à l'étage, j'ouvre l'enveloppe, qui ne comporte qu'un seul bout de papier.
+De retour à l'étage, Arianne porte son regard sur le bracelet de plus tôt, remarquant que l'une des perles s'est noircie. #name:nothing
+"C'est étrange ça... Ce serait dû à ce que j'ai vu ?" #name:Arianne
+"Non..." #name:Arianne
+"Mais ça expliquerait comment j'ai pu entendre maman comme ça..." #name:Arianne
+"Un bracelet magique ? C'est ça que tu cachais mamie ?" #name:Arianne
+Arianne secoue la tête, c'était n'importe quoi. #name:nothing
+Elle ouvre l'eveloppe, qui ne comporte qu'un seul bout de papier.
 Qui est-ce que ça pourrait bien être ?
 Une fois ouverte, j'en lis le contenus.
 Chère Arianne.
@@ -225,5 +232,5 @@ Une mauvaise blague de la part de Martin ou Zoé pour ce que je leurs ait dit to
 Mais c'est pas vraiment leurs styles...
 Si ?
 Mieux vaut oublier tout ça.
-Je ne compte pas sortir de toute façon, j'ai juste à empiler des caisses et ce sera bon.
+Demain sera un autre jour.
     -> END

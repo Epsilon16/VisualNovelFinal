@@ -29,6 +29,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
+    private string canTransition;
+
     [Header("Grigri Const")]
     public bool isGrigriActivated;
     [SerializeField] private GameObject grigriButton;
@@ -122,15 +124,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private void SetUIObjects()
     {
-        if (grigriLives > 0 && !isGrigriActivated)
-        {
-            grigriButton.SetActive(true);
-        }
-        else
-        {
-            grigriButton.SetActive(false);
-        }
-
         grigriPanel.SetActive(false);
         normalPanel.SetActive(false);
         if (isGrigriActivated)
@@ -139,6 +132,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             dialogueText = grigriText;
             choices = grigriChoices;
             typingSpeed = grigriTypingSpeed;
+
+            grigriButton.SetActive(false);
         }
         else
         {
@@ -146,6 +141,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             dialogueText = normalText;
             choices = normalChoices;
             typingSpeed = normalTypingSpeed;
+
+            if (grigriLives > 0 && !isGrigriActivated)
+            {
+                grigriButton.SetActive(true);
+            }
+            else
+            {
+                grigriButton.SetActive(false);
+            }
         }
         dialoguePanel.SetActive(true);
 
@@ -228,6 +232,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private void Update()
     {
+        grigriLives = ((Ink.Runtime.IntValue)GetVariableState("grigriLives")).value;
+
         if (!dialogueIsPlaying)
         {
             return;
@@ -255,6 +261,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             ExitGrigriMode();
         }
 
+        canTransition = null;
         displayNameText.text = "???";
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
@@ -310,8 +317,17 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 StopCoroutine(displayLineCoroutine);
             }
             string nextLine = currentStory.Continue();
-            HandleTags(currentStory.currentTags);
-            displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
+            
+            if (canTransition != null)
+            {
+                StartCoroutine(Transition(nextLine));
+            }
+            else
+            {
+                HandleTags(currentStory.currentTags);
+                displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
+            }
+
         }
         else
         {
@@ -319,7 +335,24 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
-    //Affichage de la ligne
+    //Transition Coroutine
+    private IEnumerator Transition(string nextLine)
+    {
+        dialoguePanel.GetComponent<Animator>().Play(canTransition);
+
+        yield return new WaitForSeconds(0.15f);
+
+        HandleTags(currentStory.currentTags);
+        dialoguePanel.GetComponent<Animator>().SetBool("End", true);
+
+        yield return new WaitForSeconds(0.15f);
+
+        displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
+        canTransition = null;
+        dialoguePanel.GetComponent<Animator>().SetBool("End", false);
+    }
+
+        //Affichage de la ligne
     private IEnumerator DisplayLine(string line)
     {
         line += " <sprite=\"ContinueIcon\" index=0>";
@@ -406,7 +439,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     }
                     break;
                 case TRANSITION_TAG:
-                    Debug.Log(tagValue); //ce sera à travers un animator qu'on les fera
+                    canTransition = tagValue;
                     break;
                 case BACKGROUND_TAG:
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + tagValue);
