@@ -385,6 +385,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             }
         }
 
+        dialogueText.maxVisibleCharacters = line.Length;
         DisplayChoices();
         canContinueToNextLine = true;
     }
