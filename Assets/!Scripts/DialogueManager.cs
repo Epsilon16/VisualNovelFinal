@@ -114,6 +114,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         isGrigriActivated = false;
         grigriButton.GetComponent<Button>().interactable = false;
 
+        foreach (Transform child in spritePlacement.transform)
+        {
+            child.GetComponent<Image>().color = Color.clear;
+        }
+
         SetUIObjects();
         InitializeAudioInfoDictionary();
 
@@ -484,16 +489,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     }
                     break;
                 case MUSIC_TAG:
-                    if (tagValue != "nothing")
-                    {
-                        musicAS.clip = Resources.Load<AudioClip>("musics/" + tagValue);
-                        musicAS.Play();
-                    }
-                    else
-                    {
-                        musicAS.clip = null;
-                        musicAS.Stop();
-                    }
+                    StartCoroutine(FadeOutMusic(tagValue));
                     break;
                 case SOUND_TAG:
                     musicAS.PlayOneShot(Resources.Load<AudioClip>("sounds/" + tagValue));
@@ -524,6 +520,42 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     break;
             }
         }
+    }
+
+    private IEnumerator FadeOutMusic(string tagValue)
+    {
+        if (musicAS.clip != null)
+        {
+            if (musicAS.volume <= 0.1f)
+            {
+                musicAS.Stop();
+            }
+            else
+            {
+                float newVolume = musicAS.volume - (0.01f);
+                if (newVolume < 0f)
+                {
+                    newVolume = 0f;
+                }
+                musicAS.volume = newVolume;
+
+                yield return new WaitForEndOfFrame();
+                StartCoroutine(FadeOutMusic(tagValue));
+                yield break;
+            }
+        }
+
+        if (tagValue != "nothing")
+        {
+            musicAS.clip = Resources.Load<AudioClip>("musics/" + tagValue);
+            musicAS.Play();
+        }
+        else
+        {
+            musicAS.clip = null;
+            musicAS.Stop();
+        }
+        musicAS.volume = 1f;
     }
 
     //Choisis la bank sonore utilisé

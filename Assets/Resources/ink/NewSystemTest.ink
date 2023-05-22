@@ -9,7 +9,7 @@ Or more like howdy there ! #trans:trans_center
 
 === main ===
  
-Test1 #name:Arianne #bg:forest #clear:all #sprite:jes_murder/2 #music:nothing
+Test1 #name:Arianne #bg:forest #clear:all #sprite:jes_murder/2 #music:goldslaughter
 Test2 #next:Grigri_Test/true #audio:celeste_low
 Test3 #item:sakutarou
 Test4 #item:nothing
