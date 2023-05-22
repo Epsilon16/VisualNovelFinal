@@ -72,7 +72,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [Header("Tags")]
     private const string NAME_TAG = "name";
     private const string SPRITE_TAG = "sprite";
-    private const string PLACEMENT_TAG = "place";
     private const string CLEAR_TAG = "clear";
     private const string TRANSITION_TAG = "trans";
     private const string BACKGROUND_TAG = "bg";
@@ -142,7 +141,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             choices = normalChoices;
             typingSpeed = normalTypingSpeed;
 
-            if (grigriLives > 0 && !isGrigriActivated)
+            if (grigriLives > 0)
             {
                 grigriButton.SetActive(true);
             }
@@ -393,8 +392,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Tag Inkle
     private void HandleTags(List<string> currentTags)
     {
-        int place = 2;
-
         foreach(string tag in currentTags)
         {
             string[] splitTag = tag.Split(':');
@@ -418,25 +415,35 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                         displayNameText.text = tagValue;
                     }
                     break;
-                case PLACEMENT_TAG:
-                    place = int.Parse(tagValue);
-                    break;
                 case SPRITE_TAG:
-                    spritePlacement.transform.GetChild(place).GetComponent<Image>().sprite = Resources.Load<Sprite>("sprites/" + tagValue);
-                    spritePlacement.transform.GetChild(place).GetComponent<Image>().color = Color.white;
-                    spritePlacement.transform.GetChild(place).GetComponent<Image>().SetNativeSize();
+                    string[] splitSprite = tagValue.Split('/');
+                    spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).GetComponent<Image>().sprite = Resources.Load<Sprite>("sprites/" + splitSprite[0]);
+                    spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).GetComponent<Image>().SetNativeSize();
+                    if (spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).GetComponent<Image>().color != Color.white)
+                    {
+                        //spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).GetComponent<Image>().color = Color.white;
+                        spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).GetComponent<Animator>().Play("sprite_on");
+                    }
                     break;
                 case CLEAR_TAG:
                     if (tagValue == "all")
                     {
                         foreach (Transform child in spritePlacement.transform)
                         {
-                            child.GetComponent<Image>().color = Color.clear;
+                            if (child.GetComponent<Image>().color != Color.clear)
+                            {
+                                //child.GetComponent<Image>().color = Color.clear;
+                                child.GetComponent<Animator>().Play("sprite_off");
+                            }
                         }
                     }
                     else
                     {
-                        spritePlacement.transform.GetChild(int.Parse(tagValue)).GetComponent<Image>().color = Color.clear;
+                        if (spritePlacement.transform.GetChild(int.Parse(tagValue)).GetComponent<Image>().color != Color.clear)
+                        {
+                            //spritePlacement.transform.GetChild(int.Parse(tagValue)).GetComponent<Image>().color = Color.clear;
+                            spritePlacement.transform.GetChild(int.Parse(tagValue)).GetComponent<Animator>().Play("sprite_off");
+                        }
                     }
                     break;
                 case TRANSITION_TAG:
@@ -678,7 +685,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         loadedState = state;
     }
 
-    //Get Variable ????
+    //Get Variable in Globals
     public Ink.Runtime.Object GetVariableState(string variableName)
     {
         Ink.Runtime.Object variableValue = null;

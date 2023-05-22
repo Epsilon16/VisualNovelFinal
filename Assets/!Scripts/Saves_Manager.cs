@@ -112,5 +112,5 @@ public class SaveData
     public string[] sprites;
     public string music;
     public string audio;
-    //les globals
+    public string saveVariablesKey = "INK_VARIABLES";
 }

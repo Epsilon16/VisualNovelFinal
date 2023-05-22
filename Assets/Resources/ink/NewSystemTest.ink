@@ -3,26 +3,26 @@ INCLUDE globals.ink
 { CHOICES_TEST has A1: -> GrigriYES}
 { CHOICES_TEST has A2: -> GrigriNO}
 
-Hello there ! #next:nothing/nothing #bg:forest #name:nothing #clear:all #place:2 #sprite:jes_murder #music:goldnoct
+Hello there ! #next:nothing/nothing #bg:forest #name:nothing #clear:all #sprite:jes_murder/2 #music:goldnoct
 Or more like howdy there !
 -> main 
 
 === main ===
  
-Test1 #name:Arianne #clear:all #place:2 #sprite:jes_murder #music:nothing
+Test1 #name:Arianne #clear:all #sprite:jes_murder/2 #music:nothing
 Test2 #next:Grigri_Test/true #audio:celeste_low
 Test3
 Test4
 Test5 #next:nothing/false
-How are you feeling today ? #name:Arianne #clear:all #place:2 #sprite:jes_murder #music:goldnoct #audio:nothing
+How are you feeling today ? #name:Arianne #clear:all #sprite:jes_murder/2 #music:goldnoct #audio:nothing
 +[Happy]
-    That make me feel <color=\#F8FF30>happy</color> as well! #name:Zoé #clear:2 #place:3 #sprite:jes_murder
+    That make me feel <color=\#F8FF30>happy</color> as well! #name:Zoé #clear:2 #sprite:jes_murder/3
     I'm so <color=\#F8FF30>happy</color> !
 +[Sad]
-    oh well, that makes me <color=\#5B81FF>sad</color> to! #name:Aloïs #clear:2 #place:3 #sprite:jes_murder
+    oh well, that makes me <color=\#5B81FF>sad</color> to! #name:Aloïs #clear:2 #sprite:jes_murder/3
     Very <color=\#5B81FF>sad</color> actually...
 
-- Don't trust him, he's <b><color=\#FF1E35>not</color></b> a real doctor! #name:Sakutarou #place:4 #sprite:sak_happy
+- Don't trust him, he's <b><color=\#FF1E35>not</color></b> a real doctor! #name:Sakutarou #sprite:sak_happy/4
 -> GrigriNO
 
     

@@ -11,6 +11,7 @@ public class DialogueVariables
     private Story globalVariablesStory;
 
     private const string saveVariablesKey = "INK_VARIABLES";
+
     public DialogueVariables (TextAsset loadGlobalsJSON)
     {
         globalVariablesStory = new Story(loadGlobalsJSON.text);
@@ -57,7 +58,6 @@ public class DialogueVariables
             variables.Remove(name);
             variables.Add(name, value);
         }
-
     }
 
     private void VariablesToStory(Story story)
