@@ -71,6 +71,7 @@ public class Saves_Manager : MonoBehaviour
             InkStoryState = DialogueManager.GetInstance().GetStoryState(),
             name = DialogueManager.GetInstance().displayNameText.text,
             background = DialogueManager.GetInstance().background.GetComponent<Image>().sprite.name,
+            item = DialogueManager.GetInstance().item.GetComponent<Image>().sprite.name,
             sprites = savedSprites,
             music = savedMusic,
             audio = savedAudio,
@@ -109,8 +110,9 @@ public class SaveData
     public string InkStoryState;
     public string name;
     public string background;
+    public string item;
     public string[] sprites;
     public string music;
     public string audio;
-    public string saveVariablesKey = "INK_VARIABLES";
+    public Dictionary<string, Ink.Runtime.Object> globals;
 }

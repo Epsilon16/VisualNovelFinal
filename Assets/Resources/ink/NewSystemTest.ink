@@ -3,16 +3,16 @@ INCLUDE globals.ink
 { CHOICES_TEST has A1: -> GrigriYES}
 { CHOICES_TEST has A2: -> GrigriNO}
 
-Hello there ! #next:nothing/nothing #bg:forest #name:nothing #clear:all #sprite:jes_murder/2 #music:goldnoct
-Or more like howdy there !
+Hello there ! #next:nothing/nothing #bg:grigri #name:nothing #clear:all #sprite:jes_murder/2 #music:goldnoct
+Or more like howdy there ! #trans:trans_center
 -> main 
 
 === main ===
  
-Test1 #name:Arianne #clear:all #sprite:jes_murder/2 #music:nothing
+Test1 #name:Arianne #bg:forest #clear:all #sprite:jes_murder/2 #music:nothing
 Test2 #next:Grigri_Test/true #audio:celeste_low
-Test3
-Test4
+Test3 #item:sakutarou
+Test4 #item:nothing
 Test5 #next:nothing/false
 How are you feeling today ? #name:Arianne #clear:all #sprite:jes_murder/2 #music:goldnoct #audio:nothing
 +[Happy]

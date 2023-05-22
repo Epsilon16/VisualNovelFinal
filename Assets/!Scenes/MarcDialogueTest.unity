@@ -536,13 +536,14 @@ GameObject:
   - component: {fileID: 100699119}
   - component: {fileID: 100699121}
   - component: {fileID: 100699120}
+  - component: {fileID: 100699122}
   m_Layer: 5
   m_Name: Item CG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &100699119
 RectTransform:
   m_ObjectHideFlags: 0
@@ -583,7 +584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d31f260c682188549a08a2a4d3c46212, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20940674128d06f479d915720bfb6f53, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -601,6 +602,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100699118}
   m_CullTransparentMesh: 1
+--- !u!95 &100699122
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100699118}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b1820425939208b4297c9d51db156d4d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &119430548
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,6 +2428,7 @@ MonoBehaviour:
   displayNameText: {fileID: 2090716543}
   spritePlacement: {fileID: 256823441}
   background: {fileID: 619369433}
+  item: {fileID: 100699118}
   isGrigriActivated: 0
   grigriButton: {fileID: 553864544}
   grigriLives: 0

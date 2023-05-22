@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     public TextMeshProUGUI displayNameText;
     public GameObject spritePlacement;
     public GameObject background;
+    public GameObject item;
 
     private GameObject dialoguePanel;
     private TextMeshProUGUI dialogueText;
@@ -174,7 +175,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             displayNameText.transform.parent.gameObject.SetActive(true);
             displayNameText.text = loadedState.name;
         }
+
         background.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + loadedState.background);
+
         for (int i = 0; i < spritePlacement.transform.childCount; i++)
         {
             if (loadedState.sprites[i] == null)
@@ -190,6 +193,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         }
 
+        item.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + loadedState.item);
+        
         if (loadedState.music != "nothing")
         {
             musicAS.clip = Resources.Load<AudioClip>("musics/" + loadedState.music);
@@ -337,23 +342,27 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Transition Coroutine
     private IEnumerator Transition(string nextLine)
     {
+        canContinueToNextLine = false;
         dialoguePanel.GetComponent<Animator>().Play(canTransition);
 
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.25f);
+
 
         HandleTags(currentStory.currentTags);
         dialoguePanel.GetComponent<Animator>().SetBool("End", true);
 
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.25f);
 
         displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
         canTransition = null;
         dialoguePanel.GetComponent<Animator>().SetBool("End", false);
+        canContinueToNextLine = true;
     }
 
-        //Affichage de la ligne
+    //Affichage de la ligne
     private IEnumerator DisplayLine(string line)
     {
+        line = line.Substring(0, line.Length - 1);
         line += " <sprite=\"ContinueIcon\" index=0>";
         //line += " <sprite=\"ContinueIcon\" anim=\"0, 69, 5\">";
         dialogueText.text = line;
@@ -453,7 +462,16 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + tagValue);
                     break;
                 case ITEM_TAG:
-                    Debug.Log(tagValue); //set de l'animation et de l'image
+                    if (tagValue == "nothing")
+                    {
+                        item.GetComponent<Animator>().SetBool("end", true);
+                    }
+                    else
+                    {
+                        item.GetComponent<Animator>().SetBool("end", false);
+                        item.GetComponent<Image>().sprite = Resources.Load<Sprite>("items/" + tagValue);
+                        item.GetComponent<Animator>().Play("item_start");
+                    }
                     break;
                 case AUDIO_TAG:
                     if (tagValue != "nothing")
