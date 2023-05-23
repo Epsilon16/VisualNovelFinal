@@ -5,5 +5,3 @@ VAR RS_Martin = 0
 VAR BirthdayEnding = ""
 
 LIST CHOICES_TEST = A1, A2, A3
-
-

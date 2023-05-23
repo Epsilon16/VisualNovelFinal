@@ -9,13 +9,16 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using Unity.VisualScripting;
 
 public class Saves_Manager : MonoBehaviour
 {
     string[] savedSprites;
     string savedAudio;
     string savedMusic;
-
+    string savedGlobals;
+    string savedNext;
+    
     public void SaveGame()
     {
         SaveData save = CreateSaveGameObject();
@@ -66,6 +69,18 @@ public class Saves_Manager : MonoBehaviour
             savedMusic = DialogueManager.GetInstance().musicAS.clip.name;
         }
 
+        savedGlobals = null;
+        DialogueManager.GetInstance().dialogueVariables.VariablesToStory(DialogueManager.GetInstance().dialogueVariables.globalVariablesStory);
+        savedGlobals = DialogueManager.GetInstance().dialogueVariables.globalVariablesStory.state.ToJson();
+
+        savedNext = "nothing";
+        if (DialogueManager.GetInstance().nextInkJSON != null)
+        {
+            savedNext = DialogueManager.GetInstance().nextInkJSON.name;
+        }
+
+        Debug.Log(DialogueManager.GetInstance().wasactivated.ToString());
+
         return new SaveData
         {
             InkStoryState = DialogueManager.GetInstance().GetStoryState(),
@@ -75,6 +90,9 @@ public class Saves_Manager : MonoBehaviour
             sprites = savedSprites,
             music = savedMusic,
             audio = savedAudio,
+            globals = savedGlobals,
+            next = savedNext,
+            grigristate = DialogueManager.GetInstance().wasactivated.ToString()
         };
     }
 
@@ -114,5 +132,7 @@ public class SaveData
     public string[] sprites;
     public string music;
     public string audio;
-    public Dictionary<string, Ink.Runtime.Object> globals;
+    public string globals;
+    public string next;
+    public string grigristate;
 }

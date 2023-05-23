@@ -6,6 +6,7 @@ using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 {
@@ -17,8 +18,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [SerializeField] private float typingSpeed;
 
     [Header("Load Globals JSON")]
-    [SerializeField] private TextAsset loadGlobalsJSON;
-    
+    public TextAsset loadGlobalsJSON;
+    public DialogueVariables dialogueVariables;
+
     [Header("Dialogue Const")]
     public TextMeshProUGUI displayNameText;
     public GameObject spritePlacement;
@@ -34,7 +36,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     [Header("Grigri Const")]
     public bool isGrigriActivated;
-    [SerializeField] private GameObject grigriButton;
+    public GameObject grigriButton;
     [SerializeField] private int grigriLives;
 
     [Header("Normal UI")]
@@ -66,7 +68,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [SerializeField] private TextAsset firstInkJSON;
     public TextAsset nextInkJSON;
     private Story currentStory;
-    public bool dialogueIsPlaying { get; private set;  }
+    public bool dialogueIsPlaying { get; private set; }
     private bool canContinueToNextLine = false;
     private Coroutine displayLineCoroutine;
 
@@ -83,9 +85,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private const string NEXTSTORY_TAG = "next";
 
     [Header("Save/Load System")]
-    private static SaveData loadedState;
-
-    private DialogueVariables dialogueVariables;
+    public static SaveData loadedState;
 
 
     private void Awake()
@@ -146,15 +146,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             dialogueText = normalText;
             choices = normalChoices;
             typingSpeed = normalTypingSpeed;
-
-            if (grigriLives > 0)
-            {
-                grigriButton.SetActive(true);
-            }
-            else
-            {
-                grigriButton.SetActive(false);
-            }
         }
         dialoguePanel.SetActive(true);
 
@@ -171,6 +162,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         currentStory?.state?.LoadJson(loadedState.InkStoryState);
 
+        displayNameText.text = loadedState.name;
         if (loadedState.name == "nothing")
         {
             displayNameText.transform.parent.gameObject.SetActive(false);
@@ -178,7 +170,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         else
         {
             displayNameText.transform.parent.gameObject.SetActive(true);
-            displayNameText.text = loadedState.name;
         }
 
         background.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + loadedState.background);
@@ -194,12 +185,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().color = Color.white;
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().sprite = Resources.Load<Sprite>("sprites/" + loadedState.sprites[i]);
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().SetNativeSize();
+                spritePlacement.transform.GetChild(i).GetComponent<Animator>().Play("sprite_white");
             }
-
         }
 
         item.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + loadedState.item);
-        
+
         if (loadedState.music != "nothing")
         {
             musicAS.clip = Resources.Load<AudioClip>("musics/" + loadedState.music);
@@ -224,6 +215,25 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             }
         }
 
+        if (loadedState.next != "nothing")
+        {
+            nextInkJSON = Resources.Load<TextAsset>("ink/" + loadedState.next);
+        }
+        else
+        {
+            nextInkJSON = null;
+        }
+
+        if (loadedState.grigristate == "True")
+        {
+            grigriButton.GetComponent<Button>().interactable = true;
+        }
+        else if (loadedState.grigristate == "False")
+        {
+            grigriButton.GetComponent<Button>().interactable = false;
+        }
+
+        HandleTags(currentStory.currentTags);
         StartCoroutine(DisplayLine(currentStory.currentText));
         loadedState = null;
     }
@@ -241,15 +251,13 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private void Update()
     {
-        grigriLives = ((Ink.Runtime.IntValue)GetVariableState("grigriLives")).value;
-
         if (!dialogueIsPlaying)
         {
             return;
         }
 
         if (canContinueToNextLine && !isMenuOn
-            && currentStory.currentChoices.Count == 0 
+            && currentStory.currentChoices.Count == 0
             && InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
@@ -326,7 +334,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 StopCoroutine(displayLineCoroutine);
             }
             string nextLine = currentStory.Continue();
-            
+
             if (canTransition != null)
             {
                 StartCoroutine(Transition(nextLine));
@@ -356,17 +364,32 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         HandleTags(currentStory.currentTags);
         dialoguePanel.GetComponent<Animator>().SetBool("End", true);
 
-        yield return new WaitForSeconds(0.25f);
-
         displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
         canTransition = null;
-        dialoguePanel.GetComponent<Animator>().SetBool("End", false);
         canContinueToNextLine = true;
+
+        yield return new WaitForSeconds(0.25f);
+        dialoguePanel.GetComponent<Animator>().SetBool("End", false);
     }
 
     //Affichage de la ligne
     private IEnumerator DisplayLine(string line)
     {
+        grigriLives = ((IntValue)GetVariableState("grigriLives")).value;
+        grigriButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Grigri\n-" + grigriLives + '-'; 
+
+        if (grigriLives > 0)
+        {
+            grigriButton.SetActive(true);
+        }
+        else
+        {
+            grigriButton.SetActive(false);
+        }
+
+        //olala faire un truc je sais pas quoi pour sauvegarder l'état du grigri et le NEXT
+
+
         line = line.Substring(0, line.Length - 1);
         line += " <sprite=\"ContinueIcon\" index=0>";
         //line += " <sprite=\"ContinueIcon\" anim=\"0, 69, 5\">";
@@ -419,6 +442,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             switch (tagKey)
             {
                 case NAME_TAG:
+                    displayNameText.text = tagValue;
                     if (tagValue == "nothing")
                     {
                         displayNameText.transform.parent.gameObject.SetActive(false);
@@ -426,7 +450,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     else
                     {
                         displayNameText.transform.parent.gameObject.SetActive(true);
-                        displayNameText.text = tagValue;
                     }
                     break;
                 case SPRITE_TAG:
@@ -667,6 +690,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
+    public bool wasactivated;
+
     //Active/Désactive le Menu Déroulant
     public void MenuActivation()
     {
@@ -680,7 +705,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 choice.GetComponent<Button>().interactable = false;
             }
 
-            //activation bouton grigri
+            if (grigriButton.GetComponent<Button>().interactable == true)
+            {
+                wasactivated = true;
+                grigriButton.GetComponent<Button>().interactable = false;
+            }
 
             StartCoroutine(MenuScript.GetInstance().SelectFirstChoice(menuParent.transform.GetChild(1).gameObject));
         }
@@ -694,7 +723,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 choice.GetComponent<Button>().interactable = true;
             }
 
-            //activation bouton grigri
+            if (wasactivated)
+            {
+                grigriButton.GetComponent<Button>().interactable = true;
+                wasactivated = false;
+            }
 
             StartCoroutine(MenuScript.GetInstance().SelectFirstChoice(choices[0]));
         }
@@ -735,24 +768,16 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         loadedState = state;
     }
 
-    //Get Variable in Globals
+    //Get Variable in Globals by name
     public Ink.Runtime.Object GetVariableState(string variableName)
     {
-        Ink.Runtime.Object variableValue = null;
+        Ink.Runtime.Object variableValue;
         dialogueVariables.variables.TryGetValue(variableName, out variableValue);
+
         if (variableValue == null)
         {
             Debug.LogWarning("Ink Variable was found to be null: " + variableName);
         }
         return variableValue;
-    }
-
-    //???????
-    public void OnApplicationQuit()
-    {
-        if (dialogueVariables != null)
-        {
-            dialogueVariables.SaveVariables();
-        }    
     }
 }
