@@ -2,25 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
-
+using System;
 
 public class DialogueVariables
 {
     public Dictionary<string, Ink.Runtime.Object> variables { get; private set; }
 
-    private Story globalVariablesStory;
-
-    private const string saveVariablesKey = "INK_VARIABLES";
+    public Story globalVariablesStory;
 
     public DialogueVariables (TextAsset loadGlobalsJSON)
     {
+        //load le dossier global
         globalVariablesStory = new Story(loadGlobalsJSON.text);
-        if (PlayerPrefs.HasKey(saveVariablesKey))
+        if (DialogueManager.loadedState != null)
         {
-            string jsonState = PlayerPrefs.GetString(saveVariablesKey);
-            globalVariablesStory.state.LoadJson(jsonState);
+            globalVariablesStory.state.LoadJson(DialogueManager.loadedState.globals);
         }
 
+        //créé un dictionnaire enregistrant les globals
         variables = new Dictionary<string, Ink.Runtime.Object>();
         foreach (string name in globalVariablesStory.variablesState)
         {
@@ -30,26 +29,20 @@ public class DialogueVariables
         }
     }
 
-    public void SaveVariables()
-    {
-        if (globalVariablesStory != null)
-        {
-            VariablesToStory(globalVariablesStory);
-            PlayerPrefs.SetString(saveVariablesKey, globalVariablesStory.state.ToJson());
-        }
-    }
-
+    //change en temps réel les variables
     public void StartListening(Story story)
     {
         VariablesToStory(story);
         story.variablesState.variableChangedEvent += VariableChanged;
     }
 
+    //arrête de changer les variables
     public void StopListening(Story story)
     {
         story.variablesState.variableChangedEvent -= VariableChanged;
     }
 
+    //Change the variable inside Dictionnary
     private void VariableChanged(string name, Ink.Runtime.Object value)
     {
         Debug.Log("Variable changed: " + name + " = " + value);
@@ -60,7 +53,8 @@ public class DialogueVariables
         }
     }
 
-    private void VariablesToStory(Story story)
+    //???
+    public void VariablesToStory(Story story)
     {
         foreach(KeyValuePair<string, Ink.Runtime.Object> variable in variables)
         {

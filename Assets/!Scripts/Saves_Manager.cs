@@ -15,7 +15,8 @@ public class Saves_Manager : MonoBehaviour
     string[] savedSprites;
     string savedAudio;
     string savedMusic;
-
+    string savedglobals;
+    
     public void SaveGame()
     {
         SaveData save = CreateSaveGameObject();
@@ -66,6 +67,9 @@ public class Saves_Manager : MonoBehaviour
             savedMusic = DialogueManager.GetInstance().musicAS.clip.name;
         }
 
+        DialogueManager.GetInstance().dialogueVariables.VariablesToStory(DialogueManager.GetInstance().dialogueVariables.globalVariablesStory);
+        savedglobals = DialogueManager.GetInstance().dialogueVariables.globalVariablesStory.state.ToJson();
+
         return new SaveData
         {
             InkStoryState = DialogueManager.GetInstance().GetStoryState(),
@@ -75,6 +79,7 @@ public class Saves_Manager : MonoBehaviour
             sprites = savedSprites,
             music = savedMusic,
             audio = savedAudio,
+            globals = savedglobals
         };
     }
 
@@ -114,5 +119,5 @@ public class SaveData
     public string[] sprites;
     public string music;
     public string audio;
-    public Dictionary<string, Ink.Runtime.Object> globals;
+    public string globals;
 }

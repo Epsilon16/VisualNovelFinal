@@ -6,6 +6,7 @@ using Ink.Runtime;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 {
@@ -17,8 +18,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [SerializeField] private float typingSpeed;
 
     [Header("Load Globals JSON")]
-    [SerializeField] private TextAsset loadGlobalsJSON;
-    
+    public TextAsset loadGlobalsJSON;
+    public DialogueVariables dialogueVariables;
+
     [Header("Dialogue Const")]
     public TextMeshProUGUI displayNameText;
     public GameObject spritePlacement;
@@ -83,9 +85,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private const string NEXTSTORY_TAG = "next";
 
     [Header("Save/Load System")]
-    private static SaveData loadedState;
-
-    private DialogueVariables dialogueVariables;
+    public static SaveData loadedState;
 
 
     private void Awake()
@@ -116,7 +116,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         foreach (Transform child in spritePlacement.transform)
         {
-            child.GetComponent<Image>().color = Color.clear;
+                child.GetComponent<Image>().color = Color.clear;
         }
 
         SetUIObjects();
@@ -241,8 +241,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private void Update()
     {
-        grigriLives = ((Ink.Runtime.IntValue)GetVariableState("grigriLives")).value;
-
         if (!dialogueIsPlaying)
         {
             return;
@@ -367,6 +365,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Affichage de la ligne
     private IEnumerator DisplayLine(string line)
     {
+        grigriLives = ((IntValue)GetVariableState("grigriLives")).value;
+
         line = line.Substring(0, line.Length - 1);
         line += " <sprite=\"ContinueIcon\" index=0>";
         //line += " <sprite=\"ContinueIcon\" anim=\"0, 69, 5\">";
@@ -735,24 +735,16 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         loadedState = state;
     }
 
-    //Get Variable in Globals
+    //Get Variable in Globals by name
     public Ink.Runtime.Object GetVariableState(string variableName)
     {
-        Ink.Runtime.Object variableValue = null;
+        Ink.Runtime.Object variableValue;
         dialogueVariables.variables.TryGetValue(variableName, out variableValue);
+
         if (variableValue == null)
         {
             Debug.LogWarning("Ink Variable was found to be null: " + variableName);
         }
         return variableValue;
-    }
-
-    //???????
-    public void OnApplicationQuit()
-    {
-        if (dialogueVariables != null)
-        {
-            dialogueVariables.SaveVariables();
-        }    
     }
 }
