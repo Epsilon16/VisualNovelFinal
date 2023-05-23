@@ -3,6 +3,7 @@ INCLUDE globals.ink
 { CHOICES_TEST has A1: -> GrigriYES}
 { CHOICES_TEST has A2: -> GrigriNO}
 
+~grigriLives = 8
 Hello there ! #next:nothing/nothing #bg:grigri #name:nothing #clear:all #sprite:jes_murder/2 #music:goldnoct
 Or more like howdy there ! #trans:trans_center
 -> main 
@@ -29,7 +30,7 @@ How are you feeling today ? #name:Arianne #clear:all #sprite:jes_murder/2 #music
 
     
      === GrigriYES ===
-    The Grigri was very siccessful ! #next:nothing/nothing
+    The Grigri was very successful ! #next:nothing/nothing
     Thank you !
     Do you have any more questions ?
 +[Yes]
