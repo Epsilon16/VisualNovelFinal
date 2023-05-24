@@ -6,11 +6,12 @@ public class Drag_And_Drop : MonoBehaviour
 {
     private Vector2 mousePosition;
     private float offsetX, offsetY;
-    private static bool mouseButtonReleased;
+    //private static bool mouseButtonReleased;
+
     // Start is called before the first frame update
     private void OnMouseDown()
     {
-        mouseButtonReleased = false;
+        //mouseButtonReleased = false;
         offsetX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x;
         offsetY = Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y;
     }
@@ -23,7 +24,7 @@ public class Drag_And_Drop : MonoBehaviour
 
     private void OnMouseUp()
     {
-        mouseButtonReleased = true;
+        //mouseButtonReleased = true;
     }
 
 
