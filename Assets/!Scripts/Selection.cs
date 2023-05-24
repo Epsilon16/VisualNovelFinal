@@ -12,6 +12,7 @@ public class Selection : MonoBehaviour
     [SerializeField] private float GoodY;
     [SerializeField] private bool isGood;
 
+    // Start is called before the first frame update
     void Start()
     {
         highlight = transform.GetChild(0).gameObject;
@@ -21,6 +22,7 @@ public class Selection : MonoBehaviour
             isGood = true;
     }
 
+    // Update is called once per frame
     void Update()
     {
         highlight.SetActive(selected);
@@ -46,7 +48,6 @@ public class Selection : MonoBehaviour
         {
             selected = false;
         }
-
         /*if (transform.position.x == GoodX && transform.position.y == GoodY && !isGood)
             isGood = true;
         else if (isGood)

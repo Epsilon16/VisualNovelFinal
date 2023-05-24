@@ -1,53 +1,43 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManagerPuzzle : MonoBehaviour
+public class Inversion_Controller : MonoBehaviour
 {
-    public GameObject SquaresHolder;
-    public GameObject[] Squares;
 
+    [SerializeField] private GameObject[] carrés;
     [SerializeField] private List<GameObject> inversion = new List<GameObject>();
 
-    public int TotalPipes = 0;
-
-    void Update()
+    // Start is called before the first frame update
+    void Start()
     {
-        TotalPipes = SquaresHolder.transform.childCount;
-
-        Squares = new GameObject[TotalPipes];
-
-        for (int i = 0; i < Squares.Length; i++)
-        {
-            Squares[i] = SquaresHolder.transform.GetChild(i).gameObject;
-        }
-
-        Inversion();
+        
     }
 
-    private void Inversion()
+    // Update is called once per frame
+    void Update()
     {
-        for (int i = 0; i < Squares.Length; i++)
+        for (int i = 0; i < carrés.Length; i++)
         {
-            if (Squares[i].GetComponent<Selection>().selected == true)
+            if (carrés[i].GetComponent<Selection>().selected == true)
             {
                 bool boolian = false;
-                for (int j = 0; j < inversion.Count; j++)
+                for (int j = 0;  j < inversion.Count;  j++)
                 {
-                    if (inversion[j] == Squares[i])
+                    if (inversion[j] == carrés[i])
                     {
                         boolian = true;
                     }
                 }
-
                 if (!boolian)
-                    inversion.Add(Squares[i]);
+                inversion.Add(carrés[i]);
             }
         }
 
         if (inversion.Count == 2)
         {
+            
+
             Vector2 pos0 = inversion[0].transform.position;
             Vector2 pos1 = inversion[1].transform.position;
             inversion[0].transform.position = pos1;
