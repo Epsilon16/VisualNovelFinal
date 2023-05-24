@@ -13,8 +13,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private static DialogueManager instance;
 
     [Header("Params")]
-    [SerializeField] private float normalTypingSpeed = 0.04f;
-    [SerializeField] private float grigriTypingSpeed = 0.04f;
     [SerializeField] private float typingSpeed;
 
     [Header("Load Globals JSON")]
@@ -32,6 +30,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
+    public Animator transAnim;
     private string canTransition;
 
     [Header("Grigri Const")]
@@ -65,11 +64,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
 
     [Header("Inkle")]
-    [SerializeField] private TextAsset firstInkJSON;
+    public TextAsset firstInkJSON;
     public TextAsset nextInkJSON;
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
-    private bool canContinueToNextLine = false;
+    public bool canContinueToNextLine = false;
     private Coroutine displayLineCoroutine;
 
     [Header("Tags")]
@@ -119,6 +118,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             child.GetComponent<Image>().color = Color.clear;
         }
 
+        if (loadedState != null && loadedState.layoutstate == "True")
+        {
+            isGrigriActivated = true;
+        }
+
         SetUIObjects();
         InitializeAudioInfoDictionary();
 
@@ -136,7 +140,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             dialoguePanel = grigriPanel;
             dialogueText = grigriText;
             choices = grigriChoices;
-            typingSpeed = grigriTypingSpeed;
 
             grigriButton.SetActive(false);
         }
@@ -145,7 +148,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             dialoguePanel = normalPanel;
             dialogueText = normalText;
             choices = normalChoices;
-            typingSpeed = normalTypingSpeed;
         }
         dialoguePanel.SetActive(true);
 
@@ -160,7 +162,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     public void LoadSavedState()
     {
-        currentStory?.state?.LoadJson(loadedState.InkStoryState);
+        currentStory.state.LoadJson(loadedState.InkStoryState);
 
         displayNameText.text = loadedState.name;
         if (loadedState.name == "nothing")
@@ -215,9 +217,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             }
         }
 
-        if (loadedState.next != "nothing")
+        if (loadedState.nextjson != "nothing")
         {
-            nextInkJSON = Resources.Load<TextAsset>("ink/" + loadedState.next);
+            nextInkJSON = Resources.Load<TextAsset>("ink/" + loadedState.nextjson);
         }
         else
         {
@@ -258,6 +260,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         if (canContinueToNextLine && !isMenuOn
             && currentStory.currentChoices.Count == 0
+            && MenuScript.GetInstance().mouseControl == false
             && InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
@@ -273,10 +276,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Rentre dans le fichier ink
     public void EnterDialogueMode(TextAsset inkJSON)
     {
-        if (isGrigriActivated == true)
-        {
-            ExitGrigriMode();
-        }
+        firstInkJSON = inkJSON;
 
         canTransition = null;
         displayNameText.text = "???";
@@ -287,6 +287,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         if (loadedState != null)
         {
+            currentStory = new Story(Resources.Load<TextAsset>("ink/" + loadedState.currentjson).text);
             dialogueVariables.StartListening(currentStory);
             LoadSavedState();
         }
@@ -315,13 +316,19 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         //fade into oblivion
         if (nextInkJSON != null)
         {
-            EnterDialogueMode(nextInkJSON);
+            if (isGrigriActivated)
+            {
+                StartCoroutine(ExitGrigriMode());
+            }
+            else
+            {
+                EnterDialogueMode(nextInkJSON);
+            }
         }
         else
         {
             SceneManager.LoadScene(0);
         }
-
     }
 
     //Lorsqu'on appuit sur submit
@@ -356,39 +363,21 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private IEnumerator Transition(string nextLine)
     {
         canContinueToNextLine = false;
-        dialoguePanel.GetComponent<Animator>().Play(canTransition);
+        transAnim.Play(canTransition);
 
         yield return new WaitForSeconds(0.25f);
-
 
         HandleTags(currentStory.currentTags);
-        dialoguePanel.GetComponent<Animator>().SetBool("End", true);
-
-        displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
         canTransition = null;
         canContinueToNextLine = true;
-
-        yield return new WaitForSeconds(0.25f);
-        dialoguePanel.GetComponent<Animator>().SetBool("End", false);
+        displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
     }
 
     //Affichage de la ligne
     private IEnumerator DisplayLine(string line)
     {
-        grigriLives = ((IntValue)GetVariableState("grigriLives")).value;
-        grigriButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Grigri\n-" + grigriLives + '-'; 
-
-        if (grigriLives > 0)
-        {
-            grigriButton.SetActive(true);
-        }
-        else
-        {
-            grigriButton.SetActive(false);
-        }
-
-        //olala faire un truc je sais pas quoi pour sauvegarder l'état du grigri et le NEXT
-
+        //set up de l'état du bouton grigri ici car c'est tjr lu peu importe si il y a load ou pas
+        GrigriButtonHandler();
 
         line = line.Substring(0, line.Length - 1);
         line += " <sprite=\"ContinueIcon\" index=0>";
@@ -400,7 +389,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         bool isAddingRichTextTag = false;
         foreach(char letter in line.ToCharArray())
         {
-            if (InputManager.GetInstance().GetSubmitPressed() || isGrigriActivated)
+            if (InputManager.GetInstance().GetSubmitPressed() && !isGrigriActivated)
             {
                 dialogueText.maxVisibleCharacters = line.Length;
                 break;
@@ -424,6 +413,26 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         dialogueText.maxVisibleCharacters = line.Length;
         DisplayChoices();
         canContinueToNextLine = true;
+    }
+
+    private void GrigriButtonHandler()
+    {
+        grigriLives = ((IntValue)GetVariableState("grigriLives")).value;
+        grigriButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Grigri\n-" + grigriLives + '-';
+
+        if (!isGrigriActivated)
+        {
+            if (grigriLives > 0)
+            {
+                grigriButton.SetActive(true);
+                //rajouter un "appuyez sur A" or whatever the fuck works
+            }
+            else
+            {
+                grigriButton.SetActive(false);
+                //enlever le "appuyez sur A" or whatever the fuck
+            }
+        }
     }
 
     //Tag Inkle
@@ -545,6 +554,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
+    //Fade Out de la musique
     private IEnumerator FadeOutMusic(string tagValue)
     {
         if (musicAS.clip != null)
@@ -695,6 +705,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Active/Désactive le Menu Déroulant
     public void MenuActivation()
     {
+        MenuScript.GetInstance().mouseControl = false;
+
         if (!isMenuOn)
         {
             isMenuOn = true;
@@ -736,26 +748,44 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Lance le mode Grigri
     public void EnterGrigriMode()
     {
-        //animation in grigri mode
+        StartCoroutine(GrigriCoroutine());
+    }
+    public IEnumerator GrigriCoroutine()
+    {
+        MenuScript.GetInstance().mouseControl = false;
+        canContinueToNextLine = false;
+
+        transAnim.Play("trans_grigri_on");
+        yield return new WaitForSeconds(1.25f);
+
         //changement des icônes menu
 
-        EnterDialogueMode(nextInkJSON);
-
+        canContinueToNextLine = true;
         isGrigriActivated = true;
+
         SetUIObjects();
+        EnterDialogueMode(nextInkJSON);
     }
 
-    public void ExitGrigriMode()
+    public IEnumerator ExitGrigriMode()
     {
-        //animation out grigri mode
+        canContinueToNextLine = false;
+
+        transAnim.Play("trans_grigri_off");
+        yield return new WaitForSeconds(1.25f);
+
         //montrer qu'on a réussi/perdu
         //changement des icônes menu
 
+        canContinueToNextLine = true;
         isGrigriActivated = false;
+
         SetUIObjects();
+        EnterDialogueMode(nextInkJSON);
     }
 
 
+    //TOUT LES SCRIPTS PAR RAPPORT A LA SAUVEGARDE/LOAD
     //get the state of the current story
     public string GetStoryState()
     {

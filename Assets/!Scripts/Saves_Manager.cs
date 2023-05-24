@@ -79,8 +79,6 @@ public class Saves_Manager : MonoBehaviour
             savedNext = DialogueManager.GetInstance().nextInkJSON.name;
         }
 
-        Debug.Log(DialogueManager.GetInstance().wasactivated.ToString());
-
         return new SaveData
         {
             InkStoryState = DialogueManager.GetInstance().GetStoryState(),
@@ -91,8 +89,10 @@ public class Saves_Manager : MonoBehaviour
             music = savedMusic,
             audio = savedAudio,
             globals = savedGlobals,
-            next = savedNext,
-            grigristate = DialogueManager.GetInstance().wasactivated.ToString()
+            currentjson = DialogueManager.GetInstance().firstInkJSON.name,
+            nextjson = savedNext,
+            grigristate = DialogueManager.GetInstance().wasactivated.ToString(),
+            layoutstate = DialogueManager.GetInstance().isGrigriActivated.ToString()
         };
     }
 
@@ -133,6 +133,8 @@ public class SaveData
     public string music;
     public string audio;
     public string globals;
-    public string next;
+    public string currentjson;
+    public string nextjson;
     public string grigristate;
+    public string layoutstate;
 }

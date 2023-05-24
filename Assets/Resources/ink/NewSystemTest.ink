@@ -30,7 +30,7 @@ How are you feeling today ? #name:Arianne #clear:all #sprite:jes_murder/2 #music
 
     
      === GrigriYES ===
-    The Grigri was very successful ! #next:nothing/nothing
+    The Grigri was very successful ! #next:nothing/nothing #bg:forest
     Thank you !
     Do you have any more questions ?
 +[Yes]
@@ -41,6 +41,6 @@ How are you feeling today ? #name:Arianne #clear:all #sprite:jes_murder/2 #music
     
     === GrigriNO ===
     ~grigriLives = 0
-    The Grigri was unsuccessful... #next:nothing/nothing
+    The Grigri was unsuccessful... #next:nothing/nothing #bg:forest
     Goodbye then! #name:Zoé #clear:all #bg:bedroom
     -> END

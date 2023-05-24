@@ -9,7 +9,7 @@ public class MenuScript : MonoBehaviour
 {
     private static MenuScript instance;
 
-    private bool mouseControl;
+    public bool mouseControl;
 
     private void Awake()
     {
@@ -27,6 +27,7 @@ public class MenuScript : MonoBehaviour
 
     public void LoadScene(int GameScene)
     {
+        mouseControl = false;
         SceneManager.LoadScene(GameScene);
     }
 

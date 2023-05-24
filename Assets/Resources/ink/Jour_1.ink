@@ -1,6 +1,8 @@
 INCLUDE globals.ink
 
-Le monde était recouvert d'une épaisse couche de fleures. #name:nothing #clear:all
+{ CHOICES_TEST has Z0: -> AfterGrigri}
+
+Le monde était recouvert d'une épaisse couche de fleures. #name:nothing #clear:all #bg:grigri
 Même si je les arrachais je n'arriverais pas à en voir le sol.
 J'en suis sûr. Si j'en cueuillais une seule, trois autres pousserait à partir de la tige.
 Leur rouge recouvre le monde telle une marre de sang impossible à sécher.
@@ -14,7 +16,7 @@ La créature sort alors un couteau ensanglanté de ses draps sombres et la mets 
 Des gouttes du liquide vitale coulent le long de la lame et tombe dans le parterre, se diluant dans sa teinte sanguine.
 Les joyaux virent à un noire ébène alors alors qu'un son grave émane de l'intérieur du crâne.
 Le son résonne à l'intérieur de ma tête et s'emplifie, semblant ne vouloir dire qu'une seule chose :
-Je serais la prochaine à colorer de rouge sa lame. #trans:trans_center
+Je serais la prochaine à colorer de rouge sa lame.
 
 "!!!" #name:Arianne #bg:bedroom
 La jeune fille se lève en sursaut de son lit #name:nothing
@@ -26,9 +28,9 @@ Le voyage ayant été plutôt long, la fatigue à eu raison d'elle et le confort
 Je me demande ce que ce rêve pourrait signifier.
 Une sorte de croque mitaine dans un champ de fleures ? Il me semble qu'il ait sortis un objet de son habit...
 Les détails m'échappent déjà, et puis mes rêves n'ont jamais fait sens de toute façon.
-Une fois levé, elle sort de la chambre et se dirige vers la cuisine à l'étage d'en dessous afin de prendre un verre d'eau et d'oublier une fois pour toute la vision.
+Une fois levé, elle sort de la chambre et se dirige vers la cuisine à l'étage d'en dessous afin de prendre un verre d'eau et d'oublier une fois pour toute la vision. #trans:trans_center
 
-Une fois en bas, elle tombe sur sa mère, prête à sortir.
+Une fois en bas, elle tombe sur sa mère, prête à sortir. 
 "Ah Arianne, bien j'allais t'appeler. Je dois aller au service funéraire pour signer des papiers ou quelque chose." #name:Jeanne
 "Je veux pas t'ennuyer avec toute ces formalités alors..." #name:Jeanne
 "Alors je restes ici. T'inquiète pas 'man je suis une adulte maintenant." #name:Arianne
@@ -38,13 +40,13 @@ Une fois en bas, elle tombe sur sa mère, prête à sortir.
 "Bisous maman." #name:Arianne
 De nouveau seule dans la grande maison, Arianne décide d'avancer sur ses devoirs pour la rentrée. #name:nothing
 Elle ne reste qu'une semaine, et sachant que ses activités en présence de sa mère seront limité à remplir des cartons.
-C'est probablement le meilleure moment pour le faire.
+C'est probablement le meilleure moment pour le faire. #trans:trans_center
 
-Après une heure passée sur ses papiers, le son d'une sonette retentis dans l'habitation.
+Après une heure passée sur ses papiers, le son d'une sonette retentis dans l'habitation. #bg:bedroom
 Maman est déjà revenue ? Pourtant il faut bien une demie heure pour aller jusqu'à la ville.
-Arianne descend les escalier jusqu'à la porte d'entrée.
+Arianne descend les escalier jusqu'à la porte d'entrée. #trans:trans_center
 
-"... dis qu'elle sera pas-" #name:Martin
+"... dis qu'elle sera pas-" #name:Martin #bg:1_Maison_GrandMere_Arianne
 "Arianne !!" #name:Zoé
 "Zoé ? Martin ?" #name:Arianne
 "Hey." #name:Martin
@@ -77,9 +79,9 @@ Mais plus car ça fat bientôt cinq ans que je n'ais pas eu à subir son étrein
 Zoé et Martin ont été dans ma vie aussi loin que je puisse m'en souvenir. #name:nothing
 Notre séparation soudaine fu dur pour nous tous je penses. Mais je m'y suis habitué avec le temps.
 Lorsque je les ais quittés ont été encore qu'au collège. Les revoirs maintenant me donne l'impression de parler à des inconnus dont j'ai lu la biographie.
-Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux.
+Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #trans:trans_center
 
-"Des études d'ingénieurie ?" #name:Martin
+"Des études d'ingénieurie ?" #name:Martin #bg:1_Village_Rue_1
 "Ouais, je m'y plait bien." #name:Arianne
 "En même temps, Arianne a toujours été celle avec le plus de neurone dans ce groupe." #name:Zoé
 "T'exagère." #name:Arianne
@@ -94,9 +96,9 @@ Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux.
 "... une fois cette couche de jaune mise dessus en tout cas." #name:Arianne
 "Hey !" #name:Zoé
 Il ne fallut pas longtemps pour que le trio reviennent à leur discussions d'autrefois. #name:nothing
-Comme si ils s'étaient quittés hier.
+Comme si ils s'étaient quittés hier. #trans:trans_center
 
-"C'est la place du village ? Où est la statue ?" #name:Arianne
+"C'est la place du village ? Où est la statue ?" #name:Arianne #bg:1_Village_Place
 "Elle a été descendu y'a un ou deux ans je crois. Je me souviens plus de la raison exacte." #name:Martin
 "C'est dommage." #name:Arianne
 "Y'a pas mal de choses qui ont changé. C'est inévitable, mais c'est étrange." #name:Arianne
@@ -130,22 +132,22 @@ Pourquoi est-ce qu'ils aggissent comme ça.
 "..." #name:Martin
 "Je vois." #name:Arianne
 "Ma mère va bientôt rentrer." #name:Arianne
-"C'était sympa. Au revoir." #name:Arianne
+"C'était sympa. Au revoir." #name:Arianne #trans:trans_center
 
-Comment peuvent-ils faire pour ignorer ça ? #name:nothing
+Comment peuvent-ils faire pour ignorer ça ? #name:nothing #bg:1_Village_Rue_1
 L'incident nous a tous impacté. Mais c'est pas une raison pour oublier.
 C'est pas une raison pour ignorer qu'il ait existé.
 Il était notre grand frère.
 C'était le mien.
 C'était...
-Horrible.
+Horrible. #trans:trans_center
 
 Arrivée chez elle, Arianne claque la porte derrière elle.
 Je...
 Je dois me changer les idées.
-J'allais attendre maman mais autant commencer à faire les cartons moi-même.
+J'allais attendre maman mais autant commencer à faire les cartons moi-même. #trans:trans_center
 
-Une fois dans la chambre à l'étage, Arianne ouvre quelques cartons vides et commence à les remplir.
+Une fois dans la chambre à l'étage, Arianne ouvre quelques cartons vides et commence à les remplir. #bg:bedroom
 Habits, livres et autres objets dont la teneur émotionnelles est perdue au fil du temps.
 "Hm ?" #name:Arianne
 Une petite boite tombe des plis d'un habits sur le sol. #name:nothing
@@ -153,7 +155,7 @@ Qu'est-ce que c'est...?
 Visiblement il a été caché entre deux pulls, mais pour quelle raison ?
 La curiosité prend le dessus et Arianne ouvre la petite boite pour y découvrir un bracelet singulier avec huit perles brillantes.
 Grand-Mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vue porter quelque chose ressemblant à ça.
-La porte d'en bas claque alors, et Arianne descend les escaliers, prenant le bracelet avec elle.
+La porte d'en bas claque alors, et Arianne descend les escaliers, prenant le bracelet avec elle. #trans:trans_center
  
 "'man ?" #name:Arianne
 Jeanne se pose sur une chaise de la cuisine, se tenant la tête. #name:nothing
@@ -180,7 +182,7 @@ Alors que j'allais repartir dans ma chambre, le bracelet se met à briller dans 
 L'une des perles s'illumine d'un blanc qui m'aveugle et englobe l'espace devant moi.
 
 
-===postgrigri===
+===AfterGrigri===
 "C'est à propos de Yann c'est ça ?" #name:Arianne
 "Qu'est-ce que-" #name:Jeanne
 "Désolé maman, j'aurais pas dû... Je vais dans ma chambre." #name:Arianne
@@ -209,11 +211,11 @@ Malgré son regard triste, un petit sourir s'affiche sur le visage de ma mère. 
 Une lettre ? #name:nothing
 Je l'attrape et l'inspecte
 . Pas d'expéditeur.
-"Probablement Zoé. Merci 'man." #name:Arianne
+"Probablement Zoé. Merci 'man." #name:Arianne #trans:trans_center
 
-De retour à l'étage, Arianne porte son regard sur le bracelet de plus tôt, remarquant que l'une des perles s'est noircie. #name:nothing
+De retour à l'étage, Arianne porte son regard sur le bracelet de plus tôt, remarquant que l'une des perles s'est noircie. #name:nothing #bg:bedroom
 "C'est étrange ça... Ce serait dû à ce que j'ai vu ?" #name:Arianne
-"Non..." #name:Arianne
+"Non..." #name:Arianne 
 "Mais ça expliquerait comment j'ai pu entendre maman comme ça..." #name:Arianne
 "Un bracelet magique ? C'est ça que tu cachais mamie ?" #name:Arianne
 Arianne secoue la tête, c'était n'importe quoi. #name:nothing
