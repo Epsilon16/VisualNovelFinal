@@ -8,10 +8,18 @@ public class Selection : MonoBehaviour
     [SerializeField] private int securite;
     private GameObject highlight;
 
+    [SerializeField] private float GoodX;
+    [SerializeField] private float GoodY;
+    [SerializeField] private bool isGood;
+
     // Start is called before the first frame update
     void Start()
     {
         highlight = transform.GetChild(0).gameObject;
+
+        isGood = false;
+        if (transform.position.x == GoodX && transform.position.y == GoodY)
+            isGood = true;
     }
 
     // Update is called once per frame
@@ -22,6 +30,11 @@ public class Selection : MonoBehaviour
             securite = 1;
         else
             securite = 0;
+
+        if (transform.position.x == GoodX && transform.position.y == GoodY && !isGood)
+            isGood = true;
+        else if (isGood && (transform.position.x != GoodX || transform.position.y != GoodY))
+            isGood = false;
     }
 
     private void OnMouseDown()
@@ -35,5 +48,9 @@ public class Selection : MonoBehaviour
         {
             selected = false;
         }
+        /*if (transform.position.x == GoodX && transform.position.y == GoodY && !isGood)
+            isGood = true;
+        else if (isGood)
+            isGood = false;*/
     }
 }
