@@ -1,7 +1,7 @@
 INCLUDE globals.ink
 
 I'm not feeling very well. #next:NewSystemTest/false #bg:grigri #name:nothing
-What is happening.
+What is happening. #puzzle:puzzle_0
 I don't understand you.
 +[You don't need to understand me.]
     ~CHOICES_TEST = A1

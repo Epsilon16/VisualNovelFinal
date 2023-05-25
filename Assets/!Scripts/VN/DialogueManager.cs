@@ -48,6 +48,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [SerializeField] private TextMeshProUGUI grigriText;
     [SerializeField] private GameObject[] grigriChoices;
 
+    [Header("Puzzle")]
+    private string puzzleName = "nothing";
+    private GameObject puzzleGO;
+
     [Header("Menu UI")]
     [SerializeField] private GameObject menuParent;
     private bool isMenuOn = false;
@@ -82,6 +86,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private const string MUSIC_TAG = "music";
     private const string SOUND_TAG = "sound";
     private const string NEXTSTORY_TAG = "next";
+    private const string PUZZLE_TAG = "puzzle";
 
     [Header("Save/Load System")]
     public static SaveData loadedState;
@@ -258,12 +263,17 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             return;
         }
 
-        if (canContinueToNextLine && !isMenuOn
-            && currentStory.currentChoices.Count == 0
-            && MenuScript.GetInstance().mouseControl == false
-            && InputManager.GetInstance().GetSubmitPressed())
+        if (canContinueToNextLine && !isMenuOn && currentStory.currentChoices.Count == 0
+            && MenuScript.GetInstance().mouseControl == false && InputManager.GetInstance().GetSubmitPressed())
         {
-            ContinueStory();
+            if (puzzleName != "nothing")
+            {
+                EnterPuzzle();
+            }
+            else
+            {
+                ContinueStory();
+            }
         }
 
         if (InputManager.GetInstance().GetMenuPressed())
@@ -547,6 +557,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                         }
                     }
                     break;
+                case PUZZLE_TAG:
+                    puzzleName = tagValue;
+                    break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled " + tag);
                     break;
@@ -782,6 +795,25 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         SetUIObjects();
         EnterDialogueMode(nextInkJSON);
+    }
+
+    public void EnterPuzzle()
+    {
+        canContinueToNextLine = false;
+        puzzleGO = Instantiate(Resources.Load<GameObject>("prefabs/" + puzzleName), transform.position, transform.rotation);
+        dialogueText.text = "";
+        //animation d'activation
+    }
+
+    public void ExitPuzzle()
+    {
+        canContinueToNextLine = true;
+        puzzleName = "nothing";
+
+        //animation out
+        Destroy(puzzleGO);
+
+        ContinueStory();
     }
 
 

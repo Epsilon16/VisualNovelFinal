@@ -12,7 +12,7 @@ public class GameManagerPuzzle : MonoBehaviour
 
     public int TotalPipes = 0;
 
-    void Update()
+    private void Start()
     {
         TotalPipes = SquaresHolder.transform.childCount;
 
@@ -21,6 +21,24 @@ public class GameManagerPuzzle : MonoBehaviour
         for (int i = 0; i < Squares.Length; i++)
         {
             Squares[i] = SquaresHolder.transform.GetChild(i).gameObject;
+        }
+    }
+
+    void Update()
+    {
+        int squared = 0;
+
+        for (int i = 0; i < Squares.Length; i++)
+        {
+            if (Squares[i].GetComponent<Selection>().isGood == true)
+            {
+                squared++;
+            }
+        }
+
+        if (squared == Squares.Length)
+        {
+            DialogueManager.GetInstance().ExitPuzzle();
         }
 
         Inversion();
