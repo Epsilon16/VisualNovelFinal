@@ -35,26 +35,4 @@ public class MenuScript : MonoBehaviour
     {
         Application.Quit();
     }
-
-    public IEnumerator SelectFirstChoice(GameObject selectedchoice)
-    {
-        EventSystem.current.SetSelectedGameObject(null);
-        yield return new WaitForEndOfFrame();
-        EventSystem.current.SetSelectedGameObject(selectedchoice);
-
-        if (mouseControl)
-        {
-            StartCoroutine(SelectFirstChoice(selectedchoice));
-        }
-    }
-
-    public void Highlightchoice(GameObject thischoice)
-    {
-        StartCoroutine(SelectFirstChoice(thischoice));
-        mouseControl = true;
-    }
-    public void StopHighlightchoice()
-    {
-        mouseControl = false;
-    }
 }

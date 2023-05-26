@@ -2,7 +2,6 @@
     "name": "CurrentAssembly",
     "rootNamespace": "",
     "references": [
-        "GUID:674a810bef035764499d2317cd66d86f",
         "GUID:58bed0e7c5306824586d7eda03609289",
         "GUID:2047ab7874eb449d78c2b459017aa506",
         "GUID:6055be8ebefd69e48b49212b09b47b2f",
