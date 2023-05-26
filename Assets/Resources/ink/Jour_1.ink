@@ -166,7 +166,7 @@ Zoé et Martin se bloquent lorsque son nom est prononcé. #name:nothing
 Pourquoi ? Ça fait cinq ans.
 Cinq. Années.
 Pourquoi est-ce qu'ils agissent comme ça ?
-"E-Enfin, on peut toujours y aller si tu veux. Le gérant doit avoir oublié." #name:Zoé #clear:3 #sprite:mar_neutral/4 #sprite:zoe_neutral/2
+"E-Enfin, on peut toujours y aller si tu veux. Le gérant doit avoir oublié." #name:Zoé #clear:3 #sprite:mar_neutral/4 #sprite:zoe_neutral/2 #music:MinuteDarkness
 "Quoi ? Oublier Yann ?" #name:Arianne
 "Non bien sûr... Mais..." #name:Zoé
 "Mais quoi !?" #name:Arianne #clear:1 #sprite:ari_neutral/2 #sprite:zoe_neutral/3
@@ -184,7 +184,7 @@ Pourquoi est-ce qu'ils agissent comme ça ?
 "Ma mère va bientôt rentrer." #name:Arianne #clear:2 #sprite:ari_neutral/1
 "C'était sympa. Au revoir." #name:Arianne #trans:trans_center
 
-Comment peuvent-ils faire pour ignorer ça ? #name:nothing #bg:1_Village_Rue_1 #clear:all #sprite:ari_neutral/2 #music:MinuteDarkness
+Comment peuvent-ils faire pour ignorer ça ? #name:nothing #bg:1_Village_Rue_1 #clear:all #sprite:ari_neutral/2
 L'incident nous a tous impactées. Mais ce n'est pas une raison pour oublier.
 Ce n'est pas une raison pour ignorer qu'il ait existé.
 Il était notre grand frère.

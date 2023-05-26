@@ -296,7 +296,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         if (InputManager.GetInstance().GetMenuPressed())
         {
-            MenuScript.GetInstance().StopHighlightchoice();
             MenuActivation();
         }
     }
@@ -410,7 +409,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         if (!isGrigriActivated)
         {
-            line += " <sprite=\"ContinueIcon\" index=0>";
+            line += " <sprite=\"ui_next\" index=0>";
             //line += " <sprite=\"ContinueIcon\" anim=\"0, 69, 5\">";
         }
 
@@ -724,7 +723,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         {
             choices[i].gameObject.SetActive(false);
         }
-        StartCoroutine(MenuScript.GetInstance().SelectFirstChoice(choices[0].gameObject));
     }
 
     //Cache les choix
@@ -741,7 +739,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         if (canContinueToNextLine)
         {
-            MenuScript.GetInstance().StopHighlightchoice();
             currentStory.ChooseChoiceIndex(choiceIndex);
             InputManager.GetInstance().RegisterSubmitPressed();
             ContinueStory();
@@ -770,8 +767,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 wasactivated = true;
                 grigriButton.GetComponent<Button>().interactable = false;
             }
-
-            StartCoroutine(MenuScript.GetInstance().SelectFirstChoice(menuParent.transform.GetChild(1).gameObject));
         }
         else
         {
@@ -788,8 +783,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 grigriButton.GetComponent<Button>().interactable = true;
                 wasactivated = false;
             }
-
-            StartCoroutine(MenuScript.GetInstance().SelectFirstChoice(choices[0]));
         }
     }
 
