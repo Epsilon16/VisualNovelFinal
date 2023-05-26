@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7143393
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2968,7 +2968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &901719273
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5547,11 +5547,11 @@ MonoBehaviour:
   - name: Arianne
     color: {r: 0.72156864, g: 0.73333335, b: 0.76470596, a: 1}
   - name: "Zo\xE9"
-    color: {r: 0.7830189, g: 0.45356, b: 0.70897, a: 1}
+    color: {r: 0.8117648, g: 0.6627451, b: 0.8313726, a: 1}
   - name: Martin
-    color: {r: 0.5014398, g: 0.8862745, b: 0.36470586, a: 1}
+    color: {r: 0.49803925, g: 0.1137255, b: 0.14901961, a: 1}
   - name: Elise
-    color: {r: 1, g: 0, b: 0, a: 1}
+    color: {r: 1, g: 0, b: 0.8185215, a: 1}
   - name: "Alo\xEFs"
     color: {r: 0.2883232, g: 0.4637449, b: 0.8396226, a: 1}
   - name: Jeanne

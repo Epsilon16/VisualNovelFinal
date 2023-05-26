@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 {
