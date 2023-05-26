@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/TextMesh Pro/Resources/Sprite Assets/ui_next.asset.meta
 guid: 29490d317d35e744b90c97d423446651
 NativeFormatImporter:
+========
+guid: 1d75bb27edbf91c4f99290d622283e58
+AssemblyDefinitionImporter:
+>>>>>>>> Version_SANS_ExtendedButton:Assets/!Scripts/CurrentAssembly.asmdef.meta
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 
