@@ -87,7 +87,8 @@ Mais plus, car je n'ai pas eu à subir ses étreintes légendaires depuis bien l
 "Okay ! C'est parti ! Adonis tour !" #name:Zoé
 Zoé et Martin ont été dans ma vie aussi loin que je puisse m'en souvenir. #name:nothing #clear:all #sprite:ari_neutral/2
 Notre séparation soudaine fut dure pour nous tous, je pense. Mais je m'y suis habitué avec le temps.
-Lorsque je les ai quittés on était encore qu'au collège. Les revoir maintenant me donne l'impression de parler à des inconnus dont j'ai lu la biographie.
+Lorsque je les ai quittés on était encore qu'au collège.
+ Les revoir maintenant me donne l'impression de parler à des inconnus dont j'ai lu la biographie.
 Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #trans:trans_center
 
 "Des études d'ingénieur ?" #name:Martin #bg:1_Village_Rue_1 #clear:2 #sprite:ari_neutral/1 #sprite:mar_neutral/2 #sprite:zoe_neutral/3 #music:Praise
@@ -239,7 +240,7 @@ Je ne vois plus que ma mère alors que l'espace se tord autour de nous. #next:Gr
 "C'est à propos de Yann, c'est ça ?" #name:Arianne #bg:1_Cuisine_Arianne #sprite:ari_neutral/1 #sprite:jea_neutral/3 #music:WhiteShadow
 "Qu'est-ce que-" #name:Jeanne
 "Désolé maman, je n'aurais pas dû... Je vais dans ma chambre." #name:Arianne
-"Non, Arianne. Tu veux en parler ?"
+"Non, Arianne. Tu veux en parler ?" #name:Jeanne
 "..." #name:Arianne
 Je me rassois sur ma chaise, et maman me prend la main. #name:nothing
 "Écoute... Je sais que ce n'est pas facile de revenir ici." #name:Jeanne
