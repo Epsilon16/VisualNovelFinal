@@ -76,6 +76,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     public bool canContinueToNextLine = false;
     private Coroutine displayLineCoroutine;
 
+    private bool grigrinow;
+
     [Header("Tags")]
     private const string NAME_TAG = "name";
     private const string SPRITE_TAG = "sprite";
@@ -356,7 +358,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Lorsqu'on appuit sur submit
     private void ContinueStory()
     {
-        if (currentStory.canContinue)
+        if (grigrinow)
+        {
+            grigrinow = false;
+            EnterGrigriMode();
+        }
+        else if (currentStory.canContinue)
         {
             if (displayLineCoroutine != null)
             {
@@ -580,6 +587,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                         {
                             grigriButton.GetComponent<Button>().interactable = true;
                         }
+                        else if (splitScene[1] == "now")
+                        {
+                            grigrinow = true;
+                        }
                     }
                     break;
                 case PUZZLE_TAG:
@@ -732,11 +743,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         if (canContinueToNextLine)
         {
-            if (isGrigriActivated)
-            {
-                //AAAAAAH
-            }
-
             MenuScript.GetInstance().StopHighlightchoice();
             currentStory.ChooseChoiceIndex(choiceIndex);
             InputManager.GetInstance().RegisterSubmitPressed();
