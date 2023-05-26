@@ -85,7 +85,7 @@ Mais plus, car je n'ai pas eu à subir ses étreintes légendaires depuis bien l
 "On va où ? Je te vois mal t'asseoir toute une après-midi." #name:Arianne
 "Je pensais à te faire visiter un peu le village, puis aller prendre quelque chose à grignoter." #name:Martin
 "Okay ! C'est parti ! Adonis tour !" #name:Zoé
-Zoé et Martin ont été dans ma vie aussi loin que je puisse m'en souvenir. #name:nothing #clear:all #sprite:ari_neutral/2
+Zoé et Martin ont été dans ma vie aussi loin que je puisse m'en souvenir. #name:nothing #clear:all
 Notre séparation soudaine fut dure pour nous tous, je pense. Mais je m'y suis habitué avec le temps.
 Lorsque je les ai quittés on était encore qu'au collège.
  Les revoir maintenant me donne l'impression de parler à des inconnus dont j'ai lu la biographie.
@@ -139,7 +139,7 @@ Je pourrais leur demander où ils en sont eux... #name:nothing
     "Mais qu'à moitié." #name:Martin
     "Vrais, ils m'ont aidé, mais c'est moi qui ai choisi le domaine." #name:Martin
     Zoé s'interpose alors de manière dramatique entre nous. #name:nothing #sprite:mar_neutral/3 #sprite:zoe_neutral/2
-    Petit Martin sur les traces de ses ancêtres." #name:Zoé
+    "Petit Martin sur les traces de ses ancêtres." #name:Zoé
     "Arrête on dirait que tu les enterres avant l'heure." #name:Martin
     "Et si c'était le cas ??" #name:Zoé
     "Tu sais que je ne pourrais pas survivre sans les repas de ma mère." #name:Martin
@@ -154,7 +154,7 @@ Vu de loin, personne n'aurait l'impression qu'ils se sont quittés pendant cinq 
 "C'est dommage." #name:Arianne
 "Il y a pas mal de choses qui ont changé. C'est inévitable, mais c'est étrange." #name:Arianne
 "Le plus important n'a pas changé en tout cas !" #name:Zoé
-"C'est vrai. Vous êtes toujours là." #name:Martin
+"C'est vrai. Vous êtes toujours là." #name:Arianne
 "Oh nan, je parlais du café." #name:Zoé
 La remarque fait rire Martin, et celui-ci propage à travers le groupe. #name:nothing
 "Tu dis ça comme si on y allait souvent." #name:Arianne
