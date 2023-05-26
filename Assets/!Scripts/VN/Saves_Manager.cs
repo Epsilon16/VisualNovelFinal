@@ -18,6 +18,7 @@ public class Saves_Manager : MonoBehaviour
     string savedMusic;
     string savedGlobals;
     string savedNext;
+    string savedGSprite;
     
     public void SaveGame()
     {
@@ -79,6 +80,12 @@ public class Saves_Manager : MonoBehaviour
             savedNext = DialogueManager.GetInstance().nextInkJSON.name;
         }
 
+        savedGSprite = "nothing";
+        if (DialogueManager.GetInstance().gSprite != null)
+        {
+            savedGSprite = DialogueManager.GetInstance().gSprite.name;
+        }
+
         return new SaveData
         {
             InkStoryState = DialogueManager.GetInstance().GetStoryState(),
@@ -92,7 +99,8 @@ public class Saves_Manager : MonoBehaviour
             currentjson = DialogueManager.GetInstance().firstInkJSON.name,
             nextjson = savedNext,
             grigristate = DialogueManager.GetInstance().wasactivated.ToString(),
-            layoutstate = DialogueManager.GetInstance().isGrigriActivated.ToString()
+            layoutstate = DialogueManager.GetInstance().isGrigriActivated.ToString(),
+            gsprite = savedGSprite
         };
     }
 
@@ -137,4 +145,5 @@ public class SaveData
     public string nextjson;
     public string grigristate;
     public string layoutstate;
+    public string gsprite;
 }

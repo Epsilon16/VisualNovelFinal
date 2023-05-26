@@ -433,6 +433,7 @@ GameObject:
   - component: {fileID: 3508938671718084397}
   - component: {fileID: 3508938671718084396}
   - component: {fileID: 3508938671718084398}
+  - component: {fileID: 6082056203659658199}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -598,9 +599,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: 0
   securite: 0
-  isGood: 0
-  GoodX: 0
-  GoodY: 3
   connecChecks:
   - name: up
     visual: {fileID: 3508938671289684914}
@@ -622,3 +620,24 @@ MonoBehaviour:
     direction: {x: -1, y: 0}
     connecToHit: 2
     istouching: 0
+  isGood: 0
+--- !u!95 &6082056203659658199
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3508938671718084392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 24fdde7aa720bd9429140f5b723d67d9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

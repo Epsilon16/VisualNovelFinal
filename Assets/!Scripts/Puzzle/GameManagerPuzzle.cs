@@ -21,6 +21,7 @@ public class GameManagerPuzzle : MonoBehaviour
         for (int i = 0; i < Squares.Length; i++)
         {
             Squares[i] = SquaresHolder.transform.GetChild(i).gameObject;
+            Squares[i].GetComponent<Animator>().Play("square_on");
         }
     }
 
@@ -38,7 +39,19 @@ public class GameManagerPuzzle : MonoBehaviour
 
         if (squared == Squares.Length)
         {
-            DialogueManager.GetInstance().ExitPuzzle();
+            for (int i = 0; i < Squares.Length; i++)
+            {
+                Squares[i].GetComponent<Animator>().Play("square_off");
+            }
+
+            if (DialogueManager.GetInstance() != null)
+            {
+                StartCoroutine(DialogueManager.GetInstance().ExitPuzzle());
+            }
+            else
+            {
+                Debug.Log("Gagné !");
+            }
         }
 
         Inversion();

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Selection : MonoBehaviour
 {
     public bool selected;
-    [SerializeField] private int securite;
+    public int securite;
 
     private GameObject highlight;
     public ConnecCheck[] connecChecks;

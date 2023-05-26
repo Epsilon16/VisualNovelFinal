@@ -47,6 +47,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [SerializeField] private GameObject grigriPanel;
     [SerializeField] private TextMeshProUGUI grigriText;
     [SerializeField] private GameObject[] grigriChoices;
+    public GameObject gSprite;
 
     [Header("Puzzle")]
     private string puzzleName = "nothing";
@@ -87,6 +88,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private const string SOUND_TAG = "sound";
     private const string NEXTSTORY_TAG = "next";
     private const string PUZZLE_TAG = "puzzle";
+    private const string GSPRITE_TAG = "gsprite";
 
     [Header("Save/Load System")]
     public static SaveData loadedState;
@@ -123,9 +125,14 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             child.GetComponent<Image>().color = Color.clear;
         }
 
-        if (loadedState != null && loadedState.layoutstate == "True")
+        if (loadedState != null)
         {
-            isGrigriActivated = true;
+            firstInkJSON = Resources.Load<TextAsset>("ink/" + loadedState.currentjson);
+
+            if (loadedState.layoutstate == "True")
+            {
+                isGrigriActivated = true;
+            }
         }
 
         SetUIObjects();
@@ -138,8 +145,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private void SetUIObjects()
     {
-        grigriPanel.SetActive(false);
         normalPanel.SetActive(false);
+        grigriPanel.SetActive(false);
+
         if (isGrigriActivated)
         {
             dialoguePanel = grigriPanel;
@@ -154,6 +162,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             dialogueText = normalText;
             choices = normalChoices;
         }
+
         dialoguePanel.SetActive(true);
 
         choicesText = new TextMeshProUGUI[choices.Length];
@@ -240,6 +249,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             grigriButton.GetComponent<Button>().interactable = false;
         }
 
+        if (loadedState.gsprite != "nothing")
+        {
+            Debug.Log(loadedState.gsprite);
+            gSprite = Instantiate(Resources.Load<GameObject>("prefabs/" + loadedState.gsprite),
+                grigriPanel.transform.position, grigriPanel.transform.rotation, grigriPanel.transform);
+            gSprite.transform.SetAsFirstSibling();
+            gSprite.name = loadedState.gsprite;
+        }
+
         HandleTags(currentStory.currentTags);
         StartCoroutine(DisplayLine(currentStory.currentText));
         loadedState = null;
@@ -297,7 +315,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         if (loadedState != null)
         {
-            currentStory = new Story(Resources.Load<TextAsset>("ink/" + loadedState.currentjson).text);
             dialogueVariables.StartListening(currentStory);
             LoadSavedState();
         }
@@ -306,10 +323,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             dialogueVariables.StartListening(currentStory);
             ContinueStory();
         }
-
-        /*currentStory.BindExternalFunction("playEmote", (string emoteName) => {
-            Debug.Log(emoteName);
-        });*/
     }
 
     //Exit du fichier Ink
@@ -317,7 +330,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         yield return new WaitForSeconds(0.2f);
         dialogueVariables.StopListening(currentStory);
-        //currentStory.UnbindExternalFunction("playEmote");
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
@@ -390,8 +402,13 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         GrigriButtonHandler();
 
         line = line.Substring(0, line.Length - 1);
-        line += " <sprite=\"ContinueIcon\" index=0>";
-        //line += " <sprite=\"ContinueIcon\" anim=\"0, 69, 5\">";
+
+        if (!isGrigriActivated)
+        {
+            line += " <sprite=\"ContinueIcon\" index=0>";
+            //line += " <sprite=\"ContinueIcon\" anim=\"0, 69, 5\">";
+        }
+
         dialogueText.text = line;
         dialogueText.maxVisibleCharacters = 0;
         HideChoices();
@@ -416,7 +433,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             {
                 PlayDialogueSound(dialogueText.maxVisibleCharacters, dialogueText.text[dialogueText.maxVisibleCharacters]);
                 dialogueText.maxVisibleCharacters++;
-                yield return new WaitForSeconds(typingSpeed);
+                if (isGrigriActivated)
+                {
+                    yield return new WaitForSeconds(typingSpeed*2);
+                }
+                else
+                {
+                    yield return new WaitForSeconds(typingSpeed);
+                }
+
             }
         }
 
@@ -428,7 +453,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private void GrigriButtonHandler()
     {
         grigriLives = ((IntValue)GetVariableState("grigriLives")).value;
-        grigriButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Grigri\n-" + grigriLives + '-';
+        grigriButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "-" + grigriLives + '-';
 
         if (!isGrigriActivated)
         {
@@ -559,6 +584,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     break;
                 case PUZZLE_TAG:
                     puzzleName = tagValue;
+                    break;
+                case GSPRITE_TAG:
+                    gSprite = Instantiate(Resources.Load<GameObject>("prefabs/" + tagValue),
+                        dialoguePanel.transform.position, dialoguePanel.transform.rotation, dialoguePanel.transform);
+                    gSprite.transform.SetAsFirstSibling();
+                    gSprite.name = tagValue;
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not currently being handled " + tag);
@@ -783,9 +814,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     public IEnumerator ExitGrigriMode()
     {
         canContinueToNextLine = false;
+        dialoguePanel.SetActive(true);
 
         transAnim.Play("trans_grigri_off");
         yield return new WaitForSeconds(1.25f);
+
+        if (gSprite != null)
+        {
+            Destroy(gSprite.gameObject);
+        }
 
         //montrer qu'on a réussi/perdu
         //changement des icônes menu
@@ -793,6 +830,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         canContinueToNextLine = true;
         isGrigriActivated = false;
 
+        dialoguePanel.SetActive(false);
         SetUIObjects();
         EnterDialogueMode(nextInkJSON);
     }
@@ -805,14 +843,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         //animation d'activation
     }
 
-    public void ExitPuzzle()
+    public IEnumerator ExitPuzzle()
     {
-        canContinueToNextLine = true;
         puzzleName = "nothing";
 
         //animation out
+        yield return new WaitForSeconds(1f);
         Destroy(puzzleGO);
 
+        canContinueToNextLine = true;
         ContinueStory();
     }
 
