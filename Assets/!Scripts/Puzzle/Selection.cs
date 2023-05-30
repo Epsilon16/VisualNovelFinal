@@ -11,6 +11,7 @@ public class Selection : MonoBehaviour
     public ConnecCheck[] connecChecks;
 
     [Header("Others")]
+    public Sprite blocked;
     public bool isGood;
     private int isconnected = 0;
     public bool selected;
@@ -24,7 +25,7 @@ public class Selection : MonoBehaviour
 
         if (isBlocked)
         {
-            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+            gameObject.GetComponent<SpriteRenderer>().sprite = blocked;
         }
     }
 
@@ -62,7 +63,7 @@ public class Selection : MonoBehaviour
 
         if (current.visual.activeInHierarchy)
         {
-            RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, current.direction, 1f);
+            RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, current.direction, transform.localScale.x);
             for (int i = 0; i < hits.Length; i++)
             {
                 if (hits[i].collider != null && hits[i].collider.gameObject != gameObject
@@ -79,12 +80,12 @@ public class Selection : MonoBehaviour
 
         if (current.istouching)
         {
-            current.visual.GetComponent<SpriteRenderer>().color = Color.green;
+            current.visual.GetComponent<SpriteRenderer>().sprite = current.lights;
             isconnected++;
         }
         else
         {
-            current.visual.GetComponent<SpriteRenderer>().color = Color.grey;
+            current.visual.GetComponent<SpriteRenderer>().sprite = current.neutral;
         }
     }
 
@@ -110,6 +111,8 @@ public class ConnecCheck
 {
     public string name;
     public GameObject visual;
+    public Sprite neutral;
+    public Sprite lights;
     public Vector2 direction;
     public int connecToHit;
     public bool istouching;

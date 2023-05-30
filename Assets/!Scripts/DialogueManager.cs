@@ -128,7 +128,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         isGrigriActivated = false;
         grigriButton.GetComponent<Button>().interactable = false;
 
-        FullClear();
+        foreach (Transform child in spritePlacement.transform)
+        {
+            child.GetComponent<Image>().color = Color.clear;
+        }
 
         if (loadedState != null)
         {
@@ -146,14 +149,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         dialogueIsPlaying = false;
 
         EnterDialogueMode(firstInkJSON);
-    }
-
-    public void FullClear()
-    {
-        foreach (Transform child in spritePlacement.transform)
-        {
-            child.GetComponent<Image>().color = Color.clear;
-        }
     }
 
     private void SetUIObjects()
@@ -394,7 +389,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
             if (canTransition != null)
             {
-                StartCoroutine(Transition(nextLine));
+                canContinueToNextLine = false;
+                transAnim.Play("trans_center");
             }
             else
             {
@@ -409,18 +405,19 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
     }
 
-    //Transition Coroutine
-    private IEnumerator Transition(string nextLine)
+    //Transition appelé In Transition anim
+    public void Transition()
     {
-        canContinueToNextLine = false;
-        transAnim.Play(canTransition);
+        foreach (Transform child in spritePlacement.transform)
+        {
+            child.GetComponent<Animator>().Play("sprite_clear");
+        }
 
-        yield return new WaitForSeconds(0.25f);
-
-        FullClear();
         HandleTags(currentStory.currentTags);
         canTransition = null;
         canContinueToNextLine = true;
+
+        string nextLine = currentStory.Continue();
         displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
     }
 
@@ -464,7 +461,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 dialogueText.maxVisibleCharacters++;
                 if (isSkipping)
                 {
-                    yield return new WaitForSeconds(0.0001f);
+                    yield return new WaitForEndOfFrame();
                 }
                 else if (isGrigriActivated)
                 {
@@ -479,8 +476,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
 
         dialogueText.maxVisibleCharacters = line.Length;
-        DisplayChoices();
         canContinueToNextLine = true;
+        DisplayChoices();
     }
 
     private void GrigriButtonHandler()

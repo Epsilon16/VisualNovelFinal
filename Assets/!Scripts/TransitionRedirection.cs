@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TransitionRedirection : MonoBehaviour
 {
-    public void AllClear()
+    public void Redirection()
     {
-        DialogueManager.GetInstance().FullClear();
+        DialogueManager.GetInstance().Transition();
     }
 }

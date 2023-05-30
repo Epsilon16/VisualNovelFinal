@@ -3635,6 +3635,7 @@ GameObject:
   - component: {fileID: 1236133267}
   - component: {fileID: 1236133266}
   - component: {fileID: 1236133270}
+  - component: {fileID: 1236133271}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3752,6 +3753,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1236133271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236133265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b0fc27bd7d95f4592a31aa415b29e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1259339867
 GameObject:
   m_ObjectHideFlags: 0
@@ -5061,7 +5074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1915986392
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5421,7 +5434,6 @@ GameObject:
   - component: {fileID: 2019034653}
   - component: {fileID: 2019034655}
   - component: {fileID: 2019034654}
-  - component: {fileID: 2019034656}
   m_Layer: 5
   m_Name: TransBoard
   m_TagString: Untagged
@@ -5487,18 +5499,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019034652}
   m_CullTransparentMesh: 1
---- !u!114 &2019034656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019034652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4b0fc27bd7d95f4592a31aa415b29e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2042646832
 GameObject:
   m_ObjectHideFlags: 0
