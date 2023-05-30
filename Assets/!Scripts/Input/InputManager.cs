@@ -13,6 +13,7 @@ public class InputManager : MonoBehaviour
 {
     private bool submitPressed = false;
     private bool menuPressed = false;
+    private bool skipPressed = false;
 
     private static InputManager instance;
 
@@ -54,6 +55,18 @@ public class InputManager : MonoBehaviour
         }
     }
 
+    public void SkipPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            skipPressed = true;
+        }
+        else if (context.canceled)
+        {
+            skipPressed = false;
+        }
+    }
+
     // for any of the below 'Get' methods, if we're getting it then we're also using it,
     // which means we should set it to false so that it can't be used again until actually
     // pressed again.
@@ -82,4 +95,15 @@ public class InputManager : MonoBehaviour
         menuPressed = false;
     }
 
+    public bool GetSkipPressed()
+    {
+        bool result = skipPressed;
+        skipPressed = false;
+        return result;
+    }
+
+    public void RegisterSkipPressed()
+    {
+        skipPressed = false;
+    }
 }

@@ -6,6 +6,7 @@ using TMPro;
 
 public class Name_Color : MonoBehaviour
 {
+    public GameObject overlay; 
     public ColorName[] nameData;
     private TextMeshProUGUI nameText;
 
@@ -20,11 +21,13 @@ public class Name_Color : MonoBehaviour
         {
             if (nameText.text == data.name)
             {
+                overlay.GetComponent<Image>().color = data.color;
                 nameText.color = data.color;
                 break;
             }
             else
             {
+                overlay.GetComponent<Image>().color = Color.white;
                 nameText.color = Color.white;
             }
         }

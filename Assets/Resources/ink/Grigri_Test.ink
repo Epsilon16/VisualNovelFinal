@@ -1,6 +1,6 @@
 INCLUDE globals.ink
 
-I'm not feeling very well. #next:NewSystemTest/false #bg:grigri_jea #name:nothing #gsprite:jea_grigri
+I'm not feeling very well. #next:NewSystemTest/false #bg:grigri_jea #name:nothing #gsprite:jea_grigri #clear:all
 What is happening. #puzzle:puzzle_0
 I don't understand you.
 +[You don't need to understand me.]

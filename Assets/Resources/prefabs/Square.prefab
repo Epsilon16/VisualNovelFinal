@@ -410,7 +410,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.17061234, g: 0.509434, b: 0.2356276, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.18604636, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -597,8 +597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3d51d6c46374b4cbce0ab26747fb64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selected: 0
-  securite: 0
+  isBlocked: 0
   connecChecks:
   - name: up
     visual: {fileID: 3508938671289684914}
@@ -621,6 +620,7 @@ MonoBehaviour:
     connecToHit: 2
     istouching: 0
   isGood: 0
+  selected: 0
 --- !u!95 &6082056203659658199
 Animator:
   serializedVersion: 5

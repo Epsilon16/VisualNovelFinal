@@ -4,13 +4,16 @@ INCLUDE globals.ink
 { CHOICES_TEST has A2: -> GrigriNO}
 
 ~grigriLives = 8
-Hello there ! #next:nothing/nothing #bg:grigri #name:nothing #clear:all #sprite:jes_murder/2 #music:goldnoct
+Hello there ! #next:nothing/nothing #bg:grigri #name:nothing #sprite:jes_murder/2 #music:goldnoct
 Or more like howdy there ! #trans:trans_center
 -> main 
 
 === main ===
- 
-Test1 #name:Arianne #bg:forest #clear:all #sprite:jes_murder/2 #music:goldslaughter
+
+Test1 #name:Arianne #bg:forest #sprite:jes_murder/2 #music:goldslaughter
+Nouveau Test #sprite:jea_neutral/2
+Nouveau CHANGEMENT #sprite:ari_neutral/2
+Nouveau TWIST ? #sprite:zoe_neutral/2
 ~grigriLives = 4
 Test2 #next:Grigri_Test/true #audio:celeste_low
 Test3 #item:sakutarou

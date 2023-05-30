@@ -5,6 +5,7 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Unity.VisualScripting.YamlDotNet.Core.Tokens;
 
 public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 {
@@ -76,6 +77,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private bool grigrinow;
 
+
+    [Header("SkipMode")]
+    public GameObject skipIndicator;
+    private bool isSkipping;
+
     [Header("Tags")]
     private const string NAME_TAG = "name";
     private const string SPRITE_TAG = "sprite";
@@ -116,14 +122,13 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private void Start()
     {
+        isSkipping = false;
+
         menuParent.SetActive(true);
         isGrigriActivated = false;
         grigriButton.GetComponent<Button>().interactable = false;
 
-        foreach (Transform child in spritePlacement.transform)
-        {
-            child.GetComponent<Image>().color = Color.clear;
-        }
+        FullClear();
 
         if (loadedState != null)
         {
@@ -141,6 +146,14 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         dialogueIsPlaying = false;
 
         EnterDialogueMode(firstInkJSON);
+    }
+
+    public void FullClear()
+    {
+        foreach (Transform child in spritePlacement.transform)
+        {
+            child.GetComponent<Image>().color = Color.clear;
+        }
     }
 
     private void SetUIObjects()
@@ -192,12 +205,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         for (int i = 0; i < spritePlacement.transform.childCount; i++)
         {
+            Debug.Log(loadedState.sprites[i] + " number" + i);
+
             if (loadedState.sprites[i] == null)
             {
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().color = Color.clear;
             }
             else
             {
+                Debug.Log("ducks");
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().color = Color.white;
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().sprite = Resources.Load<Sprite>("sprites/" + loadedState.sprites[i]);
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().SetNativeSize();
@@ -251,7 +267,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         if (loadedState.gsprite != "nothing")
         {
-            Debug.Log(loadedState.gsprite);
             gSprite = Instantiate(Resources.Load<GameObject>("prefabs/" + loadedState.gsprite),
                 grigriPanel.transform.position, grigriPanel.transform.rotation, grigriPanel.transform);
             gSprite.transform.SetAsFirstSibling();
@@ -281,16 +296,19 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             return;
         }
 
-        if (canContinueToNextLine && !isMenuOn && currentStory.currentChoices.Count == 0
-            && MenuScript.GetInstance().mouseControl == false && InputManager.GetInstance().GetSubmitPressed())
+        if (canContinueToNextLine && !isMenuOn && currentStory.currentChoices.Count == 0 && MenuScript.GetInstance().mouseControl == false)
         {
-            if (puzzleName != "nothing")
+            if (isSkipping || InputManager.GetInstance().GetSubmitPressed())
             {
-                EnterPuzzle();
-            }
-            else
-            {
-                ContinueStory();
+                if (puzzleName != "nothing")
+                {
+                    isSkipping = false;
+                    EnterPuzzle();
+                }
+                else
+                {
+                    ContinueStory();
+                }
             }
         }
 
@@ -298,6 +316,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         {
             MenuActivation();
         }
+
+        if (InputManager.GetInstance().GetSkipPressed() && currentStory.currentChoices.Count == 0 && !isMenuOn)
+        {
+            isSkipping = !isSkipping;
+        }
+        skipIndicator.SetActive(isSkipping);
     }
 
     //Rentre dans le fichier ink
@@ -393,6 +417,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         yield return new WaitForSeconds(0.25f);
 
+        FullClear();
         HandleTags(currentStory.currentTags);
         canTransition = null;
         canContinueToNextLine = true;
@@ -437,11 +462,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             {
                 PlayDialogueSound(dialogueText.maxVisibleCharacters, dialogueText.text[dialogueText.maxVisibleCharacters]);
                 dialogueText.maxVisibleCharacters++;
-                if (isGrigriActivated)
+                if (isSkipping)
+                {
+                    yield return new WaitForSeconds(0.0001f);
+                }
+                else if (isGrigriActivated)
                 {
                     yield return new WaitForSeconds(typingSpeed*2);
                 }
-                else
+                else if (!isGrigriActivated)
                 {
                     yield return new WaitForSeconds(typingSpeed);
                 }
@@ -502,13 +531,20 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     break;
                 case SPRITE_TAG:
                     string[] splitSprite = tagValue.Split('/');
-                    spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).GetComponent<Image>().sprite = Resources.Load<Sprite>("sprites/" + splitSprite[0]);
-                    spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).GetComponent<Image>().SetNativeSize();
-                    if (spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).GetComponent<Image>().color != Color.white)
+                    GameObject imagetochange = spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).gameObject;
+                    if (imagetochange.GetComponent<Image>().color != Color.white)
                     {
-                        //spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).GetComponent<Image>().color = Color.white;
-                        spritePlacement.transform.GetChild(int.Parse(splitSprite[1])).GetComponent<Animator>().Play("sprite_on");
+                        imagetochange.GetComponent<Animator>().Play("sprite_on");
                     }
+                    else
+                    {
+                        imagetochange.GetComponent<Animator>().Play("sprite_change");
+                    }
+                    imagetochange.transform.GetChild(0).GetComponent<Image>().sprite = imagetochange.GetComponent<Image>().sprite;
+                    imagetochange.transform.GetChild(0).GetComponent<Image>().SetNativeSize();
+
+                    imagetochange.GetComponent<Image>().sprite = Resources.Load<Sprite>("sprites/" + splitSprite[0]);
+                    imagetochange.GetComponent<Image>().SetNativeSize();
                     break;
                 case CLEAR_TAG:
                     if (tagValue == "all")
@@ -582,6 +618,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                         }
                         else if (splitScene[1] == "true" && grigriLives > 0)
                         {
+                            isSkipping = false;
                             grigriButton.GetComponent<Button>().interactable = true;
                         }
                         else if (splitScene[1] == "now")
@@ -715,6 +752,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         int index = 0;
         foreach (Choice choice in currentChoices)
         {
+            isSkipping = false;
             choices[index].gameObject.SetActive(true);
             choicesText[index].text = choice.text;
             index++;
@@ -739,6 +777,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         if (canContinueToNextLine)
         {
+            isSkipping = false;
             currentStory.ChooseChoiceIndex(choiceIndex);
             InputManager.GetInstance().RegisterSubmitPressed();
             ContinueStory();
@@ -746,7 +785,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     }
 
     public bool wasactivated;
-
     //Active/Désactive le Menu Déroulant
     public void MenuActivation()
     {

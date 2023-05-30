@@ -2,21 +2,30 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Codice.CM.Common.CmCallContext;
 
 public class Selection : MonoBehaviour
 {
-    public bool selected;
-    public int securite;
-
-    private GameObject highlight;
+    [Header("Params")]
+    public bool isBlocked;
     public ConnecCheck[] connecChecks;
-    private int isconnected = 0;
+
+    [Header("Others")]
     public bool isGood;
+    private int isconnected = 0;
+    public bool selected;
+    private int securite;
+    private GameObject highlight;
 
     void Start()
     {
         highlight = transform.GetChild(0).gameObject;
         isGood = false;
+
+        if (isBlocked)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        }
     }
 
     void Update()
@@ -81,14 +90,17 @@ public class Selection : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (securite == 0)
+        if (!isBlocked)
         {
-            selected = true;
+            if (securite == 0)
+            {
+                selected = true;
 
-        }
-        else if (securite == 1)
-        {
-            selected = false;
+            }
+            else if (securite == 1)
+            {
+                selected = false;
+            }
         }
     }
 }
