@@ -12,7 +12,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private static DialogueManager instance;
 
     [Header("Params")]
-    [SerializeField] private float typingSpeed;
+    public float typingSpeed;
 
     [Header("Load Globals JSON")]
     public TextAsset loadGlobalsJSON;

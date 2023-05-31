@@ -20,23 +20,22 @@ Je serais la prochaine à colorer de rouge sa lame. #trans:trans_neutre
 
 
 "!!!" #name:Arianne #bg:1_Chambre_Arianne #sprite:ari_neutral/2 #music:nothing
-La jeune fille se lève en sursaut de son lit. #name:nothing #music:SteadyPace
-Pas de figure sombre, pas de sang et pas de mer d'Adonis recouvrant le sol.
+La jeune fille se réveille en sursaut de son lit. #name:nothing #music:SteadyPace
+Pas de figure sombre, ni de sang ou de mer d'Adonis recouvrant le sol.
 Juste elle, une chambre presque vide et un plancher en bois qui grince à chaque pas.
 Elle s'assoit sur le bord du matelas et se frotte un peu les yeux avant de reprendre ses esprits.
 Le matin même, elle et sa mère ont parcouru la moitié du pays afin d'aller vider la maison vacante de leur grand-mère.
 Le voyage ayant été plutôt long, la fatigue a eu raison d'elle et le confort d'un lit l'endormis peu après son arrivée.
-Je me demande ce que ce rêve pourrait signifier.
+Je me demande ce que ce rêve pourrait signifier. #clear:all
 Une sorte de croque-mitaine dans un champ de fleurs ? Il me semble qu'il avait une arme...
 Les détails m'échappent déjà.
 Ce n'est pas bien grave. Mes rêves n'ont jamais fait beaucoup sens de toute façon.
-Une fois levée, elle sort de la chambre et se dirige vers la cuisine à l'étage du dessous afin d'oublier ses visions oniriques. #trans:trans_center
+Une fois debout, elle sort de la chambre et se dirige vers la cuisine à l'étage du dessous afin d'oublier ses visions oniriques. #sprite:ari_neutral/2 #trans:trans_center
 
-Une fois en bas, elle tombe sur sa mère, prête à sortir. #bg:1_Cuisine_Arianne #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
+En bas, elle tombe sur sa mère, prête à sortir. #bg:1_Cuisine_Arianne #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
 "Ah Arianne, bon timing. Je dois aller au service funéraire pour signer des papiers." #name:Jeanne
-"Je ne veux pas t'ennuyer avec toute ces formalités alors..." #name:Jeanne
-"Alors je reste ici." #name:Arianne
-"C'est cool 'man. T'inquiètes pas."  #name:Arianne
+"Ça ne te dérange pas de rester ici ?" #name:Jeanne
+"C'est cool man. T'inquiètes pas."  #name:Arianne
 "Je connais les environs. Et dans le pire des cas, je t'appelle." #name:Arianne
 "On fait comme ça alors."  #name:Jeanne
 "Bon, je file ou je vais être en retard. Bisous ma chérie."  #name:Jeanne
@@ -46,14 +45,14 @@ Il ne reste qu'une semaine, et sachant que ses activités en présence de sa mè
 C'est probablement le meilleur moment pour les faire. #trans:trans_center #clear:1
 
 Après une heure passée sur ses papiers, le son d'une sonnette retentis dans l'habitation. #bg:1_Chambre_Arianne #sprite:ari_neutral/2
-Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville.
-Arianne descend les escaliers jusqu'à la porte d'entrée. #trans:trans_center #clear:2
+Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville. #clear:2
+Arianne descend les escaliers jusqu'à la porte d'entrée. #trans:trans_center #sprite:ari_neutral/2
 
-"... dis qu'elle sera pas-" #name:Martin #bg:1_Maison_GrandMere_Arianne #sprite:ari_neutral/0 #sprite:zoe_neutral/3 #sprite:mar_neutral/4 #music:DoorOfSummer
+"Je te dis qu'elle ne sera pas-" #name:Martin #bg:1_Maison_GrandMere_Arianne #sprite:zoe_neutral/3 #sprite:mar_neutral/4 #music:DoorOfSummer
 "Arianne !!" #name:Zoé
-"Zoé ? Martin ?" #name:Arianne #clear:0 #sprite:ari_neutral/1
+"Zoé ? Martin ?" #name:Arianne #clear:0 #sprite:ari_neutral/0
 "Hey." #name:Martin
-Zoé s'approche et me prend dans ses bras. #name:nothing #clear:3 #sprite:zoe_neutral/2
+Zoé s'approche et me prend dans ses bras. #name:nothing #clear:3 #sprite:ari_neutral/1 #sprite:zoe_neutral/2
 Mes membres se figent le temps du câlin.
 Pas que je ne m'y attendais pas, c'est très Zoé les câlines surprises.
 Mais plus, car je n'ai pas eu à subir ses étreintes légendaires depuis bien longtemps.
