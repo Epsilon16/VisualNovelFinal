@@ -11,6 +11,9 @@ public class MenuScript : MonoBehaviour
 
     public bool mouseControl;
 
+    public GameObject CanvasOption;
+   
+
     private void Awake()
     {
         if (instance != null)
@@ -34,5 +37,17 @@ public class MenuScript : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void EnableOption()
+    {
+        CanvasOption.SetActive(true);
+        
+    }
+
+    public void DisableOption()
+    {
+        CanvasOption.SetActive(false);
+        
     }
 }

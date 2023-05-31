@@ -931,4 +931,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
         return variableValue;
     }
+
+    //change typing speed
+    public void changedtypingspeed(float speedOftype)
+    {
+        typingSpeed = Resolution_Quality.GetInstance().typingspeeding;
+    }
+        
+    
 }
