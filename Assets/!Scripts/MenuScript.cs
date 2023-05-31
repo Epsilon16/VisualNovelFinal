@@ -11,7 +11,7 @@ public class MenuScript : MonoBehaviour
 
     public bool mouseControl;
 
-    public GameObject CanvasOption;
+    public GameObject OptionsCanvas;
    
 
     private void Awake()
@@ -21,6 +21,12 @@ public class MenuScript : MonoBehaviour
             Debug.LogWarning("Found more than one Dialogue Manager in the scene");
         }
         instance = this;
+    }
+
+    private void Start()
+    {
+        //OptionsCanvas = GameObject.FindGameObjectsWithTag("Options");
+        
     }
 
     public static MenuScript GetInstance()
@@ -41,13 +47,15 @@ public class MenuScript : MonoBehaviour
 
     public void EnableOption()
     {
-        CanvasOption.SetActive(true);
+        
+        OptionsCanvas.SetActive(true);
         
     }
 
     public void DisableOption()
     {
-        CanvasOption.SetActive(false);
         
+        OptionsCanvas.SetActive(false);
+
     }
 }
