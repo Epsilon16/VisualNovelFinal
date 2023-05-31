@@ -93,6 +93,7 @@ public class Saves_Manager : MonoBehaviour
             name = DialogueManager.GetInstance().displayNameText.text,
             background = DialogueManager.GetInstance().background.GetComponent<Image>().sprite.name,
             item = DialogueManager.GetInstance().item.GetComponent<Image>().sprite.name,
+            itemstate = DialogueManager.GetInstance().itemset.ToString(),
             sprites = savedSprites,
             music = savedMusic,
             audio = savedAudio,
@@ -138,6 +139,7 @@ public class SaveData
     public string name;
     public string background;
     public string item;
+    public string itemstate;
     public string[] sprites;
     public string music;
     public string audio;

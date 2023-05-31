@@ -31,6 +31,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     public Animator transAnim;
     private string canTransition;
+    public bool itemset;
 
     [Header("Grigri Const")]
     public bool isGrigriActivated;
@@ -216,7 +217,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             }
         }
 
-        item.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + loadedState.item);
+        item.GetComponent<Image>().sprite = Resources.Load<Sprite>("items/" + loadedState.item);
+        if (loadedState.itemstate == "True")
+        {
+            item.GetComponent<Animator>().Play("item_set");
+        }
+        else if (loadedState.itemstate == "False")
+        {
+            item.GetComponent<Animator>().Play("item_default");
+        }
 
         if (loadedState.music != "nothing")
         {
@@ -445,6 +454,14 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             if (InputManager.GetInstance().GetSubmitPressed() && !isGrigriActivated)
             {
                 dialogueText.maxVisibleCharacters = line.Length;
+                if (itemset)
+                {
+                    item.GetComponent<Animator>().Play("item_set");
+                }
+                else
+                {
+                    item.GetComponent<Animator>().Play("item_default");
+                }
                 break;
             }
             if (letter == '<' || isAddingRichTextTag)
@@ -573,13 +590,14 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 case ITEM_TAG:
                     if (tagValue == "nothing")
                     {
-                        item.GetComponent<Animator>().SetBool("end", true);
+                        item.GetComponent<Animator>().Play("item_end");
+                        itemset = false;
                     }
                     else
                     {
-                        item.GetComponent<Animator>().SetBool("end", false);
                         item.GetComponent<Image>().sprite = Resources.Load<Sprite>("items/" + tagValue);
                         item.GetComponent<Animator>().Play("item_start");
+                        itemset = true;
                     }
                     break;
                 case AUDIO_TAG:
