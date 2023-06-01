@@ -4,27 +4,27 @@ INCLUDE globals.ink
 
 Le monde était recouvert d'une épaisse couche de fleures. #name:nothing #clear:all #bg:grigri_neutral #music:Stupefaction
 Même si je les arrachais, je n'arriverais pas à en voir le sol.
-J'en suis sûr. Si j'en cueillais une seule, trois autres pousseraient à partir de la tige.
-Leur rouge recouvre le monde telle une mare de sang impossible à sécher.
-Dans le vide de ce monde, la seule constante était l'étrange réconfort de savoir que la mer d'Adonis est immortelle.
+J'en suis sûr. Si j'en cueillais une seule, trois autres pousseraient à partir de sa tige.
+Leur rouge recouvre le monde telle une mare de sang sans début ni fin.
+Dans le vide de cet espace, la seule constante est l'étrange réconfort de savoir que la mer d'Adonis est immortelle.
 Sans même m'en rendre compte, de cette mer écarlate submerge une figure au visage macabre, entourée d'une décoration à huit joyaux.
 Sa présence funeste m'envahit et je n'arrive plus à bouger le moindre membre.
-Plus précisément, je me rends compte que je n'ai jamais eu la capacité de bouger depuis le début.
-La présence semble me regarder, mais l'absence de quelconque organe oculaire m'empêche d'en avoir la certitude.
-J'ai envie de crier et de lui demander pourquoi elle est là, mais peu importe l'intensité de mes intentions aucun son ne sort.
-La créature sort alors un couteau ensanglanté de ses draps sombres et la mets en évidence.
-Des gouttes de liquide vital coulent le long de la lame et tombe dans le parterre, se diluant dans sa teinte sanguine.
+Plus précisément, je me rends compte que je n'ai jamais eu la capacité de bouger.
+L'ombre semble me regarder, mais l'absence de quelconque organe oculaire m'empêche d'en avoir la certitude.
+J'ai envie de crier et de lui demander pourquoi elle est là, mais peu importe l'intensité de mes intentions aucun son ne sort de ma gorge.
+La créature sort alors un couteau ensanglanté de ses draps sombres et le mets en évidence.
+Des gouttes rouge coulent le long de la lame et tombe dans le parterre, se diluant dans sa teinte sanguine.
 Les joyaux virent à un noir ébène alors qu'un son grave émane de l'intérieur du crâne.
 Le son résonne à l'intérieur de ma tête et s'amplifia, semblant ne vouloir dire qu'une seule chose :
-Je serais la prochaine à colorer de rouge sa lame. #trans:trans_neutre
+Je serais la prochaine à colorer sa lame. #trans:trans_neutre
 
 
 "!!!" #name:Arianne #bg:1_Chambre_Arianne #sprite:ari_neutral/2 #music:nothing
-La jeune fille se réveille en sursaut de son lit. #name:nothing #music:SteadyPace
+Une jeune fille se réveille en sursaut de son lit. #name:nothing #music:SteadyPace
 Pas de figure sombre, ni de sang ou de mer d'Adonis recouvrant le sol.
 Juste elle, une chambre presque vide et un plancher en bois qui grince à chaque pas.
 Elle s'assoit sur le bord du matelas et se frotte un peu les yeux avant de reprendre ses esprits.
-Le matin même, elle et sa mère ont parcouru la moitié du pays afin d'aller vider la maison vacante de leur grand-mère.
+Le matin même, elle et sa mère ont parcouru la moitié du pays afin d'aller vider la maison vacante de sa grand-mère.
 Le voyage ayant été plutôt long, la fatigue a eu raison d'elle et le confort d'un lit l'endormis peu après son arrivée.
 Je me demande ce que ce rêve pourrait signifier. #clear:all
 Une sorte de croque-mitaine dans un champ de fleurs ? Il me semble qu'il avait une arme...
@@ -32,7 +32,7 @@ Les détails m'échappent déjà.
 Ce n'est pas bien grave. Mes rêves n'ont jamais fait beaucoup sens de toute façon.
 Une fois debout, elle sort de la chambre et se dirige vers la cuisine à l'étage du dessous afin d'oublier ses visions oniriques. #sprite:ari_neutral/2 #trans:trans_center
 
-En bas, elle tombe sur sa mère, prête à sortir. #bg:1_Cuisine_Arianne #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
+En bas, elle tombe sur sa mère prête à sortir. #bg:1_Cuisine_Arianne #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
 "Ah Arianne, bon timing. Je dois aller au service funéraire pour signer des papiers." #name:Jeanne
 "Ça ne te dérange pas de rester ici ?" #name:Jeanne
 "C'est cool man. T'inquiètes pas."  #name:Arianne
@@ -41,10 +41,10 @@ En bas, elle tombe sur sa mère, prête à sortir. #bg:1_Cuisine_Arianne #clear:
 "Bon, je file ou je vais être en retard. Bisous ma chérie."  #name:Jeanne
 "Bisous maman." #name:Arianne
 À présent seule dans la grande maison, Arianne décide d'avancer sur ses devoirs pour la rentrée. #name:nothing #clear:3
-Il ne reste qu'une semaine, et sachant que ses activités en présence de sa mère seront limitées à remplir des cartons,
-C'est probablement le meilleur moment pour les faire. #trans:trans_center #clear:1
+Je ne reste qu'une semaine, et sachant qu'avec maman je vais surtout ranger des affaires dans des cartons... #clear:all
+C'est probablement le meilleur moment pour en faire. #trans:trans_center
 
-Après une heure passée sur mes papiers, le son d'une sonnette retentis dans la maison. #bg:1_Chambre_Arianne #sprite:ari_neutral/2
+Après une heure passée sur mes papiers, le son d'une sonnette retentis dans la maison. #bg:1_Chambre_Arianne
 Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville.
 Je descend alors les escaliers pour voir qui pourrait bien être là. #trans:trans_center
 
@@ -75,23 +75,22 @@ Je n'ai pas envie que la discussion se bloque à cause de ça.
 "Les nouvelles vont vite." #name:Martin
 "Et quand Zoé a apprit pour ton retour elle m'a tiré hors de chez moi pour venir ici." #name:Martin
 "Rien d'étonnant." #name:Arianne
-"Mais ça fait si longtemps ! Il fallait qu'on se voie !" #name:Zoé
+"Mais ça fait si longtemps ! Il fallait qu'on se voit !" #name:Zoé
 "T'es libre ? D'ailleurs, est-ce que ta maman est là ? Il faut qu'on lui dise bonjour ! Et tu restes combien de temps ?" #name:Zoé
-"Du calme, du calme." #name:Arianne
+"Du calme." #name:Arianne
 "Maman est partie en ville, elle rentrera pas avant un petit moment." #name:Arianne
 "Et je suis là jusqu'au 1er novembre." #name:Arianne
 "Ça nous donne une semaine pour rattraper le temps perdu." #name:Martin
 "Je ne pensais pas vraiment..." #name:Arianne
 "Pas que je ne veux pas vous voir. Mais je dois aider au déménagement." #name:Arianne
 "..." #name:Zoé
-"..." #name:Zoé
-"Mais, j'ai le reste de l'aprem de libre." #name:Arianne
+"Mais, j'ai une ou deux heures de libre devant moi." #name:Arianne
 "Yahoo !!" #name:Zoé
-"On va où ? Je te vois mal t'asseoir toute une après-midi." #name:Arianne
-"Je pensais à te faire visiter un peu le village, puis aller prendre quelque chose à grignoter." #name:Martin
-"Okay ! C'est parti ! Adonis tour !" #name:Zoé
+"On va quelque part ? Je te vois mal t'asseoir toute une après-midi." #name:Arianne
+"Je pensais à faire un tour du village, puis aller prendre quelque chose à grignoter." #name:Martin
+"Okay ! C'est parti !" #name:Zoé
 Zoé et Martin ont été dans ma vie aussi loin que je puisse m'en souvenir. #name:nothing #clear:all
-Notre séparation soudaine fut dure pour nous tous, je pense. Mais je m'y suis habitué avec le temps.
+Notre séparation fu soudaine, et dure pour nous tous je pense. Mais je m'y suis habitué avec le temps.
 Lorsque je les ai quittés on était encore qu'au collège.
  Les revoir maintenant me donne l'impression de parler à des inconnus dont j'ai lu la biographie.
 Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #trans:trans_center
@@ -100,11 +99,12 @@ Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #t
 "Ouais, je m'y plais bien." #name:Arianne
 "En même temps, Arianne a toujours été celle avec le plus de neurone dans ce groupe." #name:Zoé
 "T'exagères." #name:Arianne
-"Mais t'as totalement raison." #name:Arianne
+"Mais c'est vrai que comparé à d'autres..." #name:Arianne
 "Ouch, c'était méchant ça !" #name:Zoé
 "Laisse-moi te rappeler qui a peint la balançoire de la cour d'école en jaune car elle était :" #name:Martin
 " 'Pas assez coloré.' " #name:Martin
 "T'y mets pas toi aussi, j'ai besoin d'alliés face à Arianne !" #name:Zoé
+"T'as fini recouverte de peinture, ta mère était furieuse." #name:Arianne
 "Et pour ma défense, j'avais totalement raison. Mon talent artistique ne s'est jamais trompé." #name:Zoé
 "Ces balançoires étaient hideuses, t'as raison..." #name:Arianne
 "Mon génie enfin reconnu à sa juste valeure." #name:Zoé
@@ -122,7 +122,7 @@ Je pourrais leur demander où ils en sont eux... #name:nothing
     "Z'êtes trop gentil." #name:Zoé
     "Voir un peu trop." #name:Zoé
     "Ça cache forcément quelque chose !" #name:Zoé
-    Zoé m'attaque alors avec des guilis. #name:nothing #clear:2 #sprite:ari_neutral/0 #sprite:zoe_neutral/1 #sprite:mar_neutral/3
+    Zoé m'attaque alors les côtes. #name:nothing #clear:2 #sprite:ari_neutral/0 #sprite:zoe_neutral/1 #sprite:mar_neutral/3
     "Ah pitié stop !" #name:Arianne
     "Pourquoi suis-je la seule victime ?" #name:Arianne
     "Car c'est normal pour Martin d'être gentil." #name:Zoé
@@ -151,17 +151,22 @@ Je pourrais leur demander où ils en sont eux... #name:nothing
     "C'était mon but depuis le début !" #name:Zoé
     "Adieu les délicieuses poêler." #name:Arianne
     "Noooon-" #name:Martin
--Il ne fallut pas longtemps pour que le trio revienne à leurs discussions d'autrefois. #name:nothing #clear:all
+-Il ne fallut pas longtemps pour que le trio revienne à leurs discussions d'autrefois. #name:nothing
 Vu de loin, personne n'aurait l'impression qu'ils se sont quittés pendant cinq longues années. #trans:trans_center
 
 "C'est la place du village ? Où est la statue ?" #name:Arianne #bg:1_Village_Place #sprite:ari_neutral/1 #sprite:mar_neutral/2 #sprite:zoe_neutral/3
+"Celle de l'Homme-Cerf ? Ce truc me terrifiait quand j'étais petite."
 "Elle a été descendue il y a un ou deux ans je crois. Je me souviens plus de la raison exacte." #name:Martin
+"Probablement car elle faisait plus peur aux touriste qu'autre chose." #name:Martin
 "C'est dommage." #name:Arianne
-"Il y a pas mal de choses qui ont changé. C'est inévitable, mais c'est étrange." #name:Arianne
+"Ma Grand-mère me racontait souvent la légende." #name:Arianne
+"C'était... Je sais pas. Ça rendait note village spécial." #name:Arianne
+"On avait quelque chose de propre à ici." #name:Arianne
+"Mais les choses changent je suppose." #name:Arianne
 "Le plus important n'a pas changé en tout cas !" #name:Zoé
 "C'est vrai. Vous êtes toujours là." #name:Arianne
 "Oh nan, je parlais du café." #name:Zoé
-La remarque fait rire Martin, et celui-ci propage à travers le groupe. #name:nothing
+La remarque fait rire Martin, et très vite on se met tous à rire. #name:nothing
 "Tu dis ça comme si on y allait souvent." #name:Arianne
 "Oh non, j'ai jamais pu y revenir." #name:Zoé
 "C'est sûr que depuis que Yann à cassé une fenêtre." #name:Martin  #music:nothing
@@ -197,17 +202,16 @@ Cinq ans depuis l'incident.
 Pourquoi est-ce qu'ils bloquent encore ?
 "Je vois..." #name:Arianne
 "Ma mère va bientôt rentrer." #name:Arianne #clear:2 #sprite:ari_neutral/1
-"C'était sympa. Au revoir." #name:Arianne #trans:trans_center
+"C'était sympa..." #name:Arianne 
+"Au revoir." #name:Arianne #trans:trans_center
 
 Comment peuvent-ils faire pour ignorer ça ? #name:nothing #bg:1_Village_Rue_1 #clear:all #sprite:ari_neutral/2
 L'incident nous a tous impactées. Mais ce n'est pas une raison pour oublier.
 Ce n'est pas une raison pour ignorer qu'il ait existé.
-Il était notre grand frère.
-C'était le mien.
-C'était...
-Horrible. #trans:trans_center
+Il était notre grand frère à tous.
+C'était surtout le mien. #trans:trans_center
 
-Arrivée chez elle, Arianne claque la porte derrière elle. #bg:1_Cuisine_Arianne
+En rentrant chez à la maison je claque la porte derrière moi. #bg:1_Cuisine_Arianne
 Je...
 Je dois me changer les idées.
 J'allais attendre maman, mais autant commencer à faire les cartons moi-même. #trans:trans_center
@@ -216,71 +220,101 @@ Une fois dans la chambre à l'étage, Arianne ouvre quelques cartons vides et co
 Habits, livres et autres objets dont la teneur émotionnelle est perdue au fil du temps.
 "Hm ?" #name:Arianne
 Une petite boite tombe des plis d'un habit sur le sol. #name:nothing
-Qu'est-ce que c'est...?
-Visiblement, il a été caché entre deux pulls, mais pour quelle raison ?
-La curiosité prend le dessus et Arianne ouvre la petite boite pour y découvrir un bracelet singulier avec huit perles brillantes. #item:grigri_8
-Grand-mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vue porter quelque chose ressemblant à ça.
-La porte d'en bas claque alors, et Arianne descend les escaliers, prenant le bracelet avec elle. #trans:trans_center #item:nothing
+"Qu'est-ce que c'est...?" #name:Arianne
+"Visiblement, il a été caché entre deux pulls, mais pour quelle raison ?" #name:Arianne
+La curiosité prend le dessus et Arianne ouvre la petite boite pour y découvrir un bracelet singulier avec huit perles brillantes. #item:grigri_8  #name:nothing
+"Grand-mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vue porter quelque chose ressemblant à ça." #name:Arianne
+La porte d'en bas claque alors, et Arianne descend les escaliers. #trans:trans_center #item:nothing #name:nothing
  
-"'man ?" #name:Arianne #bg:1_Cuisine_Arianne #music:SteadyPace
+"Maman ?" #name:Arianne #bg:1_Cuisine_Arianne #music:SteadyPace
 Jeanne se pose sur une chaise de la cuisine, se tenant la tête. #name:nothing
 "Tout s'est bien passé ?" #name:Arianne #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
-"Oui... Fais moi un thé..." #name:Jeanne
+"Oui..." #name:Jeanne
+"Tu peux me faire un thé ?" #name:Jeanne
 "S'il te plait ?" #name:Jeanne
-Lorsque maman est comme ça, il lui faut un petit moment avant de pouvoir lui parler. #name:nothing #clear:1
-Arianne sort une boite de sachet de thé et fait de l'eau chaude.
+Arianne vis rapidement dans quel genre d'humeur était sa mère. #name:nothing
+Il fallait lui donner un peu d'espace et attendre qu'elle instaur la conversation.
+C'est le genre de choses qui ne sont jamais expliqué et qu'un enfant apprend à force de vivre avec son parent.
+Elle se dirige alors sans un mot en direction des divers placard et tiroirs de la cuisine en sort des sachets de thés et met en route la bouilloire. #clear:1
 Une fois la tasse préparée, elle la pose devant sa mère et s'assoit à côté d'elle. #sprite:ari_neutral/1
 "Merci chérie." #name:Jeanne
 "Comment s'est passé ton après-midi ?" #name:Jeanne
 "Zoé et Martin sont passés. J'ai pu rattraper un peu." #name:Arianne
-"Je vois, ils vont bien ?" #name:Jeanne
-"Ouais... Je suppose." #name:Arianne
+"Ils vont bien ?" #name:Jeanne
+"Ouais..." #name:Arianne
+"Je suppose." #name:Arianne
 "D'autres choses ?" #name:Jeanne
-"J'ai trouvé ce bracelet à l'étage. J'ai jamais vu Mamie Nat le porter, tu sais ce que c'est ?" #name:Arianne
+"J'ai commencé à faire du rangement dans ma chambre..." #name:Arianne
+Arianne se souvient alors qu'elle n'avait pas rangé le bracelet qui se trouve dans sa poche. #name:nothing
+Elle le sort alors et le montre à Jeanne. #name:nothing
+"Et j'ai trouvé ce bracelet dans une boite. J'ai jamais vu Mamie Nat le porter, tu sais ce que c'est ?" #name:Arianne
 "Ça ne me dit rien. Mais ta grand-mère avait beaucoup de bijoux, un de plus un de moins, ça change rien." #name:Jeanne
 "Okay..." #name:Arianne
-"Et toi ? Qu'est-ce qui s'est dit ?" #name:Arianne
+"Et toi ?" #name:Arianne
+"Hm ?" #name:Jeanne
+"Qu'est-ce qui s'est dit ?" #name:Arianne
 "Comment ça ?" #name:Jeanne
 "Au service funéraire." #name:Arianne
 "Arianne, tu ne vois pas que je suis fatiguée ?" #name:Jeanne
 "Oui, mais-" #name:Arianne
+J'aurais dû me taire. #name:nothing
 "Ce rendez-vous était exténuant, et je n'ai vraiment pas envie d'en reparler." #name:Jeanne
-Alors que j'allais repartir dans ma chambre, le bracelet se met à briller dans ma main. #name:nothing
+"Remonte dans ta chambre s'il te plait." #name:Jeanne
+Je me sens un peu mal. J'ai envie de m'excuser mais je penses pas quoi ce soit le bon moment. #name:nothing
+Je sais que c'était pas facile.
+J'aurais juste voulu pouvoir en parler un peu.
+Alors que j'allais repartir dans ma chambre, le bracelet se met à briller dans ma main. 
 L'une des perles s'illumine d'un blanc qui m'aveugle et englobe l'espace devant moi. #clear:all #sprite:jea_neutral/2
-Je ne vois plus que ma mère alors que l'espace se tord autour de nous. #next:Grigri_Jeanne/now
+Je ne vois plus que ma mère alors que l'espace se tord autour de nous. #next:Grigri_Jeanne/now #music:nothing
 
 
 ===AfterGrigri===
-"C'est à propos de Yann, c'est ça ?" #name:Arianne #bg:1_Cuisine_Arianne #sprite:ari_neutral/1 #sprite:jea_neutral/3 #music:WhiteShadow
+Qu'est-ce que je viens de voir ? #name:nothing #bg:1_Cuisine_Arianne #sprite:ari_neutral/1 #sprite:jea_neutral/3 #music:WhiteShadow
+J'ai bien mis un sachet de thé hein ? #name:nothing
+Grand-mère Nat était exccentrique mais pas à ce point. #name:nothing
+"Arianne ?" #name:Jeanne
+Je reprend mes esprit et porte le regard sur ma mère. #name:nothing
+Elle me regarde d'un air un peu inquiet. #name:nothing
+Mais les mots que j'ai entendu... Si c'est bien les siens... #name:nothing
+"C'est à propos de Yann, c'est ça ?" #name:Arianne 
 "Qu'est-ce que-" #name:Jeanne
-"Désolé maman, je n'aurais pas dû... Je vais dans ma chambre." #name:Arianne
+"J'veux dire... C'est au même endroit que t'as du faire les papiers et..." #name:Arianne
+"..." #name:Jeanne
+Qu'est-ce que je suis entrain de raconter ? #name:nothing
+"Désolé maman, j'aurais pas dû....." #name:Arianne
+"Je vais dans ma chambre." #name:Arianne
+Je me lève de ma chaise, c'est n'importe quoi. #name:nothing
 "Non, Arianne. Tu veux en parler ?" #name:Jeanne
 "..." #name:Arianne
-Je me rassois sur ma chaise, et maman me prend la main. #name:nothing
+Je me rassois doucement à ma place, et maman me prend la main. #name:nothing
 "Écoute... Je sais que ce n'est pas facile de revenir ici." #name:Jeanne
 "Surtout au vu de la période de l'année." #name:Jeanne
 "Mais je suis là pour toi, tu le sais ça n'est-ce pas ?" #name:Jeanne
-"Bien sûre maman." #name:Arianne
+"Bien sûre..." #name:Arianne
 "J'ai passé plusieurs heures avec ces gens qui ne font que parler de logistique autour de la mort." #name:Jeanne
 "Et..." #name:Jeanne
 "J'avais juste l'impression de revivre la même chose qu'il y a cinq ans..." #name:Jeanne
 "Après..." #name:Jeanne
-"Après le suicide de Yann... C'est juste..." #name:Jeanne
+"Après le suicide de Yann..." #name:Jeanne
 "..." #name:Arianne
+"C'est juste..." #name:Jeanne
 Je ressers ma main sur la sienne. #name:nothing
-"C'est dur. Désolé d'avoir été désagréable." #name:Jeanne
+"C'était juste..." #name:Jeanne
+"C'était, et c'est toujours dur." #name:Jeanne
+"Désolé d'avoir été désagréable tout à l'heure." #name:Jeanne
 "Tu as toujours su garder la tête haute ma chérie. Tu es très forte, bien plus que tes vieux parents." #name:Jeanne
 "J'espère que revenir ici pourra nous aider." #name:Jeanne
 "Pouvoir accepter et passer à la suite." #name:Jeanne
-"J'espère..." #name:Arianne
+"J'espère aussi..." #name:Arianne
+Maman me souris, pas d'une manière heureuse, mais pas d'une manière triste non plus. #name:nothing
 "Et tu exagères, toi et papa n'êtes pas si vieux." #name:Arianne
-Malgré son regard triste, un petit sourire s'affiche sur le visage de ma mère. #name:nothing
+Le coin de sa lèvre se lève un peu avant de reprendre une expression plus sereine.
 "Allez, monte dans ta chambre." #name:Jeanne
 "Oh, avant ça. Il y avait cette lettre à ton nom dans la boite aux lettres." #name:Jeanne
-Une lettre ? #name:nothing
-Je l'attrape et l'inspecte. #clear:1 #sprite:ari_neutral/2
+"Une lettre ?"
+Elle pose une enveloppe devant moi que je prend et inspecte. #name:nothing
 Pas d'expéditeur.
-"Probablement Zoé. Merci 'man." #name:Arianne #trans:trans_center #clear:2 #sprite:ari_neutral/0
+"Probablement Zoé. Merci maman." #name:Arianne #trans:trans_center #clear:1 #sprite:ari_neutral/0
 
 De retour à l'étage, Arianne porte son regard sur le bracelet de plus tôt, remarquant que l'une des perles s'est noircie. #name:nothing #bg:1_Chambre_Arianne #clear:all #sprite:ari_neutral/2 #item:grigri_7
 "C'est étrange ça... Ce serait dû à ce que j'ai vu ?" #name:Arianne #item:nothing
