@@ -326,6 +326,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             isSkipping = !isSkipping;
         }
         skipIndicator.SetActive(isSkipping);
+
+        typingSpeed = Resolution_Quality.GetInstance().typingspeeding / 10;
     }
 
     //Rentre dans le fichier ink
@@ -933,7 +935,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     }
 
     //change typing speed
-    public void changedtypingspeed(float speedOftype)
+    public void changedtypingspeed()
     {
         typingSpeed = Resolution_Quality.GetInstance().typingspeeding;
     }

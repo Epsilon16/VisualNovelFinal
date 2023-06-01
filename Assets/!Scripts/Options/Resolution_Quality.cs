@@ -67,4 +67,9 @@ public class Resolution_Quality : MonoBehaviour
     {
         typingspeeding = typing;
     }
+
+    public void QuitOption()
+    {
+        MenuScript.GetInstance().DisableOption();
+    }
 }

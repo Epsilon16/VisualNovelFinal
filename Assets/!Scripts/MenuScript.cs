@@ -12,6 +12,8 @@ public class MenuScript : MonoBehaviour
     public bool mouseControl;
 
     public GameObject OptionsCanvas;
+    public GameObject RacineCanvas;
+    private GameObject childOption;
    
 
     private void Awake()
@@ -26,6 +28,7 @@ public class MenuScript : MonoBehaviour
     private void Start()
     {
         //OptionsCanvas = GameObject.FindGameObjectsWithTag("Options");
+        
         
     }
 
@@ -47,15 +50,32 @@ public class MenuScript : MonoBehaviour
 
     public void EnableOption()
     {
-        
-        OptionsCanvas.SetActive(true);
+        if (OptionsCanvas != null)
+            OptionsCanvas.SetActive(true);
+        else
+        {
+            //OptionsCanvas = GameObject.FindGameObjectWithTag("options");
+            //Debug.Log(OptionsCanvas);
+            RacineCanvas = GameObject.FindGameObjectWithTag("Options");
+            childOption = RacineCanvas.transform.GetChild(0).gameObject;
+            childOption.SetActive(true);
+
+        }
+            //OptionsCanvas = GameObject.FindGameObjectWithTag("Options");
         
     }
 
     public void DisableOption()
     {
-        
-        OptionsCanvas.SetActive(false);
+        if (OptionsCanvas != null)
+            OptionsCanvas.SetActive(false);
+        else
+        {
+            //OptionsCanvas = GameObject.FindGameObjectWithTag("options");
+            RacineCanvas = GameObject.FindGameObjectWithTag("Options");
+            childOption = RacineCanvas.transform.GetChild(0).gameObject;
+            childOption.SetActive(false);
+        }
 
     }
 }

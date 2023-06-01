@@ -422,6 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseControl: 0
   OptionsCanvas: {fileID: 0}
+  RacineCanvas: {fileID: 0}
 --- !u!4 &89370651
 Transform:
   m_ObjectHideFlags: 0
@@ -575,7 +576,7 @@ AudioSource:
   m_GameObject: {fileID: 119430548}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2905279108240583846, guid: 038e6059308556945b7b1ec26431d900, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
