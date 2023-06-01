@@ -27,9 +27,8 @@ public class MenuScript : MonoBehaviour
 
     private void Start()
     {
-        //OptionsCanvas = GameObject.FindGameObjectsWithTag("Options");
-        
-        
+        DisableOption();
+        //OptionsCanvas = GameObject.FindGameObjectsWithTag("Options");     
     }
 
     public static MenuScript GetInstance()
@@ -61,8 +60,7 @@ public class MenuScript : MonoBehaviour
             childOption.SetActive(true);
 
         }
-            //OptionsCanvas = GameObject.FindGameObjectWithTag("Options");
-        
+            //OptionsCanvas = GameObject.FindGameObjectWithTag("Options");      
     }
 
     public void DisableOption()

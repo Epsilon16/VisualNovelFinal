@@ -396,7 +396,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             {
                 StopCoroutine(displayLineCoroutine);
             }
-            string nextLine = currentStory.Continue();
 
             if (canTransition != null)
             {
@@ -405,6 +404,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             }
             else
             {
+                string nextLine = currentStory.Continue();
                 HandleTags(currentStory.currentTags);
                 displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
             }
@@ -424,11 +424,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             child.GetComponent<Animator>().Play("sprite_clear");
         }
 
+        string nextLine = currentStory.Continue();
+
         HandleTags(currentStory.currentTags);
         canTransition = null;
         canContinueToNextLine = true;
 
-        string nextLine = currentStory.Continue();
         displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
     }
 

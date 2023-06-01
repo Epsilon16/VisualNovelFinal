@@ -2009,7 +2009,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c92d4dc6094dd054abf83096032b5c0a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 177167bc6894a9048a6b00c9f464482f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6555,7 +6555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ResolutionDropdown: {fileID: 1959518861}
-  typingspeeding: 0
+  typingspeeding: 0.04
 --- !u!114 &1687869310
 MonoBehaviour:
   m_ObjectHideFlags: 0
