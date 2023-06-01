@@ -440,8 +440,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         if (!isGrigriActivated)
         {
-            line += " <sprite=\"ui_next\" index=0>";
-            //line += " <sprite=\"ContinueIcon\" anim=\"0, 69, 5\">";
+            //line += " <sprite=\"ui_next\" index=0>";
+            line += " <sprite=\"ui_next-Sheet_2\" anim=\"0, 7, 5\">";
         }
 
         dialogueText.text = line;

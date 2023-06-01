@@ -44,26 +44,32 @@ En bas, elle tombe sur sa mère, prête à sortir. #bg:1_Cuisine_Arianne #clear:
 Il ne reste qu'une semaine, et sachant que ses activités en présence de sa mère seront limitées à remplir des cartons,
 C'est probablement le meilleur moment pour les faire. #trans:trans_center #clear:1
 
-Après une heure passée sur ses papiers, le son d'une sonnette retentis dans l'habitation. #bg:1_Chambre_Arianne #sprite:ari_neutral/2
-Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville. #clear:2
-Arianne descend les escaliers jusqu'à la porte d'entrée. #trans:trans_center #sprite:ari_neutral/2
+Après une heure passée sur mes papiers, le son d'une sonnette retentis dans la maison. #bg:1_Chambre_Arianne #sprite:ari_neutral/2
+Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville.
+Je descend alors les escaliers pour voir qui pourrait bien être là. #trans:trans_center
 
-"Je te dis qu'elle ne sera pas-" #name:Martin #bg:1_Maison_GrandMere_Arianne #sprite:zoe_neutral/3 #sprite:mar_neutral/4 #music:DoorOfSummer
+"Je te dis qu'elle n'est pas-" #name:Martin #bg:1_Maison_GrandMere_Arianne #sprite:zoe_neutral/3 #sprite:mar_neutral/4 #music:DoorOfSummer
 "Arianne !!" #name:Zoé
+Je mets un petit moment avant de reconnaitre les deux personnes se trouvant devant la porte.
+Mais très vite leurs noms me reviennes et un tas de sentiments refont surface.
 "Zoé ? Martin ?" #name:Arianne #clear:0 #sprite:ari_neutral/0
 "Hey." #name:Martin
-Zoé s'approche et me prend dans ses bras. #name:nothing #clear:3 #sprite:ari_neutral/1 #sprite:zoe_neutral/2
-Mes membres se figent le temps du câlin.
+Zoé s'approche alors et me serre dans ses bras. #name:nothing #clear:3 #sprite:ari_neutral/1 #sprite:zoe_neutral/2
+Mon corps se fige le temps de l'étreinte.
 Pas que je ne m'y attendais pas, c'est très Zoé les câlines surprises.
-Mais plus, car je n'ai pas eu à subir ses étreintes légendaires depuis bien longtemps.
-"Qu'est-ce que vous faites là ?" #name:Arianne
+Mais plus, car je n'ai pas eu à en subir depuis longtemps.
+"Qu'est-ce... que vous faites là ?" #name:Arianne
 "C'est plutôt à nous de te poser la question !" #name:Zoé
-"Ben..." #name:Arianne
-"Comme papa est pris avec le restaurant, les seules qui pouvaient vider la maison de Grand-mère Nat," #name:Arianne
-"C'était maman et moi." #name:Arianne
-"Ah oui... C'est vrai que Nat est plus là..." #name:Zoé
-"Excuse-moi, je n'ai pas fait attention." #name:Zoé
+"Tu reviens soudainement, comment ça, d'un coup !"
+"Soudainement c'est le bon mot." #name:Arianne
+"On ne s'attendait pas vraiment à la mort de Grand-mère Nat."
+"Comme papa est pris avec le restaurant, les seules qui pouvaient venir vider la maison était maman et moi." #name:Arianne
+"Oh... C'est vrai..." #name:Zoé
+"Excuse-moi, j'aurais dû faire plus attention." #name:Zoé
 "Ne t'excuse pas. Ce n'est pas grave." #name:Arianne
+"T'es sûr ?" #name:Zoé
+Je hôche la tête à l'affirmative. #name:nothing
+Je n'ai pas envie que la discussion se bloque à cause de ça.
 "Mais du coup vous n'avez toujours pas répondu à ma question." #name:Arianne
 "Tu sais ce que c'est, les petits villages." #name:Martin #clear:4 #sprite:mar_neutral/3
 "Les nouvelles vont vite." #name:Martin
@@ -158,29 +164,38 @@ Vu de loin, personne n'aurait l'impression qu'ils se sont quittés pendant cinq 
 La remarque fait rire Martin, et celui-ci propage à travers le groupe. #name:nothing
 "Tu dis ça comme si on y allait souvent." #name:Arianne
 "Oh non, j'ai jamais pu y revenir." #name:Zoé
-"C'est sûr que depuis que Yann à cassé une fenêtre." #name:Martin
-"..." #name:Zoé #music:nothing
-"Je..." #name:Martin
-"..." #name:Martin
-Zoé et Martin se bloquent lorsque son nom est prononcé. #name:nothing
-Pourquoi ? Ça fait cinq ans.
-Cinq. Années.
-Pourquoi est-ce qu'ils agissent comme ça ?
-"E-Enfin, on peut toujours y aller si tu veux. Le gérant doit avoir oublié." #name:Zoé #clear:3 #sprite:mar_neutral/4 #sprite:zoe_neutral/2 #music:MinuteDarkness
-"Quoi ? Oublier Yann ?" #name:Arianne
-"Non bien sûr... Mais..." #name:Zoé
-"Mais quoi !?" #name:Arianne #clear:1 #sprite:ari_neutral/2 #sprite:zoe_neutral/3
-"Arianne..." #name:Zoé
-"On va faire comme si rien ne s'était passé ?" #name:Arianne
-"Faire comme s'il n'avait pas existé ?" #name:Arianne
-"Non... C'est juste..." #name:Zoé
-"Il est mort." #name:Arianne
+"C'est sûr que depuis que Yann à cassé une fenêtre." #name:Martin  #music:nothing
 "..." #name:Zoé
-"Il serait temps de l'accepter, ce n'est pas comme s'il allait revenir." #name:Arianne
-"Arianne stop..." #name:Zoé
-"Et toi Martin. Rien à dire ?" #name:Arianne
+"Je..." #name:Martin #music:MinuteDarkness
+"Qu'est-ce qu'il y a ?" #name:Arianne
 "..." #name:Martin
-"Je vois." #name:Arianne
+"Un problème avec le café ?" #name:Arianne
+J'espère que c'est le café #name:nothing
+"..." #name:Martin
+"E-Enfin, on peut toujours y aller si tu veux. Le gérant doit avoir oublié." #name:Zoé
+"Oublier Yann ?" #name:Arianne
+"Non bien sûr... Mais..." #name:Zoé
+"..." #name:Martin
+"Martin."#name:Arianne
+"Arianne..." #name:Zoé
+"Pourquoi vous agissez comme ça d'un coup ?"
+"On va faire comme si rien ne s'était passé ?" #name:Arianne
+"..." #name:Martin
+"Arianne....." #name:Zoé
+"Faire comme si il n'avait pas existé ?" #name:Arianne
+"Non... C'est juste..." #name:Zoé
+"Il est mort !" #name:Arianne
+"..." #name:Martin
+"C'est pas en l'inorant qu'il va revenir." #name:Arianne
+"Arianne stop..." #name:Zoé
+"..." #name:Martin
+Je regarde Zoé, qui affiche un visage sans émotion, puis Martin qui n'a pas prononcé un mot depuis tout à l'heure. #name:nothing
+Ils osent à peine me regarder en face.
+Pourquoi est-ce qu'ils agissent comme ça ?
+Ca fait cinq ans.
+Cinq ans depuis l'incident.
+Pourquoi est-ce qu'ils bloquent encore ?
+"Je vois..." #name:Arianne
 "Ma mère va bientôt rentrer." #name:Arianne #clear:2 #sprite:ari_neutral/1
 "C'était sympa. Au revoir." #name:Arianne #trans:trans_center
 
