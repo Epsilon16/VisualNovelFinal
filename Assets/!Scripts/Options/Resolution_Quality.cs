@@ -12,6 +12,7 @@ public class Resolution_Quality : MonoBehaviour
     [SerializeField] Resolution[] resolutions;
 
     public float typingspeeding;
+    [SerializeField] private Slider SpeedSlider;
 
     private void Awake()
     {
@@ -41,6 +42,14 @@ public class Resolution_Quality : MonoBehaviour
         ResolutionDropdown.AddOptions(options);
         ResolutionDropdown.value = CurrentResolutionIndex;
         ResolutionDropdown.RefreshShownValue();
+
+        float savespeed = PlayerPrefs.GetFloat("Typing Speed");
+
+        if (savespeed != 0)
+        {
+            typingspeeding = savespeed;
+            SpeedSlider.value = savespeed;
+        }
     }
 
     public void SetResolution(int ResolutionIndex)
@@ -65,6 +74,7 @@ public class Resolution_Quality : MonoBehaviour
 
     public void setSpeedText(float typing)
     {
+        
         typingspeeding = typing;
     }
 
