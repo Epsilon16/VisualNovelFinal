@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: b3cf575b22314af469321884a8ed3830, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77b235686c9772244a23fd06a9080303, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: a0b97d0091dd1754a8517be5375a79b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cbffdedb2ddfbff4ca3bf4b7e750d9b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -241,7 +241,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 675fc93a7816df04dabaa760e9f82448, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1381a8aed3fd38b48946cfc2567c71cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -325,7 +325,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: f05c4136277e1f14d9433ffe202b2549, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c69fce5715fea441a158d5bff44a885, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -503,15 +503,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 0a8c63f0ea73a7c47a6de5dd33a07be4, type: 3}
+  m_Color: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.9907692, y: 1.0007693}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &3508938671718084397
@@ -550,8 +550,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9907692, y: 1.0007693}
-    newSize: {x: 0.9907692, y: 1.0007693}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -602,33 +602,33 @@ MonoBehaviour:
   connecChecks:
   - name: up
     visual: {fileID: 3508938671289684914}
-    neutral: {fileID: 21300000, guid: f05c4136277e1f14d9433ffe202b2549, type: 3}
-    lights: {fileID: 21300000, guid: b79f823ab5c1f734c977bf7c7ac76766, type: 3}
+    neutral: {fileID: 21300000, guid: 9c69fce5715fea441a158d5bff44a885, type: 3}
+    lights: {fileID: 21300000, guid: 2c1eb2369fc97b5439848c6c5a783a7f, type: 3}
     direction: {x: 0, y: 1}
     connecToHit: 1
     istouching: 0
   - name: down
     visual: {fileID: 3508938671072086069}
-    neutral: {fileID: 21300000, guid: 675fc93a7816df04dabaa760e9f82448, type: 3}
-    lights: {fileID: 21300000, guid: 440431660e99c9240aebdeefe4f5cb37, type: 3}
+    neutral: {fileID: 21300000, guid: 1381a8aed3fd38b48946cfc2567c71cb, type: 3}
+    lights: {fileID: 21300000, guid: afb055ffc24e9dc40a6123a767fdde10, type: 3}
     direction: {x: 0, y: -1}
     connecToHit: 0
     istouching: 0
   - name: right
     visual: {fileID: 3508938669669554567}
-    neutral: {fileID: 21300000, guid: b3cf575b22314af469321884a8ed3830, type: 3}
-    lights: {fileID: 21300000, guid: 0ce83b20184c18e4bbed6a48628085b7, type: 3}
+    neutral: {fileID: 21300000, guid: 77b235686c9772244a23fd06a9080303, type: 3}
+    lights: {fileID: 21300000, guid: 66cf1660e6fcfb24ea650837dc9598b7, type: 3}
     direction: {x: 1, y: 0}
     connecToHit: 3
     istouching: 0
   - name: left
     visual: {fileID: 3508938670329917799}
-    neutral: {fileID: 21300000, guid: a0b97d0091dd1754a8517be5375a79b2, type: 3}
-    lights: {fileID: 21300000, guid: b73aba7a436f48c4fa71219691b70fcf, type: 3}
+    neutral: {fileID: 21300000, guid: cbffdedb2ddfbff4ca3bf4b7e750d9b5, type: 3}
+    lights: {fileID: 21300000, guid: 7d96ffc9e75514c41a0ec5fa6efc0377, type: 3}
     direction: {x: -1, y: 0}
     connecToHit: 2
     istouching: 0
-  blocked: {fileID: 21300000, guid: c0acb4d5f44cf904a91e7b73d54d2a08, type: 3}
+  blocked: {fileID: 21300000, guid: 08e7fcef9c1ac514f811e5a8e2371110, type: 3}
   isGood: 0
   selected: 0
 --- !u!95 &6082056203659658199
@@ -724,12 +724,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 77ef2e6b429bf01469b2df1d89ce79c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41c86568e5839f046a43046228b5f376, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 12.88, y: 13.01}
+  m_Size: {x: 13, y: 13}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

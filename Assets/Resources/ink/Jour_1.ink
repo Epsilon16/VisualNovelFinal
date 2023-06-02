@@ -181,13 +181,13 @@ J'espère que c'est le café. #name:nothing
 "E-Enfin, on peut toujours y aller si tu veux. Le gérant doit avoir oublié." #name:Zoé
 "Oublier Yann ?" #name:Arianne
 "Non bien sûr... Mais..." #name:Zoé
+"Martin ?"#name:Arianne
 "..." #name:Martin
-"Martin."#name:Arianne
 "Arianne..." #name:Zoé
 "Pourquoi vous agissez comme ça d'un coup ?"
 "On va faire comme si rien ne s'était passé ?" #name:Arianne
 "..." #name:Martin
-"Arianne....." #name:Zoé
+"Arianne s'il te plait..." #name:Zoé
 "Faire comme si il n'avait pas existé ?" #name:Arianne
 "Non... C'est juste..." #name:Zoé
 "Il est mort." #name:Arianne
@@ -212,7 +212,7 @@ Ce n'est pas une raison pour ignorer qu'il ait existé.
 Il était notre grand frère à tous.
 C'était surtout le mien. #trans:trans_center
 
-En rentrant chez à la maison je claque la porte derrière moi. #bg:1_Cuisine_Arianne
+En rentrant à la maison je claque la porte derrière moi. #bg:1_Cuisine_Arianne
 Je...
 Je dois me changer les idées.
 J'allais attendre maman, mais autant commencer à faire les cartons moi-même. #trans:trans_center
