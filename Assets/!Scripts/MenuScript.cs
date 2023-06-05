@@ -59,6 +59,10 @@ public class MenuScript : MonoBehaviour
             childOption = RacineCanvas.transform.GetChild(0).gameObject;
             childOption.SetActive(true);
 
+            if (DialogueManager.GetInstance())
+            {
+                DialogueManager.GetInstance().isOptionOn = true;
+            }
         }
             //OptionsCanvas = GameObject.FindGameObjectWithTag("Options");      
     }

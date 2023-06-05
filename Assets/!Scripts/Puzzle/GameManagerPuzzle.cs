@@ -54,7 +54,11 @@ public class GameManagerPuzzle : MonoBehaviour
             }
         }
 
-        Inversion();
+        if (InputManager.GetInstance().GetSubmitPressed())
+        {
+            Inversion();
+        }
+
     }
 
     private void Inversion()
@@ -73,7 +77,17 @@ public class GameManagerPuzzle : MonoBehaviour
                 }
 
                 if (!boolian)
+                {
                     inversion.Add(Squares[i]);
+                }
+            }
+
+            for (int j = 0; j < inversion.Count; j++)
+            {
+                if (inversion[j].GetComponent<Selection>().selected == false)
+                {
+                    inversion.Clear();
+                }
             }
         }
 
@@ -85,6 +99,8 @@ public class GameManagerPuzzle : MonoBehaviour
             inversion[1].transform.position = pos0;
             inversion[0].GetComponent<Selection>().selected = false;
             inversion[1].GetComponent<Selection>().selected = false;
+            inversion[0].GetComponent<Animator>().Play("square_changed");
+            inversion[1].GetComponent<Animator>().Play("square_changed");
             inversion.Clear();
         }
     }

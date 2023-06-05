@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Codice.CM.Common.CmCallContext;
 
 public class Selection : MonoBehaviour
 {
@@ -16,11 +15,11 @@ public class Selection : MonoBehaviour
     private int isconnected = 0;
     public bool selected;
     private int securite;
-    private GameObject highlight;
+    private Color highlight;
 
     void Start()
     {
-        highlight = transform.GetChild(0).gameObject;
+        highlight = gameObject.GetComponent<SpriteRenderer>().color;
         isGood = false;
 
         if (isBlocked)
@@ -32,12 +31,16 @@ public class Selection : MonoBehaviour
     void Update()
     {
         //Is selected ?
-        highlight.SetActive(selected);
         if (selected == true)
+        {
             securite = 1;
+            gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+        }
         else
+        {
             securite = 0;
-
+            gameObject.GetComponent<SpriteRenderer>().color = highlight;
+        }
 
         //Is good ?
         isconnected = 0;

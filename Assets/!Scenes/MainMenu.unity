@@ -4405,6 +4405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd66725f2e5f46d4397ef48d82a0fc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadButton: {fileID: 943739457}
 --- !u!1 &1042586074
 GameObject:
   m_ObjectHideFlags: 0
@@ -6255,7 +6256,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1595705928}
   m_OnClick:
     m_PersistentCalls:

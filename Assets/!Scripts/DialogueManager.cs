@@ -5,7 +5,6 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Unity.VisualScripting.YamlDotNet.Core.Tokens;
 
 public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 {
@@ -56,6 +55,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [Header("Menu UI")]
     [SerializeField] private GameObject menuParent;
     private bool isMenuOn = false;
+    public bool isOptionOn = false;
 
     [Header("Audio")]
     [SerializeField] private DialogueAudioInfoSO defaultAudioInfo;
@@ -316,7 +316,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             }
         }
 
-        if (InputManager.GetInstance().GetMenuPressed())
+        if (InputManager.GetInstance().GetMenuPressed() && !isOptionOn)
         {
             MenuActivation();
         }
@@ -772,13 +772,13 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         foreach (Choice choice in currentChoices)
         {
             isSkipping = false;
-            choices[index].gameObject.SetActive(true);
+            choices[index].SetActive(true);
             choicesText[index].text = choice.text;
             index++;
         }
         for (int i = index; i < choices.Length; i++)
         {
-            choices[i].gameObject.SetActive(false);
+            choices[i].SetActive(false);
         }
     }
 

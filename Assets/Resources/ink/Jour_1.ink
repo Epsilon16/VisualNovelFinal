@@ -30,7 +30,7 @@ Le voyage ayant été plutôt long, la fatigue a eu raison d'elle et le confort 
 "Une sorte de croque-mitaine dans un champ de fleurs ? Il me semble qu'il avait une arme..."
 "Les détails m'échappent déjà."
 "Ce n'est pas bien grave. Mes rêves n'ont jamais fait beaucoup sens de toute façon."
-Une fois debout, elle sort de la chambre et se dirige vers la cuisine à l'étage du dessous afin d'oublier ses visions oniriques. #trans:trans_center
+Une fois debout, elle sort de la chambre et se dirige vers la cuisine à l'étage du dessous afin d'oublier ses visions oniriques. #trans:trans_center #name:nothing
 
 En bas, elle tombe sur sa mère prête à sortir. #bg:1_Cuisine_Arianne #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
 "Ah Arianne, bon timing. Je dois aller au service funéraire pour signer des papiers." #name:Jeanne
@@ -41,11 +41,17 @@ En bas, elle tombe sur sa mère prête à sortir. #bg:1_Cuisine_Arianne #clear:2
 Jeanne regarde sa montre avant de mettre son sac à main sur son épaule. #name:nothing
 "Bon, je file ou je vais être en retard. Bisous ma chérie."  #name:Jeanne
 "Bisous maman." #name:Arianne
-À présent seule dans la grande maison, Arianne décide d'avancer sur ses devoirs pour la rentrée. #name:nothing #clear:3
-"Je ne reste qu'une semaine, et sachant qu'avec maman je vais surtout ranger des affaires dans des cartons..." #name:Arianne
-"C'est probablement le meilleur moment pour en faire." #trans:trans_center
+Arianne est à présent seule dans la grande maison. #name:nothing #clear:3
++[Commencer à ranger.]
+"Maman voudra probablement faire les cartons d'une manière organiser." #name:Arianne
+"Autant ne pas être stupide et attendre qu'elle rentre avant de commencer à ranger."
+"La dernière fois que j'ai ranger le grenier sans elle j'ai cru voir ma vie défiler devant mes yeux..."#trans:trans_center
++[Avancer sur ses devoirs.]
+"Je ne reste qu'une semaine, et sachant qu'avec maman je vais surtout ranger des affaires dans des cartons." #name:Arianne
+"C'est probablement le meilleur moment pour en faire."
+"Prendre de l'avance ne fait jamais de mal."#trans:trans_center
 
-Après une heure passée sur mes papiers, le son d'une sonnette retentis dans la maison. #bg:1_Chambre_Arianne #name:nothing
+-Après une demie-heure passée dans sa chambre, le son d'une sonnette retentis dans la maison. #bg:1_Chambre_Arianne #name:nothing
 Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville. #sprite:ari_neutral/2
 Je descend alors les escaliers pour voir qui pourrait bien être là. #trans:trans_center
 
@@ -55,9 +61,9 @@ Je mets un petit moment avant de reconnaitre les deux personnes se trouvant deva
 Mais très vite leurs noms me reviennes et un tas de sentiments refont surface.
 "Zoé ? Martin ?" #name:Arianne #clear:0 #sprite:ari_neutral/1
 "Hey." #name:Martin
-Zoé s'approche alors et me serre dans ses bras. #name:nothing #clear:3 #sprite:ari_neutral/1 #sprite:zoe_neutral/2
+Zoé s'approche alors et me serre dans ses bras. #name:nothing #clear:3 #sprite:zoe_neutral/2
 Mon corps se fige le temps de l'étreinte.
-Pas que je ne m'y attendais pas, c'est très Zoé les câlines surprises.
+Pas que je ne m'y attendais pas, c'est très Zoé les câlins surprises.
 Mais plus, car je n'ai pas eu à en subir depuis longtemps.
 "Qu'est-ce... que vous faites là ?" #name:Arianne
 "C'est plutôt à nous de te poser la question !" #name:Zoé
@@ -76,8 +82,9 @@ Je n'ai pas envie que la discussion se bloque à cause de ça.
 "Les nouvelles vont vite." #name:Martin
 "Et quand Zoé a apprit pour ton retour elle m'a tiré hors de chez moi pour venir ici." #name:Martin
 "Rien d'étonnant." #name:Arianne
-"Mais ça fait si longtemps ! Il fallait qu'on se voit !" #name:Zoé
+"Mais ça fait si longtemps ! Il fallait qu'on se voit au moins une fois !" #name:Zoé
 "T'es libre ? D'ailleurs, est-ce que ta maman est là ? Il faut qu'on lui dise bonjour ! Et tu restes combien de temps ?" #name:Zoé
+Son enthousiame me fait lâcher un petit rire. #name:nothing
 "Du calme." #name:Arianne
 "Maman est partie en ville, elle rentrera pas avant un petit moment." #name:Arianne
 "Et je suis là jusqu'au 1er novembre." #name:Arianne
@@ -91,8 +98,8 @@ Je n'ai pas envie que la discussion se bloque à cause de ça.
 "Je pensais à faire un tour du village, puis aller prendre quelque chose à grignoter." #name:Martin
 "Okay ! C'est parti !" #name:Zoé
 Zoé et Martin ont été dans ma vie aussi loin que je puisse m'en souvenir. #name:nothing #clear:all
-Notre séparation fu soudaine, et dure pour nous tous je pense. Mais je m'y suis habitué avec le temps.
 Lorsque je les ai quittés on était encore qu'au collège.
+Notre séparation fu soudaine, et dure pour nous tous je pense. Mais je m'y suis habitué avec le temps.
  Les revoir maintenant me donne l'impression de parler à des inconnus dont j'ai lu la biographie.
 Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #trans:trans_center
 
@@ -102,8 +109,8 @@ Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #t
 "T'exagères." #name:Arianne
 "Mais c'est vrai que comparé à d'autres..." #name:Arianne
 "Ouch, c'était méchant ça !" #name:Zoé
-"Laisse-moi te rappeler qui a peint la balançoire de la cour d'école en jaune car elle était :" #name:Martin
-" 'Pas assez coloré.' " #name:Martin
+"Laisse-moi te rappeler qui a peint la balançoire de la cour d'école en jaune car elle était," #name:Martin
+"Et je cite, 'Pas assez coloré.' " #name:Martin
 "T'y mets pas toi aussi, j'ai besoin d'alliés face à Arianne !" #name:Zoé
 "T'as fini recouverte de peinture, ta mère était furieuse." #name:Arianne
 "Pour ma défense, j'avais totalement raison. Mon talent artistique ne s'est jamais trompé." #name:Zoé
@@ -113,17 +120,17 @@ Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #t
 "Hey !" #name:Zoé
 "Je rigole, je rigole. #name:Arianne
 Je pourrais leur demander où ils en sont eux... #name:nothing
-+[Les études de Zoé.]
+++[Les études de Zoé.]
     "Mais du coup, tu fais quoi comme étude Zoé ?" #name:Arianne
     "Moi ? École d'art." #name:Zoé #sprite:mar_neutral/3 #sprite:zoe_neutral/2
     "Étrange, je sais." #name:Zoé
     "Désolé pour les balançoires." #name:Arianne
     "Elles ont une personnalité maintenant." #name:Arianne
-    "C'est sur. Peu de chance qu'on les oublies maintenant." #name:Martin
+    "C'est sur. Peu de chance qu'on les oublies." #name:Martin
     "Z'êtes trop gentil." #name:Zoé
-    "Voir un peu trop." #name:Zoé
+    "Voir un peu trop..." #name:Zoé
     "Ça cache forcément quelque chose !" #name:Zoé
-    Zoé m'attaque alors les côtes. #name:nothing #clear:2 #sprite:ari_neutral/0 #sprite:zoe_neutral/1 #sprite:mar_neutral/3
+    Zoé m'attaque alors les côtes. #name:nothing #clear:2 #sprite:ari_neutral/0 #sprite:zoe_neutral/1
     "Ah pitié stop !" #name:Arianne
     "Pourquoi suis-je la seule victime ?" #name:Arianne
     "Car c'est normal pour Martin d'être gentil." #name:Zoé
@@ -131,7 +138,7 @@ Je pourrais leur demander où ils en sont eux... #name:nothing
     "Désolé mais c'est vrai." #name:Zoé
     "Comme quoi, ça vaut le coup de faire des compliments." #name:Martin #clear:3 #sprite:mar_neutral/2
     "Ha. Ha." #name:Arianne
-+[Les études de Martin.]
+++[Les études de Martin.]
     "Et sinon, tu fais quoi comme étude Martin ?" #name:Arianne
     "De l'économie." #name:Martin
     "Vraiment ?" #name:Arianne
@@ -152,7 +159,7 @@ Je pourrais leur demander où ils en sont eux... #name:nothing
     "C'était mon but depuis le début !" #name:Zoé
     "Adieu les délicieuses poêler." #name:Arianne
     "Noooon-" #name:Martin
--Il ne fallut pas longtemps pour que le trio revienne à leurs discussions d'autrefois. #name:nothing
+-Il ne fallut pas longtemps pour que le trio revienne à leurs discussions d'autrefois. #name:nothing #clear:all
 Vu de loin, personne n'aurait l'impression qu'ils se sont quittés pendant cinq longues années. #trans:trans_center
 
 "C'est la place du village ? Où est la statue ?" #name:Arianne #bg:1_Village_Place #sprite:ari_neutral/1 #sprite:mar_neutral/2 #sprite:zoe_neutral/3
@@ -174,17 +181,17 @@ La remarque fait rire Martin, et très vite on se met tous à rire. #name:nothin
 "..." #name:Zoé
 "Je..." #name:Martin #music:MinuteDarkness
 "Qu'est-ce qu'il y a ?" #name:Arianne
-"..." #name:Martin
+"..." #name:Martin #clear:2 #sprite:mar_neutral/4
 "Un problème avec le café ?" #name:Arianne
 J'espère que c'est le café. #name:nothing
 "..." #name:Martin
-"E-Enfin, on peut toujours y aller si tu veux. Le gérant doit avoir oublié." #name:Zoé
+"E-Enfin, on peut toujours y aller si tu veux. Le gérant doit avoir oublié." #name:Zoé #clear:3 #sprite:zoe_neutral/2
 "Oublier Yann ?" #name:Arianne
 "Non bien sûr... Mais..." #name:Zoé
 "Martin ?"#name:Arianne
 "..." #name:Martin
 "Arianne..." #name:Zoé
-"Pourquoi vous agissez comme ça d'un coup ?"
+"Pourquoi vous agissez comme ça d'un coup ?" #name:Arianne
 "On va faire comme si rien ne s'était passé ?" #name:Arianne
 "..." #name:Martin
 "Arianne s'il te plait..." #name:Zoé
@@ -202,17 +209,19 @@ Ca fait cinq ans.
 Cinq ans depuis l'incident.
 Pourquoi est-ce qu'ils bloquent encore ?
 "Je vois..." #name:Arianne
-"Ma mère va bientôt rentrer." #name:Arianne #clear:2 #sprite:ari_neutral/1
+"Ma mère va bientôt rentrer." #name:Arianne #clear:1 #sprite:ari_neutral/0
 "C'était sympa..." #name:Arianne 
-"Au revoir." #name:Arianne #trans:trans_center
+"Au revoir." #name:Arianne #trans:trans_center #clear:0
 
-Comment peuvent-ils faire pour ignorer ça ? #name:nothing #bg:1_Village_Rue_1 #clear:all #sprite:ari_neutral/2
-L'incident nous a tous impactées. Mais ce n'est pas une raison pour oublier.
+Alors que je retrace le chemin en direction de la maison, la discussion tourne en boucle dans ma tête. #name:nothing #bg:1_Village_Rue_1 #clear:all #sprite:ari_neutral/2
+Comment peuvent-ils faire pour ignorer ça ? 
+L'incident nous a tous impactées. Mais ce n'est pas une raison pour essayer d'oublier.
 Ce n'est pas une raison pour ignorer qu'il ait existé.
 Il était notre grand frère à tous.
-C'était surtout le mien. #trans:trans_center
+C'était surtout le mien.
+Je continue à marcher d'un pied ferme, serrant mes poings. #trans:trans_center
 
-En rentrant à la maison je claque la porte derrière moi. #bg:1_Cuisine_Arianne
+En rentrant à la maison je claque la porte derrière moi. #bg:1_Cuisine_Arianne #sprite:ari_neutral/2
 Je...
 Je dois me changer les idées.
 J'allais attendre maman, mais autant commencer à faire les cartons moi-même. #trans:trans_center
@@ -228,28 +237,28 @@ La curiosité prend le dessus et Arianne ouvre la petite boite pour y découvrir
 La porte d'en bas claque alors, et Arianne descend les escaliers. #trans:trans_center #item:nothing #name:nothing
  
 "Maman ?" #name:Arianne #bg:1_Cuisine_Arianne #music:SteadyPace
-Jeanne se pose sur une chaise de la cuisine, se tenant la tête. #name:nothing
-"Tout s'est bien passé ?" #name:Arianne #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
+Jeanne se pose sur une chaise de la cuisine, se tenant la tête. #name:nothing #sprite:jea_neutral/3
+"Tout s'est bien passé ?" #name:Arianne #clear:2 #sprite:ari_neutral/1
 "Oui..." #name:Jeanne
 "Tu peux me faire un thé ?" #name:Jeanne
 "S'il te plait ?" #name:Jeanne
-Arianne vis rapidement dans quel genre d'humeur était sa mère. #name:nothing
-Il fallait lui donner un peu d'espace et attendre qu'elle instaur la conversation.
+Arianne vit rapidement dans quel genre d'humeur était sa mère. #name:nothing
+Il fallait lui donner un peu d'espace et attendre qu'elle instaure la conversation.
 C'est le genre de choses qui ne sont jamais expliqué et qu'un enfant apprend à force de vivre avec son parent.
 Elle se dirige alors sans un mot en direction des divers placard et tiroirs de la cuisine en sort des sachets de thés et met en route la bouilloire. #clear:1
-Une fois la tasse préparée, elle la pose devant sa mère et s'assoit à côté d'elle. #sprite:ari_neutral/1
-"Merci chérie." #name:Jeanne
-"Comment s'est passé ton après-midi ?" #name:Jeanne
+Une fois la tasse préparée, elle la pose devant sa mère et s'assoit à côté d'elle. 
+"Merci." #name:Jeanne #sprite:ari_neutral/1
+"Alors, comment s'est passé ton après-midi ?" #name:Jeanne
 "Zoé et Martin sont passés. J'ai pu rattraper un peu." #name:Arianne
 "Ils vont bien ?" #name:Jeanne
 "Ouais..." #name:Arianne
 "Je suppose." #name:Arianne
 "D'autres choses ?" #name:Jeanne
 "J'ai commencé à faire du rangement dans ma chambre..." #name:Arianne
-Arianne se souvient alors qu'elle n'avait pas rangé le bracelet qui se trouve dans sa poche. #name:nothing
+Arianne se souvient alors qu'elle n'avait pas rangé le bijoux qui se trouve dans sa poche. #name:nothing
 Elle le sort alors et le montre à Jeanne. #name:nothing
 "Et j'ai trouvé ce bracelet dans une boite. J'ai jamais vu Mamie Nat le porter, tu sais ce que c'est ?" #name:Arianne
-"Ça ne me dit rien. Mais ta grand-mère avait beaucoup de bijoux, un de plus un de moins, ça change rien." #name:Jeanne
+"Ça ne me dit rien. Mais ta grand-mère avait beaucoup de décorations, un de plus un de moins, ça change rien." #name:Jeanne
 "Okay..." #name:Arianne
 "Et toi ?" #name:Arianne
 "Hm ?" #name:Jeanne
@@ -279,15 +288,15 @@ Elle me regarde d'un air un peu inquiet. #name:nothing
 Mais les mots que j'ai entendu... Si c'est bien les siens... #name:nothing
 "C'est à propos de Yann, c'est ça ?" #name:Arianne 
 "Qu'est-ce que-" #name:Jeanne
-"J'veux dire... C'est au même endroit que t'as du faire les papiers et..." #name:Arianne
+"J'veux dire... C'est au même endroit que t'as dû faire les papiers et..." #name:Arianne
 "..." #name:Jeanne
 Qu'est-ce que je suis entrain de raconter ? #name:nothing
 "Désolé maman, j'aurais pas dû....." #name:Arianne
 "Je vais dans ma chambre." #name:Arianne
-Je me lève de ma chaise, c'est n'importe quoi. #name:nothing
+Je me lève de ma chaise, c'est n'importe quoi. #name:nothing #sprite:ari_neutral/0 #clear:1
 "Non, Arianne. Tu veux en parler ?" #name:Jeanne
 "..." #name:Arianne
-Je me rassois doucement à ma place, et maman me prend la main. #name:nothing
+Je me rassois doucement à ma place, et maman me prend la main. #name:nothing #sprite:ari_neutral/1 #clear:0
 "Écoute... Je sais que ce n'est pas facile de revenir ici." #name:Jeanne
 "Surtout au vu de la période de l'année." #name:Jeanne
 "Mais je suis là pour toi, tu le sais ça n'est-ce pas ?" #name:Jeanne
@@ -317,26 +326,27 @@ Elle pose une enveloppe devant moi que je prend et inspecte. #name:nothing
 Pas d'expéditeur.
 "Probablement Zoé. Merci maman." #name:Arianne #trans:trans_center #clear:1 #sprite:ari_neutral/0
 
-De retour à l'étage, Arianne porte son regard sur le bracelet de plus tôt, remarquant que l'une des perles s'est noircie. #name:nothing #bg:1_Chambre_Arianne #clear:all #sprite:ari_neutral/2 #item:grigri_7
-"C'est étrange ça... Ce serait dû à ce que j'ai vu ?" #name:Arianne #item:nothing
+De retour à l'étage, Arianne porte son regard sur le bracelet de plus tôt, remarquant que l'une des perles s'est noircie. #name:nothing #bg:1_Chambre_Arianne #item:grigri_7
+"C'est étrange ça... Ce serait dû à ce que j'ai vu ?" #name:Arianne 
 "Non..." #name:Arianne
 "Mais ça expliquerait comment j'ai pu entendre maman comme ça..." #name:Arianne
-"Un bracelet magique ? C'est ça que tu cachais mamie ?" #name:Arianne
-Pourtant ça expliquerais. #name:nothing
-Elle ouvre l'enveloppe, qui ne comporte qu'un seul bout de papier.
-Qui est-ce que ça pourrait bien être ?
-Une fois ouverte, j'en lis le contenu.
-Arianne. #clear:2 #music:CorridorPurgatory
+"Un bracelet magique ? C'est ça que tu cachais mamie ?" #name:Arianne #item:nothing
+Pourtant ça expliquerais comment j'ai pu savoir ces choses. #name:nothing
+Bref. Je reporte mon attention sur la fameuse lettre. #name:nothing
+J'ouvre l'enveloppe, qui ne comporte qu'un seul bout de papier. #name:nothing
+"Qui est-ce que ça pourrait bien être ?"  #name:Arianne
+Une fois ouverte, j'en lis le contenu.  #name:nothing
+Arianne. #clear:2 #music:CorridorPurgatory #bg:grigri_neutral
 Tu n'aurais pas dû revenir à Adonis.
 De mauvaises choses t'attendent si tu fouilles trop.
 Reste terré dans ta maison.
 Cela vaut mieux pour toi.
-Qu'est-ce que c'est que ça ? #sprite:ari_neutral/2
-Je jette la lettre en dégoût dans un carton.
-Une menace ? Ce doit être une blague.
-Une mauvaise blague de la part de Martin ou Zoé pour ce que je leurs ait dit tout à l'heure.
-Mais ce ne sont pas vraiment leurs styles...
-Si ?
-Mieux vaut oublier tout ça.
-Demain sera un autre jour. #next:nothing/nothing
+"Qu'est-ce que c'est que ça ?" #bg:1_Chambre_Arianne #name:Arianne
+Je jette la lettre en dégoût dans un carton. #name:nothing
+"Une menace ? Ce doit être une blague." #name:Arianne
+"Une mauvaise blague de la part de Martin ou Zoé pour ce que je leurs ait dit tout à l'heure." #name:Arianne
+"Mais ce ne sont pas vraiment leurs styles..." #name:Arianne
+"Si..?" #name:Arianne
+"Mieux vaut oublier tout ça." #name:Arianne
+"Demain sera un autre jour." #next:nothing/nothing #name:Arianne
 -> END

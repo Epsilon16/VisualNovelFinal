@@ -22,6 +22,12 @@ public class Resolution_Quality : MonoBehaviour
         }
         instance = this;
     }
+
+    public static Resolution_Quality GetInstance()
+    {
+        return instance;
+    }
+
     void Start()
     {
         resolutions = Screen.resolutions;
@@ -67,19 +73,17 @@ public class Resolution_Quality : MonoBehaviour
         Screen.fullScreen = IsFullScreen;
     }
 
-    public static Resolution_Quality GetInstance()
+    public void SetSpeedText(float typing)
     {
-        return instance;
-    }
-
-    public void setSpeedText(float typing)
-    {
-        
         typingspeeding = typing;
     }
 
     public void QuitOption()
     {
+        if (DialogueManager.GetInstance())
+        {
+            DialogueManager.GetInstance().isOptionOn = false;
+        }
         MenuScript.GetInstance().DisableOption();
     }
 }

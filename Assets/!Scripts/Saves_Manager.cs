@@ -9,8 +9,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using Unity.VisualScripting;
-using Unity.VisualScripting.YamlDotNet.Core.Tokens;
 
 public class Saves_Manager : MonoBehaviour
 {
@@ -20,7 +18,15 @@ public class Saves_Manager : MonoBehaviour
     string savedGlobals;
     string savedNext;
     string savedGSprite;
-    
+
+    public GameObject loadButton;
+
+    private void Start()
+    {
+        //SaveButtonState();
+    }
+
+    //sauvegarde de la data
     public void SaveGame()
     {
         SaveData save = CreateSaveGameObject();
@@ -34,9 +40,11 @@ public class Saves_Manager : MonoBehaviour
 
         file.Close();
 
+        SaveButtonState();
         Debug.Log("Game saved");
     }
 
+    //création du fichier de save de data
     private SaveData CreateSaveGameObject()
     {
         savedSprites = null;
@@ -106,6 +114,7 @@ public class Saves_Manager : MonoBehaviour
         };
     }
 
+    //load de la data
     public void LoadGame()
     {
         var savePath = Application.persistentDataPath + "/savedata.save";
@@ -128,6 +137,35 @@ public class Saves_Manager : MonoBehaviour
         else
         {
             Debug.Log("No game saved!");
+        }
+    }
+
+    private void SaveButtonState()
+    {
+        var savePath = Application.persistentDataPath + "/savedata.save";
+
+        if (File.Exists(savePath))
+        {
+            loadButton.GetComponent<Button>().interactable = true;
+        }
+        else
+        {
+            loadButton.GetComponent<Button>().interactable = false;
+        }
+    }
+
+    public void DestroySave()
+    {
+        foreach (var directory in Directory.GetDirectories(Application.persistentDataPath))
+        {
+            DirectoryInfo data_dir = new DirectoryInfo(directory);
+            data_dir.Delete(true);
+        }
+
+        foreach (var file in Directory.GetFiles(Application.persistentDataPath))
+        {
+            FileInfo file_info = new FileInfo(file);
+            file_info.Delete();
         }
     }
 }

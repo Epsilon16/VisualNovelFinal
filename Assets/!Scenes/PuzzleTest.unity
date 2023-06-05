@@ -169,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3508938670329917799, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671072086069, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_IsActive
@@ -233,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671718084398, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: isBlocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671718084398, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: connecChecks.Array.data[0].isactive
@@ -274,11 +274,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671072086069, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671289684914, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671718084392, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_Name
@@ -807,6 +807,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3508938671718084394, guid: eeecac181c14076468e56ea573cefeff, type: 3}
   m_PrefabInstance: {fileID: 3508938671016140544}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &880352046
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4898824528858441146, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_Name
+      value: puzzle_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898824528858441147, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ed76be84e94dbc14c8b97cda33e96f95, type: 3}
 --- !u!1001 &925809636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -825,11 +886,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671072086069, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671289684914, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671718084392, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_Name
@@ -884,6 +945,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671718084398, guid: eeecac181c14076468e56ea573cefeff, type: 3}
+      propertyPath: isBlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508938671718084398, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: connecChecks.Array.data[0].isactive
       value: 0
       objectReference: {fileID: 0}
@@ -924,7 +989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1059087251
 Transform:
   m_ObjectHideFlags: 0
@@ -1057,7 +1122,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3508938670329917799, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671072086069, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_IsActive
@@ -1118,6 +1183,10 @@ PrefabInstance:
     - target: {fileID: 3508938671718084394, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508938671718084398, guid: eeecac181c14076468e56ea573cefeff, type: 3}
+      propertyPath: isBlocked
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3508938671718084398, guid: eeecac181c14076468e56ea573cefeff, type: 3}
       propertyPath: connecChecks.Array.data[0].isactive
