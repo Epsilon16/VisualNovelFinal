@@ -188,15 +188,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         currentStory.state.LoadJson(loadedState.InkStoryState);
 
         displayNameText.text = loadedState.name;
-        if (loadedState.name == "nothing")
-        {
-            displayNameText.transform.parent.gameObject.SetActive(false);
-        }
-        else
-        {
-            displayNameText.transform.parent.gameObject.SetActive(true);
-        }
-
         background.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + loadedState.background);
 
         for (int i = 0; i < spritePlacement.transform.childCount; i++)
@@ -337,7 +328,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         firstInkJSON = inkJSON;
 
         canTransition = null;
-        displayNameText.text = "???";
+        displayNameText.text = " ";
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
 
@@ -537,14 +528,13 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             switch (tagKey)
             {
                 case NAME_TAG:
-                    displayNameText.text = tagValue;
                     if (tagValue == "nothing")
                     {
-                        displayNameText.transform.parent.gameObject.SetActive(false);
+                        displayNameText.text = " ";
                     }
                     else
                     {
-                        displayNameText.transform.parent.gameObject.SetActive(true);
+                        displayNameText.text = tagValue;
                     }
                     break;
                 case SPRITE_TAG:

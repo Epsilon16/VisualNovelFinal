@@ -20,15 +20,15 @@ Je serais la prochaine à colorer son poignard. #trans:trans_neutre
 
 
 "!!!" #name:Arianne #bg:1_Chambre_Arianne #sprite:ari_neutral/2 #music:nothing
-Une jeune fille se réveille en sursaut dans son lit. #name:nothing #music:SteadyPace
+Je me réveille en sursaut dans son lit. #name:nothing #music:SteadyPace
 Pas de figure sombre, ni de sang ou de mer d'Adonis recouvrant le sol.
-Juste elle, une chambre presque vide et un plancher en bois qui grince à chaque pas.
-Elle s'assoit sur le bord du matelas et se frotte un peu les yeux avant de reprendre ses esprits.
-Le matin même, elle et sa mère ont parcouru la moitié du pays afin d'aller vider la maison vacante de sa grand-mère.
-Le voyage ayant été plutôt long, la fatigue a eu raison d'elle et le confort d'un lit l'endormis peu après son arrivée.
-"Je me demande ce que ce rêve pourrait signifier." #name:Arianne
-"Une sorte de croque-mitaine dans un champ de fleurs ? Il me semble qu'il avait une arme..."
-"Les détails m'échappent déjà."
+Juste moi, une chambre presque vide et un plancher en bois qui grince à chaque pas.
+Je m'assois sur le bord du matelas et se frotte un peu les yeux avant de reprendre ses esprits.
+La longueur du voyage jusqu'à chez Grand-Mère Nat a eu raison de moi, je n'aurais pas dû veiller la nuit dernière.
+Je me suis endormie dés que je me suis posé sur ce lit.
+Je me demande ce que ce rêve pourrait signifier.
+Une sorte de croque-mitaine dans un champ de fleurs ? Il me semble qu'il avait une arme...
+"Les détails m'échappent déjà." #name:Arianne
 "Ce n'est pas bien grave. Mes rêves n'ont jamais fait beaucoup sens de toute façon."
 Une fois debout, elle sort de la chambre et se dirige vers la cuisine à l'étage du dessous afin d'oublier ses visions oniriques. #trans:trans_center #name:nothing
 
@@ -120,7 +120,7 @@ Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #t
 "Hey !" #name:Zoé
 "Je rigole, je rigole. #name:Arianne
 Je pourrais leur demander où ils en sont eux... #name:nothing
-++[Les études de Zoé.]
++[Les études de Zoé.]
     "Mais du coup, tu fais quoi comme étude Zoé ?" #name:Arianne
     "Moi ? École d'art." #name:Zoé #sprite:mar_neutral/3 #sprite:zoe_neutral/2
     "Étrange, je sais." #name:Zoé
@@ -138,7 +138,7 @@ Je pourrais leur demander où ils en sont eux... #name:nothing
     "Désolé mais c'est vrai." #name:Zoé
     "Comme quoi, ça vaut le coup de faire des compliments." #name:Martin #clear:3 #sprite:mar_neutral/2
     "Ha. Ha." #name:Arianne
-++[Les études de Martin.]
++[Les études de Martin.]
     "Et sinon, tu fais quoi comme étude Martin ?" #name:Arianne
     "De l'économie." #name:Martin
     "Vraiment ?" #name:Arianne

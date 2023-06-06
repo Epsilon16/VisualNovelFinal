@@ -1,5 +1,7 @@
 INCLUDE globals.ink
 
+VAR Coffee = ""
+
 "Mince."
 Je tourne la tête vers ma mère entrain de frénétiquement ouvrir les armoires de la cuisine.
 "Qu'est-ce qui se passe ?"
@@ -11,7 +13,7 @@ Greg est le gérant d'une superette de village ainsi qu'un ancien ami de mes par
 Lorsqu'on était petit Yann, Martin, Zoé et moi allions souvent prendre des friandise chez lui.
 C'est un chic type, j'espère qu'il va toujours aussi bien.
 Ma mère sort un billet de dix de son porte monnais qu'elle me tend.
-"Et essaye de prendre du extra noir s'il te plait."
+"Et essaye de prendre du extra-fort s'il te plait."
 "Comment me tromper."
 J'enfile mon menteau avant de sortir.
 "A toute à l'heure."
@@ -69,14 +71,15 @@ Aloïs me regarde bizarrement. En même temps je regarde un bracelet depuis tout
 "Tu disais ?"
 "C'est euh... Rien d'important."
 "Si tu le dis."
+->discu_no_grigri
 
-
-"Qu'est-ce que tu fais là ?"
+=== discu_no_grigri ===
+"Sinon, qu'est-ce que tu fais là ?"
 "Je dois récupérer un colis pour mes parents."
 "Je vois. Ils vont bien ?"
 "Oui très."
 Je n'ai jamais vraiment cotoyé les parents d'Aloïs.
-Je les voyais à certaines occasions, mais je crois pas leurs avoir parler en dehors de "Bonjours" et "Au-revoirs".
+Je les voyais à certaines occasions, mais je crois pas leurs avoir parler en dehors de 'Bonjours' et 'Au-revoirs'.
 Ils étaient gentils mais ils m'ont toujours fait un peu peur je crois.
 Probablement car ce sont des professeurs.
 Enfin, ils vont bien, c'est le principal.
@@ -102,10 +105,13 @@ Lui en tout cas, n'a pas changé d'un poil. Peut-être les cheveux qui grisonne,
 "Qu'est-ce qui t'amène ici ?"
 "Ah oui, je dois acheter..."
 +[Café Mega-Fort]
+    ~Coffee = "CMF"
     "Du Café Mega-Fort."
 +[Thé Extra-Fort]
+    ~Coffee = "TEF"
     "Du Thé Extra-Fort."
 +[Café Extra-Fort]
+    ~Coffee = "CEF"
     "Du Café Extra-Fort."
 -"Bien sur ! Il y en a dans l'îlo à droite."
 "Merci."
@@ -150,4 +156,41 @@ Malgré le fait qu'il soit presque du même âge que ma mère, pour nous, Greg �
 Pas sur de vraiment les connaitres maintenant.
 "Merci Greg."
 "Haha, de rien."
-Je lui
+Je lui fait un signe de la main avant de repartir.
+
+Il a probablement raison, je devrais les revoirs et parler.
+C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte sur de mauvais termes.
+
+Une fois arrivé à la maison, je pose les courses sur la table.
+"J'ai ce que tu voulais !"
+Maman rentre dans la cuisine et regarde les courses.
+-> afternoon
+
+=== afternoon ===
+Après avoir passé la matinée à ranger les affaires de Mamie et avoir mangé un coup, je me dirige en direction de chez Zoé.
+Martin avait l'air bien moins enclin à la discussion hier. Et je penses que Zoé voudra reparler.
+Du moins j'espère...
+
+Je continue à descendre la rue jusqu'à arriver devant sa maison.
+Le doute me prend alors.
+Devrais-je vraiment sonner ?
+C'est probablement un peu trop tôt vu ce qu'il s'est passé.
+Mais si je ne fait rien maintenant ça s'empirera.
+Je n'ai juste pas envie de la déranger comme ça.
+Que faire ?
+"Tout va bien jeune fille ?"
+Une voix féminine me bloque dans mon monologue.
+"Vous avez besoin de direction ?"
+Je lève la tête et remarque que quelqu'un se tient devant la porte à côté de moi.
+C'est Maria, la mère de Zoé.
+"Oh non non, je suis là où je veux."
+"Attendez... Arianne c'est toi ? Qu'est-ce que tu as grandis !"
+J'ai une sensation de déjà-vu.
+"Bonjour Maria. Désolé de venir à l'improviste."
+"Oh mais nulle besoin de t'excuser, tu es et sera toujours la bienvenue chez nous."
+"Qu'est-ce qui t'amène ?"
+"Je me demandais si Zoé était ici."
+"Oh tu viens juste de la rater. Elle est partie voir Martin il n'y a pas si longtemps."
+"Ah ça rapelle le bon vieux temps de quand vous jouiez tout les quatres."
+
+->END
