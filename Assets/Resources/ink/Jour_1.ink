@@ -20,28 +20,29 @@ Je serais la prochaine à colorer son poignard. #trans:trans_neutre
 
 
 "!!!" #name:Arianne #bg:1_Chambre_Arianne #sprite:ari_neutral/2 #music:nothing
-Je me réveille en sursaut dans son lit. #name:nothing #music:SteadyPace
+Je me réveille en sursaut dans mon lit. #name:nothing #music:SteadyPace
 Pas de figure sombre, ni de sang ou de mer d'Adonis recouvrant le sol.
 Juste moi, une chambre presque vide et un plancher en bois qui grince à chaque pas.
-Je m'assois sur le bord du matelas et se frotte un peu les yeux avant de reprendre ses esprits.
+Je m'assois sur le bord du matelas et me frotte un peu les yeux.
+Ah oui je ne suis pas chez moi...
 La longueur du voyage jusqu'à chez Grand-Mère Nat a eu raison de moi, je n'aurais pas dû veiller la nuit dernière.
-Je me suis endormie dés que je me suis posé sur ce lit.
-Je me demande ce que ce rêve pourrait signifier.
-Une sorte de croque-mitaine dans un champ de fleurs ? Il me semble qu'il avait une arme...
+Je me suis endormie dés que je me suis allongée.
+D'ailleurs, je me demande ce que ce rêve pourrait signifier.
+Un homme à tête de cerf dans un champ de fleurs ? Il me semble qu'il avait une arme aussi...
 "Les détails m'échappent déjà." #name:Arianne
 "Ce n'est pas bien grave. Mes rêves n'ont jamais fait beaucoup sens de toute façon."
-Une fois debout, elle sort de la chambre et se dirige vers la cuisine à l'étage du dessous afin d'oublier ses visions oniriques. #trans:trans_center #name:nothing
+Une fois debout, je sort de la chambre et me dirige vers la cuisine au rez-de-chaussé afin d'oublier ces visions d'horreure. #trans:trans_center #name:nothing
 
-En bas, elle tombe sur sa mère prête à sortir. #bg:1_Cuisine_Arianne #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
+En bas, je tombe sur ma mère prête à sortir. #bg:1_Cuisine_Arianne #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
 "Ah Arianne, bon timing. Je dois aller au service funéraire pour signer des papiers." #name:Jeanne
 "Ça ne te dérange pas de rester ici ?" #name:Jeanne
 "C'est cool maman. T'inquiètes pas."  #name:Arianne
 "Je connais les environs. Et dans le pire des cas, je t'appelle." #name:Arianne
 "On fait comme ça alors."  #name:Jeanne
-Jeanne regarde sa montre avant de mettre son sac à main sur son épaule. #name:nothing
+Maman regarde sa montre avant de prendre son sac à main. #name:nothing
 "Bon, je file ou je vais être en retard. Bisous ma chérie."  #name:Jeanne
 "Bisous maman." #name:Arianne
-Arianne est à présent seule dans la grande maison. #name:nothing #clear:3
+Je suis à présent seule dans cette grande maison vide. #name:nothing #clear:3
 +[Commencer à ranger.]
 "Maman voudra probablement faire les cartons d'une manière organiser." #name:Arianne
 "Autant ne pas être stupide et attendre qu'elle rentre avant de commencer à ranger."
@@ -51,7 +52,7 @@ Arianne est à présent seule dans la grande maison. #name:nothing #clear:3
 "C'est probablement le meilleur moment pour en faire."
 "Prendre de l'avance ne fait jamais de mal."#trans:trans_center
 
--Après une demie-heure passée dans sa chambre, le son d'une sonnette retentis dans la maison. #bg:1_Chambre_Arianne #name:nothing
+-Après une demie-heure passée dans ma chambre, le son d'une sonnette retentis dans la maison. #bg:1_Chambre_Arianne #name:nothing
 Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville. #sprite:ari_neutral/2
 Je descend alors les escaliers pour voir qui pourrait bien être là. #trans:trans_center
 
@@ -226,27 +227,27 @@ Je...
 Je dois me changer les idées.
 J'allais attendre maman, mais autant commencer à faire les cartons moi-même. #trans:trans_center
 
-Une fois dans la chambre à l'étage, Arianne ouvre quelques cartons vides et commence à les remplir. #bg:1_Chambre_Arianne
+Une fois dans la chambre à l'étage, j'ouvre quelques cartons vides et commence à les remplir. #bg:1_Chambre_Arianne
 Habits, livres et autres objets dont la teneur émotionnelle est perdue au fil du temps.
 "Hm ?" #name:Arianne
 Une petite boite tombe des plis d'un habit sur le sol. #name:nothing
 "Qu'est-ce que c'est...?" #name:Arianne
 "Visiblement, il a été caché entre deux pulls, mais pour quelle raison ?" #name:Arianne
-La curiosité prend le dessus et Arianne ouvre la petite boite pour y découvrir un bracelet singulier avec huit perles brillantes. #item:grigri_8  #name:nothing
-"Grand-mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vue porter quelque chose ressemblant à ça." #name:Arianne
-La porte d'en bas claque alors, et Arianne descend les escaliers. #trans:trans_center #item:nothing #name:nothing
+La curiosité prend le dessus et j'ouvre la petite boite pour y découvrir un bracelet singulier avec huit perles brillantes. #item:grigri_8  #name:nothing
+Grand-mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vue porter quelque chose ressemblant à ça.
+La porte d'en bas claque alors, et je descend les escaliers. #trans:trans_center #item:nothing #name:nothing
  
 "Maman ?" #name:Arianne #bg:1_Cuisine_Arianne #music:SteadyPace
-Jeanne se pose sur une chaise de la cuisine, se tenant la tête. #name:nothing #sprite:jea_neutral/3
+Maman se pose sur une chaise, se tenant le crâne. #name:nothing #sprite:jea_neutral/3
 "Tout s'est bien passé ?" #name:Arianne #clear:2 #sprite:ari_neutral/1
 "Oui..." #name:Jeanne
 "Tu peux me faire un thé ?" #name:Jeanne
 "S'il te plait ?" #name:Jeanne
-Arianne vit rapidement dans quel genre d'humeur était sa mère. #name:nothing
-Il fallait lui donner un peu d'espace et attendre qu'elle instaure la conversation.
-C'est le genre de choses qui ne sont jamais expliqué et qu'un enfant apprend à force de vivre avec son parent.
-Elle se dirige alors sans un mot en direction des divers placard et tiroirs de la cuisine en sort des sachets de thés et met en route la bouilloire. #clear:1
-Une fois la tasse préparée, elle la pose devant sa mère et s'assoit à côté d'elle. 
+Lorsque maman est comme ça, il lui faut un peu d'espace et attendre qu'elle instaure la conversation. #name:nothing
+C'est le genre de choses que j'ai appris à déduire.
+Je vais alors en direction des tiroirs de la cuisine, me souvenant vaguement de l'emplacement de ce que je cherche. #clear:1
+Après un peu de fouille, je fini par sorti une tasse et des sachets de thé, puis je fais bouillir un peu d'eau.
+Une fois le thé préparé, je le pose devant sa mère et m'assoit à côté d'elle. 
 "Merci." #name:Jeanne #sprite:ari_neutral/1
 "Alors, comment s'est passé ton après-midi ?" #name:Jeanne
 "Zoé et Martin sont passés. J'ai pu rattraper un peu." #name:Arianne
@@ -255,8 +256,8 @@ Une fois la tasse préparée, elle la pose devant sa mère et s'assoit à côté
 "Je suppose." #name:Arianne
 "D'autres choses ?" #name:Jeanne
 "J'ai commencé à faire du rangement dans ma chambre..." #name:Arianne
-Arianne se souvient alors qu'elle n'avait pas rangé le bijoux qui se trouve dans sa poche. #name:nothing
-Elle le sort alors et le montre à Jeanne. #name:nothing
+Je me souviens alors que je n'avais pas rangé le bracelet qui se trouve toujours dans ma poche. #name:nothing
+Je le sors et le montre à ma mère. #name:nothing
 "Et j'ai trouvé ce bracelet dans une boite. J'ai jamais vu Mamie Nat le porter, tu sais ce que c'est ?" #name:Arianne
 "Ça ne me dit rien. Mais ta grand-mère avait beaucoup de décorations, un de plus un de moins, ça change rien." #name:Jeanne
 "Okay..." #name:Arianne
@@ -326,7 +327,7 @@ Elle pose une enveloppe devant moi que je prend et inspecte. #name:nothing
 Pas d'expéditeur.
 "Probablement Zoé. Merci maman." #name:Arianne #trans:trans_center #clear:1 #sprite:ari_neutral/0
 
-De retour à l'étage, Arianne porte son regard sur le bracelet de plus tôt, remarquant que l'une des perles s'est noircie. #name:nothing #bg:1_Chambre_Arianne #item:grigri_7
+De retour à l'étage, mon regard se porte sur le bracelet, remarquant que l'une des perles s'est noircie. #name:nothing #bg:1_Chambre_Arianne #item:grigri_7
 "C'est étrange ça... Ce serait dû à ce que j'ai vu ?" #name:Arianne 
 "Non..." #name:Arianne
 "Mais ça expliquerait comment j'ai pu entendre maman comme ça..." #name:Arianne

@@ -25,15 +25,15 @@ public class MenuScript : MonoBehaviour
         instance = this;
     }
 
-    private void Start()
-    {
-        DisableOption();
-        //OptionsCanvas = GameObject.FindGameObjectsWithTag("Options");     
-    }
-
     public static MenuScript GetInstance()
     {
         return instance;
+    }
+
+    private void Start()
+    {
+        DisableOption();
+        //OptionsCanvas = GameObject.FindGameObjectsWithTag("Options");
     }
 
     public void LoadScene(int GameScene)
@@ -49,6 +49,8 @@ public class MenuScript : MonoBehaviour
 
     public void EnableOption()
     {
+        EventSystem.current.SetSelectedGameObject(null);
+
         if (OptionsCanvas != null)
             OptionsCanvas.SetActive(true);
         else
@@ -69,6 +71,8 @@ public class MenuScript : MonoBehaviour
 
     public void DisableOption()
     {
+        EventSystem.current.SetSelectedGameObject(null);
+
         if (OptionsCanvas != null)
             OptionsCanvas.SetActive(false);
         else
@@ -78,6 +82,5 @@ public class MenuScript : MonoBehaviour
             childOption = RacineCanvas.transform.GetChild(0).gameObject;
             childOption.SetActive(false);
         }
-
     }
 }

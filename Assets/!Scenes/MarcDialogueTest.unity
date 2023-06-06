@@ -735,7 +735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 52, y: -49}
+  m_AnchoredPosition: {x: 52, y: -37.589996}
   m_SizeDelta: {x: 175, y: 70}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &239850085
@@ -2946,7 +2946,7 @@ MonoBehaviour:
   makePredictable: 1
   currentAudioInfo: {fileID: 0}
   musicAS: {fileID: 119430550}
-  firstInkJSON: {fileID: 4900000, guid: 6e4a70fc407d5e9418a2d3c13a01f715, type: 3}
+  firstInkJSON: {fileID: 4900000, guid: 44af70861bb74a847a9c4ba41e6a65d1, type: 3}
   nextInkJSON: {fileID: 0}
   canContinueToNextLine: 0
   skipIndicator: {fileID: 296936156}
@@ -5621,7 +5621,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -3.52, y: -215}
-  m_SizeDelta: {x: 793.68, y: 163.83}
+  m_SizeDelta: {x: 793.68, y: 152.42}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1521430241
 MonoBehaviour:
@@ -6188,7 +6188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.5902338, y: -2.710022}
+  m_AnchoredPosition: {x: 3.5902338, y: 2.994995}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1868420188
@@ -7289,7 +7289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -254, y: 60.000008}
+  m_AnchoredPosition: {x: -253.99998, y: 57.890007}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2090716543
@@ -7339,8 +7339,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

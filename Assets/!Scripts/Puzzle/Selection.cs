@@ -7,10 +7,12 @@ public class Selection : MonoBehaviour
 {
     [Header("Params")]
     public bool isBlocked;
+    public bool isEndingNerve;
     public ConnecCheck[] connecChecks;
 
     [Header("Others")]
     public Sprite blocked;
+    public Sprite nodsprite;
     public bool isGood;
     private int isconnected = 0;
     public bool selected;
@@ -21,6 +23,13 @@ public class Selection : MonoBehaviour
     {
         highlight = gameObject.GetComponent<SpriteRenderer>().color;
         isGood = false;
+
+
+        if (isEndingNerve)
+        {
+            isBlocked = true;
+            gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = nodsprite;
+        }
 
         if (isBlocked)
         {

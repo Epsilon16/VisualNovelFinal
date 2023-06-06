@@ -5,6 +5,7 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 {
@@ -751,6 +752,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Montre les choix
     private void DisplayChoices()
     {
+        EventSystem.current.SetSelectedGameObject(null);
+
         List<Choice> currentChoices = currentStory.currentChoices;
 
         if (currentChoices.Count > choices.Length)
@@ -797,6 +800,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Active/Désactive le Menu Déroulant
     public void MenuActivation()
     {
+        EventSystem.current.SetSelectedGameObject(null);
         MenuScript.GetInstance().mouseControl = false;
 
         if (!isMenuOn)

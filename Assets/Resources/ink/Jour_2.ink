@@ -192,5 +192,10 @@ J'ai une sensation de déjà-vu.
 "Je me demandais si Zoé était ici."
 "Oh tu viens juste de la rater. Elle est partie voir Martin il n'y a pas si longtemps."
 "Ah ça rapelle le bon vieux temps de quand vous jouiez tout les quatres."
+"..."
+"Merci, je vais y aller."
+"Passez une bonne journée."
+"Vous aussi."
 
+Je me dirige alors vers chez Martin, prenant un peu de temp
 ->END
