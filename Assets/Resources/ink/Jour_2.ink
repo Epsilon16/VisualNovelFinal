@@ -197,5 +197,117 @@ J'ai une sensation de déjà-vu.
 "Passez une bonne journée."
 "Vous aussi."
 
-Je me dirige alors vers chez Martin, prenant un peu de temp
+Je me dirige alors vers chez Martin.
+Malgré les années, je retrouves facilement le chemin, et fini par arriver chez lui.
+
+Arrivant devant sa grande maison, j'entends Zoé parlant à la porte.
+"Aller !"
+"Je te dis que je me sens pas bien.."
+"Arrête avec tes excuses ! C'est aujourd'hui ou jamais !"
+"Si on fait rien on le regrettera !"
+"Je n'ai pas envie de..."
+Martin lève la tête, ses mots tombant alors qu'il me remarque.
+"De ?"
+Elle tourne la tête dans la direction de Martin, son visage affichant un mélange de mécontentement et de tristesse.
+Puis elle me remarque, et son visage change du tout au tout, reprenant son sourir habituel.
+"Arianne !!"
+Elle descend les marches qui mène à la porte d'entrée pour venir me voir.
+"Contente de te revoir !"
+"Salut Zoé. De même."
+Je donne un faible sourire et penche la tête en direction de Martin qui reste sans un mot sur le pas de sa maison.
+Je respire un coup, tournant les mots de Greg dans ma tête une fois de plus.
+"Pour hier..."
+"Maintenant qu'on est tous là, allons au square !"
+"Attends Zoé je.."
+"Nan nan, on y va maintenant."
+Elle appuie le 'maintenant' en tournant sa tête vers Martin.
+Celui ci, après avoir fait une expression difficile, ferme la porte derrière lui et s'approche de nous.
+"Allons-y !"
+Zoé commence alors à marcher sans faire attention à Martin ou moi.
+
+Le chemin en direction du square est pour le moins malaisant.
+Zoé est en tête et Martin n'ose pas me regarder.
+J'ai envie de dire quelque chose mais je n'ose pas faire grand chose.
+Je vois pas comment Zoé peut garder son sourire. Je pourrais couper la tension avec un couteau.
+"Oh on est bientôt arrivé !"
+Elle se tourne et prend mon poignet, me tirant vers l'entrée du square.
+
+Le lieu n'a pas changé.
+Les mêmes chemins de terre et graviers parcourant le parc, les arbres que nous escaladions et l'air de jeu dans laquelle on a passé tant de temps.
+Milles et une histoires ont été raconté, joué et oublié ici.
+La nostalgie me pince légèrement le coeur, mais au vu de sa réaction hier, ce doit être pire pour Martin.
+"Hey regardez !"
+Zoé est monté sur le toit d'un des jeux en bois.
+"Je suis la plus grande !"
+"Zoé.. fait attention s'il te plait..."
+C'est la première chose que je l'entends dire depuis tout à l'heure, il a l'air vraiment inquiet.
+"Ne t'inquiète pas ! Je suis Miss Mouse ! Voleuse extra-ordinaire !"
+"Je suis aussi agile que le vent et aussi discrète que la nuit."
+Zoé glisse le long du toit avant d'atterir sur une petit plateforme.
+Miss Mouse.
+Je n'ai pas entendu ce nom prononcé depuis longtemps.
+C'est la méchante d'une BD que nous lisions tous ensemble, et Zoé l'adore.
+Martin et Zoé finissait souvent dans des arguments, lui étant un grand fan du personnage principal, Detective Wolf.
+Mais c'était aussi la source de nombre de nos jeux.
+"Oh mais qui va donc me poursuivre ? Je suis sur le point de voler un précieux diamant !"
+"Zoé descend..."
+"Non ! Je suis Miss Mouse."
+"Miss M..."
+"Zoé c'est pas drôle.."
+"Alerte police. Nous avons besoin de renfort. Le diamant du musée vient d'être volé."
+Zoé se tourne vers moi, affichant un grand sourire.
+"Jamais vous ne m'attraperait."
+"J'avais un plan de secours depuis le début."
+Elle se retourne et descend le long du tobbogan.
+"La cible est perdue de vu ! Nous avons besoin d'un détective pour retrouver sa trace."
+Je tourne mon regard vers Martin qui n'a toujours pas bougé.
+"Seul mon arch-nemesis saurait me tenir tête."
+"Mais il semblerait qu'il ne soit pas là aujourd'hui."
+"..."
+"Appeler tout le monde, que quelqu'un trouve Mr.Wolf."
+"..."
+"Si je m'échappe, c'est la fin ! On ne me reverra jamais !"
+"..."
+"Arrête toi là..."
+"Hm ?"
+"Arrête toi là, Miss."
+"Je crois avoir un signal !"
+"Arrête toi là Miss Mouse !"
+"Car je suis le grand Détective Wolf et rien ne saura me stopper dans ma poursuite de la justice !"
+Martin se place devant Zoé, étant à présent entièrement dans la fantasy.
+"Rend toi maintenant !"
+"Damned ! Je suis faite avoir comme un rat !"
+"C'est la fin de tes activités, tu as ma parole."
+"Jamais !"
+Zoé commence à courir dans le square.
+"Arrêtez-vous !"
+"Reviens là Miss Mouse !"
+Martin et moi commençons alors à la courser.
+J'ai l'impression d'être revenu dans le temps.
+On pouvait passer des journées tout les quatres à prétendre être ce qu'on voulait et imaginer des histoires.
+Après une dizaine de minutes, nous nous ponsons sur un banc.
+"Haha, j'ai pas autant couru depuis si longtemps."
+"Vraiment ? Tu m'étonnes."
+"Je sens plus mes jambes c'est horrible."
+"Ca m'avait manqué nos jeux de Detective Wolf."
+On reste comme ça un petit moment, reprenant notre souffle.
+Puis je me lève, faisant face au banc.
+"Hey, à propos d'hier..."
+"Hm ?"
+Martin baisse un peu le regard, n'ayant visiblement pas envie d'y repenser.
+"C'est juste... On a besoin de parler de Yann."
+Les deux reste silencieux.
+"On peut pas ne rien faire. Il était une partie centrale de nos vie !"
+"Le fait qu'il soit plus là.."
+"C'est..."
+Je perds un peu mes mots, je sais ce que je veux dire, mais je trouve pas les bonnes paroles.
+"Arianne..."
+"Hey !"
+Je lève les yeux et remarque qu'une jeune femme est entrain de nous interpeller.
+Elle s'avance vers notre direction d'un pas décidé.
+"Vous arrivez pas à lire ? Réservé aux moins de dix ans."
+"Non c'est juste que..."
+Martin et Zoé se lève
+"Hey attendez."
+
 ->END

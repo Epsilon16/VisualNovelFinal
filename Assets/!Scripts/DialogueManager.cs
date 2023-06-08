@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [Header("Grigri Const")]
     public bool isGrigriActivated;
     public GameObject grigriButton;
+    public Animator grigriAnimator;
     [SerializeField] private int grigriLives;
 
     [Header("Normal UI")]
@@ -255,6 +256,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         if (loadedState.grigristate == "True")
         {
             grigriButton.GetComponent<Button>().interactable = true;
+            grigriAnimator.Play("GrigriButton_Intro");
         }
         else if (loadedState.grigristate == "False")
         {
@@ -625,11 +627,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                         if (splitScene[1] == "false" && grigriLives > 0)
                         {
                             grigriButton.GetComponent<Button>().interactable = false;
+                            grigriAnimator.Play("GrigriButton_Outro");
+
                         }
                         else if (splitScene[1] == "true" && grigriLives > 0)
                         {
                             isSkipping = false;
                             grigriButton.GetComponent<Button>().interactable = true;
+                            grigriAnimator.Play("GrigriButton_Intro");
+
                         }
                         else if (splitScene[1] == "now")
                         {
@@ -815,8 +821,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
             if (grigriButton.GetComponent<Button>().interactable == true)
             {
-                wasactivated = true;
                 grigriButton.GetComponent<Button>().interactable = false;
+                wasactivated = true;
             }
         }
         else
