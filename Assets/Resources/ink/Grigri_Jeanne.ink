@@ -20,13 +20,13 @@ Arretez.
 Arretez.....
 J'en ais deja trop entendu.
 Je ne veux plus entendre parler de mort...
-++[Tu peux m'en parler.]
++[Tu peux m'en parler.]
     Tu es sur...?
     -> Puzzle_Moment
-++[Je suis la pour toi maman.]
++[Je suis la pour toi maman.]
     Ma cherie...
     -> Puzzle_Moment
-++[Laisse moi t'aider alors.]
++[Laisse moi t'aider alors.]
     Je veux bien un peu d'aide...
     -> Puzzle_Moment
 

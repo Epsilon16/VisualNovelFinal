@@ -1,6 +1,6 @@
 INCLUDE globals.ink
 
-{ CHOICES_TEST has Z0: -> AfterGrigri}
+{CHOICES_TEST has Z0: -> AfterGrigri}
 
 Le monde était recouvert d'une épaisse couche de fleures. #name:nothing #clear:all #bg:grigri_neutral #music:Stupefaction
 Même si je les arrachais, je n'arriverais pas à en voir le sol.

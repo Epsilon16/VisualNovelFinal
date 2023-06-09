@@ -1,5 +1,12 @@
 INCLUDE globals.ink
 
+{CHOICES_TEST has GEli0: -> AloisNoGrigri}
+{CHOICES_TEST has GEli1: -> AloisYesGrigri}
+
+
+{CHOICES_TEST has GEli0: -> EliseNoGrigri}
+{CHOICES_TEST has GEli1: -> EliseYesGrigri}
+
 VAR Coffee = ""
 
 "Mince."
@@ -73,11 +80,36 @@ Aloïs me regarde bizarrement. En même temps je regarde un bracelet depuis tout
 "Si tu le dis."
 ->discu_no_grigri
 
+===AloisYesGrigri===
+Qu'est-ce qu'il vient de dire ?
+"Si tu voulais que je part dis le tout de suite."
+Aloïs recule de quelque pas.
+"Qu'est-ce qui..."
+"J'ai compris, je te mets mal."
+"Hein non je.."
+"Désolé d'être moi Aloïs."
+Il me regarde avec un air terrifié et part presque en courant.
+Je ne sais pas si c'était une bonne idée d'utiliser le bracelet.
+J'ai l'impression que ça brouille mon cerveau, comme si je fusionnais avec celui de l'autre personne.
+C'est peut-être ce qui se passe.
+Mais il avait une telle peur. J'en ais eu peur moi même.
+Je devrais peut-être pas rentrer dans la tête des gens tout court.
+La porte du magasin s'ouvre alors et un hommme à la large posture en sort.
+"On est en service !"
+-> greg_intro
+
+===AloisNoGrigri===
+Ah!
+J'ai l'impression d'avoir été explusé de sa tête...
+Il faut que je fasse attention la prochaine fois.
+Il n'a pas l'air d'avoir vu quoi que ce soit...
+-> discu_no_grigri 
+
 === discu_no_grigri ===
 "Sinon, qu'est-ce que tu fais là ?"
 "Je dois récupérer un colis pour mes parents."
 "Je vois. Ils vont bien ?"
-"Oui très."
+"Oui."
 Je n'ai jamais vraiment cotoyé les parents d'Aloïs.
 Je les voyais à certaines occasions, mais je crois pas leurs avoir parler en dehors de 'Bonjours' et 'Au-revoirs'.
 Ils étaient gentils mais ils m'ont toujours fait un peu peur je crois.
@@ -86,14 +118,16 @@ Enfin, ils vont bien, c'est le principal.
 "Cool."
 La discussion arrive à un point mort. Mais heureusement la porte du magasin s'ouvre et un hommme à la large posture en sort.
 "On est en service !"
-
 Aloïs passe rapidement devant moi.
 "Bonjour. Euh... Est-ce que le colis pour mes parents est arrivé ?"
 "Ah Aloïs ! Il est derrière le contoire tu peux le prendre."
 "Merci!"
 Il rentre dans le magasin en pas de course et ressort tout aussi rapidement.
 Notre discussion à dû le mettre mal à l'aise j'ai l'impression.
+-> greg_intro
 
+=== greg_intro ===
+L'homme me dévisage un peu.
 "Hmm... Ton visage me dit quelque chose."
 "Hey Greg, je pensais pas que tu m'oublierais si facilement."
 "Arianne !? Bon dieu ce que tu as grandis !"
@@ -164,10 +198,42 @@ C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on 
 Une fois arrivé à la maison, je pose les courses sur la table.
 "J'ai ce que tu voulais !"
 Maman rentre dans la cuisine et regarde les courses.
+{Coffee == "CMF": -> MegaCoffee}
+{Coffee == "CEF": -> ExtraCoffee}
+{Coffee == "TEF": -> ExtraTea}
+
+===ExtraCoffee===
+"Merci Arianne, c'est parfait."
+"Viens m'aider dans le garage, on dirait qu'une tornarde est passée par là..."
+"Okay j'arrive."
 -> afternoon
 
+===ExtraTea===
+"Arianne..."
+"J'avais demandé du Café Extra. Pas du Thé Extra."
+"Ah merde."
+"J'me suis emmèler les pinceaux."
+"C'est pas grave, j'irais en acheter cet aprem."
+"Par contre tu vas devoir m'aider toute la matinée au garage."
+"On dirait qu'une tornade est passée là dedans."
+"Okay maman."
+-> afternoon
+
+===MegaCoffee===
+"Arianne..."
+"J'avais demandé du Café Extra. Pas du Café Méga."
+"C'est ton père qui le préfère comme ça."
+"Oh merde, j'ai pas fait attention."
+"Désolé maman."
+"C'est pas grave, ça en fera plus pour chez nous."
+"Par contre tu vas devoir m'aider toute la matinée au garage."
+"On dirait qu'une tornade est passée là dedans."
+"Okay maman."
+-> afternoon
+
+
 === afternoon ===
-Après avoir passé la matinée à ranger les affaires de Mamie et avoir mangé un coup, je me dirige en direction de chez Zoé.
+Après avoir passé la matinée à ranger les affaires de Mamie et mangé un coup, je me dirige en direction de chez Zoé.
 Martin avait l'air bien moins enclin à la discussion hier. Et je penses que Zoé voudra reparler.
 Du moins j'espère...
 
@@ -315,4 +381,9 @@ C'est la fille de Greg, Elise.
 "Qu'est-ce que tu fais ici Arianne ?"
 "On va partir d'ici, okay ?"
 "Je te parle pas la barbe à papa."
+->END
+
+===EliseYesGrigri===
+->END
+===EliseNoGrigri===
 ->END
