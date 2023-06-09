@@ -22,7 +22,7 @@ C'est un chic type, j'espère qu'il va toujours aussi bien.
 Ma mère sort un billet de dix de son porte monnais qu'elle me tend.
 "Et essaye de prendre du extra-fort s'il te plait."
 "Comment me tromper."
-J'enfile mon menteau avant de sortir.
+J'enfile mon manteau avant de sortir.
 "A toute à l'heure."
 "A toute."
 
@@ -381,9 +381,57 @@ C'est la fille de Greg, Elise.
 "Qu'est-ce que tu fais ici Arianne ?"
 "On va partir d'ici, okay ?"
 "Je te parle pas la barbe à papa."
+"Qu'est-ce que tu me veux."
+"Répond à ma question."
+"Je ne suis pas sur que ça te regarde."
+"Plus que tu ne le crois."
+"Vous tous d'ailleurs !"
+"Vous agissez comme des gosses ignorant."
+"Mais je sais que vous ne l'êtes pas."
+Elise a toujours été comme ça, brute de décofrage, disant tout ce qu'elle pense et hâpte aux crises de colère.
+On ne s'est jamais vraiment lié d'amitié enfants, mais quelque chose à profondément changé chez elle depuis que je l'ai vu pour la dernière fois.
+"Vous êtes qu'une bande de lâche-"
+"Elise."
+"Quoi tu veux te battre ?"
+Martin s'approche d'elle, et elle fait de même.
+Dans le mouvement, Elise pousse Martin qui fini a terre.
+"Bah alors ? C'est tout ce qu'il te reste capitaine ?"
+"Elise arrête !"
+"Pourquoi tu nous ennuie comme ça !?"
+Elle allait pour nous répondre puis s'arrête dans son élan et frappe l'échelle en bois à côté d'elle.
+"Allez vous faire."
+Elle se retourne furieuse et sort du parc.
+"Martin ça va ?"
+Celui-ci se relève, le regard lourd.
+"J'aurais pas dû venir."
+Et il s'en va également, allant en direction de la forêt.
+"Zoé ?"
+Celle-ci reste immobile déviant un peu le regard.
+Qu'est-ce que je devrais faire...
++[Suivre Elise]
+    ~Coffee = "CMF"
+    ->ChoiceElise
++[Suivre Martin]
+    ~Coffee = "TEF"
+    ->ChoiceMartin
++[Rester avec Zoé]
+    ~Coffee = "CEF"
+    ->ChoiceZoe
+
+===ChoiceElise===
 ->END
 
 ===EliseYesGrigri===
 ->END
+
 ===EliseNoGrigri===
 ->END
+
+
+===ChoiceMartin===
+->END
+
+===ChoiceZoe===
+->END
+
+
