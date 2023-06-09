@@ -114,7 +114,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         //Set des variables
         dialogueVariables = new DialogueVariables(loadGlobalsJSON);
-        audioSource = this.gameObject.AddComponent<AudioSource>();
+        audioSource = gameObject.AddComponent<AudioSource>();
         currentAudioInfo = defaultAudioInfo;
     }
 
@@ -449,7 +449,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         bool isAddingRichTextTag = false;
         foreach(char letter in line.ToCharArray())
         {
-            if (InputManager.GetInstance().GetSubmitPressed() && !isGrigriActivated)
+            if ((InputManager.GetInstance().GetSubmitPressed() && !isGrigriActivated) || isSkipping)
             {
                 dialogueText.maxVisibleCharacters = line.Length;
                 if (itemset)
@@ -460,6 +460,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 {
                     item.GetComponent<Animator>().Play("item_default");
                 }
+
+                if (isSkipping)
+                {
+                    yield return new WaitForSeconds(0.1f);
+                }
+
                 break;
             }
             if (letter == '<' || isAddingRichTextTag)
@@ -474,11 +480,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             {
                 PlayDialogueSound(dialogueText.maxVisibleCharacters, dialogueText.text[dialogueText.maxVisibleCharacters]);
                 dialogueText.maxVisibleCharacters++;
-                if (isSkipping)
-                {
-                    yield return new WaitForEndOfFrame();
-                }
-                else if (isGrigriActivated)
+                if (isGrigriActivated)
                 {
                     yield return new WaitForSeconds(typingSpeed*2);
                 }
@@ -492,7 +494,16 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         dialogueText.maxVisibleCharacters = line.Length;
         canContinueToNextLine = true;
-        DisplayChoices();
+
+        if (puzzleName != "nothing" && isSkipping)
+        {
+            isSkipping = false;
+            EnterPuzzle();
+        }
+        else
+        {
+            DisplayChoices();
+        }
     }
 
     private void GrigriButtonHandler()
@@ -623,24 +634,24 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     else
                     {
                         nextInkJSON = Resources.Load<TextAsset>("ink/" + splitScene[0]);
+                    }
 
-                        if (splitScene[1] == "false" && grigriLives > 0)
-                        {
-                            grigriButton.GetComponent<Button>().interactable = false;
-                            grigriAnimator.Play("GrigriButton_Outro");
+                    if (splitScene[1] == "false" && grigriLives > 0)
+                    {
+                        grigriButton.GetComponent<Button>().interactable = false;
+                        grigriAnimator.Play("GrigriButton_Outro");
 
-                        }
-                        else if (splitScene[1] == "true" && grigriLives > 0)
-                        {
-                            isSkipping = false;
-                            grigriButton.GetComponent<Button>().interactable = true;
-                            grigriAnimator.Play("GrigriButton_Intro");
+                    }
+                    else if (splitScene[1] == "true" && grigriLives > 0)
+                    {
+                        isSkipping = false;
+                        grigriButton.GetComponent<Button>().interactable = true;
+                        grigriAnimator.Play("GrigriButton_Intro");
 
-                        }
-                        else if (splitScene[1] == "now")
-                        {
-                            grigrinow = true;
-                        }
+                    }
+                    else if (splitScene[1] == "now")
+                    {
+                        grigrinow = true;
                     }
                     break;
                 case PUZZLE_TAG:
@@ -671,7 +682,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             else
             {
                 float newVolume = musicAS.volume - (0.01f);
-                if (newVolume < 0f)
+                if (newVolume < 0f || isSkipping || InputManager.GetInstance().GetSubmitPressed())
                 {
                     newVolume = 0f;
                 }
@@ -865,6 +876,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         EnterDialogueMode(nextInkJSON);
     }
 
+    //Sort du mode Grigri
     public IEnumerator ExitGrigriMode()
     {
         canContinueToNextLine = false;
@@ -889,14 +901,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         EnterDialogueMode(nextInkJSON);
     }
 
+    //Lance le puzzle
     public void EnterPuzzle()
     {
         canContinueToNextLine = false;
         puzzleGO = Instantiate(Resources.Load<GameObject>("prefabs/" + puzzleName), transform.position, transform.rotation);
         dialogueText.text = "";
-        //animation d'activation
     }
 
+    //Sort du puzzle
     public IEnumerator ExitPuzzle()
     {
         puzzleName = "nothing";
@@ -940,7 +953,5 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     public void changedtypingspeed()
     {
         typingSpeed = Resolution_Quality.GetInstance().typingspeeding;
-    }
-        
-    
+    }  
 }

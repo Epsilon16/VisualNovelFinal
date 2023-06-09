@@ -22,11 +22,13 @@ J'en ais deja trop entendu.
 Je ne veux plus entendre parler de mort...
 ++[Tu peux m'en parler.]
     Tu es sur...?
+    -> Puzzle_Moment
 ++[Je suis la pour toi maman.]
     Ma cherie...
+    -> Puzzle_Moment
 ++[Laisse moi t'aider alors.]
     Je veux bien un peu d'aide...
--> Puzzle_Moment
+    -> Puzzle_Moment
 
 === Puzzle_Moment ====
 Tout est trop confus dans ma tete... #puzzle:puzzle_0

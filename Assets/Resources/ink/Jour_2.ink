@@ -308,6 +308,11 @@ Elle s'avance vers notre direction d'un pas décidé.
 "Vous arrivez pas à lire ? Réservé aux moins de dix ans."
 "Non c'est juste que..."
 Martin et Zoé se lève
-"Hey attendez."
-
+"Attends.."
+"J'te reconnais."
+Elle ecarquille les yeux, et je me souviens également de la personne en face de moi.
+C'est la fille de Greg, Elise.
+"Qu'est-ce que tu fais ici Arianne ?"
+"On va partir d'ici, okay ?"
+"Je te parle pas la barbe à papa."
 ->END

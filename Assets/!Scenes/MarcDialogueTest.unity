@@ -1001,7 +1001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &256823442
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1839,7 +1839,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &496646091
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2947,7 +2947,7 @@ MonoBehaviour:
   makePredictable: 1
   currentAudioInfo: {fileID: 0}
   musicAS: {fileID: 119430550}
-  firstInkJSON: {fileID: 4900000, guid: 44af70861bb74a847a9c4ba41e6a65d1, type: 3}
+  firstInkJSON: {fileID: 4900000, guid: 6e4a70fc407d5e9418a2d3c13a01f715, type: 3}
   nextInkJSON: {fileID: 0}
   canContinueToNextLine: 0
   skipIndicator: {fileID: 296936156}
@@ -5988,7 +5988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1641596014
 MonoBehaviour:
   m_ObjectHideFlags: 0
