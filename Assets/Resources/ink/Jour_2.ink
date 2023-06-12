@@ -12,15 +12,15 @@ VAR Coffee = ""
 "Mince." #name:Jeanne
 Je tourne la tête vers ma mère entrain de frénétiquement ouvrir les armoires de la cuisine. #name:nothing
 "Qu'est-ce qui se passe ?". #name:Arianne
-"J'ai oublié de prendre du café, et visiblement Nat en est à court." #name:Jeanne
+"J'ai oublié de prendre du café, et visiblement Nat en était à court." #name:Jeanne
 "Tu peux aller en acheter chez Greg ?" #name:Jeanne
 "Tu penses qu'il est toujours ouvert ?" #name:Arianne
 "Je le connais, ce magasin fermera le jour où il passera l'arme à gauche." #name:Jeanne
 Greg est le gérant d'une superette de village ainsi qu'un ancien ami de mes parents.. #name:nothing
-Lorsqu'on était petit Yann, Martin, Zoé et moi allions souvent prendre des friandise chez lui.
+Lorsqu'on était petit ,Yann, Martin, Zoé et moi allions souvent prendre des friandise chez lui.
 C'est un chic type, j'espère qu'il va toujours aussi bien.
 Ma mère sort un billet de dix de son porte monnais qu'elle me tend.
-"Et essaye de prendre du extra-fort s'il te plait." #name:Jeanne
+"Et essayes de prendre du extra-fort s'il te plait." #name:Jeanne
 "Okay." #name:Arianne
 J'enfile mon manteau avant de sortir.. #name:nothing
 "A toute à l'heure." #name:Jeanne
@@ -88,7 +88,7 @@ Aloïs recule de quelque pas. #name:nothing
 "J'ai compris, je te mets mal." #name:Arianne
 "Hein non je.." #name:Aloïs
 "Désolé d'être moi Aloïs." #name:Arianne
-Il me regarde avec un air terrifié et part presque en courant. #name:nothing
+Il me regarde d'un air terrifié et part presque en courant. #name:nothing
 Je ne sais pas si c'était une bonne idée d'utiliser le bracelet.
 J'ai l'impression que ça brouille mon cerveau, comme si je fusionnais avec celui de l'autre personne.
 C'est peut-être ce qui se passe.
@@ -111,8 +111,8 @@ Il n'a pas l'air d'avoir vu quoi que ce soit...
 "Je vois. Ils vont bien ?" #name:Arianne
 "Oui." #name:Aloïs
 Je n'ai jamais vraiment cotoyé les parents d'Aloïs. #name:nothing
-Je les voyais à certaines occasions, mais je crois pas leurs avoir parler en dehors de 'Bonjours' et 'Au-revoirs'.
-Ils étaient gentils mais ils m'ont toujours fait un peu peur je crois.
+Je les voyais à certaines occasions, mais je crois pas leurs avoir parler en dehors des 'Bonjour' et 'Au-revoir'.
+Ils étaient gentils mais ils m'ont toujours fait un peu peur... Je crois...
 Probablement car ce sont des professeurs.
 Enfin, ils vont bien, c'est le principal.
 "Cool." #name:Arianne
@@ -130,12 +130,12 @@ Notre discussion à dû le mettre mal à l'aise j'ai l'impression.
 L'homme me dévisage un peu. #name:nothing
 "Hmm... Ton visage me dit quelque chose." #name:Greg
 "Hey Greg, je pensais pas que tu m'oublierais si facilement." #name:Arianne
-"Arianne !? Bon dieu ce que tu as grandis !" #name:Greg
-"La dernière fois que je t'ai vu tu faisais cette taille !" #name:Greg
+"Arianne !? Bon dieu, ce que tu as grandis !" #name:Greg
+"La dernière fois que je t'ai vu, tu faisais cette taille !" #name:Greg
 Il fait un geste exagéré qui ne dépasse pas les un mètre cinquante. #name:nothing
 "Je sais que j'ai grandis mais tu exagère un peu." #name:Arianne
 "Hahaha ! Toujours." #name:Greg
-Lui en tout cas, n'a pas changé d'un poil. Peut-être les cheveux qui grisonne, mais c'est toujours le même homme souriant dont je me souviens. #name:nothing
+Lui en tout cas, n'a pas changé d'un poil. Peut-être les cheveux qui grisonnent, mais c'est toujours le même homme souriant dont je me souviens. #name:nothing
 "Qu'est-ce qui t'amène ici ?" #name:Greg
 "Ah oui, je dois acheter..." #name:Arianne
 +[Café Mega-Fort]
@@ -147,31 +147,31 @@ Lui en tout cas, n'a pas changé d'un poil. Peut-être les cheveux qui grisonne,
 +[Café Extra-Fort]
     ~Coffee = "CEF"
     "Du Café Extra-Fort." #name:Arianne
--"Bien sur ! Il y en a dans l'îlo à droite." #name:Greg
+-"Bien sur ! Il y en a dans l'îlot à droite." #name:Greg
 "Merci." #name:Arianne
 Je vais dans le dit îlot, prend un paquet du produit puis va payer à la caisse. #name:nothing
-"Du coup qu'est-ce que tu deviens ?" #name:Greg
+"Du coup, qu'est-ce que tu deviens ?" #name:Greg
 "Moi pas grand chose." #name:Arianne
 "Naaan, je te crois pas. L'Arianne que je connais n'a pas une vie barbante." #name:Greg
 Je souris face à la remarque. #name:nothing
 "Je fais des études en ingénieurie." #name:Arianne
 "Vraiment ? Quoique ça m'étonnes pas tant que ça." #name:Greg
-"En tout cas je pourrais pas faire ça. Trop de machination cérébrale." #name:Greg
+"En tout cas je pourrais pas faire ça. Trop de machinations cérébrales." #name:Greg
 "C'est sur que tenir un magasin doit être bien plus relaxant pour tes neurones." #name:Arianne
 "Hahaha !" #name:Greg
 "J'en ri mais tu n'as pas tout à fait tord."
 "Ca devient de plus en plus difficile de rester au dessus de l'eau."
-"Les grandes surface en ville sont plus pratiques, plus rapide et ont plus de choix."
-"Même avec Elise pour m'aider ici je peux pas vraiment combattre le progrès."
+"Les grandes surfaceq en ville sont plus pratiques, plus rapide et ont plus de choix."
+"Même avec Elise pour m'aider ici, je peux pas vraiment combattre le progrès."
 "C'est... Dommage." #name:Arianne
-"Oooh, me fait pas cette tête là. Les choses change, c'est normal." #name:Greg
-"De mon époque on avait des systèmes de locations de casette de films !"
+"Oooh, me fait pas cette tête là. Les choses changent, c'est normal." #name:Greg
+"De mon époque, on avait des systèmes de locations de casette de films !"
 "Ca n'existe plus car on n'en a plus besoin, c'est comme ça."
 "Tu sais Greg. Je suis assez grande pour avoir connu les locations de films." #name:Arianne
 "..." #name:Greg
 "HAHAHAHA !!"
-"J'oublis tellement de choses desfois."
-"Mais j'oublis pas le plus important !"
+"J'oublis tellement de choses parfois."
+"Mais j'oublie pas le plus important !"
 "Le café ?" #name:Arianne
 "Non, toi bien sur !" #name:Greg
 "D'ailleurs, t'as pu voir Zoé et Martin ?" #name:Greg
@@ -185,16 +185,16 @@ Malgré le fait qu'il soit presque du même âge que ma mère, pour nous, Greg �
 "Est-ce que tu voulais que ça se passe mal ?" #name:Greg
 "Non évidemment." #name:Arianne
 "Donc tout va bien !" #name:Greg
-"Si tu leur explique ton point de vu ils comprendront."
+"Si tu leur explique ton point de vu, ils comprendront."
 "Tu les connais depuis la maternelle, y'a pas de raison."
 Pas sur de vraiment les connaitres maintenant. #name:nothing
 "Tu n'as pas envie de finir sur une mauvaise note, si ?" #name:Greg
-"Tu as raison, merci Greg." #name:Arianne
+"Tu as raison. merci Greg!" #name:Arianne
 "Haha, de rien." #name:Greg
 Je lui fait un signe de la main avant de repartir. #name:nothing
 
-Il a probablement raison, je devrais les revoirs et parler. #name:nothing
-C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte sur de mauvais termes.
+Il a probablement raison, je devrais les revoir et leur parler. #name:nothing
+C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte en de mauvais termes.
 
 Une fois arrivé à la maison, je pose les courses sur la table. #name:nothing
 "J'ai ce que tu voulais !" #name:Arianne
@@ -213,7 +213,7 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing
 "Arianne..." #name:Jeanne
 "J'avais demandé du Café Extra. Pas du Thé Extra." #name:Jeanne
 "Ah merde." #name:Arianne
-"J'me suis emmèler les pinceaux." #name:Arianne
+"J'me suis emmêler les pinceaux." #name:Arianne
 "C'est pas grave, j'irais en acheter cet aprem." #name:Jeanne
 "Par contre tu vas devoir m'aider toute la matinée au garage." #name:Jeanne
 "On dirait qu'une tornade est passée là dedans." #name:Jeanne
@@ -234,20 +234,20 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing
 
 
 === afternoon ===
-Après avoir passé la matinée à ranger les affaires de Mamie et mangé un coup, je me dirige en direction de chez Zoé. #name:nothing
+Après avoir passé la matinée à ranger les affaires de Mamie et manger un coup, je me dirige en direction de chez Zoé. #name:nothing
 Martin avait l'air bien moins enclin à la discussion hier. Et je penses que Zoé voudra reparler.
 Du moins j'espère...
 
 Je continue à descendre la rue jusqu'à arriver devant sa maison. #name:nothing
 Le doute me prend alors.
 Devrais-je vraiment sonner ?
-C'est probablement un peu trop tôt vu ce qu'il s'est passé.
-Mais si je ne fait rien maintenant ça s'empirera.
+C'est probablement un peu trop tôt, vu ce qu'il s'est passé.
+Mais si je ne fait rien maintenant, ça pourra empirer.
 Je n'ai juste pas envie de la déranger comme ça.
 Que faire ?
 "Tout va bien jeune fille ?" #name:Mère de Zoé
 Une voix féminine me bloque dans mon monologue intérieur. #name:nothing
-"Vous avez besoin de direction ?" #name:Mère de Zoé
+"Vous avez besoin d'une direction ?" #name:Mère de Zoé
 Je lève la tête et remarque que quelqu'un se tient devant la porte à côté de moi. #name:nothing
 C'est Maria, la mère de Zoé.
 "Oh non non, je suis là où je veux." #name:Arianne
@@ -261,17 +261,17 @@ J'ai une sensation de déjà-vu.
 "Ah ça rapelle le bon vieux temps de quand vous jouiez tout les quatres."
 "..." #name:Arianne
 "Merci, je vais y aller."
-"Passez une bonne journée.""Qu'est-ce qui t'amène ?"
+"Passez une bonne journée."
 "Vous aussi." #name:Arianne
 
 Je me dirige alors vers chez Martin. #name:nothing
-Malgré les années, je retrouves facilement le chemin, et fini par arriver chez lui.
+Malgré les années, je retrouve facilement le chemin, et finis par arriver chez lui.
 
 Arrivant devant sa grande maison, j'entends Zoé parlant à la porte. #name:nothing
-"Aller !" #name:Zoé
+"Allez !" #name:Zoé
 "Je te dis que je me sens pas bien.." #name:Martin
-"Arrête avec tes excuses ! C'est aujourd'hui ou jamais !" #name:Zoé
-"Si on fait rien on le regrettera !"
+"Arrêtes avec tes excuses ! C'est aujourd'hui ou jamais !" #name:Zoé
+"Si on fait rien, on le regrettera !"
 "Je n'ai pas envie de..." #name:Martin
 Martin lève la tête, ses mots tombant alors qu'il me remarque. #name:nothing
 "De ?" #name:Zoé
@@ -295,13 +295,13 @@ Zoé commence alors à marcher sans faire attention à Martin ou moi. #name:noth
 Le chemin en direction du square est pour le moins malaisant. #name:nothing
 Zoé est en tête et Martin n'ose pas me regarder.
 J'ai envie de dire quelque chose mais je n'ose pas faire grand chose.
-Je vois pas comment Zoé peut garder son sourire. Je pourrais couper la tension avec un couteau.
-"Oh on est bientôt arrivé !" #name:Zoé
+Je vois pas comment Zoé peut garder son sourire. Je pourrais couper la tension au couteau.
+"Oh ! On est bientôt arrivé !" #name:Zoé
 Elle se tourne et prend mon poignet, me tirant vers l'entrée du square. #name:nothing
 
 Le lieu n'a pas changé. #name:nothing
-Les mêmes chemins de terre et graviers parcourant le parc, les arbres que nous escaladions et l'air de jeu dans laquelle on a passé tant de temps.
-Milles et une histoires ont été raconté, joué et oublié ici.
+Les mêmes chemins de terre et de gravier parcourant le parc, les arbres que nous escaladions et l'air de jeu dans laquelle on a passé tant de temps.
+Mille et une histoires ont été raconté, joué et oublié ici.
 La nostalgie me pince légèrement le coeur, mais au vu de sa réaction hier, ce doit être pire pour Martin.
 "Hey regardez !" #name:Zoé
 Zoé est monté sur le toit d'un des jeux en bois. #name:nothing
@@ -317,7 +317,7 @@ C'est la méchante d'une BD que nous lisions tous ensemble, et Zoé l'adore.
 Martin et Zoé finissait souvent dans des arguments, lui étant un grand fan du personnage principal, Detective Wolf.
 Mais c'était aussi la source de nombre de nos jeux.
 "Oh mais qui va donc me poursuivre ? Je suis sur le point de voler un précieux diamant !" #name:Zoé
-"Zoé descend..." #name:Martin
+"Zoé, descends..." #name:Martin
 "Non ! Je suis Miss Mouse." #name:Zoé
 "Miss M..." #name:Martin
 "Zoé c'est pas drôle.."
@@ -337,9 +337,9 @@ Je tourne mon regard vers Martin qui n'a toujours pas bougé. #name:nothing
 "..." #name:Martin
 "Arrête toi là..."
 "Hm ?" #name:Zoé
-"Arrête toi là, Miss." #name:Martin
+"Arrêtes toi là, Miss." #name:Martin
 "Je crois avoir un signal !" #name:Arianne
-"Arrête toi là Miss Mouse !" #name:Martin
+"Arrêtes toi là, Miss Mouse !" #name:Martin
 "Car je suis le grand Détective Wolf et rien ne saura me stopper dans ma poursuite de la justice !"
 Martin se place devant Zoé, étant à présent entièrement dans la fantasy. #name:nothing
 "Rend toi maintenant !" #name:Martin
@@ -348,14 +348,14 @@ Martin se place devant Zoé, étant à présent entièrement dans la fantasy. #n
 "Jamais !" #name:Zoé
 Zoé commence à courir dans le square. #name:nothing
 "Arrêtez-vous !" #name:Arianne
-"Reviens là Miss Mouse !" #name:Martin
+"Reviens là, Miss Mouse !" #name:Martin
 Martin et moi commençons alors à la courser. #name:nothing
 J'ai l'impression d'être revenu dans le temps.
 On pouvait passer des journées tout les quatres à prétendre être ce qu'on voulait et imaginer des histoires.
 Après une dizaine de minutes, nous nous ponsons sur un banc.
 "Haha, j'ai pas autant couru depuis si longtemps."
 "Vraiment ? Tu m'étonnes."
-"Je sens plus mes jambes c'est horrible."
+"Je sens plus mes jambes, c'est horrible."
 "Ca m'avait manqué nos jeux de Detective Wolf."
 On reste comme ça un petit moment, reprenant notre souffle.
 Puis je me lève, faisant face au banc.
@@ -374,16 +374,16 @@ Je lève les yeux et remarque qu'une jeune femme est entrain de nous interpeller
 Elle s'avance vers notre direction d'un pas décidé.
 "Vous arrivez pas à lire ? Réservé aux moins de dix ans."
 "Non c'est juste que..."
-Martin et Zoé se lève
+Martin et Zoé se lèvent
 "Attends.."
 "J'te reconnais."
 Elle ecarquille les yeux, et je me souviens également de la personne en face de moi.
 C'est la fille de Greg, Elise.
 "Qu'est-ce que tu fais ici Arianne ?"
 "On va partir d'ici, okay ?"
-"Je te parle pas la barbe à papa."
-"Qu'est-ce que tu me veux."
-"Répond à ma question."
+"Je te parle pas, la barbe à papa."
+"Qu'est-ce que tu me veux?"
+"Réponds à ma question."
 "Je ne suis pas sur que ça te regarde."
 "Plus que tu ne le crois."
 "Vous tous d'ailleurs !"
@@ -391,17 +391,17 @@ C'est la fille de Greg, Elise.
 "Mais je sais que vous ne l'êtes pas."
 Elise a toujours été comme ça, brute de décofrage, disant tout ce qu'elle pense et hâpte aux crises de colère.
 On ne s'est jamais vraiment lié d'amitié enfants, mais quelque chose à profondément changé chez elle depuis que je l'ai vu pour la dernière fois.
-"Vous êtes qu'une bande de lâche-"
-"Elise stop.."
-"Quoi tu veux te battre ?"
+"Vous êtes qu'une bande de lâches-"
+"Elise, stop.."
+"Quoi ! Tu veux te battre ?"
 Martin s'approche d'elle, et elle fait de même.
-Elise pousse alors Martin qui fini a terre.
+Elise pousse alors Martin, qui finit a terre.
 "Bah alors ? C'est tout ce qu'il te reste capitaine ?"
-"Elise arrête !"
+"Elise, arrêtes !"
 "Pourquoi tu nous ennuie comme ça !?"
 Elle allait pour nous répondre puis s'arrête dans son élan et frappe l'échelle en bois à côté d'elle.
 "Allez vous faire."
-Elle se retourne furieuse et sort du parc.
+Elle se retourne, furieuse et sort du parc.
 "Martin ça va ?"
 Celui-ci se relève, le regard lourd.
 "J'aurais pas dû venir."
@@ -442,7 +442,7 @@ Elle se stop et se retourne d'un mouvement sec, une expression de rage sur le vi
 Je sens le bracelet s'allumer.
 "On t'a rien fait ! On était entrain de parler et t'es juste..."
 "Venu nous faire chier sans raison !"
-"Oh ferme la."
+"Oh, fermes la."
 "Quoi ?"
 "Juste.. ferme la ! Tu sais rien de moi !"
 "Et tu sais rien de moi non plus ! Pourquoi est-ce que tu es autant en colère tout le temps ??"
@@ -477,7 +477,7 @@ Une fois devant l'entrée de square, je me demande qui aller voir en premier.
 ===EliseNoGrigri===
 ~RS_Martin -= 1
 ~RS_Zoe -= 1
-"Mon dieu juste dégage de ma vu !"
+"Mon dieu, juste dégage de ma vu !"
 "Arrête de me suivre comme si t'étais un chien !"
 "J'ui une attraction pour toi ??"
 "Juste dégage !"
@@ -494,11 +494,11 @@ Je tente également la forêt, avec tout autant de résultat.
 
 Je fini par rentrer chez moi, la tête lourde.
 Je n'aurais probablement pas dû suivre Elise...
-Sur le moment ça semblait être une bonne idée, mais j'aurais dû rester vers Martin de Zoé au lieu de ne rien faire.
+Sur le moment ça semblait être une bonne idée, mais j'aurais dû aller vers Martin ou rester avec Zoé au lieu de ne rien faire.
 
 Je passe la soirée de ma chambre à ruminer.
 J'ai gâché nos retrouvailles, encore et encore.
-Ils ont tous raisons.
+Ils ont tous raison.
 Je n'aurais pas dû revenir à Adonis.
 ->END
 
@@ -506,8 +506,8 @@ Je n'aurais pas dû revenir à Adonis.
 ===ChoiceMartin===
 ~RS_Martin += 1
 "Martin ?"
-J'appel, sans recevoir de réponse.
-Au bout d'un moment je fini par le trouver derrière un rocher, assis dans l'herbe.
+J'appelle, sans recevoir de réponse.
+Au bout d'un moment je finis par le trouver derrière un rocher, assis dans l'herbe.
 "Hey Martin."
 "Ah !"
 "Trouvé."
@@ -529,7 +529,7 @@ Je ne pensais pas que ça pourrait faire si mal de la part de Martin.
 "Désolé pour ce que j'ai dit tout à l'heure."
 "Je suis content d'être venu, c'était cool."
 "Ton impression de Detective Wolf n'a pas changé."
-"Arrête, c'était embarrassant.."
+"Arrêtes, c'était embarrassant.."
 "Mais c'était cool."
 "Haha ouais."
 "..."
@@ -538,7 +538,7 @@ Je ne pensais pas que ça pourrait faire si mal de la part de Martin.
 "..."
 "Je voulais pas..."
 "C'est juste..."
-"C'est dur tu sais."
+"C'est dur, tu sais..."
 Martin ne dit rien, mais il n'a pas l'air de mal le prendre non plus.
 "On va voir Zoé ?"
 "Okay."
@@ -561,12 +561,12 @@ J'espère pouvoir en reparler un jour.
 
 ===ChoiceZoe===
 ~RS_Zoe += 1
-On reste un moment assise toute les deux sans rien dire.
+On reste un moment, assises toute les deux sans rien dire.
 Puis j'entamme la conversation.
 "A quoi est-ce que tu penses ?"
 "Elise."
-Dur de penser à autre chose en même temps.
-"Qu'est-ce qu'on lui a fait pour qu'elle nous haïsse comme ça."
+Dur de penser à autre chose, en même temps.
+"Qu'est-ce qu'on lui a fait pour qu'elle nous haïsse comme ça?"
 "Pourquoi est-ce qu'elle est aussi.. explosive envers nous ?"
 "Mais elle a l'air de m'en vouloir à moi. Et elle était pas comme ça avant."
 "Tu crois que c'est parce que tu es partie ?"
@@ -576,7 +576,7 @@ Dur de penser à autre chose en même temps.
 Le message d'hier me revient en tête... Ce serait elle ?
 "On ne saura probablement jamais..."
 Zoé est inhabituellement très neutre.
-Elle qui est toujours positive et enjouée, la voir aussi sérieuse est assez étrange.
+Elle, qui est toujours positive et enjouée, la voir aussi sérieuse est assez étrange.
 J'ai vraiment raté beaucoup de chose, j'aurais dû faire de mon mieux pour garder contacte...
 "Je suis désolé d'avoir gâché nos retrouvailles. Je sais que tu avais hâte qu'on se revois."
 "Dis pas ça, c'est de la faute d'Elise."
