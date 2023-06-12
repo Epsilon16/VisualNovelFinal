@@ -46,7 +46,7 @@ Je suis à présent seule dans cette grande maison vide. #name:nothing #clear:3
 +[Commencer à ranger.]
 "Maman voudra probablement faire les cartons d'une manière organiser." #name:Arianne
 "Autant ne pas être stupide et attendre qu'elle rentre avant de commencer à ranger."
-"La dernière fois que j'ai ranger le grenier sans elle j'ai cru voir ma vie défiler devant mes yeux..."#trans:trans_center
+"La dernière fois que j'ai rangé le grenier sans elle j'ai cru voir ma vie défiler devant mes yeux..."#trans:trans_center
 +[Avancer sur ses devoirs.]
 "Je ne reste qu'une semaine, et sachant qu'avec maman je vais surtout ranger des affaires dans des cartons." #name:Arianne
 "C'est probablement le meilleur moment pour en faire."
@@ -349,5 +349,5 @@ Je jette la lettre en dégoût dans un carton. #name:nothing
 "Mais ce ne sont pas vraiment leurs styles..." #name:Arianne
 "Si..?" #name:Arianne
 "Mieux vaut oublier tout ça." #name:Arianne
-"Demain sera un autre jour." #next:nothing/nothing #name:Arianne
+"Demain sera un autre jour." #next:Jour_2/false #name:Arianne
 -> END

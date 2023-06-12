@@ -4,7 +4,7 @@ INCLUDE globals.ink
 J'en ais marre. #next:Jour_2/false #bg:grigri_eli #gsprite:eli_grigri #name:nothing #clear:all #music:Stupefaction
 Marre, marre, marre, marre,
 MARRE!!
-Disparait de ma vu.
+Dégage de ma vu.
 Vous m'enragez, m'enragez!
 +[Calme toi, ca ne sert à rien.]
     ~CHOICES_TEST = GEli0
@@ -28,4 +28,5 @@ Ca me rappel ce foutu halloween.
 Ce putain d'halloween.
 J'aimerais l'oublier mais vous exister toujours pour me le rappeler.
 Si seulement vous pouviez tous disparaitre.
+Pour toujours.
 -> END
