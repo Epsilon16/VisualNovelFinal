@@ -234,122 +234,122 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing
 
 
 === afternoon ===
-Après avoir passé la matinée à ranger les affaires de Mamie et mangé un coup, je me dirige en direction de chez Zoé.
+Après avoir passé la matinée à ranger les affaires de Mamie et mangé un coup, je me dirige en direction de chez Zoé. #name:nothing
 Martin avait l'air bien moins enclin à la discussion hier. Et je penses que Zoé voudra reparler.
 Du moins j'espère...
 
-Je continue à descendre la rue jusqu'à arriver devant sa maison.
+Je continue à descendre la rue jusqu'à arriver devant sa maison. #name:nothing
 Le doute me prend alors.
 Devrais-je vraiment sonner ?
 C'est probablement un peu trop tôt vu ce qu'il s'est passé.
 Mais si je ne fait rien maintenant ça s'empirera.
 Je n'ai juste pas envie de la déranger comme ça.
 Que faire ?
-"Tout va bien jeune fille ?"
-Une voix féminine me bloque dans mon monologue.
-"Vous avez besoin de direction ?"
-Je lève la tête et remarque que quelqu'un se tient devant la porte à côté de moi.
+"Tout va bien jeune fille ?" #name:Mère de Zoé
+Une voix féminine me bloque dans mon monologue intérieur. #name:nothing
+"Vous avez besoin de direction ?" #name:Mère de Zoé
+Je lève la tête et remarque que quelqu'un se tient devant la porte à côté de moi. #name:nothing
 C'est Maria, la mère de Zoé.
-"Oh non non, je suis là où je veux."
-"Attendez... Arianne c'est toi ? Qu'est-ce que tu as grandis !"
+"Oh non non, je suis là où je veux." #name:Arianne
+"Attendez... Arianne c'est toi ? Qu'est-ce que tu as grandis !" #name:Mère de Zoé
 J'ai une sensation de déjà-vu.
-"Bonjour Maria. Désolé de venir à l'improviste."
-"Oh mais nulle besoin de t'excuser, tu es et sera toujours la bienvenue chez nous."
+"Bonjour Maria. Désolé de venir à l'improviste." #name:Arianne
+"Oh mais nulle besoin de t'excuser, tu es et sera toujours la bienvenue chez nous." #name:Mère de Zoé
 "Qu'est-ce qui t'amène ?"
-"Je me demandais si Zoé était ici."
-"Oh tu viens juste de la rater. Elle est partie voir Martin il n'y a pas si longtemps."
+"Je me demandais si Zoé était ici." #name:Arianne
+"Oh tu viens juste de la rater. Elle est partie voir Martin il n'y a pas si longtemps.""Qu'est-ce qui t'amène ?"
 "Ah ça rapelle le bon vieux temps de quand vous jouiez tout les quatres."
-"..."
+"..." #name:Arianne
 "Merci, je vais y aller."
-"Passez une bonne journée."
-"Vous aussi."
+"Passez une bonne journée.""Qu'est-ce qui t'amène ?"
+"Vous aussi." #name:Arianne
 
-Je me dirige alors vers chez Martin.
+Je me dirige alors vers chez Martin. #name:nothing
 Malgré les années, je retrouves facilement le chemin, et fini par arriver chez lui.
 
-Arrivant devant sa grande maison, j'entends Zoé parlant à la porte.
-"Aller !"
-"Je te dis que je me sens pas bien.."
-"Arrête avec tes excuses ! C'est aujourd'hui ou jamais !"
+Arrivant devant sa grande maison, j'entends Zoé parlant à la porte. #name:nothing
+"Aller !" #name:Zoé
+"Je te dis que je me sens pas bien.." #name:Martin
+"Arrête avec tes excuses ! C'est aujourd'hui ou jamais !" #name:Zoé
 "Si on fait rien on le regrettera !"
-"Je n'ai pas envie de..."
-Martin lève la tête, ses mots tombant alors qu'il me remarque.
-"De ?"
-Elle tourne la tête dans la direction de Martin, son visage affichant un mélange de mécontentement et de tristesse.
+"Je n'ai pas envie de..." #name:Martin
+Martin lève la tête, ses mots tombant alors qu'il me remarque. #name:nothing
+"De ?" #name:Zoé
+Elle tourne la tête dans la direction de Martin, affichant du mécontentement. #name:nothing
 Puis elle me remarque, et son visage change du tout au tout, reprenant son sourir habituel.
-"Arianne !!"
-Elle descend les marches qui mène à la porte d'entrée pour venir me voir.
-"Contente de te revoir !"
-"Salut Zoé. De même."
-Je donne un faible sourire et penche la tête en direction de Martin qui reste sans un mot sur le pas de sa maison.
+"Arianne !!" #name:Zoé
+Elle descend les marches qui mène à la porte d'entrée pour venir me voir. #name:nothing
+"Contente de te revoir !" #name:Zoé
+"Salut Zoé. De même." #name:Arianne
+Je donne un faible sourire et penche la tête en direction de Martin qui reste sans un mot sur le pas de sa maison. #name:nothing
 Je respire un coup, tournant les mots de Greg dans ma tête une fois de plus.
-"Pour hier..."
-"Maintenant qu'on est tous là, allons au square !"
-"Attends Zoé je.."
-"Nan nan, on y va maintenant."
-Elle appuie le 'maintenant' en tournant sa tête vers Martin.
+"Pour hier..." #name:Arianne
+"Maintenant qu'on est tous là, allons au square !" #name:Zoé
+"Attends Zoé je.." #name:Arianne
+"Nan nan, on y va maintenant." #name:Zoé
+Elle appuie le 'maintenant' en tournant sa tête vers Martin. #name:nothing
 Celui ci, après avoir fait une expression difficile, ferme la porte derrière lui et s'approche de nous.
-"Allons-y !"
-Zoé commence alors à marcher sans faire attention à Martin ou moi.
+"Allons-y !" #name:Zoé
+Zoé commence alors à marcher sans faire attention à Martin ou moi. #name:nothing
 
-Le chemin en direction du square est pour le moins malaisant.
+Le chemin en direction du square est pour le moins malaisant. #name:nothing
 Zoé est en tête et Martin n'ose pas me regarder.
 J'ai envie de dire quelque chose mais je n'ose pas faire grand chose.
 Je vois pas comment Zoé peut garder son sourire. Je pourrais couper la tension avec un couteau.
-"Oh on est bientôt arrivé !"
-Elle se tourne et prend mon poignet, me tirant vers l'entrée du square.
+"Oh on est bientôt arrivé !" #name:Zoé
+Elle se tourne et prend mon poignet, me tirant vers l'entrée du square. #name:nothing
 
-Le lieu n'a pas changé.
+Le lieu n'a pas changé. #name:nothing
 Les mêmes chemins de terre et graviers parcourant le parc, les arbres que nous escaladions et l'air de jeu dans laquelle on a passé tant de temps.
 Milles et une histoires ont été raconté, joué et oublié ici.
 La nostalgie me pince légèrement le coeur, mais au vu de sa réaction hier, ce doit être pire pour Martin.
-"Hey regardez !"
-Zoé est monté sur le toit d'un des jeux en bois.
-"Je suis la plus grande !"
-"Zoé.. fait attention s'il te plait..."
-C'est la première chose que je l'entends dire depuis tout à l'heure, il a l'air vraiment inquiet.
-"Ne t'inquiète pas ! Je suis Miss Mouse ! Voleuse extra-ordinaire !"
+"Hey regardez !" #name:Zoé
+Zoé est monté sur le toit d'un des jeux en bois. #name:nothing
+"Je suis la plus grande !" #name:Zoé
+"Zoé.. fait attention s'il te plait..." #name:Martin
+C'est la première chose que je l'entends dire depuis tout à l'heure, il a l'air vraiment inquiet. #name:nothing
+"Ne t'inquiète pas ! Je suis Miss Mouse ! Voleuse extra-ordinaire !" #name:Zoé
 "Je suis aussi agile que le vent et aussi discrète que la nuit."
-Zoé glisse le long du toit avant d'atterir sur une petit plateforme.
+Zoé glisse le long du toit avant d'atterir sur une petit plateforme. #name:nothing
 Miss Mouse.
 Je n'ai pas entendu ce nom prononcé depuis longtemps.
 C'est la méchante d'une BD que nous lisions tous ensemble, et Zoé l'adore.
 Martin et Zoé finissait souvent dans des arguments, lui étant un grand fan du personnage principal, Detective Wolf.
 Mais c'était aussi la source de nombre de nos jeux.
-"Oh mais qui va donc me poursuivre ? Je suis sur le point de voler un précieux diamant !"
-"Zoé descend..."
-"Non ! Je suis Miss Mouse."
-"Miss M..."
+"Oh mais qui va donc me poursuivre ? Je suis sur le point de voler un précieux diamant !" #name:Zoé
+"Zoé descend..." #name:Martin
+"Non ! Je suis Miss Mouse." #name:Zoé
+"Miss M..." #name:Martin
 "Zoé c'est pas drôle.."
-"Alerte police. Nous avons besoin de renfort. Le diamant du musée vient d'être volé."
-Zoé se tourne vers moi, affichant un grand sourire.
-"Jamais vous ne m'attraperait."
+"Alerte police. Nous avons besoin de renfort. Le diamant du musée vient d'être volé." #name:Arianne
+Zoé se tourne vers moi, affichant un grand sourire. #name:nothing
+"Jamais vous ne m'attraperez." #name:Zoé
 "J'avais un plan de secours depuis le début."
-Elle se retourne et descend le long du tobbogan.
-"La cible est perdue de vu ! Nous avons besoin d'un détective pour retrouver sa trace."
-Je tourne mon regard vers Martin qui n'a toujours pas bougé.
-"Seul mon arch-nemesis saurait me tenir tête."
+Elle se retourne et descend le long du tobbogan. #name:nothing
+"La cible est perdue de vu ! Nous avons besoin d'un détective pour retrouver sa trace." #name:Arianne
+Je tourne mon regard vers Martin qui n'a toujours pas bougé. #name:nothing
+"Seul mon arch-nemesis saurait me tenir tête." #name:Zoé
 "Mais il semblerait qu'il ne soit pas là aujourd'hui."
-"..."
-"Appeler tout le monde, que quelqu'un trouve Mr.Wolf."
-"..."
-"Si je m'échappe, c'est la fin ! On ne me reverra jamais !"
-"..."
+"..." #name:Martin
+"Appeler tout le monde, que quelqu'un trouve Mr.Wolf." #name:Arianne
+"..." #name:Martin
+"Si je m'échappe, c'est la fin ! On ne me reverra jamais !" #name:Zoé
+"..." #name:Martin
 "Arrête toi là..."
-"Hm ?"
-"Arrête toi là, Miss."
-"Je crois avoir un signal !"
-"Arrête toi là Miss Mouse !"
+"Hm ?" #name:Zoé
+"Arrête toi là, Miss." #name:Martin
+"Je crois avoir un signal !" #name:Arianne
+"Arrête toi là Miss Mouse !" #name:Martin
 "Car je suis le grand Détective Wolf et rien ne saura me stopper dans ma poursuite de la justice !"
-Martin se place devant Zoé, étant à présent entièrement dans la fantasy.
-"Rend toi maintenant !"
-"Damned ! Je suis faite avoir comme un rat !"
-"C'est la fin de tes activités, tu as ma parole."
-"Jamais !"
-Zoé commence à courir dans le square.
-"Arrêtez-vous !"
-"Reviens là Miss Mouse !"
-Martin et moi commençons alors à la courser.
+Martin se place devant Zoé, étant à présent entièrement dans la fantasy. #name:nothing
+"Rend toi maintenant !" #name:Martin
+"Damned ! Je suis faite avoir comme un rat !" #name:Zoé
+"C'est la fin de tes activités, tu as ma parole." #name:Martin
+"Jamais !" #name:Zoé
+Zoé commence à courir dans le square. #name:nothing
+"Arrêtez-vous !" #name:Arianne
+"Reviens là Miss Mouse !" #name:Martin
+Martin et moi commençons alors à la courser. #name:nothing
 J'ai l'impression d'être revenu dans le temps.
 On pouvait passer des journées tout les quatres à prétendre être ce qu'on voulait et imaginer des histoires.
 Après une dizaine de minutes, nous nous ponsons sur un banc.
