@@ -10,7 +10,7 @@ Dans le vide de cet espace, la seule constante est l'étrange réconfort de savo
 Sans même m'en rendre compte, de cette mer écarlate submerge une figure au visage macabre, entourée d'une décoration à huit joyaux.
 Sa présence funeste m'envahit et je n'arrive plus à bouger le moindre membre.
 Plus précisément, je me rends compte que je n'ai jamais eu la capacité de bouger.
-L'ombre semble me regarder, mais l'absence de quelconque organe occulaire m'empêche d'en avoir la certitude.
+L'ombre semble me regarder, mais l'absence d'un quelconque organe occulaire m'empêche d'en avoir la certitude.
 J'ai envie de crier et de lui demander pourquoi elle est là, mais; peu importe l'intensité de mes intentions; aucun son ne sort de ma gorge.
 La créature sort alors un couteau ensanglanté de ses habits sombres et le met en évidence.
 Le liquide rouge coule le long de sa lame et des gouttes tombent dans le parterre, se diluant dans sa teinte sanguine.
