@@ -4,13 +4,13 @@ INCLUDE globals.ink
 { CHOICES_TEST has A2: -> GrigriNO}
 
 ~grigriLives = 8
-Hello there ! #next:nothing/nothing #bg:grigri #name:nothing #sprite:jes_murder/2 #music:goldnoct
+Hello there ! #next:nothing/nothing #bg:grigri #name:nothing #sprite:eli_neutral/2 #music:goldnoct
 Or more like howdy there ! #trans:trans_center
 -> main 
 
 === main ===
 
-Test1 #name:Arianne #bg:forest #sprite:jes_murder/2 #music:goldslaughter
+Test1 #name:Arianne #bg:forest #sprite:eli_neutral/2 #music:goldslaughter
 Nouveau Test #sprite:jea_neutral/2
 Nouveau CHANGEMENT #sprite:ari_neutral/2
 Nouveau TWIST ? #sprite:zoe_neutral/2
@@ -20,15 +20,15 @@ Test3 #item:sakutarou
 Test4 #item:nothing
 Test5 #next:nothing/false
 ~grigriLives = 2
-How are you feeling today ? #name:Arianne #clear:all #sprite:jes_murder/2 #music:goldnoct #audio:nothing
+How are you feeling today ? #name:Arianne #clear:all #sprite:eli_neutral/2 #music:goldnoct #audio:nothing
 +[Happy]
-    That make me feel <color=\#F8FF30>happy</color> as well! #name:Zoé #clear:2 #sprite:jes_murder/3
+    That make me feel <color=\#F8FF30>happy</color> as well! #name:Zoé #clear:2 #sprite:eli_neutral/3
     I'm so <color=\#F8FF30>happy</color> !
 +[Sad]
-    oh well, that makes me <color=\#5B81FF>sad</color> to! #name:Aloïs #clear:2 #sprite:jes_murder/3
+    oh well, that makes me <color=\#5B81FF>sad</color> to! #name:Aloïs #clear:2 #sprite:eli_neutral/3
     Very <color=\#5B81FF>sad</color> actually...
 
-- Don't trust him, he's <b><color=\#FF1E35>not</color></b> a real doctor! #name:Sakutarou #sprite:sak_happy/4
+- Don't trust him, he's <b><color=\#FF1E35>not</color></b> a real doctor! #name:Sakutarou #sprite:zoe_neutral/4
 -> GrigriNO
 
     

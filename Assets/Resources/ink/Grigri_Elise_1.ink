@@ -1,7 +1,7 @@
 INCLUDE globals.ink
 
 ~grigriLives--
-J'en ai marre. #next:Jour_2/false #bg:grigri_eli #gsprite:eli_grigri #name:nothing #clear:all #music:Stupefaction
+J'en ai marre. #next:Jour_2/false #bg:grigri_eli #gsprite:eli_grigri #name:nothing #clear:all
 Marre, marre, marre, marre,
 MARRE!!
 Dégage de ma vu.

@@ -402,6 +402,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 string nextLine = currentStory.Continue();
                 HandleTags(currentStory.currentTags);
                 displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
+                transAnim.Play("trans_neutral");
             }
 
         }
@@ -628,7 +629,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     string[] splitScene = tagValue.Split('/');
                     if (splitScene[0] == "nothing")
                     {
-                        grigriButton.GetComponent<Button>().interactable = false;
                         nextInkJSON = null;
                     }
                     else
@@ -638,16 +638,17 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
                     if (splitScene[1] == "false" && grigriLives > 0)
                     {
-                        grigriButton.GetComponent<Button>().interactable = false;
-                        grigriAnimator.Play("GrigriButton_Outro");
-
+                        if (grigriButton.GetComponent<Button>().interactable == true)
+                        {
+                            grigriButton.GetComponent<Button>().interactable = false;
+                            grigriAnimator.Play("GrigriButton_Outro");
+                        }
                     }
                     else if (splitScene[1] == "true" && grigriLives > 0)
                     {
                         isSkipping = false;
                         grigriButton.GetComponent<Button>().interactable = true;
                         grigriAnimator.Play("GrigriButton_Intro");
-
                     }
                     else if (splitScene[1] == "now")
                     {

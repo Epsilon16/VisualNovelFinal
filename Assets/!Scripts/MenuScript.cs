@@ -14,7 +14,8 @@ public class MenuScript : MonoBehaviour
     public GameObject OptionsCanvas;
     public GameObject RacineCanvas;
     private GameObject childOption;
-   
+
+    public GameObject optionMenuPrefab;
 
     private void Awake()
     {
@@ -32,8 +33,9 @@ public class MenuScript : MonoBehaviour
 
     private void Start()
     {
+        OptionsCanvas = Instantiate(optionMenuPrefab, transform.position, transform.rotation);
+
         DisableOption();
-        //OptionsCanvas = GameObject.FindGameObjectsWithTag("Options");
     }
 
     public void LoadScene(int GameScene)
@@ -52,7 +54,9 @@ public class MenuScript : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
 
         if (OptionsCanvas != null)
+        {
             OptionsCanvas.SetActive(true);
+        }
         else
         {
             //OptionsCanvas = GameObject.FindGameObjectWithTag("options");
@@ -74,7 +78,9 @@ public class MenuScript : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
 
         if (OptionsCanvas != null)
+        {
             OptionsCanvas.SetActive(false);
+        }
         else
         {
             //OptionsCanvas = GameObject.FindGameObjectWithTag("options");

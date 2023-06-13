@@ -82,7 +82,7 @@ Aloïs me regarde bizarrement. En même temps je regarde un bracelet depuis tout
 ->discu_no_grigri
 
 ===AloisYesGrigri===
-Qu'est-ce qu'il vient de dire ? #name:nothing
+Qu'est-ce qu'il vient de dire ? #name:nothing #bg:town #sprite:ari_neutral/1 #sprite:alo_neutral/2
 "Si tu voulais que je part dis le tout de suite." #name:Arianne
 Aloïs recule de quelque pas. #name:nothing
 "Qu'est-ce qui..." #name:Aloïs
@@ -100,7 +100,7 @@ La porte du magasin s'ouvre alors et un hommme à la large posture en sort. #spr
 -> greg_intro
 
 ===AloisNoGrigri===
-Ah! #name:nothing
+Ah! #name:nothing #bg:town #sprite:ari_neutral/1 #sprite:alo_neutral/2
 J'ai l'impression d'avoir été explusé de sa tête...
 Il faut que je fasse attention la prochaine fois.
 Il n'a pas l'air d'avoir vu quoi que ce soit...
@@ -207,7 +207,7 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing #sprite:jea_n
 ===ExtraCoffee===
 "Merci Arianne, c'est parfait." #name:Jeanne
 "Viens m'aider dans le garage, on dirait qu'une tornarde est passée par là..." #name:Jeanne
-"Okay j'arrive." #name:Arianne
+"Okay j'arrive." #name:Arianne #trans:trans_neutre
 -> afternoon
 
 ===ExtraTea===
@@ -218,7 +218,7 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing #sprite:jea_n
 "C'est pas grave, j'irais en acheter cet aprem." #name:Jeanne
 "Par contre tu vas devoir m'aider toute la matinée au garage." #name:Jeanne
 "On dirait qu'une tornade est passée là dedans." #name:Jeanne
-"Okay maman." #name:Arianne
+"Okay maman." #name:Arianne #trans:trans_neutre
 -> afternoon
 
 ===MegaCoffee===
@@ -451,7 +451,7 @@ Je sens le bracelet s'allumer. #name:nothing #next:Grigri_Elise_1/true
 ->EliseNoGrigri
 
 ===EliseYesGrigri===
-... #name:nothing
+... #name:nothing #bg:street_2 #sprite:ari_neutral/2 #sprite:eli_neutral/3
 Les poils de mes bras se sont redressé, j'ai l'impression d'avoir fait face à un prédateur enragé.
 J'ais vraiment cru que j'allais mourir à tout moment là dedans.
 "Qu'est-ce qui se passe ? Perdue ta langue ?" #name:Elise
@@ -480,7 +480,7 @@ Une fois devant l'entrée de square, je me demande qui aller voir. #trans:trans_
 ===EliseNoGrigri===
 ~RS_Martin -= 1
 ~RS_Zoe -= 1
-"Mon dieu, juste dégage de ma vu !" #name:Elise
+"Mon dieu, juste dégage de ma vu !" #name:Elise #bg:street_2 #sprite:ari_neutral/2 #sprite:eli_neutral/3
 "Arrête de me suivre comme si t'étais un chien !"
 "J'ui une attraction pour toi ??"
 "Juste dégage !"

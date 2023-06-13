@@ -4,30 +4,16 @@ using UnityEngine;
 
 public class SaveOption : MonoBehaviour
 {
+    private static SaveOption instance;
 
-    // Start is called before the first frame update
     [SerializeField] private float GlobalVolumeSave;
     [SerializeField] private float MusicVolumeSave;
     [SerializeField] private float SFXVolumeSave;
     [SerializeField] private float typingSpeedSave;
 
     //[SerializeField] private Resolution[] resolutionSave;
-
     //[SerializeField] private QualitySettings qualitySave;
-
     //[SerializeField] private Screen fullScreenSave;
-    private static SaveOption instance;
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void Awake()
     {
@@ -37,7 +23,11 @@ public class SaveOption : MonoBehaviour
         }
 
         instance = this;
+    }
 
+    public static SaveOption GetInstance()
+    {
+        return instance;
     }
 
     public void Savedata()
@@ -54,7 +44,6 @@ public class SaveOption : MonoBehaviour
         typingSpeedSave = Resolution_Quality.GetInstance().typingspeeding;
         PlayerPrefs.SetFloat("Typing Speed", typingSpeedSave);
         Debug.Log(typingSpeedSave);
-
     }
 
     public void LoadData()
@@ -63,10 +52,5 @@ public class SaveOption : MonoBehaviour
         MusicVolumeSave = PlayerPrefs.GetFloat("Volume Musique");
         SFXVolumeSave = PlayerPrefs.GetFloat("Volume SFX");
         typingSpeedSave = PlayerPrefs.GetFloat("Typing Speed");
-    }
-
-    public static SaveOption GetInstance()
-    {
-        return instance;
     }
 }

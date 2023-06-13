@@ -4,19 +4,11 @@ using UnityEngine;
 
 public class OptionScript : MonoBehaviour
 {
-    public GameObject OptionPanel;
-    public GameObject validationGO;
-    
-  // Start is called before the first frame update
+    public GameObject validationGO;   
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        validationGO.SetActive(false);
     }
 
     public void Validation()
@@ -28,10 +20,9 @@ public class OptionScript : MonoBehaviour
     {
         SaveOption.GetInstance().Savedata();
         validationGO.SetActive(false);
-        OptionPanel.SetActive(false);
     }
 
-    public void annulation()
+    public void Annulation()
     {
         validationGO.SetActive(false);
     }

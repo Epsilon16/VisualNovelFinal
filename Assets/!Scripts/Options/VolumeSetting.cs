@@ -26,14 +26,20 @@ public class VolumeSetting : MonoBehaviour
         }
         
         instance = this;
-
     }
 
+    public static VolumeSetting GetInstance()
+    {
+        return instance;
+    }
+
+    //Set les valeurs par rapport aux playerprefs
     private void Start()
     {
         float savegeneral = PlayerPrefs.GetFloat("Volume Général");
         float savemusic = PlayerPrefs.GetFloat("Volume Musique");
         float savesfx = PlayerPrefs.GetFloat("Volume SFX");
+
         if ( savegeneral != 0)
         {
             GeneralSlider.value = savegeneral;
@@ -52,7 +58,6 @@ public class VolumeSetting : MonoBehaviour
             volumeSFX = savesfx;
             MyMixer.SetFloat("SFX", Mathf.Log10(volumeSFX) * 50);
         }
-        
     }
 
     private void Update()
@@ -79,11 +84,6 @@ public class VolumeSetting : MonoBehaviour
     {
         //float volumeSFX = SFXSlider.value;
         MyMixer.SetFloat("SFX", Mathf.Log10(volumeSFX) * 50);
-    }
-
-    public static VolumeSetting GetInstance()
-    {
-        return instance;
     }
 }
 

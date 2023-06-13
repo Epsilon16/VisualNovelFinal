@@ -56,8 +56,8 @@ Je suis à présent seule dans cette grande maison vide. #name:nothing #clear:3
 Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville. #sprite:ari_neutral/2
 Je descend alors les escaliers pour voir qui pourrait bien être là. #trans:trans_center
 
-"Je te dis qu'elle n'est pas-" #name:Martin #bg:house_ari #sprite:zoe_neutral/3 #sprite:mar_neutral/4 #music:DoorOfSummer
-"Arianne !!" #name:Zoé
+"Je te dis qu'elle n'est pas-" #name:??? #bg:house_ari #sprite:zoe_neutral/3 #sprite:mar_neutral/4 #music:DoorOfSummer
+"Arianne !!" #name:???
 Je mets un petit moment avant de reconnaitre les deux personnes se trouvant devant la porte. #name:nothing #sprite:ari_neutral/0
 Mais très vite leurs noms me reviennent et un tas de sentiments refont surface.
 "Zoé ? Martin ?" #name:Arianne #clear:0 #sprite:ari_neutral/1
