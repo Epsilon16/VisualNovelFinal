@@ -9,7 +9,8 @@ INCLUDE globals.ink
 
 VAR Coffee = ""
 
-"Mince." #name:Jeanne bg:kitchen #sprite:jea_neutral/2 #sprite:ari_neutral/1
+~grigriLives = 7
+"Mince." #name:Jeanne #bg:kitchen #sprite:jea_neutral/2 #sprite:ari_neutral/1
 Je tourne la tête vers ma mère entrain de frénétiquement ouvrir les armoires de la cuisine. #name:nothing
 "Qu'est-ce qui se passe ?". #name:Arianne
 "J'ai oublié de prendre du café, et visiblement Nat en était à court." #name:Jeanne
@@ -26,7 +27,7 @@ J'enfile mon manteau avant de sortir.. #name:nothing
 "A toute à l'heure." #name:Jeanne
 "A toute." #name:Arianne #trans:trans_neutre
 
-En descendant la rue jusqu'au magasin, je repense aux évènements d'hier. #name:nothing bg:street_1 #sprite:ari_neutral/2
+En descendant la rue jusqu'au magasin, je repense aux évènements d'hier. #name:nothing #bg:street_1 #sprite:ari_neutral/2
 J'ai peut-être été trop dure avec eux.
 Je revois mes amis après tout ce temps et j'ai tout ruiné.
 Mais leurs réactions...
@@ -36,7 +37,7 @@ Aaaaaahhh !
 Je devrais penser à autour chose.
 Pas comme si j'allais les revoirs. #trans:trans_neutre
 
-Le magasin est toujours au même endroit, mais il semble fermé. #name:nothing bg:town #sprite:ari_neutral/1
+Le magasin est toujours au même endroit, mais il semble fermé. #name:nothing #bg:town #sprite:ari_neutral/1
 Je m'approche et vois un petit carton derrière l'une des fenêtres.
 Ouvre à 9h
 Je regarde mon téléphone.
@@ -53,8 +54,8 @@ Je lui tend ma main pour l'aider à se relever, quelque chose semble familier ch
 Mais il n'a vraiment fait aucun bruit, je ne l'ai pas vu venir du tout. #name:nothing
 Mais...
 Ces cheveux... Et cette voix...
-"Aloïs..?" #name:Aloïs
-"A-Arianne !?" #name:Arianne
+"Aloïs ?" #name:Arianne
+"A-Arianne ?" #name:Aloïs
 Il me regarde avec des yeux écarquillé. J'ai probablement l'air très différente de la dernière fois qu'on s'est vu. #name:nothing
 "Whoa. J'aurais jamais cru te revoir un jour." #name:Arianne
 "M-Moi non plus..." #name:Aloïs
@@ -193,12 +194,12 @@ Pas sur de vraiment les connaitres maintenant. #name:nothing
 "Haha, de rien." #name:Greg
 Je lui fait un signe de la main avant de repartir. #name:nothing #trans:trans_neutre
 
-Il a probablement raison, je devrais les revoir et leur parler. #name:nothing bg:street_1
+Il a probablement raison, je devrais les revoir et leur parler. #name:nothing #bg:street_1
 C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte en de mauvais termes. #trans:trans_neutre
 
-Une fois arrivé à la maison, je pose les courses sur la table. #name:nothing bg:kitchen
+Une fois arrivé à la maison, je pose les courses sur la table. #name:nothing #bg:kitchen #sprite:ari_neutral/1
 "J'ai ce que tu voulais !" #name:Arianne
-Maman rentre dans la cuisine et regarde les courses. #name:nothing
+Maman rentre dans la cuisine et regarde les courses. #name:nothing #sprite:jea_neutral/2 
 {Coffee == "CMF": -> MegaCoffee}
 {Coffee == "CEF": -> ExtraCoffee}
 {Coffee == "TEF": -> ExtraTea}
@@ -234,11 +235,11 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing
 
 
 === afternoon ===
-Après avoir passé la matinée à ranger les affaires de Mamie et manger un coup, je me dirige en direction de chez Zoé. #name:nothing bg:street_3 #sprite:ari_neutral/2
+Après avoir passé la matinée à ranger les affaires de Mamie et manger un coup, je me dirige en direction de chez Zoé. #name:nothing #bg:street_3 #sprite:ari_neutral/2
 Martin avait l'air bien moins enclin à la discussion hier. Et je penses que Zoé voudra reparler.
 Du moins j'espère... #trans:trans_neutre
 
-Je continue à descendre la rue jusqu'à arriver devant sa maison. #name:nothing bg:house_zoe #sprite:ari_neutral/2
+Je continue à descendre la rue jusqu'à arriver devant sa maison. #name:nothing #bg:house_zoe #sprite:ari_neutral/2
 Le doute me prend alors.
 Devrais-je vraiment sonner ?
 C'est probablement un peu trop tôt, vu ce qu'il s'est passé.
@@ -264,10 +265,10 @@ J'ai une sensation de déjà-vu.
 "Passez une bonne journée."
 "Vous aussi." #name:Arianne #trans:trans_neutre
 
-Je me dirige alors vers chez Martin. #name:nothing bg:street_3
+Je me dirige alors vers chez Martin. #name:nothing #bg:street_3
 Malgré les années, je retrouve facilement le chemin, et finis par arriver chez lui. #trans:trans_neutre
 
-Arrivant devant sa grande maison, j'entends Zoé parlant à la porte. #name:nothing bg:house_mar #sprite:ari_neutral/0  #sprite:zoe_neutral/2  #sprite:mar_neutral/3
+Arrivant devant sa grande maison, j'entends Zoé parlant à la porte. #name:nothing #bg:house_mar #sprite:ari_neutral/0  #sprite:zoe_neutral/2  #sprite:mar_neutral/3
 "Allez !" #name:Zoé
 "Je te dis que je me sens pas bien.." #name:Martin
 "Arrêtes avec tes excuses ! C'est aujourd'hui ou jamais !" #name:Zoé
@@ -292,14 +293,14 @@ Celui ci, après avoir fait une expression difficile, ferme la porte derrière l
 "Allons-y !" #name:Zoé
 Zoé commence alors à marcher sans faire attention à Martin ou moi. #name:nothing #trans:trans_neutre
 
-Le chemin en direction du square est pour le moins malaisant. #name:nothing bg:street_2 #sprite:ari_neutral/2  #sprite:zoe_neutral/3  #sprite:mar_neutral/1
+Le chemin en direction du square est pour le moins malaisant. #name:nothing #bg:street_2 #sprite:ari_neutral/2  #sprite:zoe_neutral/3  #sprite:mar_neutral/1
 Zoé est en tête et Martin n'ose pas me regarder.
 J'ai envie de dire quelque chose mais je n'ose pas faire grand chose.
 Je vois pas comment Zoé peut garder son sourire. Je pourrais couper la tension au couteau.
 "Oh ! On est bientôt arrivé !" #name:Zoé
 Elle se tourne et prend mon poignet, me tirant vers l'entrée du square. #name:nothing #trans:trans_neutre
 
-Le lieu n'a pas changé. #name:nothing bg:square #sprite:ari_neutral/2  #sprite:zoe_neutral/3  #sprite:mar_neutral/1
+Le lieu n'a pas changé. #name:nothing #bg:square #sprite:ari_neutral/2  #sprite:zoe_neutral/3  #sprite:mar_neutral/1
 Les mêmes chemins de terre et de gravier parcourant le parc, les arbres que nous escaladions et l'air de jeu dans laquelle on a passé tant de temps.
 Mille et une histoires ont été raconté, joué et oublié ici.
 La nostalgie me pince légèrement le coeur, mais au vu de sa réaction hier, ce doit être pire pour Martin.

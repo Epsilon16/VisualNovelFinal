@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 472ee6c38c8ecc84f862b00f5fe63bcf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 51b1067de42a2a94e8e17dab7f7a6685, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2947,7 +2947,7 @@ MonoBehaviour:
   makePredictable: 1
   currentAudioInfo: {fileID: 0}
   musicAS: {fileID: 119430550}
-  firstInkJSON: {fileID: 4900000, guid: 44af70861bb74a847a9c4ba41e6a65d1, type: 3}
+  firstInkJSON: {fileID: 4900000, guid: 15fc5633a9e5ea74bbbdf96a1c79c59a, type: 3}
   nextInkJSON: {fileID: 0}
   canContinueToNextLine: 0
   skipIndicator: {fileID: 296936156}
@@ -4119,7 +4119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1127540046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6754,7 +6754,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 472ee6c38c8ecc84f862b00f5fe63bcf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4ecf61aac3ace44fb078770b1e3ea41, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7446,13 +7446,13 @@ MonoBehaviour:
   - name: Arianne
     color: {r: 0.72156864, g: 0.73333335, b: 0.76470596, a: 1}
   - name: "Zo\xE9"
-    color: {r: 0.8117648, g: 0.6627451, b: 0.8313726, a: 1}
+    color: {r: 0.8431373, g: 0.62352943, b: 0.8588236, a: 1}
   - name: Martin
     color: {r: 0.59607846, g: 0.20000002, b: 0.227451, a: 1}
   - name: Elise
-    color: {r: 1, g: 0, b: 0.8185215, a: 1}
+    color: {r: 0.30980393, g: 0.8313726, b: 0.2509804, a: 1}
   - name: "Alo\xEFs"
-    color: {r: 0.2883232, g: 0.4637449, b: 0.8396226, a: 1}
+    color: {r: 0.34901962, g: 0.35686275, b: 0.5647059, a: 1}
   - name: Jeanne
     color: {r: 0.735849, g: 0.40962777, b: 0.34987536, a: 1}
   - name: Greg

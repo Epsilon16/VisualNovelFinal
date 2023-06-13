@@ -1,6 +1,5 @@
 INCLUDE globals.ink
 
-~grigriLives = 7
 J'ai l'impression de vivre dans un cauchemar. #next:Jour_1/false #bg:grigri_jea #gsprite:jea_grigri #name:nothing #clear:all #music:Stupefaction
 Tout revient pour me hanter.
 Pourquoi...
