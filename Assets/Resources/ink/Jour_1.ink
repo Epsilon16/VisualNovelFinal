@@ -19,7 +19,7 @@ Le son résonne à l'intérieur de ma tête et s'amplifie, semblant ne vouloir d
 Je serais la prochaine à colorer son poignard. #trans:trans_neutre
 
 
-"!!!" #name:Arianne #bg:1_Chambre_Arianne #sprite:ari_neutral/2 #music:nothing
+"!!!" #name:Arianne #bg:bedroom #sprite:ari_neutral/2 #music:nothing
 Je me réveille en sursaut dans mon lit. #name:nothing #music:SteadyPace
 Pas de figure sombre, ni de sang ou de mer d'Adonis recouvrant le sol.
 Juste moi, une chambre presque vide et un plancher en bois qui grince à chaque pas.
@@ -33,7 +33,7 @@ Un homme à tête de cerf dans un champ de fleurs ? Il me semble qu'il avait une
 "Ce n'est pas bien grave. Mes rêves n'ont jamais fait beaucoup sens de toute façon."
 Une fois debout, je sort de la chambre et me dirige vers la cuisine au rez-de-chaussé afin d'oublier ces visions d'horreur. #trans:trans_center #name:nothing
 
-En bas, je tombe sur ma mère, prête à sortir. #bg:1_Cuisine_Arianne #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
+En bas, je tombe sur ma mère, prête à sortir. #bg:kitchen #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
 "Ah Arianne, bon timing. Je dois aller au service funéraire pour signer des papiers." #name:Jeanne
 "Ça ne te dérange pas de rester ici ?" #name:Jeanne
 "C'est cool maman. T'inquiètes pas."  #name:Arianne
@@ -52,11 +52,11 @@ Je suis à présent seule dans cette grande maison vide. #name:nothing #clear:3
 "C'est probablement le meilleur moment pour en faire."
 "Prendre de l'avance ne fait jamais de mal."#trans:trans_center
 
--Après une demie-heure passée dans ma chambre, le son d'une sonnette retentit dans la maison. #bg:1_Chambre_Arianne #name:nothing
+-Après une demie-heure passée dans ma chambre, le son d'une sonnette retentit dans la maison. #bg:bedroom #name:nothing
 Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville. #sprite:ari_neutral/2
 Je descend alors les escaliers pour voir qui pourrait bien être là. #trans:trans_center
 
-"Je te dis qu'elle n'est pas-" #name:Martin #bg:1_Maison_GrandMere_Arianne #sprite:zoe_neutral/3 #sprite:mar_neutral/4 #music:DoorOfSummer
+"Je te dis qu'elle n'est pas-" #name:Martin #bg:house_ari #sprite:zoe_neutral/3 #sprite:mar_neutral/4 #music:DoorOfSummer
 "Arianne !!" #name:Zoé
 Je mets un petit moment avant de reconnaitre les deux personnes se trouvant devant la porte. #name:nothing #sprite:ari_neutral/0
 Mais très vite leurs noms me reviennent et un tas de sentiments refont surface.
@@ -104,7 +104,7 @@ Notre séparation fut soudaine et dure pour nous tous ... Je pense. Mais je m'y 
  Les revoir maintenant me donne l'impression de parler à des inconnus dont j'ai lu la biographie.
 Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #trans:trans_center
 
-"Des études d'ingénieur ?" #name:Martin #bg:1_Village_Rue_1 #clear:2 #sprite:ari_neutral/1 #sprite:mar_neutral/2 #sprite:zoe_neutral/3 #music:Praise
+"Des études d'ingénieur ?" #name:Martin #bg:street_1 #clear:2 #sprite:ari_neutral/1 #sprite:mar_neutral/2 #sprite:zoe_neutral/3 #music:Praise
 "Ouais, je m'y plais bien." #name:Arianne
 "En même temps, Arianne a toujours été celle avec le plus de neurones dans ce groupe." #name:Zoé
 "T'exagères." #name:Arianne
@@ -163,7 +163,7 @@ Je pourrais leur demander où ils en sont eux... #name:nothing
 -Il ne fallut pas longtemps pour que le trio revienne à leurs discussions d'autrefois. #name:nothing #clear:all
 Vu de loin, personne n'aurait l'impression qu'ils se sont quittés pendant cinq longues années. #trans:trans_center
 
-"C'est la place du village ? Où est la statue ?" #name:Arianne #bg:1_Village_Place #sprite:ari_neutral/1 #sprite:mar_neutral/2 #sprite:zoe_neutral/3
+"C'est la place du village ? Où est la statue ?" #name:Arianne #bg:town #sprite:ari_neutral/1 #sprite:mar_neutral/2 #sprite:zoe_neutral/3
 "Celle de l'Homme-Cerf ? Ce truc me terrifiait quand j'étais petite." #name:Zoé
 "Elle a été descendue il y a un ou deux ans je crois. Je me souviens plus de la raison exacte." #name:Martin
 "Probablement car elle faisait plus peur aux touristes qu'autre chose." #name:Martin
@@ -214,7 +214,7 @@ Pourquoi est-ce qu'ils bloquent encore ?
 "C'était sympa..." #name:Arianne 
 "Au revoir." #name:Arianne #trans:trans_center #clear:0
 
-Alors que je retrace le chemin en direction de la maison, la discussion tourne en boucle dans ma tête. #name:nothing #bg:1_Village_Rue_1 #clear:all #sprite:ari_neutral/2
+Alors que je retrace le chemin en direction de la maison, la discussion tourne en boucle dans ma tête. #name:nothing #bg:street_1 #clear:all #sprite:ari_neutral/2
 Comment peuvent-ils faire pour ignorer ça ? 
 L'incident nous a tous impactés. Mais ce n'est pas une raison pour essayer d'oublier.
 Ce n'est pas une raison pour ignorer qu'il ait existé.
@@ -222,12 +222,12 @@ Il était notre grand frère à tous.
 C'était surtout le mien.
 Je continue à marcher d'un pied ferme, serrant mes poings. #trans:trans_center
 
-En rentrant à la maison je claque la porte derrière moi. #bg:1_Cuisine_Arianne #sprite:ari_neutral/2
+En rentrant à la maison je claque la porte derrière moi. #bg:kitchen #sprite:ari_neutral/2
 Je...
 Je dois me changer les idées.
 J'allais attendre maman, mais autant commencer à faire les cartons moi-même. #trans:trans_center
 
-Une fois dans la chambre à l'étage, j'ouvre quelques cartons vides et commence à les remplir. #bg:1_Chambre_Arianne
+Une fois dans la chambre à l'étage, j'ouvre quelques cartons vides et commence à les remplir. #bg:bedroom
 Habits, livres et autres objets dont la teneur émotionnelle est perdue au fil du temps.
 "Hm ?" #name:Arianne
 Une petite boite tombe des plis d'un habit sur le sol. #name:nothing
@@ -237,7 +237,7 @@ La curiosité prend le dessus et j'ouvre la petite boite pour y découvrir un br
 Grand-mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vu porter quelque chose ressemblant à ça.
 La porte d'en bas claque alors, et je descend les escaliers. #trans:trans_center #item:nothing #name:nothing
  
-"Maman ?" #name:Arianne #bg:1_Cuisine_Arianne #music:SteadyPace
+"Maman ?" #name:Arianne #bg:kitchen #music:SteadyPace
 Maman se pose sur une chaise, se tenant le crâne. #name:nothing #sprite:jea_neutral/3
 "Tout s'est bien passé ?" #name:Arianne #clear:2 #sprite:ari_neutral/1
 "Oui..." #name:Jeanne
@@ -280,7 +280,7 @@ Je ne vois plus que ma mère alors que l'espace se tord autour de nous. #next:Gr
 
 
 ===AfterGrigri===
-Qu'est-ce que je viens de voir ? #name:nothing #bg:1_Cuisine_Arianne #sprite:ari_neutral/1 #sprite:jea_neutral/3 #music:WhiteShadow
+Qu'est-ce que je viens de voir ? #name:nothing #bg:kitchen #sprite:ari_neutral/1 #sprite:jea_neutral/3 #music:WhiteShadow
 J'ai bien mis un sachet de thé hein ? #name:nothing
 Grand-mère Nat était excentrique mais pas à ce point. #name:nothing
 "Arianne ?" #name:Jeanne
@@ -327,7 +327,7 @@ Elle pose une enveloppe devant moi que je prend et inspecte. #name:nothing
 Pas d'expéditeur.
 "Probablement Zoé. Merci maman." #name:Arianne #trans:trans_center #clear:1 #sprite:ari_neutral/0
 
-De retour à l'étage, mon regard se porte sur le bracelet, remarquant que l'une des perles s'est noircie. #name:nothing #bg:1_Chambre_Arianne #item:grigri_7
+De retour à l'étage, mon regard se porte sur le bracelet, remarquant que l'une des perles s'est noircie. #name:nothing #bg:bedroom #item:grigri_7
 "C'est étrange ça... Ce serait dû à ce que j'ai vu ?" #name:Arianne 
 "Non..." #name:Arianne
 "Mais ça expliquerait comment j'ai pu entendre maman comme ça..." #name:Arianne
@@ -342,7 +342,7 @@ Tu n'aurais pas dû revenir à Adonis.
 De mauvaises choses t'attendent si tu fouilles trop.
 Restes terrée dans ta maison.
 Cela vaut mieux pour toi.
-"Qu'est-ce que c'est que ça ?" #bg:1_Chambre_Arianne #name:Arianne
+"Qu'est-ce que c'est que ça ?" #bg:bedroom #name:Arianne
 Je jette la lettre en dégoût dans un carton. #name:nothing
 "Une menace ? Ce doit être une blague." #name:Arianne
 "Une mauvaise blague de la part de Martin ou Zoé pour ce que je leurs ait dit tout à l'heure." #name:Arianne
