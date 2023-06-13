@@ -9,7 +9,7 @@ INCLUDE globals.ink
 
 VAR Coffee = ""
 
-"Mince." #name:Jeanne bg:kitchen
+"Mince." #name:Jeanne bg:kitchen #sprite:jea_neutral/2 #sprite:ari_neutral/1
 Je tourne la tête vers ma mère entrain de frénétiquement ouvrir les armoires de la cuisine. #name:nothing
 "Qu'est-ce qui se passe ?". #name:Arianne
 "J'ai oublié de prendre du café, et visiblement Nat en était à court." #name:Jeanne
@@ -24,9 +24,9 @@ Ma mère sort un billet de dix de son porte monnais qu'elle me tend.
 "Okay." #name:Arianne
 J'enfile mon manteau avant de sortir.. #name:nothing
 "A toute à l'heure." #name:Jeanne
-"A toute." #name:Arianne
+"A toute." #name:Arianne #trans:trans_neutre
 
-En descendant la rue jusqu'au magasin, je repense aux évènements d'hier. #name:nothing bg:street_1
+En descendant la rue jusqu'au magasin, je repense aux évènements d'hier. #name:nothing bg:street_1 #sprite:ari_neutral/2
 J'ai peut-être été trop dure avec eux.
 Je revois mes amis après tout ce temps et j'ai tout ruiné.
 Mais leurs réactions...
@@ -34,21 +34,21 @@ C'est juste...
 Juste...
 Aaaaaahhh !
 Je devrais penser à autour chose.
-Pas comme si j'allais les revoirs.
+Pas comme si j'allais les revoirs. #trans:trans_neutre
 
-Le magasin est toujours au même endroit, mais il semble fermé. #name:nothing bg:town
+Le magasin est toujours au même endroit, mais il semble fermé. #name:nothing bg:town #sprite:ari_neutral/1
 Je m'approche et vois un petit carton derrière l'une des fenêtres.
 Ouvre à 9h
 Je regarde mon téléphone.
 8h50
 J'aurais pas à attendre énormément, c'est déjà ça.
 Je recule un peu, et rentre accidentellement dans quelqu'un.
-"Ah !" #name:Aloïs
+"Ah !" #name:???
 "Ah !" #name:nothing
 Le jeune homme tombe en arrière.
 "Vous allez bien ?" #name:Arianne
-Je lui tend ma main pour l'aider à se relever, quelque chose semble familier chez lui. #name:nothing
-"Oui... Désolé je vous ais fait peur..." #name:Aloïs
+Je lui tend ma main pour l'aider à se relever, quelque chose semble familier chez lui. #name:nothing  #sprite:alo_neutral/2
+"Oui... Désolé je vous ais fait peur..." #name:???
 "C'est ma faute j'aurais dû faire plus attention." #name:Arianne
 Mais il n'a vraiment fait aucun bruit, je ne l'ai pas vu venir du tout. #name:nothing
 Mais...
@@ -88,13 +88,13 @@ Aloïs recule de quelque pas. #name:nothing
 "J'ai compris, je te mets mal." #name:Arianne
 "Hein non je.." #name:Aloïs
 "Désolé d'être moi Aloïs." #name:Arianne
-Il me regarde d'un air terrifié et part presque en courant. #name:nothing
+Il me regarde d'un air terrifié et part presque en courant. #name:nothing #clear:2
 Je ne sais pas si c'était une bonne idée d'utiliser le bracelet.
 J'ai l'impression que ça brouille mon cerveau, comme si je fusionnais avec celui de l'autre personne.
 C'est peut-être ce qui se passe.
 Mais il avait une telle peur. J'en ais eu peur moi même.
 Je devrais peut-être pas rentrer dans la tête des gens tout court.
-La porte du magasin s'ouvre alors et un hommme à la large posture en sort.
+La porte du magasin s'ouvre alors et un hommme à la large posture en sort. #sprite:greg_neutral/3
 "On est en service !" #name:Greg
 -> greg_intro
 
@@ -116,13 +116,13 @@ Ils étaient gentils mais ils m'ont toujours fait un peu peur... Je crois...
 Probablement car ce sont des professeurs.
 Enfin, ils vont bien, c'est le principal.
 "Cool." #name:Arianne
-La discussion arrive à un point mort. Mais heureusement la porte du magasin s'ouvre et un hommme à la large posture en sort. #name:nothing
+La discussion arrive à un point mort. Mais heureusement la porte du magasin s'ouvre et un hommme à la large posture en sort. #name:nothing #sprite:greg_neutral/3
 "On est en service !" #name:Greg
 Aloïs passe rapidement devant moi. #name:nothing
 "Bonjour. Euh... Est-ce que le colis pour mes parents est arrivé ?" #name:Aloïs
 "Ah Aloïs ! Il est derrière le contoire tu peux le prendre." #name:Greg
 "Merci!" #name:Aloïs
-Il rentre dans le magasin en pas de course et ressort tout aussi rapidement. #name:nothing
+Il rentre dans le magasin en pas de course et ressort tout aussi rapidement. #name:nothing #name:nothing #clear:2
 Notre discussion à dû le mettre mal à l'aise j'ai l'impression.
 -> greg_intro
 
@@ -191,10 +191,10 @@ Pas sur de vraiment les connaitres maintenant. #name:nothing
 "Tu n'as pas envie de finir sur une mauvaise note, si ?" #name:Greg
 "Tu as raison. merci Greg!" #name:Arianne
 "Haha, de rien." #name:Greg
-Je lui fait un signe de la main avant de repartir. #name:nothing
+Je lui fait un signe de la main avant de repartir. #name:nothing #trans:trans_neutre
 
 Il a probablement raison, je devrais les revoir et leur parler. #name:nothing bg:street_1
-C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte en de mauvais termes.
+C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte en de mauvais termes. #trans:trans_neutre
 
 Une fois arrivé à la maison, je pose les courses sur la table. #name:nothing bg:kitchen
 "J'ai ce que tu voulais !" #name:Arianne
@@ -229,26 +229,26 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing
 "C'est pas grave, ça en fera plus pour chez nous." #name:Jeanne
 "Par contre tu vas devoir m'aider toute la matinée au garage." #name:Jeanne
 "On dirait qu'une tornade est passée là dedans." #name:Jeanne
-"Okay maman." #name:Arianne
+"Okay maman." #name:Arianne #trans:trans_neutre
 -> afternoon
 
 
 === afternoon ===
-Après avoir passé la matinée à ranger les affaires de Mamie et manger un coup, je me dirige en direction de chez Zoé. #name:nothing bg:street_3
+Après avoir passé la matinée à ranger les affaires de Mamie et manger un coup, je me dirige en direction de chez Zoé. #name:nothing bg:street_3 #sprite:ari_neutral/2
 Martin avait l'air bien moins enclin à la discussion hier. Et je penses que Zoé voudra reparler.
-Du moins j'espère...
+Du moins j'espère... #trans:trans_neutre
 
-Je continue à descendre la rue jusqu'à arriver devant sa maison. #name:nothing bg:house_zoe
+Je continue à descendre la rue jusqu'à arriver devant sa maison. #name:nothing bg:house_zoe #sprite:ari_neutral/2
 Le doute me prend alors.
 Devrais-je vraiment sonner ?
 C'est probablement un peu trop tôt, vu ce qu'il s'est passé.
 Mais si je ne fait rien maintenant, ça pourra empirer.
 Je n'ai juste pas envie de la déranger comme ça.
 Que faire ?
-"Tout va bien jeune fille ?" #name:Mère de Zoé
+"Tout va bien jeune fille ?" #name:???
 Une voix féminine me bloque dans mon monologue intérieur. #name:nothing
-"Vous avez besoin d'une direction ?" #name:Mère de Zoé
-Je lève la tête et remarque que quelqu'un se tient devant la porte à côté de moi. #name:nothing
+"Vous avez besoin d'une direction ?" #name:???
+Je lève la tête et remarque que quelqu'un se tient devant la porte à côté de moi. #name:nothing #sprite:maria_neutral/3
 C'est Maria, la mère de Zoé.
 "Oh non non, je suis là où je veux." #name:Arianne
 "Attendez... Arianne c'est toi ? Qu'est-ce que tu as grandis !" #name:Mère de Zoé
@@ -262,12 +262,12 @@ J'ai une sensation de déjà-vu.
 "..." #name:Arianne
 "Merci, je vais y aller."
 "Passez une bonne journée."
-"Vous aussi." #name:Arianne
+"Vous aussi." #name:Arianne #trans:trans_neutre
 
 Je me dirige alors vers chez Martin. #name:nothing bg:street_3
-Malgré les années, je retrouve facilement le chemin, et finis par arriver chez lui.
+Malgré les années, je retrouve facilement le chemin, et finis par arriver chez lui. #trans:trans_neutre
 
-Arrivant devant sa grande maison, j'entends Zoé parlant à la porte. #name:nothing bg:house_mar
+Arrivant devant sa grande maison, j'entends Zoé parlant à la porte. #name:nothing bg:house_mar #sprite:ari_neutral/0  #sprite:zoe_neutral/2  #sprite:mar_neutral/3
 "Allez !" #name:Zoé
 "Je te dis que je me sens pas bien.." #name:Martin
 "Arrêtes avec tes excuses ! C'est aujourd'hui ou jamais !" #name:Zoé
@@ -290,16 +290,16 @@ Je respire un coup, tournant les mots de Greg dans ma tête une fois de plus.
 Elle appuie le 'maintenant' en tournant sa tête vers Martin. #name:nothing
 Celui ci, après avoir fait une expression difficile, ferme la porte derrière lui et s'approche de nous.
 "Allons-y !" #name:Zoé
-Zoé commence alors à marcher sans faire attention à Martin ou moi. #name:nothing
+Zoé commence alors à marcher sans faire attention à Martin ou moi. #name:nothing #trans:trans_neutre
 
-Le chemin en direction du square est pour le moins malaisant. #name:nothing bg:street_2
+Le chemin en direction du square est pour le moins malaisant. #name:nothing bg:street_2 #sprite:ari_neutral/2  #sprite:zoe_neutral/3  #sprite:mar_neutral/1
 Zoé est en tête et Martin n'ose pas me regarder.
 J'ai envie de dire quelque chose mais je n'ose pas faire grand chose.
 Je vois pas comment Zoé peut garder son sourire. Je pourrais couper la tension au couteau.
 "Oh ! On est bientôt arrivé !" #name:Zoé
-Elle se tourne et prend mon poignet, me tirant vers l'entrée du square. #name:nothing
+Elle se tourne et prend mon poignet, me tirant vers l'entrée du square. #name:nothing #trans:trans_neutre
 
-Le lieu n'a pas changé. #name:nothing bg:square
+Le lieu n'a pas changé. #name:nothing bg:square #sprite:ari_neutral/2  #sprite:zoe_neutral/3  #sprite:mar_neutral/1
 Les mêmes chemins de terre et de gravier parcourant le parc, les arbres que nous escaladions et l'air de jeu dans laquelle on a passé tant de temps.
 Mille et une histoires ont été raconté, joué et oublié ici.
 La nostalgie me pince légèrement le coeur, mais au vu de sa réaction hier, ce doit être pire pour Martin.
@@ -368,13 +368,13 @@ Les deux reste silencieux. #name:nothing
 "C'est..."
 Je perds un peu mes mots, je sais ce que je veux dire, mais je trouve pas les bonnes paroles. #name:nothing
 "Arianne..." #name:Zoé
-"Hey !" #name:Elise
-Je lève les yeux et remarque qu'une jeune femme est entrain de nous interpeller. #name:nothing
+"Hey !" #name:???
+Je lève les yeux et remarque qu'une jeune femme est entrain de nous interpeller. #name:nothing #sprite:eli_neutral/0
 Elle s'avance vers notre direction d'un pas décidé.
-"Vous arrivez pas à lire ? Réservé aux moins de dix ans." #name:Elise
+"Vous arrivez pas à lire ? Réservé aux moins de dix ans." #name:???
 "Non c'est juste que..." #name:Zoé
 Martin et Zoé se lèvent. #name:nothing
-"Attends.." #name:Elise
+"Attends.." #name:???
 "J'te reconnais."
 Elle ecarquille les yeux, et je me souviens également de la personne en face de moi. #name:nothing
 C'est la fille de Greg, Elise.
@@ -400,27 +400,28 @@ Elise pousse alors Martin, qui finit a terre.
 "Pourquoi tu nous ennuie comme ça !?"
 Elle allait pour nous répondre puis s'arrête dans son élan et frappe l'échelle en bois à côté d'elle. #name:nothing
 "Allez vous faire." #name:Elise
-Elle se retourne, furieuse et sort du parc. #name:nothing
+Elle se retourne, furieuse et sort du parc. #name:nothing #clear:0
 "Martin ça va ?" #name:Arianne
 Celui-ci se relève, le regard lourd. #name:nothing
 "J'aurais pas dû venir." #name:Martin
-Et il s'en va également, allant en direction de la forêt. #name:nothing
+Et il s'en va également, allant en direction de la forêt. #name:nothing #clear:1
 "Zoé ?" #name:Arianne
 Celle-ci reste immobile déviant un peu le regard. #name:nothing
-Qu'est-ce que je devrais faire...
+Qu'est-ce que je devrais faire... #clear:all
 +[Suivre Elise]
     ~CHOICES_TEST = J2C1
     ->ChoiceElise
 +[Suivre Martin]
     Je décide de suivre Martin, je m'approche de l'entrée de la forêt. #name:nothing
-    "Martin-" #name:Arianne
+    "Martin-" #name:Arianne #sprite:ari_neutral/2
     Il remarque que je suis là et commence à partir en courant. #name:nothing
-    J'accélère pour le rattraper, mais rien à faire. Martin est bien plus athlétique que moi.
-    Au bout d'un moment, je fini par le perdre et je me retrouve seule dans les bois. #bg:forest
+    J'accélère pour le rattraper, mais rien à faire. Martin est bien plus athlétique que moi. #trans:trans_neutre
+    
+    Au bout d'un moment, je fini par le perdre et je me retrouve seule dans les bois. #bg:forest #sprite:ari_neutral/2
     ~CHOICES_TEST = J2C2
     ->ChoiceMartin
 +[Rester avec Zoé]
-    Je décide de rester avec Zoé. #name:nothing
+    Je décide de rester avec Zoé. #name:nothing #sprite:ari_neutral/2 #sprite:zoe_neutral/3
     Elle est resté sur le côté sans rien dire tout le long de la conversation.
     Sans un mot, elle escalade doucement l'une des structures en bois avant de s'assoir sur le bord.
     J'en fais de même et me mets à côté d'elle.
@@ -430,9 +431,10 @@ Qu'est-ce que je devrais faire...
     ->ChoiceZoe
 
 ===ChoiceElise===
-Je décide de suivre Elise, toute cette situation est de sa faute. #name:nothing bg:street_2
-Elle a des excuses à donner à Martin et Zoé.
-"Elise !" #name:Arianne
+Je décide de suivre Elise, toute cette situation est de sa faute. #name:nothing
+Elle a des excuses à donner à Martin et Zoé. #trans:trans_neutre
+
+"Elise !" #name:Arianne #bg:street_2 #sprite:ari_neutral/2 #sprite:eli_neutral/3
 Malgré mes appels, elle continue de me tourner le dos. #name:nothing
 "ELISE !" #name:Arianne
 "QUOI ?" #name:Elise
@@ -459,15 +461,16 @@ Qu'est-ce que c'était que ça ?
 C'était terrifiant !
 Je repense à la lettre d'hier soir et de sa menace.
 Ce serait elle ? Mais pourquoi ?
-Une fois devant l'entrée de square, je me demande qui aller voir en premier.
+Une fois devant l'entrée de square, je me demande qui aller voir. #trans:trans_neutre
+
 +[Chercher Martin]
-    Je vais en direction de la forêt pour trouver Martin. #name:nothing #bg:forest
+    Je vais en direction de la forêt pour trouver Martin. #name:nothing #bg:forest #sprite:ari_neutral/2
     Il doit bien être quelque part.
     ~CHOICES_TEST = J2C2
     ->ChoiceMartin
 +[Chercher Zoé]
     Je rentre à l'intérieur du square en direction des jeux. #name:nothing bg:square
-    "Zoé ?" #name:Arianne
+    "Zoé ?" #name:Arianne #sprite:ari_neutral/2 #sprite:zoe_neutral/3
     Aucune réponse, mais je la trouve assise sur l'une des structures en bois, balançant ses jambes d'avant en arrière. #name:nothing
     Je monte et m'assois à côté d'elle.
     ~CHOICES_TEST = J2C3
@@ -485,15 +488,15 @@ Une fois devant l'entrée de square, je me demande qui aller voir en premier.
 Elle me fixe, essoufflé, j'ai l'impression qu'elle est presque sur le point de pleurer de colère. #name:nothing
 On reste une vingtaine de seconde à se regarder sans un mot, puis elle se retourne et part.
 Je n'ose pas continuer à la suivre.
-Je reste planter là plusieurs dizaine de seconde avant de me retourner en direction du square.
+Je reste planter là plusieurs dizaine de seconde avant de me retourner en direction du square. #trans:trans_neutre
 
-Une fois arrivé là bas, et malgré mes efforts, aucune trace de Zoé ni de Martin. bg:square
+Une fois arrivé là bas, et malgré mes efforts, aucune trace de Zoé ni de Martin. #bg:square #trans:trans_neutre
 
-Je tente également la forêt, avec tout autant de résultat. #bg:forest
+Je tente également la forêt, avec tout autant de résultat. #bg:forest #trans:trans_neutre
 
 Je fini par rentrer chez moi, la tête lourde. #bg:house_ari
 Je n'aurais probablement pas dû suivre Elise...
-Sur le moment ça semblait être une bonne idée, mais j'aurais dû aller vers Martin ou rester avec Zoé au lieu de ne rien faire.
+Sur le moment ça semblait être une bonne idée, mais j'aurais dû aller vers Martin ou rester avec Zoé au lieu de ne rien faire. #trans:trans_neutre
 
 Je passe la soirée de ma chambre à ruminer. #bg:bedroom
 J'ai gâché nos retrouvailles, encore et encore.
@@ -506,7 +509,7 @@ Je n'aurais pas dû revenir à Adonis. #next:nothing/false
 ~RS_Martin += 1
 "Martin ?" #name:Arianne
 J'appelle, sans recevoir de réponse. #name:nothing
-Au bout d'un moment je finis par le trouver derrière un rocher, assis dans l'herbe.
+Au bout d'un moment je finis par le trouver derrière un rocher, assis dans l'herbe. #sprite:mar_neutral/3
 "Hey Martin." #name:Arianne
 "Ah !" #name:Martin
 "Trouvé." #name:Arianne
@@ -541,18 +544,18 @@ Je ne pensais pas que ça pourrait faire si mal de la part de Martin. #name:noth
 Martin ne dit rien, mais il n'a pas l'air de mal le prendre non plus. #name:nothing
 "On va voir Zoé ?" #name:Arianne
 "Okay." #name:Martin
-Je me relève et lui tend ma main pour l'aider à se mettre debout. #name:nothing
+Je me relève et lui tend ma main pour l'aider à se mettre debout. #name:nothing #trans:trans_neutre
 
-Une fois au parc, nous ne trouvons aucune trace de Zoé. #name:nothing #bg:square
+Une fois au parc, nous ne trouvons aucune trace de Zoé. #name:nothing #bg:square #sprite:ari_neutral/2 #sprite:mar_neutral/3
 "On devrait aller voir chez elle." #name:Martin
 "Tu devrais aller voir chez elle." #name:Arianne
 "Tu ne viens pas ?" #name:Martin
 "Je penses pas qu'elle ait envie de me voir." #name:Arianne
 "Je suis qur qu'elle ne t'en veux pas. Mais je vais pas te forcer." #name:Martin
 "Rentre bien."
-"Merci." #name:Arianne
+"Merci." #name:Arianne #trans:trans_neutre
 
-Sur le chemin retour, je me demande si je n'aurais pas dû rester avec Zoé. #name:nothing #bg:street_1
+Sur le chemin retour, je me demande si je n'aurais pas dû rester avec Zoé. #name:nothing #bg:street_1 #sprite:ari_neutral/2
 Elle qui était si contente qu'on soit de nouveau ensemble.
 Elle doit penser que je n'en ais pas grand chose à faire.
 J'espère pouvoir en reparler un jour. #next:nothing/false
@@ -599,9 +602,9 @@ J'acquiesce. #name:nothing
 "Et puis, tu as toujours eu une connaissance encyclopédique de ces bois." #name:Arianne
 "Je ne peux pas argumenter contre ça." #name:Zoé
 "Rentre bien Arianne."
-"Merci Zoé." #name:Arianne
+"Merci Zoé." #name:Arianne #trans:trans_neutre
 
-Sur le chemin retour, je me demande si je n'aurais pas dû rester avec Martin. #name:nothing #bg:street_1
+Sur le chemin retour, je me demande si je n'aurais pas dû rester avec Martin. #name:nothing #bg:street_1 #sprite:ari_neutral/2
 Il avait probablement plus besoin de moi que Zoé tout à l'heure.
 Et il doit penser qu'on l'a abandonné...
 J'espère pouvoir en reparler un jour. #next:nothing/false

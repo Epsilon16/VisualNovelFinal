@@ -20,7 +20,7 @@ Vous m'enragez, m'enragez!
     -> Puzzle_Moment
 
 === Puzzle_Moment ====
-Comme si tu pouvais me comprendre. #puzzle:puzzle_2
+Comme si on pouvait me comprendre. #puzzle:puzzle_2
 
 Rien que voir vos visage niais et heureux.
 J'ai impression de le voir lui.
