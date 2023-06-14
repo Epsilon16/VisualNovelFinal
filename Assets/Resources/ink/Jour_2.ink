@@ -11,7 +11,7 @@ VAR Coffee = ""
 
 ~grigriLives = 7
 Test #name:nothing #clear:all #bg:kitchen #trans:trans_intro
-"Mince." #name:Jeanne #sprite:jea_neutral/2 #sprite:ari_neutral/1
+"Mince." #name:Jeanne #sprite:jea_neutral/2 #sprite:ari_neutral/1 #music:Happy/Maison
 Je tourne la tête vers ma mère entrain de frénétiquement ouvrir les armoires de la cuisine. #name:nothing #transbg:transbg_neutral
 "Qu'est-ce qui se passe ?". #name:Arianne
 "J'ai oublié de prendre du café, et visiblement Nat en était à court." #name:Jeanne
@@ -28,7 +28,7 @@ J'enfile mon manteau avant de sortir.. #name:nothing
 "A toute à l'heure." #name:Jeanne
 "A toute." #name:Arianne #trans:trans_central
 
-En descendant la rue jusqu'au magasin, je repense aux évènements d'hier. #name:nothing #bg:street_1 #sprite:ari_neutral/2
+En descendant la rue jusqu'au magasin, je repense aux évènements d'hier. #name:nothing #bg:street_1 #sprite:ari_neutral/2 #music:Pensive/Solitude
 J'ai peut-être été trop dure avec eux.
 Je revois mes amis après tout ce temps et j'ai tout ruiné.
 Mais leurs réactions...
@@ -38,7 +38,7 @@ Aaaaaahhh !
 Je devrais penser à autour chose.
 Pas comme si j'allais les revoirs. #trans:trans_central
 
-Le magasin est toujours au même endroit, mais il semble fermé. #name:nothing #bg:town #sprite:ari_neutral/1
+Le magasin est toujours au même endroit, mais il semble fermé. #name:nothing #bg:town #sprite:ari_neutral/1 #music:Happy/Cité
 Je m'approche et vois un petit carton derrière l'une des fenêtres.
 Ouvre à 9h
 Je regarde mon téléphone.
@@ -83,7 +83,7 @@ Aloïs me regarde bizarrement. En même temps je regarde un bracelet depuis tout
 ->discu_no_grigri
 
 ===AloisYesGrigri===
-Qu'est-ce qu'il vient de dire ? #name:nothing #bg:town #sprite:ari_neutral/1 #sprite:alo_neutral/2
+Qu'est-ce qu'il vient de dire ? #name:nothing #bg:town #sprite:ari_neutral/1 #sprite:alo_neutral/2 #music:Fear/Refus
 "Si tu voulais que je part dis le tout de suite." #name:Arianne
 Aloïs recule de quelque pas. #name:nothing
 "Qu'est-ce qui..." #name:Aloïs
@@ -101,14 +101,14 @@ La porte du magasin s'ouvre alors et un hommme à la large posture en sort. #spr
 -> greg_intro
 
 ===AloisNoGrigri===
-Ah! #name:nothing #bg:town #sprite:ari_neutral/1 #sprite:alo_neutral/2
+Ah! #name:nothing #bg:town #sprite:ari_neutral/1 #sprite:alo_neutral/2 #music:Fear/Refus
 J'ai l'impression d'avoir été explusé de sa tête...
 Il faut que je fasse attention la prochaine fois.
 Il n'a pas l'air d'avoir vu quoi que ce soit...
 -> discu_no_grigri 
 
 === discu_no_grigri ===
-"Sinon, qu'est-ce que tu fais là ?" #name:Arianne
+"Sinon, qu'est-ce que tu fais là ?" #name:Arianne #music:Happy/Cité
 "Je dois récupérer un colis pour mes parents." #name:Aloïs
 "Je vois. Ils vont bien ?" #name:Arianne
 "Oui." #name:Aloïs
@@ -129,7 +129,7 @@ Notre discussion à dû le mettre mal à l'aise j'ai l'impression.
 -> greg_intro
 
 === greg_intro ===
-L'homme me dévisage un peu. #name:nothing
+L'homme me dévisage un peu. #name:nothing #music:Happy/GREG
 "Hmm... Ton visage me dit quelque chose." #name:Greg
 "Hey Greg, je pensais pas que tu m'oublierais si facilement." #name:Arianne
 "Arianne !? Bon dieu, ce que tu as grandis !" #name:Greg
@@ -198,7 +198,7 @@ Je lui fait un signe de la main avant de repartir. #name:nothing #trans:trans_ce
 Il a probablement raison, je devrais les revoir et leur parler. #name:nothing #bg:street_1
 C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte en de mauvais termes. #trans:trans_central
 
-Une fois arrivé à la maison, je pose les courses sur la table. #name:nothing #bg:kitchen #sprite:ari_neutral/1
+Une fois arrivé à la maison, je pose les courses sur la table. #name:nothing #bg:kitchen #sprite:ari_neutral/1 #music:Happy/Maison
 "J'ai ce que tu voulais !" #name:Arianne
 Maman rentre dans la cuisine et regarde les courses. #name:nothing #sprite:jea_neutral/2 
 {Coffee == "CMF": -> MegaCoffee}

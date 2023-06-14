@@ -1,7 +1,7 @@
 INCLUDE globals.ink
 
 ~grigriLives--
-J'en ai marre. #next:Jour_2/false #bg:grigri_eli #gsprite:eli_grigri #name:nothing #clear:all
+J'en ai marre. #next:Jour_2/false #bg:grigri_eli #gsprite:eli_grigri #name:nothing #clear:all #music:Spirit/Distortion
 Marre, marre, marre, marre,
 MARRE!!
 Degage de ma vu.
@@ -28,5 +28,5 @@ Ca me rappelle ce foutu halloween.
 Ce putain d'halloween.
 J'aimerais l'oublier mais vous existez toujours pour me le rappeler.
 Si seulement vous pouviez tous disparaitre.
-Pour toujours.
+Pour toujours. #music:nothing/Distortion
 -> END
