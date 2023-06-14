@@ -10,7 +10,8 @@ INCLUDE globals.ink
 VAR Coffee = ""
 
 ~grigriLives = 7
-"Mince." #name:Jeanne #bg:kitchen #sprite:jea_neutral/2 #sprite:ari_neutral/1
+Test #name:nothing #clear:all #bg:kitchen #trans:trans_intro
+"Mince." #name:Jeanne #sprite:jea_neutral/2 #sprite:ari_neutral/1  #transbg:transbg_neutral
 Je tourne la tête vers ma mère entrain de frénétiquement ouvrir les armoires de la cuisine. #name:nothing
 "Qu'est-ce qui se passe ?". #name:Arianne
 "J'ai oublié de prendre du café, et visiblement Nat en était à court." #name:Jeanne

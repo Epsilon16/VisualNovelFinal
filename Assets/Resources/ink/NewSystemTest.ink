@@ -5,13 +5,13 @@ INCLUDE globals.ink
 
 ~grigriLives = 8
 Test #bg:grigri #name:nothing #trans:trans_intro
-Hello there ! #music:goldnoct #sprite:eli_neutral/2 
+Hello there ! #sprite:eli_neutral/2 #transbg:transbg_neutral
 Or more like howdy there ! #trans:trans_center
 -> main 
 
 === main ===
 
-Test1 #name:Arianne #bg:forest #sprite:eli_neutral/2 #music:goldslaughter
+Test1 #name:Arianne #bg:forest #sprite:eli_neutral/2
 Nouveau Test #sprite:jea_neutral/2
 Nouveau CHANGEMENT #sprite:ari_neutral/2
 Nouveau TWIST ? #sprite:zoe_neutral/2
@@ -21,7 +21,7 @@ Test3 #item:sakutarou
 Test4 #item:nothing
 Test5 #next:nothing/false
 ~grigriLives = 2
-How are you feeling today ? #name:Arianne #clear:all #sprite:eli_neutral/2 #music:goldnoct #audio:nothing
+How are you feeling today ? #name:Arianne #clear:all #sprite:eli_neutral/2 #audio:nothing
 +[Happy]
     That make me feel <color=\#F8FF30>happy</color> as well! #name:Zoé #clear:2 #sprite:eli_neutral/3
     I'm so <color=\#F8FF30>happy</color> !
@@ -46,5 +46,5 @@ How are you feeling today ? #name:Arianne #clear:all #sprite:eli_neutral/2 #musi
     === GrigriNO ===
     ~grigriLives = 0
     The Grigri was unsuccessful... #next:Jour_1/nothing #bg:forest
-    Goodbye then! #name:Zoé #clear:all #bg:bedroom
+    Goodbye then! #name:Zoé #clear:all #bg:bedroom #transbg:transbg_1
     -> END

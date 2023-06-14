@@ -30,7 +30,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private TextMeshProUGUI[] choicesText;
 
     public Animator transAnim;
-    public string canTransition = "trans_intro";
+    private string canTransition = "trans_intro";
+    public Image transBoard;
     public bool itemset;
 
     [Header("Grigri Const")]
@@ -90,6 +91,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private const string SPRITE_TAG = "sprite";
     private const string CLEAR_TAG = "clear";
     private const string TRANSITION_TAG = "trans";
+    private const string TRANSBG_TAG = "transbg";
     private const string BACKGROUND_TAG = "bg";
     private const string ITEM_TAG = "item";
     private const string AUDIO_TAG = "audio";
@@ -354,11 +356,13 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Exit du fichier Ink
     private IEnumerator ExitDialogueMode()
     {
+        isSkipping = false;
+
         yield return new WaitForSeconds(0.2f);
         dialogueVariables.StopListening(currentStory);
         dialogueIsPlaying = false;
-        dialoguePanel.SetActive(false);
         dialogueText.text = " ";
+        displayNameText.text = " ";
         SetCurrentAudioInfo(defaultAudioInfo.id);
 
         //fade into oblivion
@@ -372,7 +376,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             {
                 transAnim.Play("trans_outro");
                 yield return new WaitForSeconds(4f);
-                dialogueIsPlaying = false;
                 EnterDialogueMode(nextInkJSON);
             }
         }
@@ -407,9 +410,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 string nextLine = currentStory.Continue();
                 HandleTags(currentStory.currentTags);
                 displayLineCoroutine = StartCoroutine(DisplayLine(nextLine));
-                transAnim.Play("trans_neutral");
             }
-
         }
         else
         {
@@ -597,6 +598,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     break;
                 case TRANSITION_TAG:
                     canTransition = tagValue;
+                    break;
+                case TRANSBG_TAG:
+                    transBoard.sprite = Resources.Load<Sprite>("bgs/" + tagValue);
                     break;
                 case BACKGROUND_TAG:
                     background.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + tagValue);

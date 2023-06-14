@@ -1,6 +1,6 @@
 INCLUDE globals.ink
 
-J'ai l'impression de vivre dans un cauchemar. #next:Jour_1/false #bg:grigri_jea #gsprite:jea_grigri #name:nothing #clear:all #music:Stupefaction
+J'ai l'impression de vivre dans un cauchemar. #next:Jour_1/false #bg:grigri_jea #gsprite:jea_grigri #name:nothing #clear:all
 Tout revient pour me hanter.
 Pourquoi...
 Pourquoi est-ce que tout me fait si mal ?
