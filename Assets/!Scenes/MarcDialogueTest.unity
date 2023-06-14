@@ -2949,7 +2949,7 @@ MonoBehaviour:
   makePredictable: 1
   currentAudioInfo: {fileID: 0}
   musicAS: {fileID: 119430550}
-  firstInkJSON: {fileID: 4900000, guid: 15fc5633a9e5ea74bbbdf96a1c79c59a, type: 3}
+  firstInkJSON: {fileID: 4900000, guid: 6e4a70fc407d5e9418a2d3c13a01f715, type: 3}
   nextInkJSON: {fileID: 0}
   canContinueToNextLine: 0
   skipIndicator: {fileID: 296936156}

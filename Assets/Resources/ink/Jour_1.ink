@@ -4,7 +4,7 @@ INCLUDE globals.ink
 
 
 Test #name:nothing #clear:all #bg:grigri_neutral #trans:trans_intro
-Le monde était recouvert d'une épaisse couche de fleurs.
+Le monde était recouvert d'une épaisse couche de fleurs. #music:Fear/Menace
 Même si je les arrachais, je n'arriverais pas à en voir le sol. #transbg:transbg_neutral
 J'en suis sûr. Si j'en cueillais une seule, trois autres pousseraient à partir de sa tige.
 Leur rouge recouvre le monde telle une mare de sang sans début ni fin.
@@ -21,8 +21,8 @@ Le son résonne à l'intérieur de ma tête et s'amplifie, semblant ne vouloir d
 Je serais la prochaine à colorer son poignard. #trans:trans_center
 
 
-"!!!" #name:Arianne #bg:bedroom #sprite:ari_neutral/2
-Je me réveille en sursaut dans mon lit. #name:nothing
+"!!!" #name:Arianne #bg:bedroom #sprite:ari_neutral/2 #music:nothing/Menace
+Je me réveille en sursaut dans mon lit. #music:Pensive/Dialogue #name:nothing 
 Pas de figure sombre, ni de sang ou de mer d'Adonis recouvrant le sol.
 Juste moi, une chambre presque vide et un plancher en bois qui grince à chaque pas.
 Je m'assois sur le bord du matelas et me frotte un peu les yeux.
@@ -58,7 +58,7 @@ Je suis à présent seule dans cette grande maison vide. #name:nothing #clear:3
 Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville. #sprite:ari_neutral/2
 Je descend alors les escaliers pour voir qui pourrait bien être là. #trans:trans_center
 
-"Je te dis qu'elle n'est pas-" #name:??? #bg:house_ari #sprite:zoe_neutral/3 #sprite:mar_neutral/4
+"Je te dis qu'elle n'est pas-" #name:??? #bg:house_ari #sprite:zoe_neutral/3 #sprite:mar_neutral/4 #music:Happy/Camaraderie
 "Arianne !!" #name:???
 Je mets un petit moment avant de reconnaitre les deux personnes se trouvant devant la porte. #name:nothing #sprite:ari_neutral/0
 Mais très vite leurs noms me reviennent et un tas de sentiments refont surface.
@@ -106,7 +106,7 @@ Notre séparation fut soudaine et dure pour nous tous ... Je pense. Mais je m'y 
  Les revoir maintenant me donne l'impression de parler à des inconnus dont j'ai lu la biographie.
 Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #trans:trans_center
 
-"Des études d'ingénieur ?" #name:Martin #bg:street_1 #clear:2 #sprite:ari_neutral/1 #sprite:mar_neutral/2 #sprite:zoe_neutral/3
+"Des études d'ingénieur ?" #name:Martin #bg:street_1 #clear:2 #sprite:ari_neutral/1 #sprite:mar_neutral/2 #sprite:zoe_neutral/3 #music:Happy/Visite
 "Ouais, je m'y plais bien." #name:Arianne
 "En même temps, Arianne a toujours été celle avec le plus de neurones dans ce groupe." #name:Zoé
 "T'exagères." #name:Arianne
@@ -180,8 +180,8 @@ Vu de loin, personne n'aurait l'impression qu'ils se sont quittés pendant cinq 
 La remarque fait rire Martin, et très vite on se met tous à rire. #name:nothing
 "Tu dis ça comme si on y allait souvent." #name:Arianne
 "Oh non, j'ai jamais pu y revenir." #name:Zoé
-"C'est sûr que depuis que Yann à cassé une fenêtre." #name:Martin
-"..." #name:Zoé
+"C'est sûr que depuis que Yann à cassé une fenêtre." #name:Martin 
+"..." #name:Zoé #music:nothing/Visite
 "Je..." #name:Martin
 "Qu'est-ce qu'il y a ?" #name:Arianne
 "..." #name:Martin #clear:2 #sprite:mar_neutral/4
@@ -189,8 +189,8 @@ La remarque fait rire Martin, et très vite on se met tous à rire. #name:nothin
 J'espère que c'est le café. #name:nothing
 "..." #name:Martin
 "E-Enfin, on peut toujours y aller si tu veux. Le gérant doit avoir oublié." #name:Zoé #clear:3 #sprite:zoe_neutral/2
-"Oublier Yann ?" #name:Arianne
-"Non bien sûr... Mais..." #name:Zoé
+"Oublier Yann ?" #name:Arianne #music:Fear/Douleur
+"Non bien sûr... Mais..." #name:Zoé 
 "Martin ?"#name:Arianne
 "..." #name:Martin
 "Arianne..." #name:Zoé
@@ -216,7 +216,7 @@ Pourquoi est-ce qu'ils bloquent encore ?
 "C'était sympa..." #name:Arianne 
 "Au revoir." #name:Arianne #trans:trans_center #clear:0
 
-Alors que je retrace le chemin en direction de la maison, la discussion tourne en boucle dans ma tête. #name:nothing #bg:street_1 #clear:all #sprite:ari_neutral/2
+Alors que je retrace le chemin en direction de la maison, la discussion tourne en boucle dans ma tête. #name:nothing #bg:street_1 #clear:all #sprite:ari_neutral/2 #music:Pensive/Solitude
 Comment peuvent-ils faire pour ignorer ça ? 
 L'incident nous a tous impactés. Mais ce n'est pas une raison pour essayer d'oublier.
 Ce n'est pas une raison pour ignorer qu'il ait existé.
@@ -229,10 +229,10 @@ Je...
 Je dois me changer les idées.
 J'allais attendre maman, mais autant commencer à faire les cartons moi-même. #trans:trans_center
 
-Une fois dans la chambre à l'étage, j'ouvre quelques cartons vides et commence à les remplir. #bg:bedroom
+Une fois dans la chambre à l'étage, j'ouvre quelques cartons vides et commence à les remplir. #bg:bedroom 
 Habits, livres et autres objets dont la teneur émotionnelle est perdue au fil du temps.
 "Hm ?" #name:Arianne
-Une petite boite tombe des plis d'un habit sur le sol. #name:nothing
+Une petite boite tombe des plis d'un habit sur le sol. #name:nothing #music:Spirit/Etrange
 "Qu'est-ce que c'est...?" #name:Arianne
 "Visiblement, il a été caché entre deux pulls, mais pour quelle raison ?" #name:Arianne
 La curiosité prend le dessus et j'ouvre la petite boite pour y découvrir un bracelet singulier avec huit perles brillantes. #item:grigri_8  #name:nothing
@@ -276,16 +276,16 @@ J'aurais dû me taire. #name:nothing
 Je me sens un peu mal. J'ai envie de m'excuser mais je penses pas quoi ce soit le bon moment. #name:nothing
 Je sais que c'était pas facile.
 J'aurais juste voulu pouvoir en parler un peu.
-Alors que j'allais repartir dans ma chambre, le bracelet se met à briller dans ma main. 
+Alors que j'allais repartir dans ma chambre, le bracelet se met à briller dans ma main. #music:nothing/Etrange
 L'une des perles s'illumine d'un blanc qui m'aveugle et englobe l'espace devant moi. #clear:all #sprite:jea_neutral/2
 Je ne vois plus que ma mère alors que l'espace se tord autour de nous. #next:Grigri_Jeanne/now
 
 
 ===AfterGrigri===
-Qu'est-ce que je viens de voir ? #name:nothing #bg:kitchen #sprite:ari_neutral/1 #sprite:jea_neutral/3
+Qu'est-ce que je viens de voir ? #name:nothing #bg:kitchen #sprite:ari_neutral/1 #sprite:jea_neutral/3 
 J'ai bien mis un sachet de thé hein ? #name:nothing
 Grand-mère Nat était excentrique mais pas à ce point. #name:nothing
-"Arianne ?" #name:Jeanne
+"Arianne ?" #name:Jeanne #music:Pensive/Solitude
 Je reprend mes esprit et porte le regard sur ma mère. #name:nothing
 Elle me regarde d'un air un peu inquiet. #name:nothing
 Mais les mots que j'ai entendu... Si c'est bien les siens... #name:nothing
@@ -327,7 +327,7 @@ Le coin de sa lèvre se lève un peu avant de reprendre une expression plus sere
 "Une lettre ?"
 Elle pose une enveloppe devant moi que je prend et inspecte. #name:nothing
 Pas d'expéditeur.
-"Probablement Zoé. Merci maman." #name:Arianne #trans:trans_center #clear:1 #sprite:ari_neutral/0
+"Probablement Zoé. Merci maman." #name:Arianne #trans:trans_center #clear:1 #sprite:ari_neutral/0 #music:nothing/Solitude
 
 De retour à l'étage, mon regard se porte sur le bracelet, remarquant que l'une des perles s'est noircie. #name:nothing #bg:bedroom #item:grigri_7
 "C'est étrange ça... Ce serait dû à ce que j'ai vu ?" #name:Arianne 
@@ -340,7 +340,7 @@ J'ouvre l'enveloppe, qui ne comporte qu'un seul bout de papier. #name:nothing
 "Qui est-ce que ça pourrait bien être ?"  #name:Arianne
 Une fois ouverte, j'en lis le contenu.  #name:nothing
 Arianne. #clear:2 #bg:grigri_neutral
-Tu n'aurais pas dû revenir à Adonis.
+Tu n'aurais pas dû revenir à Adonis. #music:Fear/Menace
 De mauvaises choses t'attendent si tu fouilles trop.
 Restes terrée dans ta maison.
 Cela vaut mieux pour toi.
@@ -350,6 +350,6 @@ Je jette la lettre en dégoût dans un carton. #name:nothing
 "Une mauvaise blague de la part de Martin ou Zoé pour ce que je leurs ait dit tout à l'heure." #name:Arianne
 "Mais ce ne sont pas vraiment leurs styles..." #name:Arianne
 "Si..?" #name:Arianne
-"Mieux vaut oublier tout ça." #name:Arianne
+"Mieux vaut oublier tout ça." #name:Arianne #music:nothing/Menace
 "Demain sera un autre jour." #next:Jour_2/false #name:Arianne #transbg:transbg_2
 -> END
