@@ -4,7 +4,7 @@ INCLUDE globals.ink
 J'en ai marre. #next:Jour_2/false #bg:grigri_eli #gsprite:eli_grigri #name:nothing #clear:all
 Marre, marre, marre, marre,
 MARRE!!
-Dégage de ma vu.
+Degage de ma vu.
 Vous m'enragez, m'enragez!
 +[Calme toi, ca ne sert à rien.]
     ~CHOICES_TEST = GEli0

@@ -458,19 +458,21 @@ J'ais vraiment cru que j'allais mourir à tout moment là dedans.
 "Qu'est-ce qui se passe ? Perdue ta langue ?" #name:Elise
 Je suis figée sur place, Elise me fixe avec des yeux de tueur. #name:nothing
 "Alors !?" #name:Elise
-Je n'ose rien dire et part en courant, revenant sur mes pas.
+Je n'ose rien dire et part en courant, revenant sur mes pas. #clear:3 #name:nothing
 Qu'est-ce que c'était que ça ?
 C'était terrifiant !
 Je repense à la lettre d'hier soir et de sa menace.
 Ce serait elle ? Mais pourquoi ?
-Une fois devant l'entrée de square, je me demande qui aller voir. #trans:trans_central
+Une fois devant l'entrée de square, je me demande qui aller voir.
 
 +[Chercher Martin]
+    Je choisis de partir voir Martin. #trans:trans_central
     Je vais en direction de la forêt pour trouver Martin. #name:nothing #bg:forest #sprite:ari_neutral/2
     Il doit bien être quelque part.
     ~CHOICES_TEST = J2C2
     ->ChoiceMartin
 +[Chercher Zoé]
+    Je choisis de partir voir Zoé. #trans:trans_central
     Je rentre à l'intérieur du square en direction des jeux. #name:nothing bg:square
     "Zoé ?" #name:Arianne #sprite:ari_neutral/2 #sprite:zoe_neutral/3
     Aucune réponse, mais je la trouve assise sur l'une des structures en bois, balançant ses jambes d'avant en arrière. #name:nothing
