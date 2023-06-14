@@ -194,6 +194,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         displayNameText.text = loadedState.name;
         background.GetComponent<Image>().sprite = Resources.Load<Sprite>("bgs/" + loadedState.background);
 
+        transBoard.sprite = Resources.Load<Sprite>("bgs/" + "transbg_neutral");
+
         for (int i = 0; i < spritePlacement.transform.childCount; i++)
         {
             Debug.Log(loadedState.sprites[i] + " number" + i);

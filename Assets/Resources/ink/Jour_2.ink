@@ -473,7 +473,7 @@ Une fois devant l'entrée de square, je me demande qui aller voir.
     ->ChoiceMartin
 +[Chercher Zoé]
     Je choisis de partir voir Zoé. #trans:trans_central
-    Je rentre à l'intérieur du square en direction des jeux. #name:nothing bg:square
+    Je rentre à l'intérieur du square en direction des jeux. #name:nothing #bg:square
     "Zoé ?" #name:Arianne #sprite:ari_neutral/2 #sprite:zoe_neutral/3
     Aucune réponse, mais je la trouve assise sur l'une des structures en bois, balançant ses jambes d'avant en arrière. #name:nothing
     Je monte et m'assois à côté d'elle.
