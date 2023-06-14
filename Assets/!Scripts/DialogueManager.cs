@@ -346,7 +346,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
         else
         {
-            Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAH");
             transAnim.Play("trans_titlecard");
             dialogueVariables.StartListening(currentStory);
             ContinueStory();
@@ -402,8 +401,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
             if (canTransition != null)
             {
-                canContinueToNextLine = false;
-                transAnim.Play(canTransition);
+                if (isSkipping)
+                {
+                    Transition();
+                }
+                else
+                {
+                    canContinueToNextLine = false;
+                    transAnim.Play(canTransition);
+                }
             }
             else
             {

@@ -4,8 +4,8 @@ INCLUDE globals.ink
 
 
 Test #name:nothing #clear:all #bg:grigri_neutral #trans:trans_intro
-Le monde était recouvert d'une épaisse couche de fleurs. #transbg:transbg_neutral
-Même si je les arrachais, je n'arriverais pas à en voir le sol.
+Le monde était recouvert d'une épaisse couche de fleurs.
+Même si je les arrachais, je n'arriverais pas à en voir le sol. #transbg:transbg_neutral
 J'en suis sûr. Si j'en cueillais une seule, trois autres pousseraient à partir de sa tige.
 Leur rouge recouvre le monde telle une mare de sang sans début ni fin.
 Dans le vide de cet espace, la seule constante est l'étrange réconfort de savoir que la mer d'Adonis est immortelle.
@@ -18,7 +18,7 @@ La créature sort alors un couteau ensanglanté de ses habits sombres et le met 
 Le liquide rouge coule le long de sa lame et des gouttes tombent dans le parterre, se diluant dans sa teinte sanguine.
 Les joyaux virent à un noir ébène alors qu'un son grave émane de l'intérieur du crâne de la bête.
 Le son résonne à l'intérieur de ma tête et s'amplifie, semblant ne vouloir dire qu'une seule chose :
-Je serais la prochaine à colorer son poignard. #trans:trans_neutral
+Je serais la prochaine à colorer son poignard. #trans:trans_center
 
 
 "!!!" #name:Arianne #bg:bedroom #sprite:ari_neutral/2

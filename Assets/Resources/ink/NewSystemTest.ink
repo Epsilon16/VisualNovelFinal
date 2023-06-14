@@ -5,8 +5,8 @@ INCLUDE globals.ink
 
 ~grigriLives = 8
 Test #bg:grigri #name:nothing #trans:trans_intro
-Hello there ! #sprite:eli_neutral/2 #transbg:transbg_neutral
-Or more like howdy there ! #trans:trans_center
+Hello there ! #sprite:eli_neutral/2
+Or more like howdy there ! #trans:trans_center #transbg:transbg_neutral
 -> main 
 
 === main ===

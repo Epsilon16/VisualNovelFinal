@@ -11,8 +11,8 @@ VAR Coffee = ""
 
 ~grigriLives = 7
 Test #name:nothing #clear:all #bg:kitchen #trans:trans_intro
-"Mince." #name:Jeanne #sprite:jea_neutral/2 #sprite:ari_neutral/1  #transbg:transbg_neutral
-Je tourne la tête vers ma mère entrain de frénétiquement ouvrir les armoires de la cuisine. #name:nothing
+"Mince." #name:Jeanne #sprite:jea_neutral/2 #sprite:ari_neutral/1
+Je tourne la tête vers ma mère entrain de frénétiquement ouvrir les armoires de la cuisine. #name:nothing #transbg:transbg_neutral
 "Qu'est-ce qui se passe ?". #name:Arianne
 "J'ai oublié de prendre du café, et visiblement Nat en était à court." #name:Jeanne
 "Tu peux aller en acheter chez Greg ?" #name:Jeanne
