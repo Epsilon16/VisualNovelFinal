@@ -12,7 +12,6 @@ public class MenuScript : MonoBehaviour
     public bool mouseControl;
 
     public GameObject OptionsCanvas;
-    public GameObject RacineCanvas;
     private GameObject childOption;
 
     public GameObject optionMenuPrefab;
@@ -24,6 +23,8 @@ public class MenuScript : MonoBehaviour
             Debug.LogWarning("Found more than one Dialogue Manager in the scene");
         }
         instance = this;
+
+        OptionsCanvas = Instantiate(optionMenuPrefab, transform.position, transform.rotation);
     }
 
     public static MenuScript GetInstance()
@@ -33,8 +34,7 @@ public class MenuScript : MonoBehaviour
 
     private void Start()
     {
-        OptionsCanvas = Instantiate(optionMenuPrefab, transform.position, transform.rotation);
-
+        childOption = OptionsCanvas.transform.GetChild(0).gameObject;
         DisableOption();
     }
 
@@ -52,41 +52,17 @@ public class MenuScript : MonoBehaviour
     public void EnableOption()
     {
         EventSystem.current.SetSelectedGameObject(null);
+        childOption.SetActive(true);
 
-        if (OptionsCanvas != null)
+        if (DialogueManager.GetInstance())
         {
-            OptionsCanvas.SetActive(true);
+            DialogueManager.GetInstance().isOptionOn = true;
         }
-        else
-        {
-            //OptionsCanvas = GameObject.FindGameObjectWithTag("options");
-            //Debug.Log(OptionsCanvas);
-            RacineCanvas = GameObject.FindGameObjectWithTag("Options");
-            childOption = RacineCanvas.transform.GetChild(0).gameObject;
-            childOption.SetActive(true);
-
-            if (DialogueManager.GetInstance())
-            {
-                DialogueManager.GetInstance().isOptionOn = true;
-            }
-        }
-            //OptionsCanvas = GameObject.FindGameObjectWithTag("Options");      
     }
 
     public void DisableOption()
     {
         EventSystem.current.SetSelectedGameObject(null);
-
-        if (OptionsCanvas != null)
-        {
-            OptionsCanvas.SetActive(false);
-        }
-        else
-        {
-            //OptionsCanvas = GameObject.FindGameObjectWithTag("options");
-            RacineCanvas = GameObject.FindGameObjectWithTag("Options");
-            childOption = RacineCanvas.transform.GetChild(0).gameObject;
-            childOption.SetActive(false);
-        }
+        childOption.SetActive(false);
     }
 }
