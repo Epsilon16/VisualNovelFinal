@@ -690,8 +690,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     }
 
     //Fade Out de la musique
-    private IEnumerator FadeOutMusic(string tagValue)
+    private IEnumerator FadeOutMusic(string music)
     {
+        string[] splitMusic = music.Split('/');
+
         if (musicAS.clip != null)
         {
             if (musicAS.volume <= 0.1f)
@@ -708,14 +710,14 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 musicAS.volume = newVolume;
 
                 yield return new WaitForEndOfFrame();
-                StartCoroutine(FadeOutMusic(tagValue));
+                StartCoroutine(FadeOutMusic(music));
                 yield break;
             }
         }
 
-        if (tagValue != "nothing")
+        if (splitMusic[0] != "nothing")
         {
-            musicAS.clip = Resources.Load<AudioClip>("musics/" + tagValue);
+            musicAS.clip = Resources.Load<AudioClip>("musics/" + splitMusic[0] + "/" + splitMusic[1]);
             musicAS.Play();
         }
         else
