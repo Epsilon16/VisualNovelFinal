@@ -2,7 +2,9 @@ INCLUDE globals.ink
 
 {CHOICES_TEST has Z0: -> AfterGrigri}
 
-Le monde était recouvert d'une épaisse couche de fleurs. #name:nothing #clear:all #bg:grigri_neutral #music:Stupefaction
+
+Test #name:nothing #clear:all #bg:grigri_neutral #trans:trans_intro
+Le monde était recouvert d'une épaisse couche de fleurs. #music:Stupefaction
 Même si je les arrachais, je n'arriverais pas à en voir le sol.
 J'en suis sûr. Si j'en cueillais une seule, trois autres pousseraient à partir de sa tige.
 Leur rouge recouvre le monde telle une mare de sang sans début ni fin.

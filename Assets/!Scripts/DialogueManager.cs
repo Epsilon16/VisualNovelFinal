@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private TextMeshProUGUI[] choicesText;
 
     public Animator transAnim;
-    private string canTransition;
+    private string canTransition = "trans_intro";
     public bool itemset;
 
     [Header("Grigri Const")]
@@ -151,7 +151,13 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         dialogueIsPlaying = false;
 
+        transAnim.Play("trans_titlecard");
         EnterDialogueMode(firstInkJSON);
+    }
+
+    private IEnumerator Intro()
+    {
+        yield return new WaitForSeconds(1f);
     }
 
     private void SetUIObjects()
@@ -368,6 +374,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             }
             else
             {
+                transAnim.Play("trans_outro");
+                yield return new WaitForSeconds(4f);
+                dialogueIsPlaying = false;
+                transAnim.Play("trans_titlecard");
                 EnterDialogueMode(nextInkJSON);
             }
         }
@@ -395,7 +405,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             if (canTransition != null)
             {
                 canContinueToNextLine = false;
-                transAnim.Play("trans_center");
+                transAnim.Play(canTransition);
             }
             else
             {
