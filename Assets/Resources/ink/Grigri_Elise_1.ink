@@ -34,7 +34,7 @@ Stop stop stop!
     Ce putain d'halloween.
     J'aimerais l'oublier mais vous existez toujours pour me le rappeler.
     Si seulement vous pouviez tous disparaitre.
-    Pour toujours.
+    Pour toujours. #music:nothing/Distortion
     -> END
 
 +[Pitie dis ce qu'il ne va pas!]
@@ -42,5 +42,5 @@ Stop stop stop!
     J'en ais que faire de ta pitie.
     Je n'ai pas besoin de votre pitie.
     Laissez la pour les autres!
-    J'arrive très bien à survivre seule!
+    J'arrive très bien à survivre seule! #music:nothing/Distortion
     -> END

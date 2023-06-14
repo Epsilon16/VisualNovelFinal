@@ -96,7 +96,7 @@ J'ai l'impression que ça brouille mon cerveau, comme si je fusionnais avec celu
 C'est peut-être ce qui se passe.
 Mais il avait une telle peur. J'en ais eu peur moi même.
 Je devrais peut-être pas rentrer dans la tête des gens tout court.
-La porte du magasin s'ouvre alors et un hommme à la large posture en sort. #sprite:greg_neutral/3
+La porte du magasin s'ouvre alors et un hommme à la large posture en sort. #sprite:greg_neutral/3 #music:nothing/Refus
 "On est en service !" #name:Greg
 -> greg_intro
 
@@ -118,7 +118,7 @@ Ils étaient gentils mais ils m'ont toujours fait un peu peur... Je crois...
 Probablement car ce sont des professeurs.
 Enfin, ils vont bien, c'est le principal.
 "Cool." #name:Arianne
-La discussion arrive à un point mort. Mais heureusement la porte du magasin s'ouvre et un hommme à la large posture en sort. #name:nothing #sprite:greg_neutral/3
+La discussion arrive à un point mort. Mais heureusement la porte du magasin s'ouvre et un hommme à la large posture en sort. #name:nothing #sprite:greg_neutral/3 #music:nothing/Cité
 "On est en service !" #name:Greg
 Aloïs passe rapidement devant moi. #name:nothing
 "Bonjour. Euh... Est-ce que le colis pour mes parents est arrivé ?" #name:Aloïs
@@ -195,7 +195,7 @@ Pas sur de vraiment les connaitres maintenant. #name:nothing
 "Haha, de rien." #name:Greg
 Je lui fait un signe de la main avant de repartir. #name:nothing #trans:trans_center
 
-Il a probablement raison, je devrais les revoir et leur parler. #name:nothing #bg:street_1
+Il a probablement raison, je devrais les revoir et leur parler. #name:nothing #bg:street_1 #music:nothing/GREG
 C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte en de mauvais termes. #trans:trans_center
 
 Une fois arrivé à la maison, je pose les courses sur la table. #name:nothing #bg:kitchen #sprite:ari_neutral/1 #music:Happy/Maison
@@ -238,7 +238,7 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing #sprite:jea_n
 === afternoon ===
 Après avoir passé la matinée à ranger les affaires de Mamie et manger un coup, je me dirige en direction de chez Zoé. #name:nothing #bg:street_3 #sprite:ari_neutral/2
 Martin avait l'air bien moins enclin à la discussion hier. Et je penses que Zoé voudra reparler.
-Du moins j'espère... #trans:trans_center
+Du moins j'espère... #trans:trans_center #music:nothing/Maison
 
 Je continue à descendre la rue jusqu'à arriver devant sa maison. #name:nothing #bg:house_zoe #sprite:ari_neutral/2
 Le doute me prend alors.
@@ -253,7 +253,7 @@ Une voix féminine me bloque dans mon monologue intérieur. #name:nothing
 Je lève la tête et remarque que quelqu'un se tient devant la porte à côté de moi. #name:nothing #sprite:maria_neutral/3
 C'est Maria, la mère de Zoé.
 "Oh non non, je suis là où je veux." #name:Arianne
-"Attendez... Arianne c'est toi ? Qu'est-ce que tu as grandis !" #name:Mère de Zoé
+"Attendez... Arianne c'est toi ? Qu'est-ce que tu as grandis !" #name:Mère de Zoé #music:Happy/Visite
 J'ai une sensation de déjà-vu.
 "Bonjour Maria. Désolé de venir à l'improviste." #name:Arianne
 "Oh mais nulle besoin de t'excuser, tu es et sera toujours la bienvenue chez nous." #name:Mère de Zoé
@@ -266,11 +266,11 @@ J'ai une sensation de déjà-vu.
 "Passez une bonne journée."
 "Vous aussi." #name:Arianne #trans:trans_center
 
-Je me dirige alors vers chez Martin. #name:nothing #bg:street_3
+Je me dirige alors vers chez Martin. #name:nothing #bg:street_3 #music:nothing/Visite
 Malgré les années, je retrouve facilement le chemin, et finis par arriver chez lui. #trans:trans_center
 
 Arrivant devant sa grande maison, j'entends Zoé parlant à la porte. #name:nothing #bg:house_mar #sprite:ari_neutral/0  #sprite:zoe_neutral/2  #sprite:mar_neutral/3
-"Allez !" #name:Zoé
+"Allez !" #name:Zoé #music:Happy/Camaraderie
 "Je te dis que je me sens pas bien.." #name:Martin
 "Arrêtes avec tes excuses ! C'est aujourd'hui ou jamais !" #name:Zoé
 "Si on fait rien, on le regrettera !"
@@ -307,7 +307,7 @@ Mille et une histoires ont été raconté, joué et oublié ici.
 La nostalgie me pince légèrement le coeur, mais au vu de sa réaction hier, ce doit être pire pour Martin.
 "Hey regardez !" #name:Zoé
 Zoé est monté sur le toit d'un des jeux en bois. #name:nothing
-"Je suis la plus grande !" #name:Zoé
+"Je suis la plus grande !" #name:Zoé #music:Happy/Enfant
 "Zoé.. fait attention s'il te plait..." #name:Martin
 C'est la première chose que je l'entends dire depuis tout à l'heure, il a l'air vraiment inquiet. #name:nothing
 "Ne t'inquiète pas ! Je suis Miss Mouse ! Voleuse extra-ordinaire !" #name:Zoé
@@ -360,7 +360,7 @@ Après une dizaine de minutes, nous nous ponsons sur un banc.
 "Je sens plus mes jambes, c'est horrible." #name:Martin
 "Ca m'avait manqué nos jeux de Detective Wolf." #name:Zoé
 On reste comme ça un petit moment, reprenant notre souffle. #name:nothing
-Puis je me lève, faisant face au banc.
+Puis je me lève, faisant face au banc. #music:nothing/Enfant
 "Hey, à propos d'hier..." #name:Arianne
 Martin baisse un peu le regard, n'ayant visiblement pas envie d'y repenser. #name:nothing
 "C'est juste... On a besoin de parler de Yann." #name:Arianne
@@ -373,14 +373,14 @@ Je perds un peu mes mots, je sais ce que je veux dire, mais je trouve pas les bo
 "Hey !" #name:???
 Je lève les yeux et remarque qu'une jeune femme est entrain de nous interpeller. #name:nothing #sprite:eli_neutral/0
 Elle s'avance vers notre direction d'un pas décidé.
-"Vous arrivez pas à lire ? Réservé aux moins de dix ans." #name:???
+"Vous arrivez pas à lire ? Réservé aux moins de dix ans." #name:??? #music:Fear/Menace
 "Non c'est juste que..." #name:Zoé
 Martin et Zoé se lèvent. #name:nothing
 "Attends.." #name:???
 "J'te reconnais."
-Elle ecarquille les yeux, et je me souviens également de la personne en face de moi. #name:nothing
+Elle ecarquille les yeux, et je me souviens également de la personne en face de moi. #name:nothing #music:nothing/Menace
 C'est la fille de Greg, Elise.
-"Qu'est-ce que tu fais ici Arianne ?" #name:Elise
+"Qu'est-ce que tu fais ici Arianne ?" #name:Elise #music:Fear/Colère
 "On va partir d'ici, okay ?" #name:Zoé
 "Je te parle pas, la barbe à papa." #name:Elise
 "Qu'est-ce que tu me veux?" #name:Arianne
@@ -402,7 +402,7 @@ Elise pousse alors Martin, qui finit a terre.
 "Pourquoi tu nous ennuie comme ça !?"
 Elle allait pour nous répondre puis s'arrête dans son élan et frappe l'échelle en bois à côté d'elle. #name:nothing
 "Allez vous faire." #name:Elise
-Elle se retourne, furieuse et sort du parc. #name:nothing #clear:0
+Elle se retourne, furieuse et sort du parc. #name:nothing #clear:0 #music:nothing/Colère
 "Martin ça va ?" #name:Arianne
 Celui-ci se relève, le regard lourd. #name:nothing
 "J'aurais pas dû venir." #name:Martin
@@ -523,7 +523,7 @@ Je n'ai pas vraiment envie de reparler d'hier.
 Mais je ne sais pas vraiment de quoi parler non plus.
 Ce que je sais, c'est que je ne veux pas le laisser seul non plus.
 "Dit..." #name:Martin
-"Pourquoi est-ce que t'es revenu ?"
+"Pourquoi est-ce que t'es revenu ?" #music:Pensive/Dialogue
 "..." #name:Arianne
 Je ne pensais pas que ça pourrait faire si mal de la part de Martin. #name:nothing
 "Tu n'avais pas l'air de vouloir nous revoir hier. Alors pourquoi est-ce que tu venu chez moi ?" #name:Martin
@@ -569,7 +569,7 @@ J'espère pouvoir en reparler un jour. #next:nothing/false
 ~RS_Zoe += 1
 On reste un moment, assises toute les deux sans rien dire. #name:nothing
 Puis j'entamme la conversation.
-"A quoi est-ce que tu penses ?" #name:Arianne
+"A quoi est-ce que tu penses ?" #name:Arianne #music:Pensive/Dialogue
 "Elise." #name:Zoé
 Dur de penser à autre chose, en même temps. #name:nothing
 "Qu'est-ce qu'on lui a fait pour qu'elle nous haïsse comme ça ?" #name:Zoé
