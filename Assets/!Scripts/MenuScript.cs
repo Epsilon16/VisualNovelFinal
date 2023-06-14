@@ -38,6 +38,14 @@ public class MenuScript : MonoBehaviour
         DisableOption();
     }
 
+    private void Update()
+    {
+        /*if (InputManager.GetInstance().GetMenuPressed() && DialogueManager.GetInstance().isOptionOn)
+        {
+            DisableOption();
+        }*/
+    }
+
     public void LoadScene(int GameScene)
     {
         mouseControl = false;

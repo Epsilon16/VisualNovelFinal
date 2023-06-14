@@ -73,9 +73,9 @@ public class Resolution_Quality : MonoBehaviour
         Screen.fullScreen = IsFullScreen;
     }
 
-    public void SetSpeedText(float typing)
+    public void SetSpeedText()
     {
-        typingspeeding = typing;
+        typingspeeding = SpeedSlider.value;
     }
 
     public void QuitOption()

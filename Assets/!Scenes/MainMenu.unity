@@ -1357,7 +1357,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2905279108240583846, guid: 038e6059308556945b7b1ec26431d900, type: 2}
-  m_audioClip: {fileID: 8300000, guid: c6077b33229a62a42a56bef764a2c284, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cb055414f5ba5374284246c2bb92840d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1669,7 +1669,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseControl: 0
   OptionsCanvas: {fileID: 0}
-  RacineCanvas: {fileID: 0}
   optionMenuPrefab: {fileID: 1709866237761919567, guid: e6174436e1dcb3848919d0d5827f9e90, type: 3}
 --- !u!1 &1186305975
 GameObject:
