@@ -346,7 +346,10 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
         else
         {
-            transAnim.Play("trans_titlecard");
+            if(transBoard.sprite.name != "transbg_neutral")
+            {
+                transAnim.Play("trans_titlecard");
+            }
             dialogueVariables.StartListening(currentStory);
             ContinueStory();
         }
@@ -873,6 +876,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Lance le mode Grigri
     public void EnterGrigriMode()
     {
+        isSkipping = false;
         StartCoroutine(GrigriCoroutine());
     }
     public IEnumerator GrigriCoroutine()
