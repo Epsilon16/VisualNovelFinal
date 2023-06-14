@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private TextMeshProUGUI[] choicesText;
 
     public Animator transAnim;
-    private string canTransition = "trans_intro";
+    public string canTransition = "trans_intro";
     public bool itemset;
 
     [Header("Grigri Const")]
@@ -151,13 +151,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         dialogueIsPlaying = false;
 
-        transAnim.Play("trans_titlecard");
         EnterDialogueMode(firstInkJSON);
-    }
-
-    private IEnumerator Intro()
-    {
-        yield return new WaitForSeconds(1f);
     }
 
     private void SetUIObjects()
@@ -350,6 +344,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
         else
         {
+            Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAH");
+            transAnim.Play("trans_titlecard");
             dialogueVariables.StartListening(currentStory);
             ContinueStory();
         }
@@ -362,7 +358,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         dialogueVariables.StopListening(currentStory);
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
-        dialogueText.text = "";
+        dialogueText.text = " ";
         SetCurrentAudioInfo(defaultAudioInfo.id);
 
         //fade into oblivion
@@ -377,7 +373,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                 transAnim.Play("trans_outro");
                 yield return new WaitForSeconds(4f);
                 dialogueIsPlaying = false;
-                transAnim.Play("trans_titlecard");
                 EnterDialogueMode(nextInkJSON);
             }
         }

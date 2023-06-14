@@ -18,7 +18,7 @@ La créature sort alors un couteau ensanglanté de ses habits sombres et le met 
 Le liquide rouge coule le long de sa lame et des gouttes tombent dans le parterre, se diluant dans sa teinte sanguine.
 Les joyaux virent à un noir ébène alors qu'un son grave émane de l'intérieur du crâne de la bête.
 Le son résonne à l'intérieur de ma tête et s'amplifie, semblant ne vouloir dire qu'une seule chose :
-Je serais la prochaine à colorer son poignard. #trans:trans_neutre
+Je serais la prochaine à colorer son poignard. #trans:trans_neutral
 
 
 "!!!" #name:Arianne #bg:bedroom #sprite:ari_neutral/2 #music:nothing

@@ -4,7 +4,7 @@ INCLUDE globals.ink
 { CHOICES_TEST has A2: -> GrigriNO}
 
 ~grigriLives = 8
-Test #bg:grigri #name:nothing #trans:
+Test #bg:grigri #name:nothing #trans:trans_intro
 Hello there ! #music:goldnoct #sprite:eli_neutral/2 
 Or more like howdy there ! #trans:trans_center
 -> main 
@@ -36,7 +36,7 @@ How are you feeling today ? #name:Arianne #clear:all #sprite:eli_neutral/2 #musi
      === GrigriYES ===
     The Grigri was very successful ! #next:nothing/nothing #bg:forest
     Thank you !
-    Do you have any more questions ?
+    Do you have any more questions ? #trans:trans_neutral
 +[Yes]
     ->main
 +[No]
