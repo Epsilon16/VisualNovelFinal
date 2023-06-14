@@ -25,7 +25,7 @@ Ma mère sort un billet de dix de son porte monnais qu'elle me tend.
 "Okay." #name:Arianne
 J'enfile mon manteau avant de sortir.. #name:nothing
 "A toute à l'heure." #name:Jeanne
-"A toute." #name:Arianne #trans:trans_neutre
+"A toute." #name:Arianne #trans:trans_central
 
 En descendant la rue jusqu'au magasin, je repense aux évènements d'hier. #name:nothing #bg:street_1 #sprite:ari_neutral/2
 J'ai peut-être été trop dure avec eux.
@@ -35,7 +35,7 @@ C'est juste...
 Juste...
 Aaaaaahhh !
 Je devrais penser à autour chose.
-Pas comme si j'allais les revoirs. #trans:trans_neutre
+Pas comme si j'allais les revoirs. #trans:trans_central
 
 Le magasin est toujours au même endroit, mais il semble fermé. #name:nothing #bg:town #sprite:ari_neutral/1
 Je m'approche et vois un petit carton derrière l'une des fenêtres.
@@ -192,10 +192,10 @@ Pas sur de vraiment les connaitres maintenant. #name:nothing
 "Tu n'as pas envie de finir sur une mauvaise note, si ?" #name:Greg
 "Tu as raison. merci Greg!" #name:Arianne
 "Haha, de rien." #name:Greg
-Je lui fait un signe de la main avant de repartir. #name:nothing #trans:trans_neutre
+Je lui fait un signe de la main avant de repartir. #name:nothing #trans:trans_central
 
 Il a probablement raison, je devrais les revoir et leur parler. #name:nothing #bg:street_1
-C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte en de mauvais termes. #trans:trans_neutre
+C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte en de mauvais termes. #trans:trans_central
 
 Une fois arrivé à la maison, je pose les courses sur la table. #name:nothing #bg:kitchen #sprite:ari_neutral/1
 "J'ai ce que tu voulais !" #name:Arianne
@@ -207,7 +207,7 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing #sprite:jea_n
 ===ExtraCoffee===
 "Merci Arianne, c'est parfait." #name:Jeanne
 "Viens m'aider dans le garage, on dirait qu'une tornarde est passée par là..." #name:Jeanne
-"Okay j'arrive." #name:Arianne #trans:trans_neutre
+"Okay j'arrive." #name:Arianne #trans:trans_central
 -> afternoon
 
 ===ExtraTea===
@@ -218,7 +218,7 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing #sprite:jea_n
 "C'est pas grave, j'irais en acheter cet aprem." #name:Jeanne
 "Par contre tu vas devoir m'aider toute la matinée au garage." #name:Jeanne
 "On dirait qu'une tornade est passée là dedans." #name:Jeanne
-"Okay maman." #name:Arianne #trans:trans_neutre
+"Okay maman." #name:Arianne #trans:trans_central
 -> afternoon
 
 ===MegaCoffee===
@@ -230,14 +230,14 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing #sprite:jea_n
 "C'est pas grave, ça en fera plus pour chez nous." #name:Jeanne
 "Par contre tu vas devoir m'aider toute la matinée au garage." #name:Jeanne
 "On dirait qu'une tornade est passée là dedans." #name:Jeanne
-"Okay maman." #name:Arianne #trans:trans_neutre
+"Okay maman." #name:Arianne #trans:trans_central
 -> afternoon
 
 
 === afternoon ===
 Après avoir passé la matinée à ranger les affaires de Mamie et manger un coup, je me dirige en direction de chez Zoé. #name:nothing #bg:street_3 #sprite:ari_neutral/2
 Martin avait l'air bien moins enclin à la discussion hier. Et je penses que Zoé voudra reparler.
-Du moins j'espère... #trans:trans_neutre
+Du moins j'espère... #trans:trans_central
 
 Je continue à descendre la rue jusqu'à arriver devant sa maison. #name:nothing #bg:house_zoe #sprite:ari_neutral/2
 Le doute me prend alors.
@@ -263,10 +263,10 @@ J'ai une sensation de déjà-vu.
 "..." #name:Arianne
 "Merci, je vais y aller."
 "Passez une bonne journée."
-"Vous aussi." #name:Arianne #trans:trans_neutre
+"Vous aussi." #name:Arianne #trans:trans_central
 
 Je me dirige alors vers chez Martin. #name:nothing #bg:street_3
-Malgré les années, je retrouve facilement le chemin, et finis par arriver chez lui. #trans:trans_neutre
+Malgré les années, je retrouve facilement le chemin, et finis par arriver chez lui. #trans:trans_central
 
 Arrivant devant sa grande maison, j'entends Zoé parlant à la porte. #name:nothing #bg:house_mar #sprite:ari_neutral/0  #sprite:zoe_neutral/2  #sprite:mar_neutral/3
 "Allez !" #name:Zoé
@@ -291,14 +291,14 @@ Je respire un coup, tournant les mots de Greg dans ma tête une fois de plus.
 Elle appuie le 'maintenant' en tournant sa tête vers Martin. #name:nothing
 Celui ci, après avoir fait une expression difficile, ferme la porte derrière lui et s'approche de nous.
 "Allons-y !" #name:Zoé
-Zoé commence alors à marcher sans faire attention à Martin ou moi. #name:nothing #trans:trans_neutre
+Zoé commence alors à marcher sans faire attention à Martin ou moi. #name:nothing #trans:trans_central
 
 Le chemin en direction du square est pour le moins malaisant. #name:nothing #bg:street_2 #sprite:ari_neutral/2  #sprite:zoe_neutral/3  #sprite:mar_neutral/1
 Zoé est en tête et Martin n'ose pas me regarder.
 J'ai envie de dire quelque chose mais je n'ose pas faire grand chose.
 Je vois pas comment Zoé peut garder son sourire. Je pourrais couper la tension au couteau.
 "Oh ! On est bientôt arrivé !" #name:Zoé
-Elle se tourne et prend mon poignet, me tirant vers l'entrée du square. #name:nothing #trans:trans_neutre
+Elle se tourne et prend mon poignet, me tirant vers l'entrée du square. #name:nothing #trans:trans_central
 
 Le lieu n'a pas changé. #name:nothing #bg:square #sprite:ari_neutral/2  #sprite:zoe_neutral/3  #sprite:mar_neutral/1
 Les mêmes chemins de terre et de gravier parcourant le parc, les arbres que nous escaladions et l'air de jeu dans laquelle on a passé tant de temps.
@@ -416,7 +416,7 @@ Qu'est-ce que je devrais faire... #clear:all
     Je décide de suivre Martin, je m'approche de l'entrée de la forêt. #name:nothing
     "Martin-" #name:Arianne #sprite:ari_neutral/2
     Il remarque que je suis là et commence à partir en courant. #name:nothing
-    J'accélère pour le rattraper, mais rien à faire. Martin est bien plus athlétique que moi. #trans:trans_neutre
+    J'accélère pour le rattraper, mais rien à faire. Martin est bien plus athlétique que moi. #trans:trans_central
     
     Au bout d'un moment, je fini par le perdre et je me retrouve seule dans les bois. #bg:forest #sprite:ari_neutral/2
     ~CHOICES_TEST = J2C2
@@ -433,7 +433,7 @@ Qu'est-ce que je devrais faire... #clear:all
 
 ===ChoiceElise===
 Je décide de suivre Elise, toute cette situation est de sa faute. #name:nothing
-Elle a des excuses à donner à Martin et Zoé. #trans:trans_neutre
+Elle a des excuses à donner à Martin et Zoé. #trans:trans_central
 
 "Elise !" #name:Arianne #bg:street_2 #sprite:ari_neutral/2 #sprite:eli_neutral/3
 Malgré mes appels, elle continue de me tourner le dos. #name:nothing
@@ -462,7 +462,7 @@ Qu'est-ce que c'était que ça ?
 C'était terrifiant !
 Je repense à la lettre d'hier soir et de sa menace.
 Ce serait elle ? Mais pourquoi ?
-Une fois devant l'entrée de square, je me demande qui aller voir. #trans:trans_neutre
+Une fois devant l'entrée de square, je me demande qui aller voir. #trans:trans_central
 
 +[Chercher Martin]
     Je vais en direction de la forêt pour trouver Martin. #name:nothing #bg:forest #sprite:ari_neutral/2
@@ -489,15 +489,15 @@ Une fois devant l'entrée de square, je me demande qui aller voir. #trans:trans_
 Elle me fixe, essoufflé, j'ai l'impression qu'elle est presque sur le point de pleurer de colère. #name:nothing
 On reste une vingtaine de seconde à se regarder sans un mot, puis elle se retourne et part.
 Je n'ose pas continuer à la suivre.
-Je reste planter là plusieurs dizaine de seconde avant de me retourner en direction du square. #trans:trans_neutre
+Je reste planter là plusieurs dizaine de seconde avant de me retourner en direction du square. #trans:trans_central
 
-Une fois arrivé là bas, et malgré mes efforts, aucune trace de Zoé ni de Martin. #bg:square #trans:trans_neutre
+Une fois arrivé là bas, et malgré mes efforts, aucune trace de Zoé ni de Martin. #bg:square #trans:trans_central
 
-Je tente également la forêt, avec tout autant de résultat. #bg:forest #trans:trans_neutre
+Je tente également la forêt, avec tout autant de résultat. #bg:forest #trans:trans_central
 
 Je fini par rentrer chez moi, la tête lourde. #bg:house_ari
 Je n'aurais probablement pas dû suivre Elise...
-Sur le moment ça semblait être une bonne idée, mais j'aurais dû aller vers Martin ou rester avec Zoé au lieu de ne rien faire. #trans:trans_neutre
+Sur le moment ça semblait être une bonne idée, mais j'aurais dû aller vers Martin ou rester avec Zoé au lieu de ne rien faire. #trans:trans_central
 
 Je passe la soirée de ma chambre à ruminer. #bg:bedroom
 J'ai gâché nos retrouvailles, encore et encore.
@@ -545,7 +545,7 @@ Je ne pensais pas que ça pourrait faire si mal de la part de Martin. #name:noth
 Martin ne dit rien, mais il n'a pas l'air de mal le prendre non plus. #name:nothing
 "On va voir Zoé ?" #name:Arianne
 "Okay." #name:Martin
-Je me relève et lui tend ma main pour l'aider à se mettre debout. #name:nothing #trans:trans_neutre
+Je me relève et lui tend ma main pour l'aider à se mettre debout. #name:nothing #trans:trans_central
 
 Une fois au parc, nous ne trouvons aucune trace de Zoé. #name:nothing #bg:square #sprite:ari_neutral/2 #sprite:mar_neutral/3
 "On devrait aller voir chez elle." #name:Martin
@@ -554,7 +554,7 @@ Une fois au parc, nous ne trouvons aucune trace de Zoé. #name:nothing #bg:squar
 "Je penses pas qu'elle ait envie de me voir." #name:Arianne
 "Je suis qur qu'elle ne t'en veux pas. Mais je vais pas te forcer." #name:Martin
 "Rentre bien."
-"Merci." #name:Arianne #trans:trans_neutre
+"Merci." #name:Arianne #trans:trans_central
 
 Sur le chemin retour, je me demande si je n'aurais pas dû rester avec Zoé. #name:nothing #bg:street_1 #sprite:ari_neutral/2
 Elle qui était si contente qu'on soit de nouveau ensemble.
@@ -578,7 +578,7 @@ Dur de penser à autre chose, en même temps. #name:nothing
 "Et je vois pas pourquoi moi spécifiquement."
 Le message d'hier me revient en tête... Ce serait elle ? #name:nothing
 "On ne saura probablement jamais..." #name:Zoé
-Zoé est inhabituellement très neutre. #name:nothing
+Zoé est inhabituellement très central. #name:nothing
 Elle, qui est toujours positive et enjouée, la voir aussi sérieuse est assez étrange.
 J'ai vraiment raté beaucoup de chose, j'aurais dû faire de mon mieux pour garder contacte...
 "Je suis désolé d'avoir gâché nos retrouvailles. Je sais que tu avais hâte qu'on se revois." #name:Arianne
@@ -603,7 +603,7 @@ J'acquiesce. #name:nothing
 "Et puis, tu as toujours eu une connaissance encyclopédique de ces bois." #name:Arianne
 "Je ne peux pas argumenter contre ça." #name:Zoé
 "Rentre bien Arianne."
-"Merci Zoé." #name:Arianne #trans:trans_neutre
+"Merci Zoé." #name:Arianne #trans:trans_central
 
 Sur le chemin retour, je me demande si je n'aurais pas dû rester avec Martin. #name:nothing #bg:street_1 #sprite:ari_neutral/2
 Il avait probablement plus besoin de moi que Zoé tout à l'heure.
