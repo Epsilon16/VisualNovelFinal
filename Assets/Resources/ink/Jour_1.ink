@@ -28,7 +28,7 @@ Juste moi, une chambre presque vide et un plancher en bois qui grince à chaque 
 Je m'assois sur le bord du matelas et me frotte un peu les yeux.
 Ah oui je ne suis pas chez moi...
 La longueur du voyage jusqu'à chez Grand-Mère Nat a eu raison de moi, je n'aurais pas dû veiller la nuit dernière.
-Je me suis endormie dés que je me suis allongée.
+Je me suis endormie dès que je me suis allongée.
 D'ailleurs, je me demande ce que ce rêve pourrait signifier.
 Un homme à tête de cerf dans un champ de fleurs ? Il me semble qu'il avait une arme aussi...
 "Les détails m'échappent déjà." #name:Arianne
@@ -75,7 +75,7 @@ Mais plus, car je n'ai pas eu à en subir depuis longtemps.
 "On ne s'attendait pas vraiment à la mort de Grand-mère Nat."
 "Comme papa est pris avec le restaurant, les seules qui pouvaient venir vider la maison étaient maman et moi." #name:Arianne
 "Oh... C'est vrai..." #name:Zoé
-"Excuses-moi, j'aurais dû faire plus attention." #name:Zoé
+"Excuse-moi, j'aurais dû faire plus attention." #name:Zoé
 "Ne t'excuses pas. Ce n'est pas grave." #name:Arianne
 "T'es sûr ?" #name:Zoé
 Je hôche la tête à l'affirmative. #name:nothing
@@ -249,7 +249,7 @@ Lorsque maman est comme ça, il lui faut un peu d'espace et attendre qu'elle ins
 C'est le genre de choses que j'ai appris à déduire.
 Je vais alors en direction des tiroirs de la cuisine, me souvenant vaguement de l'emplacement de ce que je cherche. #clear:1
 Après un peu de fouille, je fini par sorti une tasse et des sachets de thé, puis je fais bouillir un peu d'eau.
-Une fois le thé préparé, je le pose devant sa mère et m'assoit à côté d'elle. 
+Une fois le thé préparé, je le pose devant ma mère et m'assoit à côté d'elle. 
 "Merci." #name:Jeanne #sprite:ari_neutral/1
 "Alors, comment s'est passé ton après-midi ?" #name:Jeanne
 "Zoé et Martin sont passés. J'ai pu rattraper un peu." #name:Arianne

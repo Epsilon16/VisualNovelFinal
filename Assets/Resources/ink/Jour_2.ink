@@ -163,7 +163,7 @@ Je souris face à la remarque. #name:nothing
 "Hahaha !" #name:Greg
 "J'en ri mais tu n'as pas tout à fait tord."
 "Ca devient de plus en plus difficile de rester au dessus de l'eau."
-"Les grandes surfaceq en ville sont plus pratiques, plus rapide et ont plus de choix."
+"Les grandes surfaces en ville sont plus pratiques, plus rapide et ont plus de choix."
 "Même avec Elise pour m'aider ici, je peux pas vraiment combattre le progrès."
 "C'est... Dommage." #name:Arianne
 "Oooh, me fait pas cette tête là. Les choses changent, c'est normal." #name:Greg

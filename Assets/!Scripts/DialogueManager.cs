@@ -696,7 +696,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         string[] splitMusic = music.Split('/');
 
-        if (musicAS.clip != null)
+        if (musicAS.clip != null && musicAS.clip.name != splitMusic[1])
         {
             if (musicAS.volume <= 0.1f)
             {
@@ -724,8 +724,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
         else
         {
-            musicAS.clip = null;
-            musicAS.Stop();
+            if (musicAS.clip.name != splitMusic[1])
+            {
+                musicAS.clip = null;
+                musicAS.Stop();
+            }
         }
         musicAS.volume = 1f;
     }
