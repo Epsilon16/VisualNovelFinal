@@ -452,7 +452,7 @@ Je sens le bracelet s'allumer. #name:nothing #next:Grigri_Elise_1/true
 ->EliseNoGrigri
 
 ===EliseYesGrigri===
-... #name:nothing #bg:street_2 #sprite:ari_neutral/2 #sprite:eli_neutral/3
+... #name:nothing #bg:street_2 #sprite:ari_neutral/2 #sprite:eli_neutral/3 #music:nothing/Distortion
 Les poils de mes bras se sont redressé, j'ai l'impression d'avoir fait face à un prédateur enragé.
 J'ais vraiment cru que j'allais mourir à tout moment là dedans.
 "Qu'est-ce qui se passe ? Perdue ta langue ?" #name:Elise

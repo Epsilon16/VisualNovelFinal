@@ -282,7 +282,7 @@ Je ne vois plus que ma mère alors que l'espace se tord autour de nous. #next:Gr
 
 
 ===AfterGrigri===
-Qu'est-ce que je viens de voir ? #name:nothing #bg:kitchen #sprite:ari_neutral/1 #sprite:jea_neutral/3 
+Qu'est-ce que je viens de voir ? #name:nothing #bg:kitchen #sprite:ari_neutral/1 #sprite:jea_neutral/3 #music:nothing/Distortion
 J'ai bien mis un sachet de thé hein ? #name:nothing
 Grand-mère Nat était excentrique mais pas à ce point. #name:nothing
 "Arianne ?" #name:Jeanne #music:Pensive/Solitude
