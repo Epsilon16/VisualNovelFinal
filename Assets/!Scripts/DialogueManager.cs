@@ -519,7 +519,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private void GrigriButtonHandler()
     {
         grigriLives = ((IntValue)GetVariableState("grigriLives")).value;
-        grigriButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "-" + grigriLives + '-';
+        grigriButton.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = "-" + grigriLives + '-';
 
         if (!isGrigriActivated)
         {
