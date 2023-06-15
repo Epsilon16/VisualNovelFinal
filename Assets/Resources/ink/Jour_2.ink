@@ -36,7 +36,7 @@ C'est juste...
 Juste...
 Aaaaaahhh !
 Je devrais penser à autour chose.
-Pas comme si j'allais les revoirs. #trans:trans_center
+Pas comme si j'allais les revoir. #trans:trans_center
 
 Le magasin est toujours au même endroit, mais il semble fermé. #name:nothing #bg:town #sprite:ari_neutral/1 #music:Happy/Cité
 Je m'approche et vois un petit carton derrière l'une des fenêtres.
@@ -46,8 +46,8 @@ Je regarde mon téléphone.
 J'aurais pas à attendre énormément, c'est déjà ça.
 Je recule un peu, et rentre accidentellement dans quelqu'un.
 "Ah !" #name:???
-"Ah !" #name:nothing
-Le jeune homme tombe en arrière.
+"Ah !" #name:Arianne
+Le jeune homme tombe en arrière. #name:nothing
 "Vous allez bien ?" #name:Arianne
 Je lui tend ma main pour l'aider à se relever, quelque chose semble familier chez lui. #name:nothing  #sprite:alo_neutral/2
 "Oui... Désolé je vous ais fait peur..." #name:???
@@ -122,7 +122,7 @@ La discussion arrive à un point mort. Mais heureusement la porte du magasin s'o
 "On est en service !" #name:Greg
 Aloïs passe rapidement devant moi. #name:nothing
 "Bonjour. Euh... Est-ce que le colis pour mes parents est arrivé ?" #name:Aloïs
-"Ah Aloïs ! Il est derrière le contoire tu peux le prendre." #name:Greg
+"Ah Aloïs ! Il est derrière le comptoire tu peux le prendre." #name:Greg
 "Merci!" #name:Aloïs
 Il rentre dans le magasin en pas de course et ressort tout aussi rapidement. #name:nothing #name:nothing #clear:2
 Notre discussion à dû le mettre mal à l'aise j'ai l'impression.
@@ -180,7 +180,7 @@ Je souris face à la remarque. #name:nothing
 "Eh bien... En parlant de ça..." #name:Arianne
 "Un problème ?" #name:Greg
 "..." #name:Arianne
-"Si tu veux m'en parler, tu sais que tu peux compter sur Greg !"
+"Si tu veux m'en parler, tu sais que tu peux compter sur Greg !" #name:Greg
 Malgré le fait qu'il soit presque du même âge que ma mère, pour nous, Greg était plus proche d'un tonton sympa qu'une véritable figure d'autorité. #name:nothing
 "Je les ais vu hier, mais ça s'est mal passé." #name:Arianne
 "C'est probablement de ma faute également."
@@ -189,7 +189,7 @@ Malgré le fait qu'il soit presque du même âge que ma mère, pour nous, Greg �
 "Donc tout va bien !" #name:Greg
 "Si tu leur explique ton point de vu, ils comprendront."
 "Tu les connais depuis la maternelle, y'a pas de raison."
-Pas sur de vraiment les connaitres maintenant. #name:nothing
+Pas sur de vraiment les connaitre maintenant. #name:nothing
 "Tu n'as pas envie de finir sur une mauvaise note, si ?" #name:Greg
 "Tu as raison. merci Greg!" #name:Arianne
 "Haha, de rien." #name:Greg
@@ -237,14 +237,14 @@ Maman rentre dans la cuisine et regarde les courses. #name:nothing #sprite:jea_n
 
 === afternoon ===
 Après avoir passé la matinée à ranger les affaires de Mamie et manger un coup, je me dirige en direction de chez Zoé. #name:nothing #bg:street_3 #sprite:ari_neutral/2
-Martin avait l'air bien moins enclin à la discussion hier. Et je penses que Zoé voudra reparler.
+Martin avait l'air bien moins enclin à la discussion hier. Et je pense que Zoé voudra reparler.
 Du moins j'espère... #trans:trans_center #music:nothing/Maison
 
 Je continue à descendre la rue jusqu'à arriver devant sa maison. #name:nothing #bg:house_zoe #sprite:ari_neutral/2
 Le doute me prend alors.
 Devrais-je vraiment sonner ?
 C'est probablement un peu trop tôt, vu ce qu'il s'est passé.
-Mais si je ne fait rien maintenant, ça pourra empirer.
+Mais si je ne fait rien maintenant, ça pourrait empirer.
 Je n'ai juste pas envie de la déranger comme ça.
 Que faire ?
 "Tout va bien jeune fille ?" #name:???
@@ -263,7 +263,7 @@ J'ai une sensation de déjà-vu.
 "Ah ça rapelle le bon vieux temps de quand vous jouiez tout les quatres."
 "..." #name:Arianne
 "Merci, je vais y aller."
-"Passez une bonne journée."
+"Passez une bonne journée." #name:Mère de Zoé
 "Vous aussi." #name:Arianne #trans:trans_center
 
 Je me dirige alors vers chez Martin. #name:nothing #bg:street_3 #music:nothing/Visite
@@ -303,7 +303,7 @@ Elle se tourne et prend mon poignet, me tirant vers l'entrée du square. #name:n
 
 Le lieu n'a pas changé. #name:nothing #bg:square #sprite:ari_neutral/2  #sprite:zoe_neutral/3  #sprite:mar_neutral/1
 Les mêmes chemins de terre et de gravier parcourant le parc, les arbres que nous escaladions et l'air de jeu dans laquelle on a passé tant de temps.
-Mille et une histoires ont été raconté, joué et oublié ici.
+Mille et une histoires ont été racontés, joués et oubliés ici.
 La nostalgie me pince légèrement le coeur, mais au vu de sa réaction hier, ce doit être pire pour Martin.
 "Hey regardez !" #name:Zoé
 Zoé est monté sur le toit d'un des jeux en bois. #name:nothing
@@ -343,9 +343,9 @@ Je tourne mon regard vers Martin qui n'a toujours pas bougé. #name:nothing
 "Je crois avoir un signal !" #name:Arianne
 "Arrêtes toi là, Miss Mouse !" #name:Martin
 "Car je suis le grand Détective Wolf et rien ne saura me stopper dans ma poursuite de la justice !"
-Martin se place devant Zoé, étant à présent entièrement dans la fantasy. #name:nothing
+Martin se place devant Zoé, étant à présent entièrement dans le jeu. #name:nothing
 "Rend toi maintenant !" #name:Martin
-"Damned ! Je suis faite avoir comme un rat !" #name:Zoé
+"Damned ! Je me suis faite avoir comme un rat !" #name:Zoé
 "C'est la fin de tes activités, tu as ma parole." #name:Martin
 "Jamais !" #name:Zoé
 Zoé commence à courir dans le square. #name:nothing
@@ -390,7 +390,7 @@ C'est la fille de Greg, Elise.
 "Vous tous d'ailleurs !"
 "Vous agissez comme des gosses ignorant."
 "Mais je sais que vous ne l'êtes pas."
-Elise a toujours été comme ça, brute de décofrage, disant tout ce qu'elle pense et hâpte aux crises de colère. #name:nothing
+Elise a toujours été comme ça, brute de décofrage, disant tout ce qu'elle pense et apte aux crises de colère. #name:nothing
 On ne s'est jamais vraiment lié d'amitié enfants, mais quelque chose à profondément changé chez elle depuis que je l'ai vu pour la dernière fois.
 "Vous êtes qu'une bande de lâches-" #name:Elise
 "Elise, stop." #name:Martin
@@ -583,7 +583,7 @@ Le message d'hier me revient en tête... Ce serait elle ? #name:nothing
 "On ne saura probablement jamais..." #name:Zoé
 Zoé est inhabituellement très central. #name:nothing
 Elle, qui est toujours positive et enjouée, la voir aussi sérieuse est assez étrange.
-J'ai vraiment raté beaucoup de chose, j'aurais dû faire de mon mieux pour garder contacte...
+J'ai vraiment raté beaucoup de chose, j'aurais dût faire de mon mieux pour garder contact...
 "Je suis désolé d'avoir gâché nos retrouvailles. Je sais que tu avais hâte qu'on se revois." #name:Arianne
 "Dis pas ça, c'est de la faute d'Elise." #name:Zoé
 "Elle s'est invité toute seule. C'est à elle de s'excuser."

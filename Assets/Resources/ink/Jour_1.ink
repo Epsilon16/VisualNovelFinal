@@ -75,7 +75,7 @@ Mais plus, car je n'ai pas eu à en subir depuis longtemps.
 "On ne s'attendait pas vraiment à la mort de Grand-mère Nat."
 "Comme papa est pris avec le restaurant, les seules qui pouvaient venir vider la maison étaient maman et moi." #name:Arianne
 "Oh... C'est vrai..." #name:Zoé
-"Excuse-moi, j'aurais dû faire plus attention." #name:Zoé
+"Excuses-moi, j'aurais dû faire plus attention." #name:Zoé
 "Ne t'excuses pas. Ce n'est pas grave." #name:Arianne
 "T'es sûr ?" #name:Zoé
 Je hôche la tête à l'affirmative. #name:nothing
@@ -104,7 +104,7 @@ Zoé et Martin ont été dans ma vie aussi loin que je puisse m'en souvenir. #na
 Lorsque je les ai quittés on était encore qu'au collège.
 Notre séparation fut soudaine et dure pour nous tous ... Je pense. Mais je m'y suis habitué avec le temps.
  Les revoir maintenant me donne l'impression de parler à des inconnus dont j'ai lu la biographie.
-Malgré tout, je suis contente de les revoirs et de pouvoir renouer avec eux. #trans:trans_center
+Malgré tout, je suis contente de les revoir et de pouvoir renouer avec eux. #trans:trans_center
 
 "Des études d'ingénieur ?" #name:Martin #bg:street_1 #clear:2 #sprite:ari_neutral/1 #sprite:mar_neutral/2 #sprite:zoe_neutral/3 #music:Happy/Visite
 "Ouais, je m'y plais bien." #name:Arianne
