@@ -45,12 +45,4 @@ public class SaveOption : MonoBehaviour
         PlayerPrefs.SetFloat("Typing Speed", typingSpeedSave);
         Debug.Log(typingSpeedSave);
     }
-
-    public void LoadData()
-    {
-        GlobalVolumeSave = PlayerPrefs.GetFloat("Volume Général");
-        MusicVolumeSave = PlayerPrefs.GetFloat("Volume Musique");
-        SFXVolumeSave = PlayerPrefs.GetFloat("Volume SFX");
-        typingSpeedSave = PlayerPrefs.GetFloat("Typing Speed");
-    }
 }

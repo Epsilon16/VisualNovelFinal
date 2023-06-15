@@ -14,7 +14,6 @@ public class Saves_Manager : MonoBehaviour
 {
     string[] savedSprites;
     string savedAudio;
-    string savedMusic;
     string savedGlobals;
     string savedNext;
     string savedGSprite;
@@ -73,12 +72,6 @@ public class Saves_Manager : MonoBehaviour
             }
         }
 
-        savedMusic = "nothing";
-        if (DialogueManager.GetInstance().musicAS.clip != null)
-        {
-            savedMusic = DialogueManager.GetInstance().musicAS.clip.name;
-        }
-
         savedGlobals = null;
         DialogueManager.GetInstance().dialogueVariables.VariablesToStory(DialogueManager.GetInstance().dialogueVariables.globalVariablesStory);
         savedGlobals = DialogueManager.GetInstance().dialogueVariables.globalVariablesStory.state.ToJson();
@@ -103,7 +96,7 @@ public class Saves_Manager : MonoBehaviour
             item = DialogueManager.GetInstance().item.GetComponent<Image>().sprite.name,
             itemstate = DialogueManager.GetInstance().itemset.ToString(),
             sprites = savedSprites,
-            music = savedMusic,
+            music = DialogueManager.GetInstance().musicPath,
             audio = savedAudio,
             globals = savedGlobals,
             currentjson = DialogueManager.GetInstance().firstInkJSON.name,

@@ -16,7 +16,11 @@ public class VolumeSetting : MonoBehaviour
     public float volume;
     public float volumeMusic;
     public float volumeSFX;
-    // Start is called before the first frame update
+
+
+    public float defaultVolume;
+    public float defaultVolumeMusic;
+    public float defaultVolumeSFX;
 
     private void Awake()
     {
@@ -40,24 +44,42 @@ public class VolumeSetting : MonoBehaviour
         float savemusic = PlayerPrefs.GetFloat("Volume Musique");
         float savesfx = PlayerPrefs.GetFloat("Volume SFX");
 
-        if ( savegeneral != 0)
+        if (savegeneral != 0)
         {
             GeneralSlider.value = savegeneral;
             volume = savegeneral;
-            MyMixer.SetFloat("General", Mathf.Log10(volume) * 20);
         }
+        else
+        {
+            GeneralSlider.value = defaultVolume;
+            volume = defaultVolume;
+        }
+
         if (savemusic != 0)
         {
             MusicSlider.value = savemusic;
             volumeMusic = savemusic;
-            MyMixer.SetFloat("Music", Mathf.Log10(volumeMusic) * 50);
         }
+        else
+        {
+            MusicSlider.value = defaultVolumeMusic;
+            volumeMusic = defaultVolumeMusic;
+        }
+
         if (savesfx != 0)
         {
             SFXSlider.value = savesfx;
             volumeSFX = savesfx;
-            MyMixer.SetFloat("SFX", Mathf.Log10(volumeSFX) * 50);
         }
+        else
+        {
+            SFXSlider.value = defaultVolumeSFX;
+            volumeSFX = defaultVolumeSFX;
+        }
+
+        MyMixer.SetFloat("General", Mathf.Log10(volume) * 20);
+        MyMixer.SetFloat("Music", Mathf.Log10(volumeMusic) * 50);
+        MyMixer.SetFloat("SFX", Mathf.Log10(volumeSFX) * 50);
     }
 
     private void Update()

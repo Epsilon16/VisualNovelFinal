@@ -1,4 +1,3 @@
-using Mono.Cecil.Cil;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,14 +16,7 @@ public class ButtonImageSetter : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
         thisButton = GetComponent<Button>();
 
-        if (thisButton.interactable)
-        {
-            GetComponent<Image>().sprite = algues;
-        }
-        else
-        {
-            GetComponent<Image>().sprite = flowerless;
-        }
+        SimpleChange();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -40,6 +32,11 @@ public class ButtonImageSetter : MonoBehaviour, IPointerEnterHandler, IPointerEx
     }
 
     public void OnPointerExit(PointerEventData eventData)
+    {
+        SimpleChange();
+    }
+
+    public void SimpleChange()
     {
         if (thisButton.interactable)
         {

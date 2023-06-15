@@ -12,6 +12,7 @@ public class Resolution_Quality : MonoBehaviour
     [SerializeField] Resolution[] resolutions;
 
     public float typingspeeding;
+    public float defaultTypingspeeding;
     [SerializeField] private Slider SpeedSlider;
 
     private void Awake()
@@ -55,6 +56,11 @@ public class Resolution_Quality : MonoBehaviour
         {
             typingspeeding = savespeed;
             SpeedSlider.value = savespeed;
+        }
+        else
+        {
+            typingspeeding = defaultTypingspeeding;
+            SpeedSlider.value = defaultTypingspeeding;
         }
     }
 

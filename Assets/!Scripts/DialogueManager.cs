@@ -69,6 +69,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private AudioSource audioSource;
 
     public AudioSource musicAS;
+    public string musicPath = "nothing/nothing";
 
 
     [Header("Inkle")]
@@ -224,16 +225,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             item.GetComponent<Animator>().Play("item_default");
         }
 
-        if (loadedState.music != "nothing")
-        {
-            musicAS.clip = Resources.Load<AudioClip>("musics/" + loadedState.music);
-            musicAS.Play();
-        }
-        else
-        {
-            musicAS.clip = null;
-            musicAS.Stop();
-        }
+        StartCoroutine(FadeOutMusic(loadedState.music));
 
         for (int i = 0; i < audioInfos.Length; i++)
         {
@@ -640,6 +632,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     }
                     break;
                 case MUSIC_TAG:
+                    musicPath = tagValue;
                     StartCoroutine(FadeOutMusic(tagValue));
                     break;
                 case SOUND_TAG:
