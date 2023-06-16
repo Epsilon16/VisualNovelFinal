@@ -22,7 +22,7 @@ public class Saves_Manager : MonoBehaviour
 
     private void Start()
     {
-        //SaveButtonState();
+        SaveButtonState();
     }
 
     //sauvegarde de la data
