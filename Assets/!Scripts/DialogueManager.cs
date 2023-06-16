@@ -717,11 +717,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         }
         else
         {
-            if (musicAS.clip.name != splitMusic[1])
-            {
-                musicAS.clip = null;
-                musicAS.Stop();
-            }
+            musicAS.clip = null;
+            musicAS.Stop();
+            
         }
         musicAS.volume = 1f;
     }
