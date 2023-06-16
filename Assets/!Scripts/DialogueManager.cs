@@ -344,8 +344,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             {
                 transAnim.Play("trans_titlecard");
             }
-            dialogueVariables.StartListening(currentStory);
-            ContinueStory();
+            else
+            {
+                dialogueVariables.StartListening(currentStory);
+                ContinueStory();
+            }
+
         }
     }
 

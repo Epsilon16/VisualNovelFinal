@@ -3,7 +3,7 @@ INCLUDE globals.ink
 {CHOICES_TEST has Z0: -> AfterGrigri}
 
 ~grigriLives = 0
-Test #name:nothing #clear:all #bg:grigri_neutral #trans:trans_intro
+Test #name:nothing #clear:all #bg:grigri_neutral
 Le monde était recouvert d'une épaisse couche de fleurs. #music:Fear/Menace
 Même si je les arrachais, je n'arriverais pas à en voir le sol. #transbg:transbg_neutral
 J'en suis sûr. Si j'en cueillais une seule, trois autres pousseraient à partir de sa tige.
