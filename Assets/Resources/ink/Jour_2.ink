@@ -8,10 +8,7 @@ INCLUDE globals.ink
 {CHOICES_TEST has GEli1: -> EliseYesGrigri}
 
 VAR Coffee = ""
-
-~grigriLives = 7
-Test #name:nothing #clear:all #bg:kitchen #trans:trans_intro
-"Mince." #name:Jeanne #sprite:jea_neutral/2 #sprite:ari_neutral/1 #music:Happy/Maison
+"Mince." #bg:kitchen #name:Jeanne #sprite:jea_neutral/2 #sprite:ari_neutral/1 #music:Happy/Maison
 Je tourne la tête vers ma mère entrain de frénétiquement ouvrir les armoires de la cuisine. #name:nothing #transbg:transbg_neutral
 "Qu'est-ce qui se passe ?". #name:Arianne
 "J'ai oublié de prendre du café, et visiblement Nat en était à court." #name:Jeanne
@@ -35,7 +32,7 @@ Mais leurs réactions...
 C'est juste...
 Juste...
 Aaaaaahhh !
-Je devrais penser à autour chose.
+Je devrais penser à autre chose.
 Pas comme si j'allais les revoir. #trans:trans_center
 
 Le magasin est toujours au même endroit, mais il semble fermé. #name:nothing #bg:town #sprite:ari_neutral/1 #music:Happy/Cité
@@ -137,7 +134,9 @@ L'homme me dévisage un peu. #name:nothing #music:Happy/GREG
 Il fait un geste exagéré qui ne dépasse pas les un mètre cinquante. #name:nothing
 "Je sais que j'ai grandis mais tu exagère un peu." #name:Arianne
 "Hahaha ! Toujours." #name:Greg
-Lui en tout cas, n'a pas changé d'un poil. Peut-être les cheveux qui grisonnent, mais c'est toujours le même homme souriant dont je me souviens. #name:nothing
+Lui en tout cas, n'a pas changé d'un poil. Peut-être les cheveux qui grisonnent, mais c'est toujours le même homme souriant dont je me souviens. #name:nothing #trans:trans_center
+
+Je rentres alors dans le magasin. #bg:market #name:nothing #sprite:greg_neutral/3 #sprite:ari_neutral/1
 "Qu'est-ce qui t'amène ici ?" #name:Greg
 "Ah oui, je dois acheter..." #name:Arianne
 +[Café Mega-Fort]
@@ -312,7 +311,7 @@ Zoé est monté sur le toit d'un des jeux en bois. #name:nothing
 C'est la première chose que je l'entends dire depuis tout à l'heure, il a l'air vraiment inquiet. #name:nothing
 "Ne t'inquiète pas ! Je suis Miss Mouse ! Voleuse extra-ordinaire !" #name:Zoé
 "Je suis aussi agile que le vent et aussi discrète que la nuit."
-Zoé glisse le long du toit avant d'atterir sur une petit plateforme. #name:nothing
+Zoé glisse le long du toit avant d'atterir sur une petite plateforme. #name:nothing
 Miss Mouse.
 Je n'ai pas entendu ce nom prononcé depuis longtemps.
 C'est la méchante d'une BD que nous lisions tous ensemble, et Zoé l'adore.
@@ -354,13 +353,13 @@ Zoé commence à courir dans le square. #name:nothing
 Martin et moi commençons alors à la courser. #name:nothing
 J'ai l'impression d'être revenu dans le temps.
 On pouvait passer des journées tout les quatres à prétendre être ce qu'on voulait et imaginer des histoires.
-Après une dizaine de minutes, nous nous ponsons sur un banc.
+Après une dizaine de minutes, nous nous posons sur un banc. #music:nothing/Enfant
 "Haha, j'ai pas autant couru depuis si longtemps." #name:Martin
 "Vraiment ? Tu m'étonnes." #name:Arianne
 "Je sens plus mes jambes, c'est horrible." #name:Martin
 "Ca m'avait manqué nos jeux de Detective Wolf." #name:Zoé
 On reste comme ça un petit moment, reprenant notre souffle. #name:nothing
-Puis je me lève, faisant face au banc. #music:nothing/Enfant
+Puis je me lève, faisant face au banc.
 "Hey, à propos d'hier..." #name:Arianne
 Martin baisse un peu le regard, n'ayant visiblement pas envie d'y repenser. #name:nothing
 "C'est juste... On a besoin de parler de Yann." #name:Arianne
@@ -427,8 +426,6 @@ Qu'est-ce que je devrais faire... #clear:all
     Elle est resté sur le côté sans rien dire tout le long de la conversation.
     Sans un mot, elle escalade doucement l'une des structures en bois avant de s'assoir sur le bord.
     J'en fais de même et me mets à côté d'elle.
-    Le temps passe sans que l'une d'entre nous ne dise grand chose.
-    Puis au bout d'un moment, j'entame la conversation.
     ~CHOICES_TEST = J2C3
     ->ChoiceZoe
 
@@ -583,7 +580,7 @@ Le message d'hier me revient en tête... Ce serait elle ? #name:nothing
 "On ne saura probablement jamais..." #name:Zoé
 Zoé est inhabituellement très central. #name:nothing
 Elle, qui est toujours positive et enjouée, la voir aussi sérieuse est assez étrange.
-J'ai vraiment raté beaucoup de chose, j'aurais dût faire de mon mieux pour garder contact...
+J'ai vraiment raté beaucoup de chose, j'aurais dû faire de mon mieux pour garder contact...
 "Je suis désolé d'avoir gâché nos retrouvailles. Je sais que tu avais hâte qu'on se revois." #name:Arianne
 "Dis pas ça, c'est de la faute d'Elise." #name:Zoé
 "Elle s'est invité toute seule. C'est à elle de s'excuser."

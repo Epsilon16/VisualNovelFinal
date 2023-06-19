@@ -42,5 +42,5 @@ Stop stop stop!
     J'en ais que faire de ta pitie.
     Je n'ai pas besoin de votre pitie.
     Laissez la pour les autres!
-    J'arrive très bien à survivre seule! 
+    J'arrive tres bien à survivre seule! 
     -> END

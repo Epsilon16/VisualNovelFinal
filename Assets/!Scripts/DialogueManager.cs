@@ -57,7 +57,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     [Header("Menu UI")]
     [SerializeField] private GameObject menuParent;
-    private bool isMenuOn = false;
+    public bool isMenuOn = false;
     public bool isOptionOn = false;
 
     [Header("Audio")]
@@ -128,6 +128,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     private void Start()
     {
+        isOptionOn = true;
         isSkipping = false;
 
         menuParent.SetActive(true);
@@ -356,6 +357,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     //Exit du fichier Ink
     private IEnumerator ExitDialogueMode()
     {
+        isOptionOn = true;
         isSkipping = false;
 
         yield return new WaitForSeconds(0.2f);

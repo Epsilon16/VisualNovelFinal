@@ -3,8 +3,7 @@ INCLUDE globals.ink
 {CHOICES_TEST has Z0: -> AfterGrigri}
 
 ~grigriLives = 0
-Test #name:nothing #clear:all #bg:grigri_neutral
-Le monde était recouvert d'une épaisse couche de fleurs. #music:Fear/Menace
+Le monde était recouvert d'une épaisse couche de fleurs.#name:nothing #clear:all #bg:grigri_neutral #music:Fear/Menace
 Même si je les arrachais, je n'arriverais pas à en voir le sol. #transbg:transbg_neutral
 J'en suis sûr. Si j'en cueillais une seule, trois autres pousseraient à partir de sa tige.
 Leur rouge recouvre le monde telle une mare de sang sans début ni fin.
@@ -282,6 +281,7 @@ Je ne vois plus que ma mère alors que l'espace se tord autour de nous. #next:Gr
 
 
 ===AfterGrigri===
+~grigriLives = 7
 Qu'est-ce que je viens de voir ? #name:nothing #bg:kitchen #sprite:ari_neutral/1 #sprite:jea_neutral/3 #music:nothing/Distortion #audio:nothing
 J'ai bien mis un sachet de thé hein ? #name:nothing
 Grand-mère Nat était excentrique mais pas à ce point. #name:nothing
