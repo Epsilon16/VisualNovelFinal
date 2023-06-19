@@ -23,7 +23,7 @@ Ma mère sort un billet de dix de son porte monnais qu'elle me tend.
 "Okay." #name:Arianne
 J'enfile mon manteau avant de sortir.. #name:nothing
 "A toute à l'heure." #name:Jeanne
-"A toute." #name:Arianne #trans:trans_center
+"A toute." #name:Arianne #trans:trans_center #sound:Door
 
 En descendant la rue jusqu'au magasin, je repense aux évènements d'hier. #name:nothing #bg:street_1 #sprite:ari_neutral/2 #music:Pensive/Solitude
 J'ai peut-être été trop dure avec eux.
@@ -272,7 +272,7 @@ Arrivant devant sa grande maison, j'entends Zoé parlant à la porte. #name:noth
 "Allez !" #name:Zoé #music:Happy/Camaraderie
 "Je te dis que je me sens pas bien.." #name:Martin
 "Arrêtes avec tes excuses ! C'est aujourd'hui ou jamais !" #name:Zoé
-"Si on fait rien, on le regrettera !"
+"Si on fait rien, on le regrettera !" #sound:punch
 "Je n'ai pas envie de..." #name:Martin
 Martin lève la tête, ses mots tombant alors qu'il me remarque. #name:nothing
 "De ?" #name:Zoé

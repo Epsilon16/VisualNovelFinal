@@ -31,7 +31,7 @@ Je me suis endormie dès que je me suis allongée.
 D'ailleurs, je me demande ce que ce rêve pourrait signifier.
 Un homme à tête de cerf dans un champ de fleurs ? Il me semble qu'il avait une arme aussi...
 "Les détails m'échappent déjà." #name:Arianne
-"Ce n'est pas bien grave. Mes rêves n'ont jamais fait beaucoup sens de toute façon."
+"Ce n'est pas bien grave. Mes rêves n'ont jamais fait beaucoup sens de toute façon." #sound:Door
 Une fois debout, je sort de la chambre et me dirige vers la cuisine au rez-de-chaussé afin d'oublier ces visions d'horreur. #trans:trans_center #name:nothing
 
 En bas, je tombe sur ma mère, prête à sortir. #bg:kitchen #clear:2 #sprite:ari_neutral/1 #sprite:jea_neutral/3
@@ -55,7 +55,7 @@ Je suis à présent seule dans cette grande maison vide. #name:nothing #clear:3
 
 -Après une demie-heure passée dans ma chambre, le son d'une sonnette retentit dans la maison. #bg:bedroom #name:nothing
 Maman est déjà revenue ? Pourtant, il faut bien une demi-heure pour aller jusqu'à la ville. #sprite:ari_neutral/2
-Je descend alors les escaliers pour voir qui pourrait bien être là. #trans:trans_center
+Je descend alors les escaliers pour voir qui pourrait bien être là. #trans:trans_center #sound:Door
 
 "Je te dis qu'elle n'est pas-" #name:??? #bg:house_ari #sprite:zoe_neutral/3 #sprite:mar_neutral/4 #music:Happy/Camaraderie
 "Arianne !!" #name:???
@@ -223,10 +223,10 @@ Il était notre grand frère à tous.
 C'était surtout le mien.
 Je continue à marcher d'un pied ferme, serrant mes poings. #trans:trans_center
 
-En rentrant à la maison je claque la porte derrière moi. #bg:kitchen #sprite:ari_neutral/2
+En rentrant à la maison je claque la porte derrière moi. #bg:kitchen #sprite:ari_neutral/2 #sound:punch
 Je...
 Je dois me changer les idées.
-J'allais attendre maman, mais autant commencer à faire les cartons moi-même. #trans:trans_center
+J'allais attendre maman, mais autant commencer à faire les cartons moi-même. #trans:trans_center #sound:Door
 
 Une fois dans la chambre à l'étage, j'ouvre quelques cartons vides et commence à les remplir. #bg:bedroom 
 Habits, livres et autres objets dont la teneur émotionnelle est perdue au fil du temps.
@@ -235,7 +235,7 @@ Une petite boite tombe des plis d'un habit sur le sol. #name:nothing #music:Spir
 "Qu'est-ce que c'est...?" #name:Arianne
 "Visiblement, il a été caché entre deux pulls, mais pour quelle raison ?" #name:Arianne
 La curiosité prend le dessus et j'ouvre la petite boite pour y découvrir un bracelet singulier avec huit perles brillantes. #item:grigri_8  #name:nothing
-Grand-mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vu porter quelque chose ressemblant à ça.
+Grand-mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vu porter quelque chose ressemblant à ça. #sound:punch
 La porte d'en bas claque alors, et je descend les escaliers. #trans:trans_center #item:nothing #name:nothing
  
 "Maman ?" #name:Arianne #bg:kitchen
