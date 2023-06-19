@@ -88,6 +88,8 @@ public class Saves_Manager : MonoBehaviour
             savedGSprite = DialogueManager.GetInstance().gSprite.name;
         }
 
+        Debug.Log(DialogueManager.GetInstance().item.GetComponent<Image>().sprite.name);
+
         return new SaveData
         {
             InkStoryState = DialogueManager.GetInstance().GetStoryState(),

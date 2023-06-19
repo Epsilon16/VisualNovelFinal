@@ -191,6 +191,9 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
     public void LoadSavedState()
     {
+        isOptionOn = false;
+        isMenuOn = false;
+
         currentStory.state.LoadJson(loadedState.InkStoryState);
 
         displayNameText.text = loadedState.name;
@@ -200,15 +203,12 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
         for (int i = 0; i < spritePlacement.transform.childCount; i++)
         {
-            Debug.Log(loadedState.sprites[i] + " number" + i);
-
             if (loadedState.sprites[i] == null)
             {
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().color = Color.clear;
             }
             else
             {
-                Debug.Log("ducks");
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().color = Color.white;
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().sprite = Resources.Load<Sprite>("sprites/" + loadedState.sprites[i]);
                 spritePlacement.transform.GetChild(i).GetComponent<Image>().SetNativeSize();
@@ -216,7 +216,11 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
             }
         }
 
-        item.GetComponent<Image>().sprite = Resources.Load<Sprite>("items/" + loadedState.item);
+        if (loadedState.item != null)
+        {
+            item.GetComponent<Image>().sprite = Resources.Load<Sprite>("items/" + loadedState.item);
+        }
+
         if (loadedState.itemstate == "True")
         {
             item.GetComponent<Animator>().Play("item_set");
