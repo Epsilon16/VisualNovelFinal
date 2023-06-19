@@ -105,7 +105,6 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     [Header("Save/Load System")]
     public static SaveData loadedState;
 
-
     private void Awake()
     {
         //Singleton

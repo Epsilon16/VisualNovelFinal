@@ -639,6 +639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 119430549}
   - component: {fileID: 119430550}
+  - component: {fileID: 119430551}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -757,6 +758,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &119430551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119430548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 335d535ce941b6d43bb57ec84a8cecf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Grigri: {fileID: 8300000, guid: 295566b844cfcb24a8ce6e1f795ed449, type: 3}
+  GrigriSon: {fileID: 119430550}
 --- !u!1 &132723826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2335,6 +2350,18 @@ MonoBehaviour:
       - m_Target: {fileID: 761009229}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: EnterGrigriMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 119430551}
+        m_TargetAssemblyTypeName: PlaySoundGrigri, CurrentAssembly
+        m_MethodName: playsound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
