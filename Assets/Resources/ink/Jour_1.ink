@@ -199,7 +199,7 @@ J'espère que c'est le café. #name:nothing
 "Arianne s'il te plait..." #name:Zoé
 "Faire comme si il n'avait pas existé ?" #name:Arianne
 "Non... C'est juste..." #name:Zoé
-"Il est mort." #name:Arianne
+"Il est mort!" #name:Arianne #sound:punch
 "..." #name:Martin
 "C'est pas en l'ignorant qu'il va revenir." #name:Arianne
 "Arianne... Stop..." #name:Zoé

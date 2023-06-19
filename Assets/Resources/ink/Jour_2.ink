@@ -197,7 +197,7 @@ Je lui fait un signe de la main avant de repartir. #name:nothing #trans:trans_ce
 Il a probablement raison, je devrais les revoir et leur parler. #name:nothing #bg:street_1 #music:nothing/GREG
 C'est probablement la dernière fois qu'on se verra. Et je n'ai pas envie qu'on se quitte en de mauvais termes. #trans:trans_center
 
-Une fois arrivé à la maison, je pose les courses sur la table. #name:nothing #bg:kitchen #sprite:ari_neutral/1 #music:Happy/Maison
+Une fois arrivé à la maison, je pose les courses sur la table. #name:nothing #bg:kitchen #sprite:ari_neutral/1 #music:Happy/Maison #sound:punch
 "J'ai ce que tu voulais !" #name:Arianne
 Maman rentre dans la cuisine et regarde les courses. #name:nothing #sprite:jea_neutral/2 
 {Coffee == "CMF": -> MegaCoffee}
@@ -395,7 +395,7 @@ On ne s'est jamais vraiment lié d'amitié enfants, mais quelque chose à profon
 "Elise, stop." #name:Martin
 "Quoi ! Tu veux te battre ?" #name:Elise
 Martin s'approche d'elle, et elle fait de même. #name:nothing
-Elise pousse alors Martin, qui finit a terre.
+Elise pousse alors Martin, qui finit a terre. #sound:punch
 "Bah alors ? C'est tout ce qu'il te reste capitaine ?" #name:Elise
 "Elise, arrêtes !" #name:Arianne
 "Pourquoi tu nous ennuie comme ça !?"
@@ -485,7 +485,7 @@ Une fois devant l'entrée de square, je me demande qui aller voir.
 "J'ui une attraction pour toi ??"
 "Juste dégage !"
 "Elise.." #name:Arianne
-"DEGAGE !!" #name:Elise
+"DEGAGE !!" #name:Elise #sound:punch
 Elle me fixe, essoufflé, j'ai l'impression qu'elle est presque sur le point de pleurer de colère. #name:nothing
 On reste une vingtaine de seconde à se regarder sans un mot, puis elle se retourne et part.
 Je n'ose pas continuer à la suivre.
