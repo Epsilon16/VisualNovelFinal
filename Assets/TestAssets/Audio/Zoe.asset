@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14a824e333994d64fa1e5f1721e6205b, type: 3}
+  m_Name: Zoe
+  m_EditorClassIdentifier: 
+  id: Zoe
+  dialoqueTypingSoundClips:
+  - {fileID: 8300000, guid: 9e74326c571260d4a8b8f26dfd5232d9, type: 3}
+  - {fileID: 8300000, guid: 1e57e925a56122246913fcbbeca6c4c9, type: 3}
+  - {fileID: 8300000, guid: 6d284595c5bc9e64faa5ee96bb7d9a6b, type: 3}
+  - {fileID: 8300000, guid: 50430e62b8a4feb4eb7f5f973a0a0622, type: 3}
+  - {fileID: 8300000, guid: e203fbe385bb4274c896f2e20a73178e, type: 3}
+  - {fileID: 8300000, guid: e7913fcf1274ff14e8835bf22ae5d85d, type: 3}
+  - {fileID: 8300000, guid: 40bf73ab2e0b3ca4bb77cd4f4609c90e, type: 3}
+  - {fileID: 8300000, guid: 885f3b501f2474e43ab5573eacfd477c, type: 3}
+  - {fileID: 8300000, guid: e461a4d9820d9144691fa68e6f740ac9, type: 3}
+  - {fileID: 8300000, guid: a3d09929e172baa429d13c5c0a4d4a7a, type: 3}
+  - {fileID: 8300000, guid: c094c4ceb8e90ce4cb2afa5c431d5152, type: 3}
+  - {fileID: 8300000, guid: b785f4c84a0503449a3fcef61702a164, type: 3}
+  frequencyLevel: 2
+  minPitch: 0
+  maxPitch: 1
+  stopAudioSource: 0

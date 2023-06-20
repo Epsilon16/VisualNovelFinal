@@ -3337,6 +3337,8 @@ MonoBehaviour:
   audioInfos:
   - {fileID: 11400000, guid: 93a42181346b31345adf9964e07dd90a, type: 2}
   - {fileID: 11400000, guid: 7b940697e084a574496c198b5932ea95, type: 2}
+  - {fileID: 11400000, guid: 68afa8d43b3f0c34799d6e20adca07a6, type: 2}
+  - {fileID: 11400000, guid: 2dbf5845ec8d0fc41820420b57c02a01, type: 2}
   makePredictable: 1
   currentAudioInfo: {fileID: 0}
   musicAS: {fileID: 119430550}
