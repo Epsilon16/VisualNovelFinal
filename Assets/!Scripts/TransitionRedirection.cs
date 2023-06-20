@@ -16,4 +16,9 @@ public class TransitionRedirection : MonoBehaviour
         DialogueManager.GetInstance().isOptionOn = false;
         DialogueManager.GetInstance().isMenuOn = false;
     }
+
+    public void EndPuzzle()
+    {
+        DialogueManager.GetInstance().ExitGrigriMode();
+    }
 }

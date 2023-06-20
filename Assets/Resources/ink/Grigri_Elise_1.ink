@@ -14,14 +14,14 @@ Vous m'enragez, m'enragez!
     Juste part!
     -> END
 +[Juste ecoute moi!]
-    ~CHOICES_TEST = GEli1
     Pourquoi je t'ecouterais?
     Tu ne sais rien!
     -> Puzzle_Moment
 
 === Puzzle_Moment ====
+    ~CHOICES_TEST = GEli0
 Comme si on pouvait me comprendre. #puzzle:puzzle_2
-
+    ~CHOICES_TEST = GEli0
 Arrete de...
 Stop stop stop!
 +[Je n'arreterais pas!]
