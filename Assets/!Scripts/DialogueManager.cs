@@ -69,6 +69,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     private AudioSource audioSource;
 
     public AudioSource musicAS;
+    public AudioSource sfxAS;
     public string musicPath = "nothing/nothing";
 
 
@@ -647,7 +648,7 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
                     StartCoroutine(FadeOutMusic(tagValue));
                     break;
                 case SOUND_TAG:
-                    musicAS.PlayOneShot(Resources.Load<AudioClip>("sounds/" + tagValue));
+                    sfxAS.PlayOneShot(Resources.Load<AudioClip>("sounds/" + tagValue));
                     break;
                 case NEXTSTORY_TAG:
                     string[] splitScene = tagValue.Split('/');
