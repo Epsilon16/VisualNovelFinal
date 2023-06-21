@@ -375,6 +375,8 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
         {
             if (isGrigriActivated)
             {
+                transAnim.Play("trans_outro");
+                yield return new WaitForSeconds(4f);
                 StartCoroutine(ExitGrigriMode());
             }
             else
