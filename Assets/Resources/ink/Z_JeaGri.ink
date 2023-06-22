@@ -24,11 +24,12 @@ J'en ais deja trop entendu.
     -> Puzzle_Moment
 
 === Puzzle_Moment ====
+~grigriLives = 8
 Tout est trop confus dans ma tete... #puzzle:puzzle_0
 ~CHOICES_TEST = Z0
 
 Aller au service funeraire...
-C'est comme si je revivais tout ça.
+C'est comme si je revivais tout.
 Encore.
 Et encore...
 Et encore.....

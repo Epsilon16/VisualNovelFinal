@@ -2,6 +2,12 @@ INCLUDE globals.ink
 
 {CHOICES_TEST has Z0: -> AfterJeanneGrigri}
 
+{CHOICES_TEST has Z1: -> AfterMartinYes}
+{CHOICES_TEST has Z2: -> AfterMartinNo}
+
+{CHOICES_TEST has Z3: -> AfterZoeYes}
+{CHOICES_TEST has Z4: -> AfterZoeNo}
+
 ~grigriLives = 0
 
 A travers la vitre je regarde les montagnes de mon enfance disparaitre peu à peu au loin alors que la voiture s'éloigne d'Adonis. #name:nothing #bg:menu #music:Happy/GREG
@@ -59,7 +65,7 @@ Puis je reçois un message sur mon téléphone. #music:nothing/Solitude
 
 "J'ai pu lui parler un peu seule à seule." #name:Arianne
 "Je suis désolé d'avoir gâché nos retrouvailles. Je sais que tu avais hâte qu'on se revois." #name:Arianne #music:Pensive/Dialogue #sprite:zoe_neutral/1 #sprite:ari_neutral/2
-"Dis pas ça, c'est de la faute d'Elise." #name:Zoé
+"Dis pas ça, c'est de la faute d'Elise." #name:Zoé #next:Z_ZoeGri/true
 "Elle s'est invité toute seule. C'est à elle de s'excuser."
 "Non non, j'ai mal réagis hier. Et on n'en serait pas là sinon." #name:Arianne
 "..." #name:Zoé
@@ -68,7 +74,7 @@ Puis je reçois un message sur mon téléphone. #music:nothing/Solitude
 "C'est pas vrai." #name:Zoé
 "Si, j'ai été méchante." #name:Arianne
 "M-Mais tu n'as pas été méchante ! Juste un peu..." #name:Zoé
-"Comment dire..."
+"Comment dire..." #next:Z_ZoeGri/false
 -> AfterZoeNo
 
 ===AfterZoeYes===
@@ -96,14 +102,14 @@ Zoé souris et se sèche une petite larme. #name:nothing
 "Au départ il avait un peu de mal à me parler." #name:Arianne #bg:rugby #music:Pensive/Dialogue
 "Le départ de Yann l'a beaucoup affecté je penses."
 "Tu..." #name:Martin #sprite:mar_neutral/2 #sprite:ari_neutral/1
-"Tu penses que c'est possible pour nous de redevenir comme avant ?"
+"Tu penses que c'est possible pour nous de redevenir comme avant ?" #next:Z_MarGri/true
 "Avant... Avant que tout change ?"
 "Martin je..." #name:Arianne
 "Je n'avais pas envie de partir tu sais..." #name:Martin
 "Martin..." #name:Arianne
 "C'était juste..." #name:Martin
 "..." #name:Arianne
-"Pourquoi c'est si dur de parler ?" #name:Martin
+"Pourquoi c'est si dur de parler ?" #name:Martin #next:Z_MarGri/false
 ->AfterMartinNo
 
 ===AfterMartinYes===
@@ -226,5 +232,5 @@ Au revoir Adonis.
 Au revoir Yann.
 Je sais enfin pourquoi tu es mort.
 A la prochaine fois tout le monde.
-A la prochaine fois...
+A la prochaine fois... #next:nothing/false
 -> END
