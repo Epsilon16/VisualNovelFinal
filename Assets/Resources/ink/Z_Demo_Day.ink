@@ -39,10 +39,10 @@ Il me suffisait de toucher le bracelet dés qu'il s'illuminait, et j'arrivais à
 J'ai pu parler avec ma mère du stress qu'elle éprouvait, et je penses qu'on en avait toute les deux besoin. #trans:trans_center
 
 "Je crois que tu as raison, revenir m'a aidé à accepter pour Yann." #name:Arianne #bg:menu
-Elle pose sa main sur mes cheveux, les ébourrifant un peu avant de reprendre le volant. #name:nothing
+Elle pose sa main sur mes cheveux, les ébourrifant un peu avant de reprendre le volant. #name:nothing #music:Happy/GREG
 "Je suis contente pour toi." #name:Jeanne
 Je souris doucement. #name:nothing
-Puis je reçois un message sur mon téléphone. #music:Happy/GREG
+Puis je reçois un message sur mon téléphone. 
 "Martin et Zoé te disent au revoir." #name:Arianne 
 "Tu peux les remercier." #name:Jeanne
 "Comment vont-ils d'ailleurs ?"
@@ -64,7 +64,7 @@ Puis je reçois un message sur mon téléphone. #music:Happy/GREG
 "C'est sur. Mais c'était sympa, ça nous a replongé un peu dans un temps plus simple." #name:Arianne
 "Sans problèmes.." #trans:trans_center
 
-"J'ai pu lui parler un peu seule à seule." #name:Arianne
+"J'ai pu lui parler un peu seule à seule." #name:Arianne #music:nothing/Enfant
 "Je suis désolé d'avoir gâché nos retrouvailles. Je sais que tu avais hâte qu'on se revoir." #name:Arianne #music:Pensive/Dialogue #sprite:zoe_sad/1 #sprite:ari_sad/2
 "Dis pas ça, c'est de la faute d'Elise." #name:Zoé #next:Z_ZoeGri/true #sprite:zoe_awkward/1
 "Elle s'est invité toute seule. C'est à elle de s'excuser."
@@ -113,7 +113,7 @@ Puis je reçois un message sur mon téléphone. #music:Happy/GREG
 ->AfterMartinNo
 
 ===AfterMartinYes===
-"Je peux comprendre que tu te sente perdu." #name:Arianne #music:Pensive/Dialogue #sprite:mar_awkward/2 #sprite:ari_neutral/1 #bg:rugby
+"Je peux comprendre que tu te sente perdu." #name:Arianne #music:Pensive/Solitude #sprite:mar_awkward/2 #sprite:ari_neutral/1 #bg:rugby
 "Je me suis sentis comme ça aussi." #sprite:ari_sad/1
 "..."  #name:Martin #sprite:mar_sad/2
 "Je vois maintenant à quel point tu l'admirais." #name:Arianne #sprite:ari_neutral/1
@@ -126,7 +126,7 @@ Puis je reçois un message sur mon téléphone. #music:Happy/GREG
 ->EliAlo
 
 ===AfterMartinNo===
-"C'est pas..." #name:Martin #sprite:mar_awkward/2 #sprite:ari_neutral/1 #bg:rugby
+"C'est pas..." #name:Martin #sprite:mar_awkward/2 #sprite:ari_neutral/1 #bg:rugby #music:Pensive/Solitude
 "C'est pas grave." #sprite:mar_sad/2
 "On est pas là pour parler de tout ça."
 "Martin si." #name:Arianne #sprite:ari_sad/1
@@ -179,7 +179,7 @@ Puis je reçois un message sur mon téléphone. #music:Happy/GREG
 
 "J'ai aussi vu Aloïs." #name:Arianne #bg:mall_cultur #music:nothing/nothing
 "Aloïs..." #name:Jeanne
-"Ah oui ! Le petit génie."
+"Ah oui ! Le petit génie." #music:Wind/Wind1
 "Il était de la même classe que ton frère si je me souviens bien."
 "On a eu du mal à parler." #name:Arianne
 "Qu'est-ce que tu fais ici ?" #name:Arianne #sprite:alo_neutral/1/flip #sprite:ari_neutral/2/flip
