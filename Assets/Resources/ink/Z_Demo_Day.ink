@@ -187,7 +187,7 @@ Zoé souris et se sèche une petite larme. #name:nothing
 "Mais évite la prochaine fois. Je sais que tu sais." #name:Arianne
 "O-Oui..." #name:Aloïs
 "Alors Arianne tu trouves ton..." #Zoé
-"Bonheure ?"
+"Bonheur ?"
 "C'était qui ce type qui part en courant?"
 "Aloïs." #name:Arianne
 "Pourquoi est-ce qu'il est là ?" #Zoé
