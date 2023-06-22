@@ -3474,7 +3474,7 @@ MonoBehaviour:
   musicAS: {fileID: 119430550}
   sfxAS: {fileID: 557242410}
   musicPath: nothing/nothing
-  firstInkJSON: {fileID: 4900000, guid: 44af70861bb74a847a9c4ba41e6a65d1, type: 3}
+  firstInkJSON: {fileID: 4900000, guid: 4ed37ac1bb8b2b444a1ac26b55d03338, type: 3}
   nextInkJSON: {fileID: 0}
   canContinueToNextLine: 0
   skipIndicator: {fileID: 296936156}
