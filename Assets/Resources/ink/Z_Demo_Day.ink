@@ -4,15 +4,15 @@ INCLUDE globals.ink
 
 ~grigriLives = 0
 
-A travers la vitre je regarde les montagnes de mon enfance disparaitre peu à peu au loin avec que le voiture s'éloigne d'Adonis. #name:nothing
+A travers la vitre je regarde les montagnes de mon enfance disparaitre peu à peu au loin avec que le voiture s'éloigne d'Adonis. #name:nothing #music:Happy/GREG
 "Comment s'est passé ta semaine chérie ?" #name:Jeanne
 Je tourne ma tête en direction de ma mère au volant. #name:nothing
 "Bien maman." #name:Arianne
 Elle possède une expression bien plus sereine qu'en début de semaine. #name:nothing
 
 La mort de Mamie Nat nous a pris au dépourvu.
-Comme papa travail au restaurant, seul maman et moi sommes descendu afin de s'occuper du déménagement.
-Et c'est en rangeant dans une chambre que j'ai découvert un bracelet très particulié.
+Comme papa travail au restaurant, seules maman et moi sommes descendues afin de s'occuper du déménagement.
+Et c'est en rangeant dans une chambre que j'ai découvert un bracelet très particulier.
 "Qu'est-ce que c'est..." #name:Arianne
 C'est à l'intérieur d'une petite boite qu'il était caché. #name:nothing
 Grand-mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vu porter quelque chose ressemblant à ça.
@@ -28,18 +28,18 @@ Mais alors que j'allais monter dans ma chambre, l'une des perle du bracelet s'es
 
 
 ===AfterJeanneGrigri===
-Sur le moment, j'étais confuse, persuadé que ce n'était qu'une illusion ou un rêve. #name:nothing
-Mais je compris rapidement que ce que j'avais vu était bien réel, et qu'il me permettait d'entendre la pensée des autres.
+Sur le moment, j'étais confuse, persuadée que ce n'était qu'une illusion ou un rêve. #name:nothing #music:Pensive/Solitude
+Mais je compris rapidement que ce que j'avais vu était bien réel, et qu'il me permettait d'entendre les pensées des autres.
 J'ai pu parler avec ma mère du stress qu'elle éprouvait, et je penses qu'on en avait toute les deux besoin.
 
 "Je crois que tu as raison, revenir m'a aidé à accepter pour Yann." #name:Arianne
 Elle pose sa main sur mes cheveux, les ébourrifant un peu avant de reprendre le volant. #name:nothing
 "Je suis contente pour toi." #name:Jeanne
 Je souris doucement. #name:nothing
-Puis je reçois un message sur mon téléphone.
-"Martin et Zoé te dise au revoir." #name:Arianne
+Puis je reçois un message sur mon téléphone. #music:nothing/Solitude
+"Martin et Zoé te disent au revoir." #name:Arianne #music:Happy/GREG
 "Tu peux les remercier." #name:Jeanne
-"Comment vont-il d'ailleurs ?"
+"Comment vont-ils d'ailleurs ?"
 "J'ai passé tellement de temps dans cette maison, j'aurais dû sortir un peu plus."
 "Très bien." #name:Arianne
 "Zoé est toujours la même."
@@ -47,9 +47,9 @@ Puis je reçois un message sur mon téléphone.
 
 ===BeforeZoe===
 "Energique et heureuse en permanence."
-"Hey regardez !" #name:Zoé
+"Hey regardez !" #name:Zoé #music:nothing/GREG
 Zoé est monté sur le toit d'un des jeux en bois. #name:nothing
-"Je suis la plus grande !" #name:Zoé #music:Happy/Enfant
+"Je suis la plus grande !" #name:Zoé #music:Happy/Enfant 
 "Zoé.. fait attention s'il te plait..." #name:Martin
 C'est la première chose que je l'entends dire depuis tout à l'heure, il a l'air vraiment inquiet. #name:nothing
 "Ne t'inquiète pas ! Je suis Miss Mouse ! Voleuse extra-ordinaire !" #name:Zoé
@@ -58,9 +58,9 @@ C'est la première chose que je l'entends dire depuis tout à l'heure, il a l'ai
 "Detective Wolf ? La BD ?" #name:Jeanne
 "J'ai pas entendu parler de ça depuis si longtemps."
 "C'est sur. Mais c'était cool, ça nous a raplongé un peu dans un temps plus simple." #name:Arianne
-"Sans problèmes.."
+"Sans problèmes.." #music:nothing/Enfant 
 
-"J'ai pu lui parler un peu seule à seule." #name:Arianne
+"J'ai pu lui parler un peu seule à seule." #name:Arianne #music:Pensive/Dialogue
 "Je suis désolé d'avoir gâché nos retrouvailles. Je sais que tu avais hâte qu'on se revois." #name:Arianne
 "Dis pas ça, c'est de la faute d'Elise." #name:Zoé
 "Elle s'est invité toute seule. C'est à elle de s'excuser."
@@ -78,7 +78,7 @@ C'est la première chose que je l'entends dire depuis tout à l'heure, il a l'ai
 "Si jamais tu as trop mal, tu n'es pas obligé de rejetter sur quelqu'un d'autre." #name:Arianne
 "Et si tu ne veux pas en parler tu peux juste me faire un câlin."
 "Mais tu déteste mes câlin." #name:Zoé
-"C'est faux, je les ais toujours aimé." #name:Arianne
+"C'est faux, je les ai toujours aimé." #name:Arianne
 ->BeforeMartin
 
 ===AfterZoeNo===
@@ -117,11 +117,11 @@ Zoé souris et se sèche une petite larme. #name:nothing
 ->BeforeElise
 
 ===BeforeElise===
-"Mais il sait où il va et je pense que c'est pour le mieux." #name:Arianne
-"Oh et évidemment j'ui allé voir Greg."
+"Mais il sait où il va et je pense que c'est pour le mieux." #name:Arianne #music:nothing/Dialogue
+"Oh et évidemment j'ui allé voir Greg." #music:Happy/GREG
 "Il ne doit pas avoir vieillis d'un pouce." #name:Jeanne
 "Tu serais surprise du nombre de cheveux blanc visibles." #name:Arianne
-"Arrête, tu me rappel que je suis sensé être son ainée." #name:Jeanne
+"Arrête, tu me rappelles que je suis sensé être son ainée." #name:Jeanne
 
 "Il continue de gérer son petit magasin." #name:Arianne
 "Arianne !? Bon dieu, ce que tu as grandis !" #name:Greg
@@ -130,9 +130,9 @@ Il fait un geste exagéré qui ne dépasse pas les un mètre cinquante. #name:no
 "Je sais que j'ai grandis mais tu exagère un peu." #name:Arianne
 "Hahaha ! Toujours." #name:Greg
 "Et Elise l'aide sur le côté."
-"Comment elle se porte ?"
-"Elise elle est..."
-"Qu'est-ce que tu fais ici Arianne ?" #name:Elise #music:Fear/Colère
+"Comment elle se porte ?" 
+"Elise elle est..." #music:nothing/GREG
+"Qu'est-ce que tu fais ici Arianne ?" #name:Elise #music:Fear/Colère 
 "On va partir d'ici, okay ?" #name:Zoé
 "Je te parle pas, la barbe à papa." #name:Elise
 "Qu'est-ce que tu me veux?" #name:Arianne
@@ -149,10 +149,10 @@ Il fait un geste exagéré qui ne dépasse pas les un mètre cinquante. #name:no
 "Elle est dense." #name:Arianne
 "Mais..."
 "..." #name:Elise
-"Je pense que c'est fini maintenant." #name:Arianne
+"Je pense que c'est fini maintenant." #name:Arianne #music:nothing/Colère 
 
 "J'ai aussi rencontré Aloïs." #name:Arianne
-"Aloïs..." #name:Jeanne
+"Aloïs..." #name:Jeanne #music:Wind/Wind1
 "Ah oui ! Le petit génie."
 "Je m'en souviens, il était de la même année que ton frère."
 "On a eu du mal à discuter au début." #name:Arianne
@@ -176,7 +176,7 @@ Il fait un geste exagéré qui ne dépasse pas les un mètre cinquante. #name:no
 "Mais évite la prochaine fois. Je sais que tu sais." #name:Arianne
 "O-Oui..." #name:Aloïs
 "Alors Arianne tu trouves ton..." #Zoé
-"Bonheure ?"
+"Bonheur ?"
 "C'était qui ce type qui part en courant?"
 "Aloïs." #name:Arianne
 "Pourquoi est-ce qu'il est là ?" #Zoé
@@ -185,13 +185,13 @@ Il fait un geste exagéré qui ne dépasse pas les un mètre cinquante. #name:no
 ->BeforeEnd
 
 ===BeforeEnd===
-"Quand au reste..." #name:Arianne
+"Quand au reste..." #name:Arianne #music:nothing/Wind1
 "???"
 "???"
 "???"
 "???"
 "???"
-"Je préfère garder ça pour une prochaine fois." #name:Arianne
+"Je préfère garder ça pour une prochaine fois." #name:Arianne #music:Happy/GREG
 
 "Le plus important c'est que tu te sois amusée." #name:Jeanne
 "Oui..." #name:Arianne
