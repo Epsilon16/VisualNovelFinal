@@ -589,6 +589,15 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
 
                     imagetochange.GetComponent<Image>().sprite = Resources.Load<Sprite>("sprites/" + splitSprite[0]);
                     imagetochange.GetComponent<Image>().SetNativeSize();
+
+                    if (splitSprite.Length == 3 && splitSprite[2] == "flip")
+                    {
+                        imagetochange.transform.localScale = new Vector3(-1, 1, 1);
+                    }
+                    else
+                    {
+                        imagetochange.transform.localScale = new Vector3(1, 1, 1);
+                    }
                     break;
                 case CLEAR_TAG:
                     if (tagValue == "all")
@@ -701,8 +710,17 @@ public class DialogueManager : MonoBehaviour//, IPointerEnterHandler
     {
         string[] splitMusic = music.Split('/');
 
+        if (musicAS.clip != null)
+        {
+            Debug.Log(musicAS.clip.name);
+            Debug.Log(splitMusic[1]);
+            Debug.Log(musicAS.clip.name != splitMusic[1]);
+        }
+
+
         if (musicAS.clip != null && musicAS.clip.name != splitMusic[1])
         {
+           
             if (musicAS.volume <= 0.1f)
             {
                 musicAS.Stop();

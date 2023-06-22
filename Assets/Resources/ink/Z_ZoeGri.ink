@@ -1,40 +1,39 @@
 INCLUDE globals.ink
 
-Je n'arrive pas a parler...#next:Z_Demo_Day/false #bg:grigri_neutral #gsprite:zoe_grigri #name:nothing #clear:all #music:Spirit/Distortion #audio:Zoe
-J'ai l'impression d'etre bloque.
-Non...
-Rien ne me bloque..
-Et pourtant...
-Les mots ne sortent pas.
-+[Tout va bien se passer.]
-    Je ne peux pas vraiment en etre sur...
-    Et si ça tourne mal ?
-    Je ne pourrais pas réessayer...
+Je ne dois pas perdre face! #next:Z_Demo_Day/false #bg:grigri_neutral #gsprite:zoe_grigri #name:nothing #clear:all #music:Spirit/Distortion #audio:Zoe
+~CHOICES_TEST = Z4
+La situation est deja assez complexe.
+Si moi j'arrete tout le monde va désespere.
+C'est mon devoir.
+Je dois le faire.
+Pour le bien de mes amis.
++[De quoi est-ce que tu parle ?]
+    Je dois t'aider à etre heureuse.
+    Tout le monde sera content comme ça.
     -> Puzzle_Moment
-+[Prends ton temps.]
-    Mais je ne peux pas...
-    Tu parts bientot...
-    C'est maintenant ou jamais.
-    -> Puzzle_Moment
++[Zoe c'est n'importe quoi...]
+    Ne me juge pas comme ça!
+    C'est mon devoir!
+    Si tu n'aimes pas ça, ce n'est pas mon probleme.
+    -> END
 
 === Puzzle_Moment ====
-Je ne suis juste pas sur de quoi faire... #puzzle:puzzle_2
+Même si c'est un petit mensonge blanc au début..
+On finira par vraiment l'etre!
+C'est un mal pour un bien. #puzzle:puzzle_1
 
-Maintenant qu'il n'est plus la.
-Plus rien n'est pareil.
-Il me guidait, mais maintenant je ne sais plus quoi faire.
-J'aimerais qu'il soit toujours ici.
-J'ai peur que ça se passe mal.
+Enfin...
+Je crois...
 
-+[Nous somme là pour toi.]
++[Tu te fais du mal...]
     ~CHOICES_TEST = Z3
-    Je pense...
-    Que si c'est vous...
-    Tout se passera bien.
+    Je ne me fais pas mal..
+    Je repousse le mal.
+    Je le repousse loin de moi.
+    N'est-ce pas?
+    N'est-ce pas...?
     -> END
-+[Il est temps d'être fort.]
-    ~CHOICES_TEST = Z4
-    Mais j'ai...
-    Je ne suis pas pret...
-    Désolé...
++[Laisse moi t'aider.]
+    Je n'ai pas besoin d'aide.
+    Je suis l'aide.
     -> END

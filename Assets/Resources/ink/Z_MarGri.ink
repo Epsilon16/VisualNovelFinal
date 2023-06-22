@@ -1,6 +1,7 @@
 INCLUDE globals.ink
 
-Je n'arrive pas a parler...#next:Z_Demo_Day/false #bg:grigri_neutral #gsprite:mar_grigri #name:nothing #clear:all #music:Spirit/Distortion #audio:Martin
+Je n'arrive pas a parler... #next:Z_Demo_Day/false #bg:grigri_neutral #gsprite:mar_grigri #name:nothing #clear:all #music:Spirit/Distortion #audio:Martin
+~CHOICES_TEST = Z2
 J'ai l'impression d'etre bloque.
 Non...
 Rien ne me bloque..
@@ -18,7 +19,7 @@ Les mots ne sortent pas.
     -> Puzzle_Moment
 
 === Puzzle_Moment ====
-Je ne suis juste pas sur de quoi faire... #puzzle:puzzle_1
+Je ne suis juste pas sur de quoi faire... #puzzle:puzzle_2
 
 Maintenant qu'il n'est plus la.
 Plus rien n'est pareil.
@@ -33,7 +34,6 @@ J'ai peur que ça se passe mal.
     Tout se passera bien.
     -> END
 +[Il est temps d'être fort.]
-    ~CHOICES_TEST = Z2
     Mais j'ai...
     Je ne suis pas pret...
     Désolé...
