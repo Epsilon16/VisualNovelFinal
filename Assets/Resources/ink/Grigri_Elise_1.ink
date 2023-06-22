@@ -19,9 +19,8 @@ Vous m'enragez, m'enragez!
     -> Puzzle_Moment
 
 === Puzzle_Moment ====
-    ~CHOICES_TEST = GEli0
+~CHOICES_TEST = GEli0
 Comme si on pouvait me comprendre. #puzzle:puzzle_2
-    ~CHOICES_TEST = GEli0
 Arrete de...
 Stop stop stop!
 +[Je n'arreterais pas!]
