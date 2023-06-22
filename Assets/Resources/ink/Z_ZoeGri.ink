@@ -1,6 +1,6 @@
 INCLUDE globals.ink
 
-Je n'arrive pas a parler...#next:Z_Demo_Day/false #bg:grigri_neutral #gsprite:zoe_grigri #name:nothing #clear:all #music:Spirit/Distortion #audio:Jeanne
+Je n'arrive pas a parler...#next:Z_Demo_Day/false #bg:grigri_neutral #gsprite:zoe_grigri #name:nothing #clear:all #music:Spirit/Distortion #audio:Zoe
 J'ai l'impression d'etre bloque.
 Non...
 Rien ne me bloque..

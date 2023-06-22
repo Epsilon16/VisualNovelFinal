@@ -126,7 +126,7 @@ Zoé souris et se sèche une petite larme. #name:nothing
 ->EliAlo
 
 ===AfterMartinNo===
-"C'est pas..." #name:Martin #music:Pensive/Dialogue #sprite:mar_neutral/2 #sprite:ari_neutral/1
+"C'est pas..." #name:Martin #sprite:mar_neutral/2 #sprite:ari_neutral/1
 "C'est pas grave."
 "On est pas là pour parler de tout ça."
 "Martin si." #name:Arianne
