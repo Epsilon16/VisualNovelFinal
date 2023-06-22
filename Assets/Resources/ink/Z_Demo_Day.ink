@@ -1,6 +1,6 @@
 INCLUDE globals.ink
 
-{CHOICES_TEST has Z0}
+{CHOICES_TEST has Z0: -> AfterJeanneGrigri}
 
 ~grigriLives = 0
 
