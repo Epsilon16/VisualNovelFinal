@@ -4,7 +4,7 @@ INCLUDE globals.ink
 
 ~grigriLives = 0
 
-A travers la vitre je regarde les montagnes de mon enfance disparaitre peu à peu au loin alors que la voiture s'éloigne d'Adonis. #name:nothing #bg:menu
+A travers la vitre je regarde les montagnes de mon enfance disparaitre peu à peu au loin alors que la voiture s'éloigne d'Adonis. #name:nothing #bg:menu #music:Happy/GREG
 "Comment s'est passé ta semaine chérie ?" #name:Jeanne
 Je tourne ma tête en direction de ma mère au volant. #name:nothing
 "Bien maman." #name:Arianne
@@ -18,8 +18,8 @@ C'est à l'intérieur d'une petite boite qu'il était caché. #name:nothing
 Grand-mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vu porter quelque chose ressemblant à ça.
 L'apparence singulière de celui-ci et la curiosité me l'ont fait garder sur moi. #trans:trans_center
 
-Plus tard dans la soirée, j'ai découvert que ce bracelet renfermait un pouvoir qui me dépasse. #bg:kitchen
-"Arianne, tu ne vois pas que je suis fatiguée ?" #name:Jeanne
+Plus tard dans la soirée, j'ai découvert que ce bracelet renfermait un pouvoir qui me dépasse. #bg:kitchen #music:nothing/GREG
+"Arianne, tu ne vois pas que je suis fatiguée ?" #name:Jeanne #music:Pensive/Solitude
 "Oui, mais-" #name:Arianne
 "Ce rendez-vous était exténuant, et je n'ai vraiment pas envie d'en reparler." #name:Jeanne
 "Remonte dans ta chambre s'il te plait." #name:Jeanne
@@ -28,16 +28,16 @@ Mais alors que j'allais monter dans ma chambre, l'une des perle du bracelet s'es
 
 ===AfterJeanneGrigri===
 Sur le moment, j'étais confuse, persuadé que ce n'était qu'une illusion ou un rêve. #name:nothing #bg:kitchen
-Mais je compris rapidement que ce que j'avais vu était bien réel, et qu'il me permettait d'entendre la pensée des autres.
+Mais je compris rapidement que ce que j'avais vu était bien réel, et qu'il me permettait d'entendre la pensée des autres. #music:Pensive/Solitude
 J'ai pu parler avec ma mère du stress qu'elle éprouvait, et je penses qu'on en avait toute les deux besoin. #trans:trans_center
 
 "Je crois que tu as raison, revenir m'a aidé à accepter pour Yann." #name:Arianne
 Elle pose sa main sur mes cheveux, les ébourrifant un peu avant de reprendre le volant. #name:nothing #bg:menu
 "Je suis contente pour toi." #name:Jeanne
 Je souris doucement. #name:nothing
-Puis je reçois un message sur mon téléphone.
-"Martin et Zoé te dise au revoir." #name:Arianne
-"Tu peux les remercier." #name:Jeanne
+Puis je reçois un message sur mon téléphone. #music:nothing/Solitude
+"Martin et Zoé te disent au revoir." #name:Arianne 
+"Tu peux les remercier." #name:Jeanne #music:Happy/GREG
 "Comment vont-il d'ailleurs ?"
 "J'ai passé tellement de temps dans cette maison, j'aurais dû sortir un peu plus."
 "Très bien." #name:Arianne
@@ -47,7 +47,7 @@ Puis je reçois un message sur mon téléphone.
 ===BeforeZoe===
 "Energique et heureuse en permanence." #bg:square
 "Hey regardez !" #name:Zoé
-"Je suis la plus grande !" #name:Zoé #music:Happy/Enfant
+"Je suis la plus grande !" #name:Zoé #music:Happy/Enfant 
 "Zoé.. fait attention s'il te plait..." #name:Martin
 "Ne t'inquiète pas ! Je suis Miss Mouse ! Voleuse extra-ordinaire !" #name:Zoé
 "Je suis aussi agile que le vent et aussi discrète que la nuit." #name:Zoé
@@ -58,7 +58,7 @@ Puis je reçois un message sur mon téléphone.
 "Sans problèmes.." #trans:trans_center
 
 "J'ai pu lui parler un peu seule à seule." #name:Arianne
-"Je suis désolé d'avoir gâché nos retrouvailles. Je sais que tu avais hâte qu'on se revois." #name:Arianne
+"Je suis désolé d'avoir gâché nos retrouvailles. Je sais que tu avais hâte qu'on se revois." #name:Arianne #music:Pensive/Dialogue
 "Dis pas ça, c'est de la faute d'Elise." #name:Zoé
 "Elle s'est invité toute seule. C'est à elle de s'excuser."
 "Non non, j'ai mal réagis hier. Et on n'en serait pas là sinon." #name:Arianne
@@ -67,19 +67,19 @@ Puis je reçois un message sur mon téléphone.
 "..."
 "C'est pas vrai." #name:Zoé
 "Si, j'ai été méchante." #name:Arianne
-"M-Mais tu n'as pas été mécahnte ! Juste un peu..." #name:Zoé
+"M-Mais tu n'as pas été méchante ! Juste un peu..." #name:Zoé
 "Comment dire..." #trans:trans_center
 -> AfterZoeNo
 
 ===AfterZoeYes===
-"Si jamais tu as trop mal, tu n'es pas obligé de rejetter sur quelqu'un d'autre." #name:Arianne
+"Si jamais tu as trop mal, tu n'es pas obligé de rejeter sur quelqu'un d'autre." #name:Arianne #music:Pensive/Solitude
 "Et si tu ne veux pas en parler tu peux juste me faire un câlin."
-"Mais tu déteste mes câlin." #name:Zoé
+"Mais tu déteste mes câlins." #name:Zoé
 "C'est faux, je les ais toujours aimé." #name:Arianne
 ->BeforeMartin
 
 ===AfterZoeNo===
-"On a tous des mauvais souvenir, et j'oublie que je ne suis pas seule pafois." #name:Arianne
+"On a tous des mauvais souvenir, et j'oublie que je ne suis pas seule pafois." #name:Arianne #music:Pensive/Solitude
 "Je suis désolé Zoé."
 Zoé souris et se sèche une petite larme. #name:nothing
 "Je ne sais pas comment tu fais pour toujours dire ce que tu penses." #name:Zoé
@@ -93,7 +93,7 @@ Zoé souris et se sèche une petite larme. #name:nothing
 "Et Martin ?" #name:Jeanne
 "Il a un peu changé, un peu plus posé qu'avant." #name:Arianne #trans:trans_center
 
-"Au départ il avait un peu de mal à me parler." #name:Arianne #bg:rugby
+"Au départ il avait un peu de mal à me parler." #name:Arianne #bg:rugby #music:Pensive/Dialogue
 "Le départ de Yann l'a beaucoup affecté je penses."
 "Tu..." #name:Martin
 "Tu penses que c'est possible pour nous de redevenir comme avant ?"
@@ -107,7 +107,7 @@ Zoé souris et se sèche une petite larme. #name:nothing
 ->AfterMartinNo
 
 ===AfterMartinYes===
-"Je peux comprendre que tu te sente perdu." #name:Arianne
+"Je peux comprendre que tu te sente perdu." #name:Arianne #music:Pensive/Dialogue
 "Je me suis sentis comme ça aussi."
 "..."  #name:Martin
 "Je vois maintenant à quel point tu l'admirais." #name:Arianne
@@ -120,7 +120,7 @@ Zoé souris et se sèche une petite larme. #name:nothing
 ->EliAlo
 
 ===AfterMartinNo===
-"C'est pas..." #name:Martin
+"C'est pas..." #name:Martin #music:Pensive/Dialogue
 "C'est pas grave."
 "On est pas là pour parler de tout ça."
 "Martin si." #name:Arianne
@@ -133,16 +133,16 @@ Zoé souris et se sèche une petite larme. #name:nothing
 ->EliAlo
 
 ===EliAlo===
-"Je pense qu'il est sur le bon chemin." #name:Arianne #trans:trans_center
+"Je pense qu'il est sur le bon chemin." #name:Arianne #trans:trans_center #music:nothing/Dialogue
 
 "Et j'ai appris une ou deux choses sur lui dont je te parlerais un autre jour..." #bg:menu
-"Oh et évidemment j'ui allé voir Greg." #name:Arianne
+"Oh et évidemment j'ui allé voir Greg." #name:Arianne #music:Happy/GREG
 "Il ne doit pas avoir vieillis d'un pouce." #name:Jeanne
 "Tu serais surprise du nombre de cheveux blanc visibles." #name:Arianne
 "Arrête, tu me rappel que je suis sensé être son ainée." #name:Jeanne #trans:trans_center
 
 "Il continue de gérer son petit magasin." #name:Arianne #bg:market
-"Arianne !? Bon dieu, ce que tu as grandis !" #name:Greg
+"Arianne !? Bon dieu, ce que tu as grandis !" #name:Greg #music:nothing/GREG
 "La dernière fois que je t'ai vu, tu faisais cette taille !" #name:Greg
 "Je sais que j'ai grandis mais tu exagère un peu." #name:Arianne
 "Hahaha ! Toujours." #name:Greg
@@ -168,9 +168,9 @@ Zoé souris et se sèche une petite larme. #name:nothing
 "Elle est dense." #name:Arianne
 "Mais..."
 "..." #name:Elise
-"Je pense que c'est fini maintenant." #name:Arianne #trans:trans_center
+"Je pense que c'est fini maintenant." #name:Arianne #trans:trans_center 
 
-"J'ai aussi rencontré Aloïs." #name:Arianne #bg:mall_cultur
+"J'ai aussi rencontré Aloïs." #name:Arianne #bg:mall_cultur #music:nothing/Colère
 "Aloïs..." #name:Jeanne
 "Ah oui ! Le petit génie."
 "Je m'en souviens, il était de la même année que ton frère."
@@ -198,7 +198,7 @@ Zoé souris et se sèche une petite larme. #name:nothing
 ===BeforeEnd===
 "Quand au reste..." #name:Arianne #trans:trans_center
 
-Tu n'aurais jamais dû revenir à Adonis. #name:nothing #bg:grigri_neutral
+Tu n'aurais jamais dû revenir à Adonis. #name:nothing #bg:grigri_neutral #music:Fear/Menace
 Restes terrée dans ta maison. #trans:trans_center
 
 "Passe la balle Zoé !" #name:Martin #bg:rugby
@@ -217,8 +217,8 @@ Restes terrée dans ta maison. #trans:trans_center
 "....."
 "......." #trans:trans_center
 
-"Je préfère garder ça pour une prochaine fois." #name:Arianne #bg:menu
-"Le plus important c'est que tu te sois amusée." #name:Jeanne
+"Je préfère garder ça pour une prochaine fois." #name:Arianne #bg:menu #music:nothing/Menace
+"Le plus important c'est que tu te sois amusée." #name:Jeanne #music:Happy/Camaraderie
 "Oui..." #name:Arianne
 "On peut dire ça..."
 Je deviens silencieuse en regardant la fenêtre. #name:nothing
