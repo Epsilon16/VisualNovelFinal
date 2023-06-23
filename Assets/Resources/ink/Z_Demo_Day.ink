@@ -20,9 +20,9 @@ La mort de Mamie Nat nous a pris au dépourvu. #bg:bedroom
 Comme papa travail au restaurant, seul maman et moi sommes descendu afin de s'occuper du déménagement.
 Et c'est en rangeant dans une chambre que j'ai découvert un bracelet très particulié.
 "Qu'est-ce que c'est..." #name:Arianne #sprite:ari_neutral/2
-C'est à l'intérieur d'une petite boite qu'il était caché. #name:nothing
+C'est à l'intérieur d'une petite boite qu'il était caché. #name:nothing #item:grigri_8
 Grand-mère Nat était connue pour ses bijoux, mais je ne l'ai jamais vu porter quelque chose ressemblant à ça.
-L'apparence singulière de celui-ci et la curiosité me l'ont fait garder sur moi. #trans:trans_center
+L'apparence singulière de celui-ci et la curiosité me l'ont fait garder sur moi. #trans:trans_center #item:nothing
 
 Plus tard dans la soirée, j'ai découvert que ce bracelet renfermait un pouvoir qui me dépasse. #bg:kitchen  #music:Pensive/Solitude
 "Arianne, ne vois-tu pas que je suis fatiguée ?" #name:Jeanne #sprite:ari_sad/1  #sprite:jea_tired/3
@@ -78,7 +78,7 @@ Puis je reçois un message sur mon téléphone.
 -> AfterZoeNo
 
 ===AfterZoeYes===
-"C'est pas grave Zoé.." #name:Arianne #music:Pensive/Solitude #sprite:zoe_sad/1 #sprite:ari_neutral/2
+"C'est pas grave Zoé.." #name:Arianne #music:Pensive/Solitude #sprite:zoe_sad/1 #sprite:ari_neutral/2 #bg:square
 "Si jamais tu as trop mal, tu n'es pas obligé de rejeter sur quelqu'un d'autre."
 "Et si tu ne veux pas en parler tu peux juste me faire un câlin."
 "Mais tu déteste mes câlins." #name:Zoé
@@ -86,7 +86,7 @@ Puis je reçois un message sur mon téléphone.
 ->BeforeMartin
 
 ===AfterZoeNo===
-"On a tous des mauvais souvenir, et j'oublie que je ne suis pas seule pafois." #name:Arianne #music:Pensive/Solitude #sprite:zoe_sad/1 #sprite:ari_neutral/2
+"On a tous des mauvais souvenir, et j'oublie que je ne suis pas seule pafois." #name:Arianne #music:Pensive/Solitude #sprite:zoe_sad/1 #sprite:ari_neutral/2 #bg:square
 "Je suis désolé Zoé."
 "Je ne sais pas comment tu fais pour toujours dire ce que tu penses." #name:Zoé #sprite:zoe_neutral/1
 "C'est pas toujours une bonne chose. Ton optimisme l'est bien plus." #name:Arianne
